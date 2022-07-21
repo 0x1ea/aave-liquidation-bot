@@ -1,33 +1,54 @@
 const Web3 = require("web3");
-const { ethers } = require("ethers");
 const { saveData } = require("../utils/saveData");
-const blocks = require("../data/blocks_2000.json");
-require("dotenv").config();
 const { updateBlocks } = require("../utils/updateBlocks");
+const blocks = require("../data/blocks_2000.json");
 const LendingPool = require("../artifacts/contracts/interfaces/ILendingPool.sol/ILendingPool.json");
+require("dotenv").config();
 
 async function main() {
-  const provider = process.env["ALCHEMY_MAINNET_RPC_URL"];
+  const provider = process.env["FORK_RPC_URL"];
   const web3 = new Web3(provider);
-  const contract = new web3.eth.Contract(
-    LendingPool.abi,
-    "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9"
-  );
 
-  // const blockSize = 1999;
-  // const block = await web3.eth.getBlockNumber();
-  // const fromBlock = parseInt(block) - blockSize;
+  /**
+   * LendingPool:
+   * Mainnet: 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
+   * Polygon: 0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
+   */
+  const LendingPoolAddress = "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf";
+  const contract = new web3.eth.Contract(LendingPool.abi, LendingPoolAddress);
 
+  /**
+   * Verifico la cantidad de steps para leer toda la blockchain
+   * La maxima cantidad de bloques que se pueden llamar a la vez son 2000
+   * Los steps son de 2000 bloques desde el lanzamiento del SC hasta el
+   * bloque mas actual
+   */
   const calls = blocks.length;
+  console.log(calls);
 
-  for (let i = 0; i <= calls; i++) {
+  /**
+   * El backup es porque se me quedo congelada la información en el archivo de 1000
+   */
+  const backup = 1600;
+
+  /**
+   * Comienzo a iterar por todo el array de blocks_2000
+   */
+  for (let i = backup; i <= calls; i++) {
     if (blocks[i].saved == false) {
       let j = i;
+
+      /**
+       * La máxima cantidad de data que caben por archivo parecen ser 100 peticiones
+       * en un rango de 2000 bloques.
+       */
       const end = j + 100;
 
       while (j < end) {
+        /**
+         * Extraigo todos los eventos en un rango de 2000 bloques
+         */
         const events = await contract.getPastEvents("Deposit", {
-          // filter: { to: toAddress },
           fromBlock: blocks[j].fromBlock,
           toBlock: blocks[j].toBlock
         });
@@ -36,6 +57,10 @@ async function main() {
         await updateBlocks("blocks_2000", j);
         j++;
       }
+
+      /**
+       * Actualizo el indice
+       */
       i = j - 1;
     }
   }

@@ -17,7 +17,7 @@ async function main() {
   await getWeth(wethTokenAddress, deployer);
 
   const balance = await deployer.getBalance();
-  console.log(" ETH balance: ", ethers.utils.formatEther(balance));
+  console.log("ETH balance: ", ethers.utils.formatEther(balance));
   await getErc20Balance(wethTokenAddress, deployer);
   await getErc20Balance(usdtAddress, deployer);
 
@@ -26,11 +26,11 @@ async function main() {
   // deposit!
   // approve
   await approveErc20(wethTokenAddress, lendingPool.address, AMOUNT, deployer);
-  console.log("Depositing...");
+  console.log("Depositing WETH...");
   await lendingPool.deposit(wethTokenAddress, AMOUNT, deployer.address, 0);
   console.log("Deposited!");
 
-  console.log("Pidiendo prestado USDT");
+  console.log("Pidiendo prestado el ERC20 para pagar la deuda");
   const borrow = "500000";
   await borrowErc20(usdtAddress, lendingPool, borrow, deployer);
 
@@ -65,8 +65,9 @@ async function main() {
 
   const newBalance = await deployer.getBalance();
 
-  console.log(" ETH balance: ", ethers.utils.formatEther(newBalance));
+  console.log("ETH balance: ", ethers.utils.formatEther(newBalance));
   await getErc20Balance(wethTokenAddress, deployer);
+  await getErc20Balance(usdtAddress, deployer);
 }
 
 async function borrowErc20(erc20Address, lendingPool, borrow, account) {
@@ -91,7 +92,8 @@ async function getErc20Balance(erc20Address, account) {
   const erc20Contract = new ethers.Contract(erc20Address, erc20ABI.abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
   const symbol = await erc20Contract.symbol();
-  console.log(`${symbol} balance: ${balance.toString()}`);
+  const decimals = await erc20Contract.decimals();
+  console.log(`${symbol} balance: ${ethers.utils.formatUnits(balance, decimals)}`);
   return balance.toString();
 }
 
@@ -124,7 +126,6 @@ async function liquidateUser(
 
   const response = await liquidateTx.wait(1);
   console.log(`You've Liquidated!`);
-  console.log(response);
 }
 
 async function approveErc20(erc20Address, spenderAddress, amountToSpend, account) {
@@ -144,49 +145,12 @@ async function getBorrowUserData(lendingPool, account) {
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
 
-  console.log("Account: ", account);
+  console.log("\nAccount: ", account);
   console.log(`Have ${totalCollateralETH} worth of ETH deposited.`);
   console.log(`Have ${totalDebtETH} worth of ETH borrowed.`);
   console.log(`Have ${availableBorrowsETH} worth of ETH.`);
-  console.log(`His helthFactor is: ${formattedHF}.`);
+  console.log(`His helthFactor is: ${formattedHF}.\n`);
 }
-
-/* async function getUserReserveData(lendingPool, asset, user) {
-  const contract_address = "0x057835Ad21a177dbdd3090bB1CAE03EaCF78Fc6d";
-  const dataProvider = await ethers.getContractAt("IProtocolDataProvider", contract_address);
-  const {} = await dataProvider.getUserReserveData(asset, user);
-
-  console.log("Approved!");
-  const {
-    totalCollateralETH,
-    totalDebtETH,
-    availableBorrowsETH,
-    healthFactor
-  } = await lendingPool.getUserAccountData(account);
-
-  const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
-
-  if (formattedHF < 2) {
-    console.log("Account: ", account);
-    console.log(`You have ${totalCollateralETH} worth of ETH deposited.`);
-    console.log(`You have ${totalDebtETH} worth of ETH borrowed.`);
-    console.log(`You have ${availableBorrowsETH} worth of ETH.`);
-    console.log(`Your helthFactor is: ${ethers.utils.formatEther(healthFactor)}.`);
-
-    const info = [
-      {
-        user: account,
-        totalCollateralETH: totalCollateralETH,
-        totalDebtETH: totalDebtETH,
-        availableBorrowsETH: availableBorrowsETH,
-        healthFactor: healthFactor,
-        formattedHF: formattedHF
-      }
-    ];
-
-    
-  }
-} */
 
 main()
   .then(() => process.exit(0))

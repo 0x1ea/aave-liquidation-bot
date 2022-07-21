@@ -25,9 +25,6 @@ async function extractUsers() {
       // }
     });
   }
-
-  console.log(newData);
-  // Finalmente guardo el array completo en un unico fichero
 }
 
 extractUsers();

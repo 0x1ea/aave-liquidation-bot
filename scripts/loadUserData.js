@@ -2,7 +2,9 @@ const { getNamedAccounts, ethers } = require("hardhat");
 const uniqueUsers = require("../data/all_users.json");
 const { saveData } = require("../utils/saveData");
 async function main() {
-  const length = uniqueUsers.length;
+  // const length = uniqueUsers.length;
+  const lenght = 47309;
+
   for (let index = length - 1; index >= 0; index--) {
     // if (parseFloat(data[index].amount) > 1) {
     const account = uniqueUsers[index];
@@ -60,7 +62,7 @@ async function getBorrowUserData(lendingPool, account) {
       }
     ];
 
-    saveData("users_data", info);
+    saveData("users_data2", info);
   }
 }
 

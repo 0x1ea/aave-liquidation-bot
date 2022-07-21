@@ -31,6 +31,7 @@ async function createBlockData(fileName, step, initialBlock, latestBlock) {
   console.log(`${fileName}_${step}.json written successfully!`);
 }
 
-createBlockData("blocks", 2000, 11362579, 15185805);
+// For Polygon
+createBlockData("blocks", 2000, 12687246, 30989475);
 
 module.exports = { createBlockData };
