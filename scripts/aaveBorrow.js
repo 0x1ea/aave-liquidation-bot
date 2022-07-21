@@ -87,13 +87,14 @@ async function approveErc20(erc20Address, spenderAddress, amountToSpend, account
 }
 
 async function getBorrowUserData(lendingPool, account) {
-  const { totalCollateralETH, totalDebtETH, availableBorrowsETH } =
+  const { totalCollateralETH, totalDebtETH, availableBorrowsETH /* , healthFactor */ } =
     await lendingPool.getUserAccountData(account);
 
   console.log(`You have ${totalCollateralETH} worth of ETH deposited.`);
   console.log(`You have ${totalDebtETH} worth of ETH borrowed.`);
 
   console.log(`You have ${availableBorrowsETH} worth of ETH.`);
+  /*   console.log(`Your helthFactor is: ${ethers.utils.formatEther(healthFactor)}.`); */
   return { availableBorrowsETH, totalDebtETH };
 }
 
