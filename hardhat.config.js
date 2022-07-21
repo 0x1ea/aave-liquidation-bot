@@ -38,6 +38,10 @@ module.exports = {
         url: MAINNET_RPC_URL,
       },
       chainId: 31337,
+      mining: {
+        auto: true,
+        interval: [1000,2000]
+      }
     },
     localhost: {
       chainId: 31337,

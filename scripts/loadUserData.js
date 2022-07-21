@@ -1,13 +1,14 @@
 const { getNamedAccounts, ethers } = require("hardhat");
-const data = require("../build/output.json");
-
+const uniqueUsers = require("../data/all_users.json");
+const { saveData } = require("../utils/saveData");
 async function main() {
-  for (let index = 0; index < data.length; index++) {
+  const length = uniqueUsers.length;
+  for (let index = length - 1; index >= 0; index--) {
     // if (parseFloat(data[index].amount) > 1) {
-    const account = data[index].from;
+    const account = uniqueUsers[index];
     // console.log("Account: ", account);
     // LendingPoolAddressesProvider: 0xB53C1a33016B2DC2fF3653530bfF1848a515c8c5
-    const lendingPool = await getLendingPool(data[index].from);
+    const lendingPool = await getLendingPool(uniqueUsers[index]);
     await getBorrowUserData(lendingPool, account);
 
     // console.log(`LendingPool address ${lendingPool.address}`);
@@ -26,8 +27,7 @@ async function getLendingPool(account) {
   // const lendingPoolAddress = await lendingPoolAddressesProvider.getLendingPool();
   const lendingPool = await ethers.getContractAt(
     "ILendingPool",
-    "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9", // WETH
-    account
+    "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9" // WETH
   );
   return lendingPool;
 }
@@ -40,15 +40,28 @@ async function getBorrowUserData(lendingPool, account) {
     healthFactor
   } = await lendingPool.getUserAccountData(account);
 
-  if (parseFloat(healthFactor < 10)) {
+  const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
+
+  if (formattedHF < 2) {
     console.log("Account: ", account);
     console.log(`You have ${totalCollateralETH} worth of ETH deposited.`);
     console.log(`You have ${totalDebtETH} worth of ETH borrowed.`);
-
     console.log(`You have ${availableBorrowsETH} worth of ETH.`);
     console.log(`Your helthFactor is: ${ethers.utils.formatEther(healthFactor)}.`);
+
+    const info = [
+      {
+        user: account,
+        totalCollateralETH: totalCollateralETH.toString(),
+        totalDebtETH: totalDebtETH.toString(),
+        availableBorrowsETH: availableBorrowsETH.toString(),
+        healthFactor: healthFactor.toString(),
+        formattedHF: formattedHF
+      }
+    ];
+
+    saveData("users_data", info);
   }
-  return { availableBorrowsETH, totalDebtETH };
 }
 
 main()
