@@ -33,6 +33,6 @@ async function getOnlyUsers() {
   }
 }
 
-getOnlyUsers();
+// getOnlyUsers();
 
 module.exports = { getOnlyUsers };

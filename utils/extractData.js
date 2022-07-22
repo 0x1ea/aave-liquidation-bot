@@ -31,6 +31,6 @@ async function extractData() {
   }
 }
 
-extractData();
+// extractData();
 
 module.exports = { extractData };

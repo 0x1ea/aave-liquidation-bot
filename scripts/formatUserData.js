@@ -92,6 +92,6 @@ async function getLendingPool(account) {
   return lendingPool;
 }
 
-formatUserData();
+// formatUserData();
 
 module.exports = { formatUserData };

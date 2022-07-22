@@ -20,17 +20,21 @@ async function deleteDuplicatesFromSomeFiles() {
         // deleteDuplicatesFromSomeFiles();
       } else {
         fs.readFile(`./data/uniqueUsers/${i}.json`, async (err, buf) => {
-          fs.writeFile(`./data/uniqueUsers/${i}.json`, JSON.stringify(uniqueUsersFile), err => {
-            if (err) {
-              return console.error(err);
+          fs.writeFile(
+            `./data/uniqueUsers/${i}.json`,
+            JSON.stringify(uniqueUsersFile),
+            err => {
+              if (err) {
+                return console.error(err);
+              }
             }
-          });
+          );
         });
       }
     });
   }
 }
 
-deleteDuplicatesFromSomeFiles();
+// deleteDuplicatesFromSomeFiles();
 
 module.exports = { deleteDuplicatesFromSomeFiles };

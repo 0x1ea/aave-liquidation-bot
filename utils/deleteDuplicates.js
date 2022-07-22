@@ -19,16 +19,20 @@ async function deleteDuplicates() {
       deleteDuplicates();
     } else {
       fs.readFile(`./data/${OUTPUT_FILE_NAME}.json`, async (err, buf) => {
-        fs.writeFile(`./data/${OUTPUT_FILE_NAME}.json`, JSON.stringify(uniqueUsers), err => {
-          if (err) {
-            return console.error(err);
+        fs.writeFile(
+          `./data/${OUTPUT_FILE_NAME}.json`,
+          JSON.stringify(uniqueUsers),
+          err => {
+            if (err) {
+              return console.error(err);
+            }
           }
-        });
+        );
       });
     }
   });
 }
 
-deleteDuplicates();
+// deleteDuplicates();
 
 module.exports = { deleteDuplicates };

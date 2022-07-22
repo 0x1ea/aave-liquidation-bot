@@ -32,6 +32,6 @@ async function createBlockData(fileName, step, initialBlock, latestBlock) {
 }
 
 // For Polygon
-createBlockData("blocks", 2000, 12687246, 30989475);
+// createBlockData("blocks", 2000, 12687246, 30989475);
 
 module.exports = { createBlockData };

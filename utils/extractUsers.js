@@ -27,6 +27,6 @@ async function extractUsers() {
   }
 }
 
-extractUsers();
+// extractUsers();
 
 module.exports = { extractUsers };
