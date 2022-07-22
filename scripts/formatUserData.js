@@ -59,7 +59,6 @@ async function formatUserData() {
         newUser.push(info);
       }
     }
-    await data.forEach(async user => {});
 
     fs.writeFile(
       `./${FOLDER_NAME}/${OUTPUT_FILE_NAME}.json`,
