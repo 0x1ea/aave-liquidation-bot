@@ -1,21 +1,25 @@
 const fs = require("fs");
-const allUsers = require("../data/raw_all_users.json");
 
 async function deleteDuplicates() {
-  let uniqueUsers = [...new Set(allUsers)];
-  console.log(uniqueUsers.length);
+  const FILE_NAME_TO_CLEAN = "allUsers_polygon";
+  const OUTPUT_FILE_NAME = "uniqueUsers_polygon";
 
-  fs.readFile(`./data/all_users.json`, async (err, buf) => {
+  const allUsers = require(`../data/${FILE_NAME_TO_CLEAN}.json`);
+  let uniqueUsers = [...new Set(allUsers)];
+  console.log(`File: ${FILE_NAME_TO_CLEAN}, all users length: ${allUsers.length}`);
+  console.log(`File: ${OUTPUT_FILE_NAME}, unique users length: ${uniqueUsers.length}`);
+
+  fs.readFile(`./data/${OUTPUT_FILE_NAME}.json`, async (err, buf) => {
     if (!buf) {
-      fs.writeFile(`./data/all_users.json`, "[]", err => {
+      fs.writeFile(`./data/${OUTPUT_FILE_NAME}.json`, "[]", err => {
         if (err) {
           return console.error(err);
         }
       });
       deleteDuplicates();
     } else {
-      fs.readFile(`./data/all_users.json`, async (err, buf) => {
-        fs.writeFile(`./data/all_users.json`, JSON.stringify(uniqueUsers), err => {
+      fs.readFile(`./data/${OUTPUT_FILE_NAME}.json`, async (err, buf) => {
+        fs.writeFile(`./data/${OUTPUT_FILE_NAME}.json`, JSON.stringify(uniqueUsers), err => {
           if (err) {
             return console.error(err);
           }

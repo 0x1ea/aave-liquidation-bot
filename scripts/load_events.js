@@ -1,9 +1,11 @@
 const Web3 = require("web3");
-const { saveData } = require("../utils/saveData");
-const { updateBlocks } = require("../utils/updateBlocks");
-const blocks = require("../data/blocks_2000.json");
-const LendingPool = require("../artifacts/contracts/interfaces/ILendingPool.sol/ILendingPool.json");
 require("dotenv").config();
+const LendingPool = require("../artifacts/contracts/interfaces/ILendingPool.sol/ILendingPool.json");
+const { updateBlocks } = require("../utils/updateBlocks");
+// ⚠ Recuerda actualizar este valor con los blocksSteps
+const blocks = require("../data/blocks_2000.json");
+// Funcion para crear o actualizar un nuevo archivo dentro de /data
+const { saveData } = require("../utils/saveData");
 
 async function main() {
   const provider = process.env["FORK_RPC_URL"];
@@ -29,7 +31,7 @@ async function main() {
   /**
    * El backup es porque se me quedo congelada la información en el archivo de 1000
    */
-  const backup = 1600;
+  const backup = 6500;
 
   /**
    * Comienzo a iterar por todo el array de blocks_2000

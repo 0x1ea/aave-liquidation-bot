@@ -1,36 +1,32 @@
 const fs = require("fs");
 
 /**
- *
- * @param {string} fileName -
- * @param {array} dataSet -
+ * Funcion para crear y actualizar un archivo dado dos parametros
+ * @param {string} folderName - nombre del archivo, sin extension dentro de la carpeta
+ *                            /data.
+ * @param {string} fileName - nombre del archivo, sin extension dentro de la carpeta
+ *                            /data.
+ * @param {array} dataSet - informacion que va ser anadida al archivo, ya debe
+ *                          estar formateado dentro de un array.
  */
-async function saveData(fileName, dataSet) {
-  fs.readFile(`./data/${fileName}.json`, async (err, buf) => {
+async function saveData(folderName, fileName, dataSet) {
+  fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
     if (!buf) {
-      fs.writeFile(`./data/${fileName}.json`, "[]", err => {
+      fs.writeFile(`./${folderName}/${fileName}.json`, "[]", err => {
         if (err) {
           return console.error(err);
         }
       });
     } else {
-      fs.readFile(`./data/${fileName}.json`, async (err, buf) => {
-        let save = await buf.toString();
+      fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
+        let save = buf.toString();
         const newSave = await JSON.parse(save);
 
         dataSet.map(data => {
-          /*       const info = {
-            asset: event.returnValues["reserve"],
-            from: event.returnValues["user"],
-            onBehalfOf: event.returnValues["onBehalfOf"],
-            amountWei: event.returnValues["amount"],
-            amount: ethers.utils.formatEther(event.returnValues["amount"]),
-            refferalCode: event.returnValues["referral"]
-          }; */
           newSave.push(data);
         });
 
-        fs.writeFile(`./data/${fileName}.json`, JSON.stringify(newSave), err => {
+        fs.writeFile(`./${folderName}/${fileName}.json`, JSON.stringify(newSave), err => {
           if (err) {
             return console.error(err);
           }
