@@ -31,7 +31,8 @@
   "scripts": {
     "test": "mocha",
     "load_events": "node scripts\\load_events.js",
-    "load": "hardhat run scripts\\loadUserData.js",
+    "loadMainnet": "node scripts\\loadUserDataMainnet.js",
+    "loadPolygon": "hardhat run scripts\\loadUserData.js",
     "liquidate": "node scripts\\liquidate.js",
     "dev": "hardhat run scripts\\aaveBorrow.js",
     "fork": "hardhat node --fork https://polygon-rpc.com/"

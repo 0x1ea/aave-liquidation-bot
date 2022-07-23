@@ -18,7 +18,8 @@ async function convertConfiguration() {
     const newUser = [];
     const end = data.length;
     for (let i = 0; i <= end; i++) {
-      if (data[i]?.formattedHF <= 1) {
+      const alldebt = data[i]?.totalDebtETH.slice().length;
+      if (data[i]?.formattedHF <= 1 && alldebt >= 16) {
         const configuration = decodeConfiguration(data[i].userConfiguration);
         const info = {
           user: data[i].user,
