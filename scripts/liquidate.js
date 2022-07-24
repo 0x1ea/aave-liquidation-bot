@@ -30,7 +30,6 @@ async function main() {
   /**
    *
    */
-
   const provider = new ethers.providers.JsonRpcProvider(rpcUrl.production);
   const deployer = new ethers.Wallet(key.production, provider);
   /**

@@ -1,53 +1,43 @@
 const { ethers } = require("ethers");
-const LendingPoolABI = require("../artifacts/contracts/interfaces/ILendingPool.sol/ILendingPool.json");
 const { saveData } = require("../utils/saveData");
+const aave = require("../constants/aave.json");
+const config = require("../constants/config.json");
 require("dotenv").config();
 
-const OUTPUT_FOLDER_NAME = "data_mainnet";
-const OUTPUT_FILE_NAME = "users_data_mainnet";
+/**
+ * INFORMACION PARA CONFIGURAR
+ * ANTES DE HACER EL LLAMADO
+ */
+const OUTPUT_FOLDER_NAME = "polygon_v3";
+const OUTPUT_FILE_NAME = "users_data";
+const ACCOUNT = config.keys.fake;
+const PROVIDER = config.rpcUrl.polygon.public;
+const CONTRACT_ADDRESS = aave.polygon.v3.pool.address;
+const CONTRACT_ABI = aave.polygon.v3.pool.abi;
 
-const startIndex = require("../data_mainnet/index.json");
-let uniqueUsers = require("../data_mainnet/all_users.json");
-
-const rpcUrl = {
-  dev: process.env.ALCHEMY_MAINNET_RPC_URL
-};
-
-const key = {
-  dev: "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
-  production: process.env.PRIVATE_KEY
-};
-
-async function main() {
-  console.log(rpcUrl.dev);
-  const provider = new ethers.providers.JsonRpcProvider(rpcUrl.dev);
-  const deployer = new ethers.Wallet(key.dev, provider);
+async function loadUserDataV2() {
+  const startIndex = require(`../${OUTPUT_FOLDER_NAME}/index.json`);
+  const uniqueUsers = require(`../${OUTPUT_FOLDER_NAME}/all_users.json`);
+  const provider = new ethers.providers.JsonRpcProvider(PROVIDER);
+  const deployer = new ethers.Wallet(ACCOUNT, provider);
   const myIndex = startIndex.length - 1;
+  const start = startIndex[myIndex] || uniqueUsers.length - 1;
 
-  const start = startIndex[myIndex] || uniqueUsers.length;
+  console.log(`Total users: ${uniqueUsers.length}`);
   console.log("Starting from: ", start);
-
   for (let index = start; index >= 0; index--) {
     const account = uniqueUsers[index];
-    const lendingPool = await getLendingPool(deployer);
+    const lendingPool = await getLendingPool(CONTRACT_ADDRESS, CONTRACT_ABI, deployer);
     await getBorrowUserData(lendingPool, account, index);
   }
 }
 
-async function getLendingPool(account) {
-  /**
-   * LendingPool:
-   * Mainnet: 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
-   * Polygon: 0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
-   */
-  const lendingPool = new ethers.Contract(
-    "0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9",
-    LendingPoolABI.abi,
-    account
-  );
+async function getLendingPool(address, abi, account) {
+  const lendingPool = new ethers.Contract(address, abi, account);
   return lendingPool;
 }
 
+// ⚠ ACUERDATE QUE EL RESULTADO VARIA ENTRE V2 Y V3 ⚠
 async function getBorrowUserData(lendingPool, account, index) {
   const {
     totalCollateralETH,
@@ -58,7 +48,7 @@ async function getBorrowUserData(lendingPool, account, index) {
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
 
-  if (formattedHF <= 1.1) {
+  if (formattedHF < 1.1) {
     console.log("Account: ", account);
     console.log(`Have ${totalCollateralETH} worth of ETH deposited.`);
     console.log(`Have ${totalDebtETH} worth of ETH borrowed.`);
@@ -80,4 +70,4 @@ async function getBorrowUserData(lendingPool, account, index) {
   saveData(OUTPUT_FOLDER_NAME, "index", infoIindex);
 }
 
-main();
+// loadUserDataV2();

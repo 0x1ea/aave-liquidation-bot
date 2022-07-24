@@ -5,19 +5,16 @@ const aave = require("../constants/aave.json");
 const config = require("../constants/config.json");
 const { convertConfiguration } = require("../utils/convertConfiguration");
 
-// Valores que modificar antes de hacer el llamado a la funcion
+/**
+ * INFORMACION PARA CONFIGURAR
+ * ANTES DE HACER EL LLAMADO
+ */
 const FOLDER_NAME = "polygon_v3";
 const INPUT_FILE_NAME = "users_polygon_v3";
 const OUTPUT_FILE_NAME = "formatted_users";
 const HEALTH_FACTOR_LIMIT = 1.05;
 const RPC_URL = config.rpcUrl.polygon.public;
 const KEY = config.keys.fake;
-
-/**
- * LendingPool:
- * Mainnet: 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
- * Polygon: 0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
- */
 
 async function formatUserData(decimals) {
   const provider = new ethers.providers.JsonRpcProvider(RPC_URL);

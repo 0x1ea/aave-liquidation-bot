@@ -4,6 +4,7 @@ const { updateBlocks } = require("../utils/updateBlocks");
 const { saveData } = require("../utils/saveData");
 require("dotenv").config();
 const aave = require("../constants/aave.json");
+const config = require("../constants/config.json");
 const { createBlockData } = require("../utils/createBlockData");
 // ⚠ Recuerda actualizar este valor con los blocksSteps
 // Funcion para crear o actualizar un nuevo archivo dentro de /data
@@ -17,15 +18,15 @@ const { createBlockData } = require("../utils/createBlockData");
  *   /uniqueUsers
  *   index.json -> with "[]" inside
  * ⚠  ⚠  ⚠
- *
+ * @param {string} provider nombre de la variable de entorno donde esta el provider
  * @param {string} folderName nombre de la carpeta donde se actualizar los archivos
  * @param {string} fileName nombre del archivo que se va actualizar
  * @param {stirng} eventName nombre del evento a pedir. CASE SENSITIVE
  */
-async function loadEvents(folderName, fileName, eventName) {
+async function loadEvents(provider, folderName, fileName, eventName) {
   const blocks = require(`../${folderName}/${fileName}.json`);
   const EVENT = eventName || "Deposit";
-  const provider = process.env.FORK_RPC_URL;
+  const provider = process.env[provider];
   const web3 = new Web3(provider);
 
   /**
@@ -84,4 +85,4 @@ async function loadEvents(folderName, fileName, eventName) {
 module.exports = { loadEvents };
 
 // createBlockData("polygon_v3", "blocks", 2000, 25826028, 31062807);
-// loadEvents("polygon_v3", "blocks_2000", "Supply");
+// loadEvents(config.rpcUrl.polygon.alchemy, "polygon_v3", "blocks_2000", "Supply");
