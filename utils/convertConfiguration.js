@@ -1,34 +1,34 @@
 const fs = require("fs");
 const { ethers } = require("ethers");
-
-const LendingPoolABI = require("../artifacts/contracts/interfaces/ILendingPool.sol/ILendingPool.json");
-const erc20ABI = require("../artifacts/contracts/interfaces/IWeth.sol/IWeth.json");
 const chainData = require("../constants/reservesList.json");
 require("dotenv").config();
 
-// Valores que modificar antes de hacer el llamado a la funcion
-const FOLDER_NAME = "data_polygon";
-const INPUT_FILE_NAME = "users_configuration";
-const OUTPUT_FILE_NAME = "users_ready";
-
-async function convertConfiguration() {
+async function convertConfiguration(folderName, inputFile, outputFile, hf, wei) {
+  // Valores que modificar antes de hacer el llamado a la funcion
+  const FOLDER_NAME = folderName;
+  const INPUT_FILE_NAME = inputFile;
+  const OUTPUT_FILE_NAME = outputFile;
+  const HEALTH_FACTOR_LIMIT = hf || 1.01;
+  const WEI_UNITS = wei || 18;
   fs.readFile(`./${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
     const data = await JSON.parse(save);
     const newUser = [];
     const end = data.length;
     for (let i = 0; i <= end; i++) {
-      const alldebt = data[i]?.totalDebtETH.slice().length;
-      if (data[i]?.formattedHF <= 1 && alldebt >= 16) {
+      const alldebt = data[i]?.totalDebtBase.slice().length;
+      if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT && alldebt >= WEI_UNITS) {
         const configuration = decodeConfiguration(data[i].userConfiguration);
         const info = {
           user: data[i].user,
-          totalCollateralETH: data[i].totalCollateralETH,
-          formatTotalCollateralETH: parseFloat(
-            ethers.utils.formatEther(data[i].totalCollateralETH)
+          totalCollateralBase: data[i].totalCollateralBase,
+          formatTotalCollateralBase: parseFloat(
+            ethers.utils.formatEther(data[i].totalCollateralBase)
           ),
-          totalDebtETH: data[i].totalDebtETH,
-          formatTotalDebtETH: parseFloat(ethers.utils.formatEther(data[i].totalDebtETH)),
+          totalDebtBase: data[i].totalDebtBase,
+          formatTotalDebtBase: parseFloat(
+            ethers.utils.formatEther(data[i].totalDebtBase)
+          ),
           healthFactor: data[i].healthFactor,
           formattedHF: data[i].formattedHF,
           userConfiguration: configuration
@@ -113,6 +113,6 @@ function decodeConfiguration(configuration) {
   return data;
 }
 
-convertConfiguration();
+// convertConfiguration("data_polygon", "formatted_users_data_polygon", "users_ready");
 
 module.exports = { convertConfiguration };

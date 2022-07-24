@@ -2,10 +2,8 @@ const fs = require("fs");
 
 /**
  * Funcion para crear y actualizar un archivo dado dos parametros
- * @param {string} folderName - nombre del archivo, sin extension dentro de la carpeta
- *                            /data.
- * @param {string} fileName - nombre del archivo, sin extension dentro de la carpeta
- *                            /data.
+ * @param {string} folderName - nombre de la carpeta base
+ * @param {string} fileName - nombre del archivo que se va a editar
  * @param {array} dataSet - informacion que va ser anadida al archivo, ya debe
  *                          estar formateado dentro de un array.
  */

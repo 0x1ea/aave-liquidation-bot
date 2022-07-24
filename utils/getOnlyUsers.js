@@ -1,8 +1,15 @@
 const fs = require("fs");
-
-async function getOnlyUsers() {
-  const start = 57;
-  const index = 87;
+const { compactFiles } = require("./compactFiles");
+const { deleteDuplicatesFromSomeFiles } = require("./deleteDuplicatesFromSomeFiles");
+/**
+ *
+ * @param {string} folderName desde donde se van a leer los archivos
+ * @param {int} startNumber desde donde va empezar a leer los archivos
+ * @param {int} endNumber hasta donde se van a leer los archivos
+ */
+async function getOnlyUsers(folderName, startNumber, endNumber) {
+  const start = startNumber;
+  const index = endNumber;
   // Primero debo recorrer los 18 archivos que estan en la carpeta de /data/events
   for (let i = start; i <= index; i++) {
     /**
@@ -11,7 +18,7 @@ async function getOnlyUsers() {
      * finalmente guardarlo en un nuevo archivo dentro de la carpeta
      * /data/users
      */
-    fs.readFile(`./data/events/${i}.json`, async (err, buf) => {
+    fs.readFile(`./${folderName}/events/${i}.json`, async (err, buf) => {
       let save = buf.toString();
       const events = await JSON.parse(save);
       const users = [];
@@ -24,7 +31,7 @@ async function getOnlyUsers() {
         users.push(event.returnValues.user);
       });
 
-      fs.writeFile(`./data/users/${i}.json`, JSON.stringify(users), err => {
+      fs.writeFile(`./${folderName}/users/${i}.json`, JSON.stringify(users), err => {
         if (err) {
           return console.error(err);
         }
@@ -33,6 +40,8 @@ async function getOnlyUsers() {
   }
 }
 
-// getOnlyUsers();
-
 module.exports = { getOnlyUsers };
+
+// getOnlyUsers("polygon_v3", 1, 25);
+// deleteDuplicatesFromSomeFiles("polygon_v3", "users", "uniqueUsers", 1, 25);
+compactFiles("polygon_v3", "uniqueUsers", "all_users", 1, 25);

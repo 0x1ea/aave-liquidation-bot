@@ -1,13 +1,14 @@
 const fs = require("fs");
 
 /**
- *
- * @param {string} fileName
- * @param {int} step
- * @param {int} initialBlock
- * @param {int} latestBlock
+ * Función para crear un json con rangos de 2000 bloques
+ * @param {string} folderName - nombre de la carpeta donde se va a guardar el archivo
+ * @param {string} fileName - nombre del archivo donde se va guardar el archivo
+ * @param {int} step - cantidad de bloques por petición. Máximo: 2000
+ * @param {int} initialBlock - bloque inicial de la petición
+ * @param {int} latestBlock - bloque final de la petición
  */
-async function createBlockData(fileName, step, initialBlock, latestBlock) {
+async function createBlockData(folderName, fileName, step, initialBlock, latestBlock) {
   let block = initialBlock || 11362579;
   const toBlock = latestBlock || 15185805;
   const data = [];
@@ -22,7 +23,7 @@ async function createBlockData(fileName, step, initialBlock, latestBlock) {
     data.push(info);
   }
 
-  fs.writeFile(`./data/${fileName}_${step}.json`, JSON.stringify(data), err => {
+  fs.writeFile(`./${folderName}/${fileName}_${step}.json`, JSON.stringify(data), err => {
     if (err) {
       return console.error(err);
     }
@@ -31,7 +32,6 @@ async function createBlockData(fileName, step, initialBlock, latestBlock) {
   console.log(`${fileName}_${step}.json written successfully!`);
 }
 
-// For Polygon
-// createBlockData("blocks", 2000, 12687246, 30989475);
+// createBlockData("polygon_v3", "blocks", 2000, 25826028, 31062807);
 
 module.exports = { createBlockData };

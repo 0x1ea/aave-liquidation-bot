@@ -1,0 +1,4812 @@
+[
+  {
+    "user": "0x00AF144D2CAc137Db127976bf87071728A2a1476",
+    "totalCollateralBase": "19929335176",
+    "formatTotalCollateralBase": 1.9929335176e-8,
+    "totalDebtBase": "19334538048",
+    "formatTotalDebtBase": 1.9334538048e-8,
+    "healthFactor": "1004994365459380020",
+    "formattedHF": 1.00499436545938,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x8f22E0d0Ef5DE906A67A22a699B6314E6BaF7358",
+    "totalCollateralBase": "224022",
+    "formatTotalCollateralBase": 2.24022e-13,
+    "totalDebtBase": "196499",
+    "formatTotalDebtBase": 1.96499e-13,
+    "healthFactor": "969058366709245340",
+    "formattedHF": 0.9690583667092454,
+    "userConfiguration": "288"
+  },
+  {
+    "user": "0xf712e2303e389A850A339D3fed5882e07880f90c",
+    "totalCollateralBase": "19837613011",
+    "formatTotalCollateralBase": 1.9837613011e-8,
+    "totalDebtBase": "19210991934",
+    "formatTotalDebtBase": 1.9210991934e-8,
+    "healthFactor": "1006802394819016012",
+    "formattedHF": 1.0068023948190161,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x080cD768CfD7837d2A7A1D32B78967Bb7924BbE9",
+    "totalCollateralBase": "113851366544",
+    "formatTotalCollateralBase": 1.13851366544e-7,
+    "totalDebtBase": "92409966118",
+    "formatTotalDebtBase": 9.2409966118e-8,
+    "healthFactor": "1047097845512057154",
+    "formattedHF": 1.0470978455120572,
+    "userConfiguration": "2097200"
+  },
+  {
+    "user": "0xB0fD1307c2e0d088424fa4939F53303974421924",
+    "totalCollateralBase": "86068495675",
+    "formatTotalCollateralBase": 8.6068495675e-8,
+    "totalDebtBase": "80655464188",
+    "formatTotalDebtBase": 8.0655464188e-8,
+    "healthFactor": "1040435190942527888",
+    "formattedHF": 1.0404351909425278,
+    "userConfiguration": "2064"
+  },
+  {
+    "user": "0x62D926d67A069bcB81457adbb6D34c4b65356CcA",
+    "totalCollateralBase": "630068829",
+    "formatTotalCollateralBase": 6.30068829e-10,
+    "totalDebtBase": "611166197",
+    "formatTotalDebtBase": 6.11166197e-10,
+    "healthFactor": "1005155571455795027",
+    "formattedHF": 1.005155571455795,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x0518026dF3BeC50e1E45D414Ece78ED1Da83709b",
+    "totalCollateralBase": "4004308",
+    "formatTotalCollateralBase": 4.004308e-12,
+    "totalDebtBase": "3436848",
+    "formatTotalDebtBase": 3.436848e-12,
+    "healthFactor": "990344059440510607",
+    "formattedHF": 0.9903440594405106,
+    "userConfiguration": "268436512"
+  },
+  {
+    "user": "0xE19A25a763871fe271fDc5e9944539D5639f0803",
+    "totalCollateralBase": "12650064",
+    "formatTotalCollateralBase": 1.2650064e-11,
+    "totalDebtBase": "10002421",
+    "formatTotalDebtBase": 1.0002421e-11,
+    "healthFactor": "1043377698259251435",
+    "formattedHF": 1.0433776982592515,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x4691126d9f07176FeDA9c0AF56D10FE3DE83cC53",
+    "totalCollateralBase": "12690589",
+    "formatTotalCollateralBase": 1.2690589e-11,
+    "totalDebtBase": "10002521",
+    "formatTotalDebtBase": 1.0002521e-11,
+    "healthFactor": "1046709724478458980",
+    "formattedHF": 1.046709724478459,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x3CFEfB661830f6D03Db300966731aE226F8E417F",
+    "totalCollateralBase": "15533587410166",
+    "formatTotalCollateralBase": 0.000015533587410166,
+    "totalDebtBase": "14767774195534",
+    "formatTotalDebtBase": 0.000014767774195534,
+    "healthFactor": "1025560624396068688",
+    "formattedHF": 1.0255606243960687,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB5ab290E152290B6BD5bdB04e23236D3F9d4AaEC",
+    "totalCollateralBase": "4309908140887",
+    "formatTotalCollateralBase": 0.000004309908140887,
+    "totalDebtBase": "4101827253508",
+    "formatTotalDebtBase": 0.000004101827253508,
+    "healthFactor": "1024460606860318701",
+    "formattedHF": 1.0244606068603186,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x1D88930365556868f3eAd8f389147e15f5AB69cb",
+    "totalCollateralBase": "24940925657",
+    "formatTotalCollateralBase": 2.4940925657e-8,
+    "totalDebtBase": "24111288096",
+    "formatTotalDebtBase": 2.4111288096e-8,
+    "healthFactor": "1008548461582780136",
+    "formattedHF": 1.0085484615827802,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x00273C9eaBC182EbF0C6f02cF466226EbF760604",
+    "totalCollateralBase": "1000748",
+    "formatTotalCollateralBase": 1.000748e-12,
+    "totalDebtBase": "971214",
+    "formatTotalDebtBase": 9.71214e-13,
+    "healthFactor": "1004648820960159141",
+    "formattedHF": 1.0046488209601592,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x31f3399aCA41aD6f5E5a944436864794b3c20F24",
+    "totalCollateralBase": "122793106962",
+    "formatTotalCollateralBase": 1.22793106962e-7,
+    "totalDebtBase": "116123451392",
+    "formatTotalDebtBase": 1.16123451392e-7,
+    "healthFactor": "1031000007774898086",
+    "formattedHF": 1.031000007774898,
+    "userConfiguration": "1058"
+  },
+  {
+    "user": "0xcb1aDd8E055cf9A9F17565C946CF528eEb1c5Cc8",
+    "totalCollateralBase": "23945906466",
+    "formatTotalCollateralBase": 2.3945906466e-8,
+    "totalDebtBase": "23256409094",
+    "formatTotalDebtBase": 2.3256409094e-8,
+    "healthFactor": "1003906437560192327",
+    "formattedHF": 1.0039064375601923,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x1bF7e205308C18D6f8194F1ec91a3F59acF8b207",
+    "totalCollateralBase": "76307",
+    "formatTotalCollateralBase": 7.6307e-14,
+    "totalDebtBase": "67456",
+    "formatTotalDebtBase": 6.7456e-14,
+    "healthFactor": "961530479127134725",
+    "formattedHF": 0.9615304791271347,
+    "userConfiguration": "96"
+  },
+  {
+    "user": "0x0Dc0F83F6F24E66053B57B712b5E8035b0140107",
+    "totalCollateralBase": "16948389923",
+    "formatTotalCollateralBase": 1.6948389923e-8,
+    "totalDebtBase": "15979293635",
+    "formatTotalDebtBase": 1.5979293635e-8,
+    "healthFactor": "1034130829087802791",
+    "formattedHF": 1.0341308290878028,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xB6199B8AD856ee465ABaCaffFbE8ae1B08259088",
+    "totalCollateralBase": "1303631",
+    "formatTotalCollateralBase": 1.303631e-12,
+    "totalDebtBase": "1031705",
+    "formatTotalDebtBase": 1.031705e-12,
+    "healthFactor": "1010855816342849943",
+    "formattedHF": 1.01085581634285,
+    "userConfiguration": "2064"
+  },
+  {
+    "user": "0x681964B57cD8CeBb4f4C41a7f2B8F1bC6A803581",
+    "totalCollateralBase": "679129735813",
+    "formatTotalCollateralBase": 6.79129735813e-7,
+    "totalDebtBase": "499822008166",
+    "formatTotalDebtBase": 4.99822008166e-7,
+    "healthFactor": "1042020130938341271",
+    "formattedHF": 1.0420201309383412,
+    "userConfiguration": "33600"
+  },
+  {
+    "user": "0x39dEd56F89BBA75D45220733C7aa1073fF480915",
+    "totalCollateralBase": "1021805015041",
+    "formatTotalCollateralBase": 0.000001021805015041,
+    "totalDebtBase": "814665634985",
+    "formatTotalDebtBase": 8.14665634985e-7,
+    "healthFactor": "1026112612225740551",
+    "formattedHF": 1.0261126122257405,
+    "userConfiguration": "33728"
+  },
+  {
+    "user": "0xF96CC95271fd5beEB01A7F4B860063FAe8b1d64f",
+    "totalCollateralBase": "12112793711",
+    "formatTotalCollateralBase": 1.2112793711e-8,
+    "totalDebtBase": "11744789738",
+    "formatTotalDebtBase": 1.1744789738e-8,
+    "healthFactor": "1005550046569935452",
+    "formattedHF": 1.0055500465699354,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x54e5a49858bCdFe36063E770a43d49ca9CfB95Ff",
+    "totalCollateralBase": "29970366461",
+    "formatTotalCollateralBase": 2.9970366461e-8,
+    "totalDebtBase": "29075829329",
+    "formatTotalDebtBase": 2.9075829329e-8,
+    "healthFactor": "1004996520249040701",
+    "formattedHF": 1.0049965202490407,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x26F6B7C13Cea67E8563F315E435C1aD69062F9f2",
+    "totalCollateralBase": "9944386617",
+    "formatTotalCollateralBase": 9.944386617e-9,
+    "totalDebtBase": "9640235863",
+    "formatTotalDebtBase": 9.640235863e-9,
+    "healthFactor": "1005761382790764608",
+    "formattedHF": 1.0057613827907645,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x9ff90f97ff3cB91e36801Dc63855081B65613BcD",
+    "totalCollateralBase": "70525286855",
+    "formatTotalCollateralBase": 7.0525286855e-8,
+    "totalDebtBase": "68168303013",
+    "formatTotalDebtBase": 6.8168303013e-8,
+    "healthFactor": "1008608093733653525",
+    "formattedHF": 1.0086080937336535,
+    "userConfiguration": "76022323"
+  },
+  {
+    "user": "0xfDeaa8E756DB90817da4fE7D6c5Ce55803c5449e",
+    "totalCollateralBase": "5871803508",
+    "formatTotalCollateralBase": 5.871803508e-9,
+    "totalDebtBase": "5610837980",
+    "formatTotalDebtBase": 5.61083798e-9,
+    "healthFactor": "1020348197614503208",
+    "formattedHF": 1.0203481976145032,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xc29FFB23AbAE4d7950D7f1e008019caF513F5078",
+    "totalCollateralBase": "10247860",
+    "formatTotalCollateralBase": 1.024786e-11,
+    "totalDebtBase": "8184112",
+    "formatTotalDebtBase": 8.184112e-12,
+    "healthFactor": "1043053540811758197",
+    "formattedHF": 1.0430535408117583,
+    "userConfiguration": "51"
+  },
+  {
+    "user": "0xF351025Dd54E2c7DA1bE857fb5085cAEBf44a11a",
+    "totalCollateralBase": "7136028",
+    "formatTotalCollateralBase": 7.136028e-12,
+    "totalDebtBase": "6019270",
+    "formatTotalDebtBase": 6.01927e-12,
+    "healthFactor": "1007700933834169260",
+    "formattedHF": 1.0077009338341694,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xcA5C5382b3c67654b6e8c27Ce10c0Af8C46Fd94f",
+    "totalCollateralBase": "1189821",
+    "formatTotalCollateralBase": 1.189821e-12,
+    "totalDebtBase": "1003211",
+    "formatTotalDebtBase": 1.003211e-12,
+    "healthFactor": "1008110955721179293",
+    "formattedHF": 1.0081109557211794,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xc96a13C2242064F9f06dF49377329689223ae0D3",
+    "totalCollateralBase": "1189721",
+    "formatTotalCollateralBase": 1.189721e-12,
+    "totalDebtBase": "1003212",
+    "formatTotalDebtBase": 1.003212e-12,
+    "healthFactor": "1008025222983776111",
+    "formattedHF": 1.008025222983776,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x2511A3B81294eB42919D2402334c61Ee44a3cB8a",
+    "totalCollateralBase": "1189621",
+    "formatTotalCollateralBase": 1.189621e-12,
+    "totalDebtBase": "1003212",
+    "formatTotalDebtBase": 1.003212e-12,
+    "healthFactor": "1007940495129643585",
+    "formattedHF": 1.0079404951296436,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x117c2c3058627eE290C698BcA83A7d5B6eEC3333",
+    "totalCollateralBase": "3079014",
+    "formatTotalCollateralBase": 3.079014e-12,
+    "totalDebtBase": "2601979",
+    "formatTotalDebtBase": 2.601979e-12,
+    "healthFactor": "1005835173919543547",
+    "formattedHF": 1.0058351739195435,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x2164835E8a8bDeFf2E73fd041B821e1BbAAf909A",
+    "totalCollateralBase": "1189521",
+    "formatTotalCollateralBase": 1.189521e-12,
+    "totalDebtBase": "1003213",
+    "formatTotalDebtBase": 1.003213e-12,
+    "healthFactor": "1007854762647613219",
+    "formattedHF": 1.0078547626476133,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x00067c68C96f8bF2D2258630BADF8E4379234179",
+    "totalCollateralBase": "1190421",
+    "formatTotalCollateralBase": 1.190421e-12,
+    "totalDebtBase": "1003214",
+    "formatTotalDebtBase": 1.003214e-12,
+    "healthFactor": "1008616307188695533",
+    "formattedHF": 1.0086163071886955,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x409FBD026a8E3FD21D876d6DFbf80710A83Dc242",
+    "totalCollateralBase": "200248545",
+    "formatTotalCollateralBase": 2.00248545e-10,
+    "totalDebtBase": "165395886",
+    "formatTotalDebtBase": 1.65395886e-10,
+    "healthFactor": "1029114248948126799",
+    "formattedHF": 1.0291142489481269,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xE677a09dc505fa07406F6e9c54C7C7E118b91eC5",
+    "totalCollateralBase": "1189521",
+    "formatTotalCollateralBase": 1.189521e-12,
+    "totalDebtBase": "1003214",
+    "formatTotalDebtBase": 1.003214e-12,
+    "healthFactor": "1007853758021718198",
+    "formattedHF": 1.0078537580217182,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x41C790BD6B26CDE1eD0e8CF3d306329d4541Cfab",
+    "totalCollateralBase": "1189921",
+    "formatTotalCollateralBase": 1.189921e-12,
+    "totalDebtBase": "1003215",
+    "formatTotalDebtBase": 1.003215e-12,
+    "healthFactor": "1008191663800880170",
+    "formattedHF": 1.00819166380088,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x30Dd92f3c1f8Ad7242E202F8F16fa0bc61a2747E",
+    "totalCollateralBase": "1189621",
+    "formatTotalCollateralBase": 1.189621e-12,
+    "totalDebtBase": "1003216",
+    "formatTotalDebtBase": 1.003216e-12,
+    "healthFactor": "1007936476292244143",
+    "formattedHF": 1.007936476292244,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xcB327254C1EAb5B6a6f7B3ADCd648786795bC93B",
+    "totalCollateralBase": "1189321",
+    "formatTotalCollateralBase": 1.189321e-12,
+    "totalDebtBase": "1003216",
+    "formatTotalDebtBase": 1.003216e-12,
+    "healthFactor": "1007682293743321478",
+    "formattedHF": 1.0076822937433214,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xb1504168B4fd9a311F0897aA6591cB18c19116E3",
+    "totalCollateralBase": "1189421",
+    "formatTotalCollateralBase": 1.189421e-12,
+    "totalDebtBase": "1003217",
+    "formatTotalDebtBase": 1.003217e-12,
+    "healthFactor": "1007766016724198254",
+    "formattedHF": 1.0077660167241982,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x04bc2f339Bbf1e042d2b692537853E296AD472E8",
+    "totalCollateralBase": "1189321",
+    "formatTotalCollateralBase": 1.189321e-12,
+    "totalDebtBase": "1003217",
+    "formatTotalDebtBase": 1.003217e-12,
+    "healthFactor": "1007681289292346521",
+    "formattedHF": 1.0076812892923466,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x7Ff1DDA877D51Bf29bc87Bb2eD30d4f2D4Dac7f0",
+    "totalCollateralBase": "1189421",
+    "formatTotalCollateralBase": 1.189421e-12,
+    "totalDebtBase": "1003219",
+    "formatTotalDebtBase": 1.003219e-12,
+    "healthFactor": "1007764007659344570",
+    "formattedHF": 1.0077640076593446,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x10E026c908DA0A82Bc8f6ba9cF533CC698E23908",
+    "totalCollateralBase": "1189921",
+    "formatTotalCollateralBase": 1.189921e-12,
+    "totalDebtBase": "1003220",
+    "formatTotalDebtBase": 1.00322e-12,
+    "healthFactor": "1008186639022348039",
+    "formattedHF": 1.008186639022348,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xAc395a12Cd0b1Bf56e4c832bffB60E723953Cd5B",
+    "totalCollateralBase": "208945937",
+    "formatTotalCollateralBase": 2.08945937e-10,
+    "totalDebtBase": "168435778",
+    "formatTotalDebtBase": 1.68435778e-10,
+    "healthFactor": "1046616633907791253",
+    "formattedHF": 1.0466166339077914,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0xd0B924Fa9728383Be41AbF0d6FC75Dc273c5e7FA",
+    "totalCollateralBase": "150186834",
+    "formatTotalCollateralBase": 1.50186834e-10,
+    "totalDebtBase": "123843880",
+    "formatTotalDebtBase": 1.2384388e-10,
+    "healthFactor": "1030804340109499153",
+    "formattedHF": 1.030804340109499,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x3741aA478895bA085D734fe20c6882C33B36263A",
+    "totalCollateralBase": "1189821",
+    "formatTotalCollateralBase": 1.189821e-12,
+    "totalDebtBase": "1003220",
+    "formatTotalDebtBase": 1.00322e-12,
+    "healthFactor": "1008101911843862762",
+    "formattedHF": 1.0081019118438628,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x469Adaf766fb35F1a3c2569FE8C57a50F4B39131",
+    "totalCollateralBase": "122998858",
+    "formatTotalCollateralBase": 1.22998858e-10,
+    "totalDebtBase": "100240658",
+    "formatTotalDebtBase": 1.00240658e-10,
+    "healthFactor": "1042980274530919380",
+    "formattedHF": 1.0429802745309193,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x8710500A88c6F9B6dD0728374f809D09c7E6dF9f",
+    "totalCollateralBase": "119069056",
+    "formatTotalCollateralBase": 1.19069056e-10,
+    "totalDebtBase": "100322063",
+    "formatTotalDebtBase": 1.00322063e-10,
+    "healthFactor": "1008837886437801822",
+    "formattedHF": 1.0088378864378018,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x7786d88cF95CA9EBf18E27014B29456B8A794113",
+    "totalCollateralBase": "1190021",
+    "formatTotalCollateralBase": 1.190021e-12,
+    "totalDebtBase": "1003221",
+    "formatTotalDebtBase": 1.003221e-12,
+    "healthFactor": "1008270361166682117",
+    "formattedHF": 1.0082703611666821,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9D75b8717aa34258DeA1afD74306Cb41e30F7B3F",
+    "totalCollateralBase": "208946358",
+    "formatTotalCollateralBase": 2.08946358e-10,
+    "totalDebtBase": "168436509",
+    "formatTotalDebtBase": 1.68436509e-10,
+    "healthFactor": "1046614199300461636",
+    "formattedHF": 1.0466141993004616,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0x5eC5A375F27Eb6254cA45Ec967cD7483eB7e03E2",
+    "totalCollateralBase": "1189221",
+    "formatTotalCollateralBase": 1.189221e-12,
+    "totalDebtBase": "1003209",
+    "formatTotalDebtBase": 1.003209e-12,
+    "healthFactor": "1007604596848712482",
+    "formattedHF": 1.0076045968487124,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9c742A4555e4eEF1123cfA3fcd9c44fd015417EE",
+    "totalCollateralBase": "10012422",
+    "formatTotalCollateralBase": 1.0012422e-11,
+    "totalDebtBase": "8278195",
+    "formatTotalDebtBase": 8.278195e-12,
+    "healthFactor": "1028069404018629665",
+    "formattedHF": 1.0280694040186296,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x4FE7FdA34111610968C4B58edA06B4e43d827d4B",
+    "totalCollateralBase": "183762785",
+    "formatTotalCollateralBase": 1.83762785e-10,
+    "totalDebtBase": "150261863",
+    "formatTotalDebtBase": 1.50261863e-10,
+    "healthFactor": "1039385429421968500",
+    "formattedHF": 1.0393854294219684,
+    "userConfiguration": "561"
+  },
+  {
+    "user": "0x985Bf8e0A52F27055406da54C4Eb79426f156502",
+    "totalCollateralBase": "2100",
+    "formatTotalCollateralBase": 2.1e-15,
+    "totalDebtBase": "1778",
+    "formatTotalDebtBase": 1.778e-15,
+    "healthFactor": "1003937007874015748",
+    "formattedHF": 1.0039370078740157,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x970A49b663Fc8Db67d36eD62f49B5bd7CB296703",
+    "totalCollateralBase": "310283679",
+    "formatTotalCollateralBase": 3.10283679e-10,
+    "totalDebtBase": "254627502",
+    "formatTotalDebtBase": 2.54627502e-10,
+    "healthFactor": "1035791989979150013",
+    "formattedHF": 1.0357919899791501,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xCe9cc2efb00a730009346B173045DbA73fd3327c",
+    "totalCollateralBase": "30037566",
+    "formatTotalCollateralBase": 3.0037566e-11,
+    "totalDebtBase": "25534449",
+    "formatTotalDebtBase": 2.5534449e-11,
+    "healthFactor": "999901388120808873",
+    "formattedHF": 0.9999013881208089,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0xCC2bF1ec08C78627C985DA47a52b15e1Ede756AA",
+    "totalCollateralBase": "3000",
+    "formatTotalCollateralBase": 3e-15,
+    "totalDebtBase": "2537",
+    "formatTotalDebtBase": 2.537e-15,
+    "healthFactor": "1005124162396531336",
+    "formattedHF": 1.0051241623965312,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xD945e44ab072Fb0319eA1164345daC05cB4Af63a",
+    "totalCollateralBase": "200250545",
+    "formatTotalCollateralBase": 2.00250545e-10,
+    "totalDebtBase": "164571902",
+    "formatTotalDebtBase": 1.64571902e-10,
+    "healthFactor": "1034277181775537844",
+    "formattedHF": 1.0342771817755378,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x437f40EFdddFd6c63c90504d3Df97F9c8326d25A",
+    "totalCollateralBase": "509323794",
+    "formatTotalCollateralBase": 5.09323794e-10,
+    "totalDebtBase": "411983371",
+    "formatTotalDebtBase": 4.11983371e-10,
+    "healthFactor": "1047617485027083775",
+    "formattedHF": 1.0476174850270839,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0x4F74278c7a62898cd198E2441c436C72554FaD81",
+    "totalCollateralBase": "1200",
+    "formatTotalCollateralBase": 1.2e-15,
+    "totalDebtBase": "1003",
+    "formatTotalDebtBase": 1.003e-15,
+    "healthFactor": "1016949152542372881",
+    "formattedHF": 1.0169491525423728,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xAb6a56dDB7D7060F1Ba3B2134f3AF9ad551E132e",
+    "totalCollateralBase": "150191534",
+    "formatTotalCollateralBase": 1.50191534e-10,
+    "totalDebtBase": "124015848",
+    "formatTotalDebtBase": 1.24015848e-10,
+    "healthFactor": "1029407177056919370",
+    "formattedHF": 1.0294071770569193,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x854f0937b9e3c15da75cB51977852df0BDE94d96",
+    "totalCollateralBase": "200256746",
+    "formatTotalCollateralBase": 2.00256746e-10,
+    "totalDebtBase": "165430809",
+    "formatTotalDebtBase": 1.65430809e-10,
+    "healthFactor": "1028939137932886492",
+    "formattedHF": 1.0289391379328865,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x62552bD69BA53CA51F3450D803Fb00e0D71db40d",
+    "totalCollateralBase": "14206",
+    "formatTotalCollateralBase": 1.4206e-14,
+    "totalDebtBase": "13601",
+    "formatTotalDebtBase": 1.3601e-14,
+    "healthFactor": "861701345489302257",
+    "formattedHF": 0.8617013454893022,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xcbF0bde101f2E2fd7f56c723898E1E9017bA66C1",
+    "totalCollateralBase": "200258546",
+    "formatTotalCollateralBase": 2.00258546e-10,
+    "totalDebtBase": "165641962",
+    "formatTotalDebtBase": 1.65641962e-10,
+    "healthFactor": "1027636728910516044",
+    "formattedHF": 1.027636728910516,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x3B8203E6B523B2985E120Ae2c3B3671C6736dFB9",
+    "totalCollateralBase": "200258546",
+    "formatTotalCollateralBase": 2.00258546e-10,
+    "totalDebtBase": "165410688",
+    "formatTotalDebtBase": 1.65410688e-10,
+    "healthFactor": "1029073550555572322",
+    "formattedHF": 1.0290735505555724,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x56bABdb63d71879f8D77e2c9515060d3Ae29Cd9e",
+    "totalCollateralBase": "200258746",
+    "formatTotalCollateralBase": 2.00258746e-10,
+    "totalDebtBase": "164759103",
+    "formatTotalDebtBase": 1.64759103e-10,
+    "healthFactor": "1033144335581870702",
+    "formattedHF": 1.0331443355818708,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x1e38f714aE87A73bC6E8C18b148841255AB81A3d",
+    "totalCollateralBase": "10012922",
+    "formatTotalCollateralBase": 1.0012922e-11,
+    "totalDebtBase": "8279849",
+    "formatTotalDebtBase": 8.279849e-12,
+    "healthFactor": "1027915364157003346",
+    "formattedHF": 1.0279153641570034,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x866A2A64351C8e39581706899C4754CBec025054",
+    "totalCollateralBase": "100750286",
+    "formatTotalCollateralBase": 1.00750286e-10,
+    "totalDebtBase": "83309764",
+    "formatTotalDebtBase": 8.3309764e-11,
+    "healthFactor": "1027943651358801112",
+    "formattedHF": 1.0279436513588012,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x906C9DBA4dB793d84b535c3712B79dA63368ED3C",
+    "totalCollateralBase": "10013222",
+    "formatTotalCollateralBase": 1.0013222e-11,
+    "totalDebtBase": "8197694",
+    "formatTotalDebtBase": 8.197694e-12,
+    "healthFactor": "1038247951192127933",
+    "formattedHF": 1.0382479511921279,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x39a4C9b04fD4a50944D63598DB0B6F050A7BFef4",
+    "totalCollateralBase": "50064911",
+    "formatTotalCollateralBase": 5.0064911e-11,
+    "totalDebtBase": "43589320",
+    "formatTotalDebtBase": 4.358932e-11,
+    "healthFactor": "976275243568837504",
+    "formattedHF": 0.9762752435688375,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0x630999EEe371D5C96526344EA1e513F31afB113c",
+    "totalCollateralBase": "9493157424",
+    "formatTotalCollateralBase": 9.493157424e-9,
+    "totalDebtBase": "7535654283",
+    "formatTotalDebtBase": 7.535654283e-9,
+    "healthFactor": "1008316320872280122",
+    "formattedHF": 1.00831632087228,
+    "userConfiguration": "35"
+  },
+  {
+    "user": "0x5c182c4089770D1d1cf4a2f9AdAB651cA833b0F7",
+    "totalCollateralBase": "124901520",
+    "formatTotalCollateralBase": 1.2490152e-10,
+    "totalDebtBase": "100333314",
+    "formatTotalDebtBase": 1.00333314e-10,
+    "healthFactor": "1008092396908169504",
+    "formattedHF": 1.0080923969081694,
+    "userConfiguration": "35"
+  },
+  {
+    "user": "0x988682054ca48D89ADbd5C027D750A36c86b0493",
+    "totalCollateralBase": "6900004",
+    "formatTotalCollateralBase": 6.900004e-12,
+    "totalDebtBase": "5703673",
+    "formatTotalDebtBase": 5.703673e-12,
+    "healthFactor": "1028285282133109665",
+    "formattedHF": 1.0282852821331097,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x191E9b7eac595546FE633ed106b6e0A27231eB38",
+    "totalCollateralBase": "3263533",
+    "formatTotalCollateralBase": 3.263533e-12,
+    "totalDebtBase": "2695711",
+    "formatTotalDebtBase": 2.695711e-12,
+    "healthFactor": "1029043172654635456",
+    "formattedHF": 1.0290431726546354,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x3722C12aF38Da3cf90A77861A36a756807888888",
+    "totalCollateralBase": "3270433",
+    "formatTotalCollateralBase": 3.270433e-12,
+    "totalDebtBase": "2703305",
+    "formatTotalDebtBase": 2.703305e-12,
+    "healthFactor": "1028321998442647056",
+    "formattedHF": 1.028321998442647,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x56D780C00B23828675161Fd452931Fb69eB99d2A",
+    "totalCollateralBase": "10028923",
+    "formatTotalCollateralBase": 1.0028923e-11,
+    "totalDebtBase": "8291570",
+    "formatTotalDebtBase": 8.29157e-12,
+    "healthFactor": "1028102639186547300",
+    "formattedHF": 1.0281026391865473,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xa3f4C522e450DE244e3b9D6bec165E16D4A4522E",
+    "totalCollateralBase": "3256732",
+    "formatTotalCollateralBase": 3.256732e-12,
+    "totalDebtBase": "2692345",
+    "formatTotalDebtBase": 2.692345e-12,
+    "healthFactor": "1028182495185423859",
+    "formattedHF": 1.028182495185424,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x48BA5955e9d19b91Ff51aC5aA083BC4B4756b84A",
+    "totalCollateralBase": "6261439",
+    "formatTotalCollateralBase": 6.261439e-12,
+    "totalDebtBase": "5171890",
+    "formatTotalDebtBase": 5.17189e-12,
+    "healthFactor": "1029067323550964928",
+    "formattedHF": 1.0290673235509649,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x995efFd76a982b5eA87b97d0dDDc0381c12f3c0F",
+    "totalCollateralBase": "3295536",
+    "formatTotalCollateralBase": 3.295536e-12,
+    "totalDebtBase": "2725265",
+    "formatTotalDebtBase": 2.725265e-12,
+    "healthFactor": "1027865547020198036",
+    "formattedHF": 1.027865547020198,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x0b0350d9F187FE370674660F19480a9c350e5E1e",
+    "totalCollateralBase": "13142941",
+    "formatTotalCollateralBase": 1.3142941e-11,
+    "totalDebtBase": "10857260",
+    "formatTotalDebtBase": 1.085726e-11,
+    "healthFactor": "1028942845616665715",
+    "formattedHF": 1.0289428456166658,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xEbb38C23D185Eb5315565e50a38ABAf5526b0952",
+    "totalCollateralBase": "50065411",
+    "formatTotalCollateralBase": 5.0065411e-11,
+    "totalDebtBase": "41354678",
+    "formatTotalDebtBase": 4.1354678e-11,
+    "healthFactor": "1029039544208275543",
+    "formattedHF": 1.0290395442082756,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x5012a077e38A65B999388c5c89f18DBd21B45403",
+    "totalCollateralBase": "1500",
+    "formatTotalCollateralBase": 1.5e-15,
+    "totalDebtBase": "1256",
+    "formatTotalDebtBase": 1.256e-15,
+    "healthFactor": "1015127388535031847",
+    "formattedHF": 1.0151273885350318,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xedb4Ec2E401B984264b4bf8B7DD62a9ec11Ee37A",
+    "totalCollateralBase": "32",
+    "formatTotalCollateralBase": 3.2e-17,
+    "totalDebtBase": "25",
+    "formatTotalDebtBase": 2.5e-17,
+    "healthFactor": "1040000000000000000",
+    "formattedHF": 1.04,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0xebf6CAF61dAF53dC92B6a9B030Cf642FD4c1103c",
+    "totalCollateralBase": "505691223",
+    "formatTotalCollateralBase": 5.05691223e-10,
+    "totalDebtBase": "401520989",
+    "formatTotalDebtBase": 4.01520989e-10,
+    "healthFactor": "1007551259045140477",
+    "formattedHF": 1.0075512590451405,
+    "userConfiguration": "1042"
+  },
+  {
+    "user": "0xde38c6964f840afeEB6D891cb4F6B132498579AE",
+    "totalCollateralBase": "119156665",
+    "formatTotalCollateralBase": 1.19156665e-10,
+    "totalDebtBase": "100253135",
+    "formatTotalDebtBase": 1.00253135e-10,
+    "healthFactor": "1010274292170514169",
+    "formattedHF": 1.0102742921705141,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xF88D2f91A5dF07a106A5386419b37471eF565B69",
+    "totalCollateralBase": "331314815",
+    "formatTotalCollateralBase": 3.31314815e-10,
+    "totalDebtBase": "270558734",
+    "formatTotalDebtBase": 2.70558734e-10,
+    "healthFactor": "1034751363820323021",
+    "formattedHF": 1.034751363820323,
+    "userConfiguration": "32819"
+  },
+  {
+    "user": "0x4bd77E5637212bc070B6C1382B3bF40BC1a7DE18",
+    "totalCollateralBase": "1476050",
+    "formatTotalCollateralBase": 1.47605e-12,
+    "totalDebtBase": "1204043",
+    "formatTotalDebtBase": 1.204043e-12,
+    "healthFactor": "1042025077177476220",
+    "formattedHF": 1.0420250771774762,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x21ee30f2DB2Daf7D61798c7043a2f02b66B56C7B",
+    "totalCollateralBase": "6228235",
+    "formatTotalCollateralBase": 6.228235e-12,
+    "totalDebtBase": "5147248",
+    "formatTotalDebtBase": 5.147248e-12,
+    "healthFactor": "1028510769249898198",
+    "formattedHF": 1.0285107692498983,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xCAD85C42C250407D9fF96d30374A85Ec36e95a67",
+    "totalCollateralBase": "10013222",
+    "formatTotalCollateralBase": 1.0013222e-11,
+    "totalDebtBase": "8275803",
+    "formatTotalDebtBase": 8.275803e-12,
+    "healthFactor": "1028448719719403664",
+    "formattedHF": 1.0284487197194037,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB689490f72d1BD3dc86c65e1c9a53FBD35c2c0A3",
+    "totalCollateralBase": "4005308",
+    "formatTotalCollateralBase": 4.005308e-12,
+    "totalDebtBase": "3286178",
+    "formatTotalDebtBase": 3.286178e-12,
+    "healthFactor": "1036009613599750227",
+    "formattedHF": 1.0360096135997503,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x36Aa31Ef7aA47e02d849378208c74A6369f16660",
+    "totalCollateralBase": "62210851",
+    "formatTotalCollateralBase": 6.2210851e-11,
+    "totalDebtBase": "51418013",
+    "formatTotalDebtBase": 5.1418013e-11,
+    "healthFactor": "1028418251012539127",
+    "formattedHF": 1.028418251012539,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB73C28354B4ecC2d4Ce98948EA229E2340eF1868",
+    "totalCollateralBase": "119112",
+    "formatTotalCollateralBase": 1.19112e-13,
+    "totalDebtBase": "100365",
+    "formatTotalDebtBase": 1.00365e-13,
+    "healthFactor": "1008767996811637523",
+    "formattedHF": 1.0087679968116374,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x8456FD2d8d4a5cBd9ee3Cf8E10802cBB75DF7A03",
+    "totalCollateralBase": "22029149",
+    "formatTotalCollateralBase": 2.2029149e-11,
+    "totalDebtBase": "18199842",
+    "formatTotalDebtBase": 1.8199842e-11,
+    "healthFactor": "1028842832811405725",
+    "formattedHF": 1.0288428328114056,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xbE665801081aC20Bc892b0f8F9836E73e4fD0E99",
+    "totalCollateralBase": "99971507",
+    "formatTotalCollateralBase": 9.9971507e-11,
+    "totalDebtBase": "82651380",
+    "formatTotalDebtBase": 8.265138e-11,
+    "healthFactor": "1028122954510862372",
+    "formattedHF": 1.0281229545108623,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x2ce27805DaFb6a38cf1022bA1B13f36075a2d4C8",
+    "totalCollateralBase": "264739829",
+    "formatTotalCollateralBase": 2.64739829e-10,
+    "totalDebtBase": "223080990",
+    "formatTotalDebtBase": 2.2308099e-10,
+    "healthFactor": "1008731649433687738",
+    "formattedHF": 1.0087316494336878,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x0e7683B316012C225B0F052e4585C78c42C01a74",
+    "totalCollateralBase": "3300",
+    "formatTotalCollateralBase": 3.3e-15,
+    "totalDebtBase": "2778",
+    "formatTotalDebtBase": 2.778e-15,
+    "healthFactor": "1009719222462203024",
+    "formattedHF": 1.009719222462203,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9F3dAC6cD3E0700495887c5677eeA370C363E4ff",
+    "totalCollateralBase": "30039867",
+    "formatTotalCollateralBase": 3.0039867e-11,
+    "totalDebtBase": "24784226",
+    "formatTotalDebtBase": 2.4784226e-11,
+    "healthFactor": "1030247505005804902",
+    "formattedHF": 1.0302475050058049,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x6C57525142c5ea2CBb2b8c26618a1774e2CecFF2",
+    "totalCollateralBase": "6191532",
+    "formatTotalCollateralBase": 6.191532e-12,
+    "totalDebtBase": "5118032",
+    "formatTotalDebtBase": 5.118032e-12,
+    "healthFactor": "1028286263157401126",
+    "formattedHF": 1.0282862631574012,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x320AA6E53AA01fb85DB1dA75C92aD93eAb98419b",
+    "totalCollateralBase": "10013281",
+    "formatTotalCollateralBase": 1.0013281e-11,
+    "totalDebtBase": "8193642",
+    "formatTotalDebtBase": 8.193642e-12,
+    "healthFactor": "1038645330123039303",
+    "formattedHF": 1.0386453301230394,
+    "userConfiguration": "32801"
+  },
+  {
+    "user": "0xF2EeBB119Be9313BaFC22a031A29A94AFC79e3c9",
+    "totalCollateralBase": "17861523",
+    "formatTotalCollateralBase": 1.7861523e-11,
+    "totalDebtBase": "15050051",
+    "formatTotalDebtBase": 1.5050051e-11,
+    "healthFactor": "1008786946967820906",
+    "formattedHF": 1.008786946967821,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x10a669EAF229c464F12ee0A26af18dBaB442677c",
+    "totalCollateralBase": "62381569",
+    "formatTotalCollateralBase": 6.2381569e-11,
+    "totalDebtBase": "51549404",
+    "formatTotalDebtBase": 5.1549404e-11,
+    "healthFactor": "1028611969985142796",
+    "formattedHF": 1.0286119699851428,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB68e2F8bbd37a9F44642E911Bc0410Bf47e334d2",
+    "totalCollateralBase": "200",
+    "formatTotalCollateralBase": 2e-16,
+    "totalDebtBase": "170",
+    "formatTotalDebtBase": 1.7e-16,
+    "healthFactor": "1000000000000000000",
+    "formattedHF": 1,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xdf7A23B9e0d46E5a96fEAd2b324aa6f85FB7227E",
+    "totalCollateralBase": "11664690",
+    "formatTotalCollateralBase": 1.166469e-11,
+    "totalDebtBase": "9639195",
+    "formatTotalDebtBase": 9.639195e-12,
+    "healthFactor": "1028611517870527570",
+    "formattedHF": 1.0286115178705275,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x2d59309df7Ab517e554B5e9033f7950D57801Aff",
+    "totalCollateralBase": "6865500",
+    "formatTotalCollateralBase": 6.8655e-12,
+    "totalDebtBase": "5673365",
+    "formatTotalDebtBase": 5.673365e-12,
+    "healthFactor": "1028609123509592632",
+    "formattedHF": 1.0286091235095927,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xA3632Dd93B046817Ae313A22a0e76CCA971499E7",
+    "totalCollateralBase": "6861800",
+    "formatTotalCollateralBase": 6.8618e-12,
+    "totalDebtBase": "5669738",
+    "formatTotalDebtBase": 5.669738e-12,
+    "healthFactor": "1028712437858680595",
+    "formattedHF": 1.0287124378586805,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x2AE16a91a4F10b035d9080e4778B7b07EDb08810",
+    "totalCollateralBase": "31256191",
+    "formatTotalCollateralBase": 3.1256191e-11,
+    "totalDebtBase": "25829430",
+    "formatTotalDebtBase": 2.582943e-11,
+    "healthFactor": "1028584912636477073",
+    "formattedHF": 1.028584912636477,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x4400AdE2136a7f77Cf98f0aA91cBC34E7119fd1a",
+    "totalCollateralBase": "400",
+    "formatTotalCollateralBase": 4e-16,
+    "totalDebtBase": "334",
+    "formatTotalDebtBase": 3.34e-16,
+    "healthFactor": "1017964071856287425",
+    "formattedHF": 1.0179640718562875,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xc49C51C7412E0177A8ca4Bdb9D0bEC9E3F32DCFf",
+    "totalCollateralBase": "90809",
+    "formatTotalCollateralBase": 9.0809e-14,
+    "totalDebtBase": "76390",
+    "formatTotalDebtBase": 7.639e-14,
+    "healthFactor": "1010446393507003534",
+    "formattedHF": 1.0104463935070036,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9c30fD4F7212f8032D1Bf9d02aE0956109FB9EC0",
+    "totalCollateralBase": "6865200",
+    "formatTotalCollateralBase": 6.8652e-12,
+    "totalDebtBase": "5673693",
+    "formatTotalDebtBase": 5.673693e-12,
+    "healthFactor": "1028504714654106241",
+    "formattedHF": 1.0285047146541062,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x88763f7072c48fe590F76C81c2dF9b8795bdc783",
+    "totalCollateralBase": "1001302",
+    "formatTotalCollateralBase": 1.001302e-12,
+    "totalDebtBase": "963194",
+    "formatTotalDebtBase": 9.63194e-13,
+    "healthFactor": "1013574627748927007",
+    "formattedHF": 1.013574627748927,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x56628F15Afe79ebCBBB23eba71cB742B7A1f4Acf",
+    "totalCollateralBase": "145989842",
+    "formatTotalCollateralBase": 1.45989842e-10,
+    "totalDebtBase": "115523848",
+    "formatTotalDebtBase": 1.15523848e-10,
+    "healthFactor": "1045349502208409817",
+    "formattedHF": 1.0453495022084098,
+    "userConfiguration": "51"
+  },
+  {
+    "user": "0x804C2F000F7BD8Ee5982e6C9E8dB18B4a889B41a",
+    "totalCollateralBase": "16401",
+    "formatTotalCollateralBase": 1.6401e-14,
+    "totalDebtBase": "13847",
+    "formatTotalDebtBase": 1.3847e-14,
+    "healthFactor": "1006788474037697696",
+    "formattedHF": 1.0067884740376978,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xd377694627a754d17b364bd670aD420676F5bA55",
+    "totalCollateralBase": "10213542",
+    "formatTotalCollateralBase": 1.0213542e-11,
+    "totalDebtBase": "8443559",
+    "formatTotalDebtBase": 8.443559e-12,
+    "healthFactor": "1028181481292426570",
+    "formattedHF": 1.0281814812924266,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x2Af40bC2F3C1A8aCF1a55b5874F9b65055D3e11B",
+    "totalCollateralBase": "40053189",
+    "formatTotalCollateralBase": 4.0053189e-11,
+    "totalDebtBase": "33110957",
+    "formatTotalDebtBase": 3.3110957e-11,
+    "healthFactor": "1028215856159035210",
+    "formattedHF": 1.028215856159035,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x700c7445F4869448D4105f7Ba241Af9EaCdB5094",
+    "totalCollateralBase": "2140018",
+    "formatTotalCollateralBase": 2.140018e-12,
+    "totalDebtBase": "1753747",
+    "formatTotalDebtBase": 1.753747e-12,
+    "healthFactor": "1037216314553923685",
+    "formattedHF": 1.0372163145539237,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x658642b84b25a418765916ea56f885293a8538d5",
+    "totalCollateralBase": "100132923",
+    "formatTotalCollateralBase": 1.00132923e-10,
+    "totalDebtBase": "82754773",
+    "formatTotalDebtBase": 8.2754773e-11,
+    "healthFactor": "1028496386546791688",
+    "formattedHF": 1.0284963865467918,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x8a332A35240F6F32A8EfF05f93A5e70931853433",
+    "totalCollateralBase": "250460971",
+    "formatTotalCollateralBase": 2.50460971e-10,
+    "totalDebtBase": "206882922",
+    "formatTotalDebtBase": 2.06882922e-10,
+    "healthFactor": "1029044944560479477",
+    "formattedHF": 1.0290449445604795,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x094dA4A75c31995B325311f6986109256FB62234",
+    "totalCollateralBase": "3800",
+    "formatTotalCollateralBase": 3.8e-15,
+    "totalDebtBase": "3237",
+    "formatTotalDebtBase": 3.237e-15,
+    "healthFactor": "997837503861600247",
+    "formattedHF": 0.9978375038616002,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x1Cc85869e9D187e7456b9276Eb1519ebDb09b095",
+    "totalCollateralBase": "100633174",
+    "formatTotalCollateralBase": 1.00633174e-10,
+    "totalDebtBase": "83150774",
+    "formatTotalDebtBase": 8.3150774e-11,
+    "healthFactor": "1028711987695989456",
+    "formattedHF": 1.0287119876959894,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x6F816a2a6Fb98EeA346e734C5d53bc12360f880d",
+    "totalCollateralBase": "2002704",
+    "formatTotalCollateralBase": 2.002704e-12,
+    "totalDebtBase": "1654584",
+    "formatTotalDebtBase": 1.654584e-12,
+    "healthFactor": "1028837460050381244",
+    "formattedHF": 1.0288374600503813,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xCD790d0813bef3aDD5ddC1Ae5589D3A9B526CaDf",
+    "totalCollateralBase": "6239037",
+    "formatTotalCollateralBase": 6.239037e-12,
+    "totalDebtBase": "5153495",
+    "formatTotalDebtBase": 5.153495e-12,
+    "healthFactor": "1029045531236568581",
+    "formattedHF": 1.0290455312365685,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x7eb8DCbE912da9c70F1eF4e724f169209Da170b8",
+    "totalCollateralBase": "1738171",
+    "formatTotalCollateralBase": 1.738171e-12,
+    "totalDebtBase": "1381055",
+    "formatTotalDebtBase": 1.381055e-12,
+    "healthFactor": "1043112692832653298",
+    "formattedHF": 1.0431126928326533,
+    "userConfiguration": "35"
+  },
+  {
+    "user": "0x66B5dE745DCC0Eb82081082b83782861234a3780",
+    "totalCollateralBase": "5612673",
+    "formatTotalCollateralBase": 5.612673e-12,
+    "totalDebtBase": "4612823",
+    "formatTotalDebtBase": 4.612823e-12,
+    "healthFactor": "1034241287818760876",
+    "formattedHF": 1.0342412878187608,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x255749ce8ab1dd14c09787E7405A15FF17c24459",
+    "totalCollateralBase": "35406",
+    "formatTotalCollateralBase": 3.5406e-14,
+    "totalDebtBase": "28056",
+    "formatTotalDebtBase": 2.8056e-14,
+    "healthFactor": "1009587966923296265",
+    "formattedHF": 1.0095879669232963,
+    "userConfiguration": "2049"
+  },
+  {
+    "user": "0xb008cA818C60F1C57dA79fe0371fEd2A8d2Cc562",
+    "totalCollateralBase": "623280136",
+    "formatTotalCollateralBase": 6.23280136e-10,
+    "totalDebtBase": "515001404",
+    "formatTotalDebtBase": 5.15001404e-10,
+    "healthFactor": "1028711983860921668",
+    "formattedHF": 1.0287119838609218,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x69D0F3081E5c857414Cf83899815A6133d3c1726",
+    "totalCollateralBase": "62256156",
+    "formatTotalCollateralBase": 6.2256156e-11,
+    "totalDebtBase": "51440753",
+    "formatTotalDebtBase": 5.1440753e-11,
+    "healthFactor": "1028712254659258196",
+    "formattedHF": 1.0287122546592582,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xAeD5EF0aA3D1461946257D9198475A8aceD910d0",
+    "totalCollateralBase": "22502",
+    "formatTotalCollateralBase": 2.2502e-14,
+    "totalDebtBase": "18901",
+    "formatTotalDebtBase": 1.8901e-14,
+    "healthFactor": "1011957039310089413",
+    "formattedHF": 1.0119570393100894,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9e89a0b12bd9184835d063712f92D89Ac3d54D4F",
+    "totalCollateralBase": "1001330935",
+    "formatTotalCollateralBase": 1.001330935e-9,
+    "totalDebtBase": "812641056",
+    "formatTotalDebtBase": 8.12641056e-10,
+    "healthFactor": "1047364379040184748",
+    "formattedHF": 1.0473643790401848,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x95b0B7670d2ab9d71048197774F1cC6A5299d33C",
+    "totalCollateralBase": "140181512",
+    "formatTotalCollateralBase": 1.40181512e-10,
+    "totalDebtBase": "114632226",
+    "formatTotalDebtBase": 1.14632226e-10,
+    "healthFactor": "1039448409559803890",
+    "formattedHF": 1.039448409559804,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x3feD016F04343eCDB8c7920D6AEC8D415e2080b2",
+    "totalCollateralBase": "140181612",
+    "formatTotalCollateralBase": 1.40181612e-10,
+    "totalDebtBase": "114632226",
+    "formatTotalDebtBase": 1.14632226e-10,
+    "healthFactor": "1039449151061587167",
+    "formattedHF": 1.039449151061587,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x074A8adEb96ef74AE82A6377C8085106F014989C",
+    "totalCollateralBase": "140181512",
+    "formatTotalCollateralBase": 1.40181512e-10,
+    "totalDebtBase": "114632226",
+    "formatTotalDebtBase": 1.14632226e-10,
+    "healthFactor": "1039448409559803890",
+    "formattedHF": 1.039448409559804,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xd4A6e45658A04D2B8Df558c2e1F45eC63079335D",
+    "totalCollateralBase": "12313857",
+    "formatTotalCollateralBase": 1.2313857e-11,
+    "totalDebtBase": "10174735",
+    "formatTotalDebtBase": 1.0174735e-11,
+    "healthFactor": "1028702762283243741",
+    "formattedHF": 1.0287027622832436,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xAdfeeeaf5DCb76E28d4137706D92Fa4a76d8a0a5",
+    "totalCollateralBase": "140181612",
+    "formatTotalCollateralBase": 1.40181612e-10,
+    "totalDebtBase": "114632228",
+    "formatTotalDebtBase": 1.14632228e-10,
+    "healthFactor": "1039449132926213386",
+    "formattedHF": 1.0394491329262134,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x89719BF149967b9305847dEd39393bc3b44Be203",
+    "totalCollateralBase": "140181612",
+    "formatTotalCollateralBase": 1.40181612e-10,
+    "totalDebtBase": "114632228",
+    "formatTotalDebtBase": 1.14632228e-10,
+    "healthFactor": "1039449132926213386",
+    "formattedHF": 1.0394491329262134,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xf5936E806bB5D2BCB1A6E596ed2aAaa4B115c47c",
+    "totalCollateralBase": "1189121",
+    "formatTotalCollateralBase": 1.189121e-12,
+    "totalDebtBase": "1003382",
+    "formatTotalDebtBase": 1.003382e-12,
+    "healthFactor": "1007346155302766045",
+    "formattedHF": 1.007346155302766,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x5C01F2Ae2517D47eE5203C5B3DFac29fFAa73C91",
+    "totalCollateralBase": "136753762",
+    "formatTotalCollateralBase": 1.36753762e-10,
+    "totalDebtBase": "111919802",
+    "formatTotalDebtBase": 1.11919802e-10,
+    "healthFactor": "1038607073304150413",
+    "formattedHF": 1.0386070733041504,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x35524A1a02D6C89C8FceAd21644cB61b032BD3DE",
+    "totalCollateralBase": "1189221",
+    "formatTotalCollateralBase": 1.189221e-12,
+    "totalDebtBase": "1003382",
+    "formatTotalDebtBase": 1.003382e-12,
+    "healthFactor": "1007430868801712608",
+    "formattedHF": 1.0074308688017126,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x5c883C1E4FF1bc136C43880E7B1a4BD58E2E7D08",
+    "totalCollateralBase": "5883700",
+    "formatTotalCollateralBase": 5.8837e-12,
+    "totalDebtBase": "4959291",
+    "formatTotalDebtBase": 4.959291e-12,
+    "healthFactor": "1008439512825522842",
+    "formattedHF": 1.0084395128255228,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x01EC4a63E8Bd579e1A2CEa4763Cf3a5da5e48e8b",
+    "totalCollateralBase": "140181612",
+    "formatTotalCollateralBase": 1.40181612e-10,
+    "totalDebtBase": "114692304",
+    "formatTotalDebtBase": 1.14692304e-10,
+    "healthFactor": "1038904667919130825",
+    "formattedHF": 1.0389046679191307,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x866FDCFB71DE6B584Eb8310a3B04fAe7eCAfb1fd",
+    "totalCollateralBase": "140181612",
+    "formatTotalCollateralBase": 1.40181612e-10,
+    "totalDebtBase": "114692304",
+    "formatTotalDebtBase": 1.14692304e-10,
+    "healthFactor": "1038904667919130825",
+    "formattedHF": 1.0389046679191307,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xe8b5A7dE5E6B4bA7B27f6DB240Bd760699588c28",
+    "totalCollateralBase": "1244127",
+    "formatTotalCollateralBase": 1.244127e-12,
+    "totalDebtBase": "1028294",
+    "formatTotalDebtBase": 1.028294e-12,
+    "healthFactor": "1028410162852258206",
+    "formattedHF": 1.0284101628522582,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB9F90aEA17E59E682fCB5167fb7da6f0Fd9D2632",
+    "totalCollateralBase": "141182914",
+    "formatTotalCollateralBase": 1.41182914e-10,
+    "totalDebtBase": "115468049",
+    "formatTotalDebtBase": 1.15468049e-10,
+    "healthFactor": "1039295961430854348",
+    "formattedHF": 1.0392959614308543,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xF560f36dA0a8e73467F6561203762Cd73f5caf2c",
+    "totalCollateralBase": "43477138",
+    "formatTotalCollateralBase": 4.3477138e-11,
+    "totalDebtBase": "35935764",
+    "formatTotalDebtBase": 3.5935764e-11,
+    "healthFactor": "1028378497810704678",
+    "formattedHF": 1.0283784978107047,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xA9Ec08edd196B91Bc9177420137804bE1D6EfDa0",
+    "totalCollateralBase": "10013322",
+    "formatTotalCollateralBase": 1.0013322e-11,
+    "totalDebtBase": "8274537",
+    "formatTotalDebtBase": 8.274537e-12,
+    "healthFactor": "1028616344334432247",
+    "formattedHF": 1.0286163443344323,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xEb9B8696d656A82fEDa75182E670B0aD21B4c3B8",
+    "totalCollateralBase": "900",
+    "formatTotalCollateralBase": 9e-16,
+    "totalDebtBase": "751",
+    "formatTotalDebtBase": 7.51e-16,
+    "healthFactor": "1018641810918774967",
+    "formattedHF": 1.018641810918775,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x074EdE19D84D9ECee42821aE0bf259db1D582321",
+    "totalCollateralBase": "124363397",
+    "formatTotalCollateralBase": 1.24363397e-10,
+    "totalDebtBase": "102768099",
+    "formatTotalDebtBase": 1.02768099e-10,
+    "healthFactor": "1028615767233370737",
+    "formattedHF": 1.0286157672333707,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xA8A9F3BF252Aa89D55821693A259D6151A3e458F",
+    "totalCollateralBase": "500",
+    "formatTotalCollateralBase": 5e-16,
+    "totalDebtBase": "416",
+    "formatTotalDebtBase": 4.16e-16,
+    "healthFactor": "1021634615384615385",
+    "formattedHF": 1.0216346153846154,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x7a903e959489cD7331D98A52eB92d4C5bC6127ea",
+    "totalCollateralBase": "60079934",
+    "formatTotalCollateralBase": 6.0079934e-11,
+    "totalDebtBase": "49230086",
+    "formatTotalDebtBase": 4.9230086e-11,
+    "healthFactor": "1037332008723283563",
+    "formattedHF": 1.0373320087232836,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x2A3381B6909512Ff4A028b6CA747E4592F8384d5",
+    "totalCollateralBase": "141182914",
+    "formatTotalCollateralBase": 1.41182914e-10,
+    "totalDebtBase": "115284559",
+    "formatTotalDebtBase": 1.15284559e-10,
+    "healthFactor": "1040950132792718581",
+    "formattedHF": 1.0409501327927186,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x2F7a32c05b7D60C317cec394B1264e9145A3363A",
+    "totalCollateralBase": "20026544",
+    "formatTotalCollateralBase": 2.0026544e-11,
+    "totalDebtBase": "16546710",
+    "formatTotalDebtBase": 1.654671e-11,
+    "healthFactor": "1028758103574668318",
+    "formattedHF": 1.0287581035746682,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x42A3EeaC9538d2108f01c1B383B0CccC371bb1a2",
+    "totalCollateralBase": "10013322",
+    "formatTotalCollateralBase": 1.0013322e-11,
+    "totalDebtBase": "8275803",
+    "formatTotalDebtBase": 8.275803e-12,
+    "healthFactor": "1028458990626045593",
+    "formattedHF": 1.0284589906260455,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9421cE448fA5ff121D4B34F61824bd2e16D68255",
+    "totalCollateralBase": "483049",
+    "formatTotalCollateralBase": 4.83049e-13,
+    "totalDebtBase": "407324",
+    "formatTotalDebtBase": 4.07324e-13,
+    "healthFactor": "1008023097092241066",
+    "formattedHF": 1.008023097092241,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xe726aab4F99C90cC1175d83A2310Fdb966676a47",
+    "totalCollateralBase": "36824459",
+    "formatTotalCollateralBase": 3.6824459e-11,
+    "totalDebtBase": "30101521",
+    "formatTotalDebtBase": 3.0101521e-11,
+    "healthFactor": "1039840810701891110",
+    "formattedHF": 1.039840810701891,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xf17547CF659Aa3796EBcf6F12d17F56f459Bb64b",
+    "totalCollateralBase": "1190521",
+    "formatTotalCollateralBase": 1.190521e-12,
+    "totalDebtBase": "1003384",
+    "formatTotalDebtBase": 1.003384e-12,
+    "healthFactor": "1008530134026454478",
+    "formattedHF": 1.0085301340264545,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x93eD3A79bB195Fa796E4CDa35D0E0d11B75FbeCc",
+    "totalCollateralBase": "2300",
+    "formatTotalCollateralBase": 2.3e-15,
+    "totalDebtBase": "1925",
+    "formatTotalDebtBase": 1.925e-15,
+    "healthFactor": "1015584415584415584",
+    "formattedHF": 1.0155844155844156,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x8214D5422aD7EE413dd74Cd8510eE628a5D7c79F",
+    "totalCollateralBase": "10013322",
+    "formatTotalCollateralBase": 1.0013322e-11,
+    "totalDebtBase": "8271366",
+    "formatTotalDebtBase": 8.271366e-12,
+    "healthFactor": "1029010685780317302",
+    "formattedHF": 1.0290106857803174,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x268A7f9D17B6DF81B27E8623131C1556282f3e55",
+    "totalCollateralBase": "1552058",
+    "formatTotalCollateralBase": 1.552058e-12,
+    "totalDebtBase": "1274629",
+    "formatTotalDebtBase": 1.274629e-12,
+    "healthFactor": "1035006264567964482",
+    "formattedHF": 1.0350062645679645,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x659DB7f3EA1801dDE55259fCCbb1e8608f8eBdEF",
+    "totalCollateralBase": "66203727",
+    "formatTotalCollateralBase": 6.6203727e-11,
+    "totalDebtBase": "54225559",
+    "formatTotalDebtBase": 5.4225559e-11,
+    "healthFactor": "1035319156414782188",
+    "formattedHF": 1.0353191564147821,
+    "userConfiguration": "32801"
+  },
+  {
+    "user": "0x87069987827feCe760e180Ac7cEce8775e89a9C3",
+    "totalCollateralBase": "23502",
+    "formatTotalCollateralBase": 2.3502e-14,
+    "totalDebtBase": "19798",
+    "formatTotalDebtBase": 1.9798e-14,
+    "healthFactor": "1009041317304778260",
+    "formattedHF": 1.0090413173047783,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xBBE82615988f669d2B6BAe63e24f4d44397894d5",
+    "totalCollateralBase": "187676453",
+    "formatTotalCollateralBase": 1.87676453e-10,
+    "totalDebtBase": "152415417",
+    "formatTotalDebtBase": 1.52415417e-10,
+    "healthFactor": "1045784049523021677",
+    "formattedHF": 1.0457840495230217,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0x5b197E3eE6770518f6F2735274522F48aBd69864",
+    "totalCollateralBase": "190382938",
+    "formatTotalCollateralBase": 1.90382938e-10,
+    "totalDebtBase": "160450958",
+    "formatTotalDebtBase": 1.60450958e-10,
+    "healthFactor": "1008566723546767480",
+    "formattedHF": 1.0085667235467675,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x30755ae674B64DDe273c18E1B6B3EE3087daB92d",
+    "totalCollateralBase": "1311633",
+    "formatTotalCollateralBase": 1.311633e-12,
+    "totalDebtBase": "1082154",
+    "formatTotalDebtBase": 1.082154e-12,
+    "healthFactor": "1030248929449967380",
+    "formattedHF": 1.0302489294499675,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xe0fda19799b5100192f2bA402CB9150aDfc42501",
+    "totalCollateralBase": "12460272",
+    "formatTotalCollateralBase": 1.2460272e-11,
+    "totalDebtBase": "12546464",
+    "formatTotalDebtBase": 1.2546464e-11,
+    "healthFactor": "844160633625537841",
+    "formattedHF": 0.8441606336255378,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0xEAC8b96069a52CE226eD3DAa6EEAdAD0B4278eB6",
+    "totalCollateralBase": "5006711",
+    "formatTotalCollateralBase": 5.006711e-12,
+    "totalDebtBase": "4138585",
+    "formatTotalDebtBase": 4.138585e-12,
+    "healthFactor": "1028299285867029432",
+    "formattedHF": 1.0282992858670295,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x54Bc0B774FEaC29Bba39fB6B5f88D39Cb8ca6698",
+    "totalCollateralBase": "100133423",
+    "formatTotalCollateralBase": 1.00133423e-10,
+    "totalDebtBase": "82749983",
+    "formatTotalDebtBase": 8.2749983e-11,
+    "healthFactor": "1028561057227044989",
+    "formattedHF": 1.028561057227045,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xc9CE4b3026A6a1F521DDc48de496e689B7478e57",
+    "totalCollateralBase": "6190632",
+    "formatTotalCollateralBase": 6.190632e-12,
+    "totalDebtBase": "5115423",
+    "formatTotalDebtBase": 5.115423e-12,
+    "healthFactor": "1028661168392134922",
+    "formattedHF": 1.028661168392135,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xDAe4cF3C22e9E71a22fcB354A3634f99Bd500244",
+    "totalCollateralBase": "119060856",
+    "formatTotalCollateralBase": 1.19060856e-10,
+    "totalDebtBase": "100256136",
+    "formatTotalDebtBase": 1.00256136e-10,
+    "healthFactor": "1009431761862436031",
+    "formattedHF": 1.009431761862436,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x2DFb4bCCCb28A77940d5A567b421f98d3B801B01",
+    "totalCollateralBase": "6197132",
+    "formatTotalCollateralBase": 6.197132e-12,
+    "totalDebtBase": "5120107",
+    "formatTotalDebtBase": 5.120107e-12,
+    "healthFactor": "1028799202829159625",
+    "formattedHF": 1.0287992028291597,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x57987a50186A9615Ba8f7BE757c0711942baA60e",
+    "totalCollateralBase": "10013322",
+    "formatTotalCollateralBase": 1.0013322e-11,
+    "totalDebtBase": "8263630",
+    "formatTotalDebtBase": 8.26363e-12,
+    "healthFactor": "1029973994479423692",
+    "formattedHF": 1.0299739944794237,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x776498D894E986d42EA3b19aa1A15647bE192af5",
+    "totalCollateralBase": "6192432",
+    "formatTotalCollateralBase": 6.192432e-12,
+    "totalDebtBase": "5117994",
+    "formatTotalDebtBase": 5.117994e-12,
+    "healthFactor": "1028443370586210144",
+    "formattedHF": 1.0284433705862102,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9C322E8EeF8F9015436a33CAC1ED787a04B7dFa0",
+    "totalCollateralBase": "6163829",
+    "formatTotalCollateralBase": 6.163829e-12,
+    "totalDebtBase": "5095146",
+    "formatTotalDebtBase": 5.095146e-12,
+    "healthFactor": "1028283585985563515",
+    "formattedHF": 1.0282835859855635,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x17a3a975C967c70A5fA5C2479cd24a3033f03717",
+    "totalCollateralBase": "51068014",
+    "formatTotalCollateralBase": 5.1068014e-11,
+    "totalDebtBase": "41787950",
+    "formatTotalDebtBase": 4.178795e-11,
+    "healthFactor": "1038763854173272439",
+    "formattedHF": 1.0387638541732724,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x4F80DB384eb7C2F529274ccA0Afb4cD9882DCAa0",
+    "totalCollateralBase": "11913816",
+    "formatTotalCollateralBase": 1.1913816e-11,
+    "totalDebtBase": "10033823",
+    "formatTotalDebtBase": 1.0033823e-11,
+    "healthFactor": "1009260777273029433",
+    "formattedHF": 1.0092607772730295,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9D6AfD3Dd7cbe2429764788c2ef3a607D57943d6",
+    "totalCollateralBase": "24986338",
+    "formatTotalCollateralBase": 2.4986338e-11,
+    "totalDebtBase": "20112513",
+    "formatTotalDebtBase": 2.0112513e-11,
+    "healthFactor": "1043555521878345088",
+    "formattedHF": 1.043555521878345,
+    "userConfiguration": "51"
+  },
+  {
+    "user": "0xbD035eA690e1Ce2f10546523B7F09Bb8dBf705F0",
+    "totalCollateralBase": "17958215",
+    "formatTotalCollateralBase": 1.7958215e-11,
+    "totalDebtBase": "14628113",
+    "formatTotalDebtBase": 1.4628113e-11,
+    "healthFactor": "1042521068848729840",
+    "formattedHF": 1.0425210688487299,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0x04248Fe487910f21fA3BE187fc84b0873d1ff1aF",
+    "totalCollateralBase": "150204735",
+    "formatTotalCollateralBase": 1.50204735e-10,
+    "totalDebtBase": "124073867",
+    "formatTotalDebtBase": 1.24073867e-10,
+    "healthFactor": "1029016247232787546",
+    "formattedHF": 1.0290162472327875,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x95c00D2cF32EdBa4CFec2Ef6086829942aAD70A0",
+    "totalCollateralBase": "300406771",
+    "formatTotalCollateralBase": 3.00406771e-10,
+    "totalDebtBase": "247418532",
+    "formatTotalDebtBase": 2.47418532e-10,
+    "healthFactor": "1032039730152468935",
+    "formattedHF": 1.0320397301524689,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xbD23497f0BFf23FBeEA70Cd14D923Ed08c5e480F",
+    "totalCollateralBase": "396840",
+    "formatTotalCollateralBase": 3.9684e-13,
+    "totalDebtBase": "1476350",
+    "formatTotalDebtBase": 1.47635e-12,
+    "healthFactor": "228478341856605818",
+    "formattedHF": 0.22847834185660582,
+    "userConfiguration": "560"
+  },
+  {
+    "user": "0xC3fB161dfcdEcB82c0E6C557A83470A9f3324b22",
+    "totalCollateralBase": "112022637",
+    "formatTotalCollateralBase": 1.12022637e-10,
+    "totalDebtBase": "91749073",
+    "formatTotalDebtBase": 9.1749073e-11,
+    "healthFactor": "1037822376690389014",
+    "formattedHF": 1.037822376690389,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xC43c1C007F24F21303623E2F124BD1E2772D24c6",
+    "totalCollateralBase": "249869011",
+    "formatTotalCollateralBase": 2.49869011e-10,
+    "totalDebtBase": "210627294",
+    "formatTotalDebtBase": 2.10627294e-10,
+    "healthFactor": "1008362472719228876",
+    "formattedHF": 1.0083624727192289,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xdDC78a3F6a609283e9fD74EEcEFB2cBFB0064548",
+    "totalCollateralBase": "118986748",
+    "formatTotalCollateralBase": 1.18986748e-10,
+    "totalDebtBase": "100263436",
+    "formatTotalDebtBase": 1.00263436e-10,
+    "healthFactor": "1008730002031847383",
+    "formattedHF": 1.0087300020318475,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x962E83b1Ed1f5826A03CE6f25C1618f5cCd23cFb",
+    "totalCollateralBase": "3",
+    "formatTotalCollateralBase": 3e-18,
+    "totalDebtBase": "2",
+    "formatTotalDebtBase": 2e-18,
+    "healthFactor": "1000000000000000000",
+    "formattedHF": 1,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x36e48e548C8ed0aE685bCba3Ca37640870FC9ed1",
+    "totalCollateralBase": "3500",
+    "formatTotalCollateralBase": 3.5e-15,
+    "totalDebtBase": "2968",
+    "formatTotalDebtBase": 2.968e-15,
+    "healthFactor": "1002358490566037736",
+    "formattedHF": 1.0023584905660377,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xa5e5237977024fFc8daf9d60A85D57C6377D7ad5",
+    "totalCollateralBase": "200275448",
+    "formatTotalCollateralBase": 2.00275448e-10,
+    "totalDebtBase": "165435290",
+    "formatTotalDebtBase": 1.6543529e-10,
+    "healthFactor": "1029007359916980228",
+    "formattedHF": 1.0290073599169802,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x3E409f31f95C7Cc6906df61D8D8B731d6076d888",
+    "totalCollateralBase": "205282259",
+    "formatTotalCollateralBase": 2.05282259e-10,
+    "totalDebtBase": "169449143",
+    "formatTotalDebtBase": 1.69449143e-10,
+    "healthFactor": "1029748022980558834",
+    "formattedHF": 1.029748022980559,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x79001049D999592ea1E3F8C4417B0A6d1344d9A3",
+    "totalCollateralBase": "5600",
+    "formatTotalCollateralBase": 5.6e-15,
+    "totalDebtBase": "5015",
+    "formatTotalDebtBase": 5.015e-15,
+    "healthFactor": "949152542372881356",
+    "formattedHF": 0.9491525423728814,
+    "userConfiguration": "288"
+  },
+  {
+    "user": "0x4eD718cBed23fCb423E5EEa37e22519EBFdE8b56",
+    "totalCollateralBase": "59",
+    "formatTotalCollateralBase": 5.9e-17,
+    "totalDebtBase": "47",
+    "formatTotalDebtBase": 4.7e-17,
+    "healthFactor": "1042553191489361702",
+    "formattedHF": 1.0425531914893618,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x5e2cb33af78c69D4a35E7948455E2c2C09d76D2E",
+    "totalCollateralBase": "800",
+    "formatTotalCollateralBase": 8e-16,
+    "totalDebtBase": "667",
+    "formatTotalDebtBase": 6.67e-16,
+    "healthFactor": "1019490254872563718",
+    "formattedHF": 1.0194902548725637,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x25c62baa5136dF213ef5dA05c923F1EFc0917EC8",
+    "totalCollateralBase": "300417472",
+    "formatTotalCollateralBase": 3.00417472e-10,
+    "totalDebtBase": "248159336",
+    "formatTotalDebtBase": 2.48159336e-10,
+    "healthFactor": "1028995544217607030",
+    "formattedHF": 1.028995544217607,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xa6381e2a61A76E9aD197bA1d626815297779297A",
+    "totalCollateralBase": "800",
+    "formatTotalCollateralBase": 8e-16,
+    "totalDebtBase": "667",
+    "formatTotalDebtBase": 6.67e-16,
+    "healthFactor": "1019490254872563718",
+    "formattedHF": 1.0194902548725637,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xbBCC7228A94Cb8b5d23c2903ed32a61A64105e69",
+    "totalCollateralBase": "2497826327",
+    "formatTotalCollateralBase": 2.497826327e-9,
+    "totalDebtBase": "2415189051",
+    "formatTotalDebtBase": 2.415189051e-9,
+    "healthFactor": "1008360263968420913",
+    "formattedHF": 1.0083602639684208,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x931E76877118C84F1D904295971cE383eCfeD5f4",
+    "totalCollateralBase": "100139524",
+    "formatTotalCollateralBase": 1.00139524e-10,
+    "totalDebtBase": "82720345",
+    "formatTotalDebtBase": 8.2720345e-11,
+    "healthFactor": "1028992263027916530",
+    "formattedHF": 1.0289922630279165,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x9267821374562fdA4Ac8d29ffc3A0d465ABE005A",
+    "totalCollateralBase": "178484223",
+    "formatTotalCollateralBase": 1.78484223e-10,
+    "totalDebtBase": "150400955",
+    "formatTotalDebtBase": 1.50400955e-10,
+    "healthFactor": "1008714273124130096",
+    "formattedHF": 1.00871427312413,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x173cF719Ca24B025404CEdb2A0BD178B2650cD25",
+    "totalCollateralBase": "237979297",
+    "formatTotalCollateralBase": 2.37979297e-10,
+    "totalDebtBase": "200535174",
+    "formatTotalDebtBase": 2.00535174e-10,
+    "healthFactor": "1008712825611331407",
+    "formattedHF": 1.0087128256113314,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x503d7D0D3B7a0FEEc6b3E8720E29812170d94964",
+    "totalCollateralBase": "700951266",
+    "formatTotalCollateralBase": 7.00951266e-10,
+    "totalDebtBase": "578262405",
+    "formatTotalDebtBase": 5.78262405e-10,
+    "healthFactor": "1030342921912760350",
+    "formattedHF": 1.0303429219127604,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x7C01AC87Da5416426377c65972232DBc0d8Ed40E",
+    "totalCollateralBase": "10012422",
+    "formatTotalCollateralBase": 1.0012422e-11,
+    "totalDebtBase": "8275523",
+    "formatTotalDebtBase": 8.275523e-12,
+    "healthFactor": "1028401346960186081",
+    "formattedHF": 1.028401346960186,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x760F755D7e14B1CbFfF86FE705101F0a19a58097",
+    "totalCollateralBase": "151208",
+    "formatTotalCollateralBase": 1.51208e-13,
+    "totalDebtBase": "119860",
+    "formatTotalDebtBase": 1.1986e-13,
+    "healthFactor": "1009227432004004672",
+    "formattedHF": 1.0092274320040047,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0xA8B4baA614e4Af59e78AFD60aCCD14Edc459C646",
+    "totalCollateralBase": "62411672",
+    "formatTotalCollateralBase": 6.2411672e-11,
+    "totalDebtBase": "51568627",
+    "formatTotalDebtBase": 5.1568627e-11,
+    "healthFactor": "1028724712798733230",
+    "formattedHF": 1.0287247127987331,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x1FD8a6cf3ff837799D7416af511249df06fA3399",
+    "totalCollateralBase": "14401",
+    "formatTotalCollateralBase": 1.4401e-14,
+    "totalDebtBase": "12146",
+    "formatTotalDebtBase": 1.2146e-14,
+    "healthFactor": "1007821505022229541",
+    "formattedHF": 1.0078215050222294,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x889cb44823b35Fc53dfC3a8b58a825Beb6A737B5",
+    "totalCollateralBase": "150210436",
+    "formatTotalCollateralBase": 1.50210436e-10,
+    "totalDebtBase": "124082168",
+    "formatTotalDebtBase": 1.24082168e-10,
+    "healthFactor": "1028986461616305737",
+    "formattedHF": 1.0289864616163058,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xF271b170Ef5f65213539f4A115eD0dDC4D7f6230",
+    "totalCollateralBase": "147830493",
+    "formatTotalCollateralBase": 1.47830493e-10,
+    "totalDebtBase": "122116268",
+    "formatTotalDebtBase": 1.22116268e-10,
+    "healthFactor": "1028985908740676549",
+    "formattedHF": 1.0289859087406765,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xcd8155ef0C46EFAB37B289061f055221531e3C90",
+    "totalCollateralBase": "200280748",
+    "formatTotalCollateralBase": 2.00280748e-10,
+    "totalDebtBase": "165443191",
+    "formatTotalDebtBase": 1.65443191e-10,
+    "healthFactor": "1028985447941462880",
+    "formattedHF": 1.0289854479414628,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xB8441d056E83b1b79DFefc4CC63260d2CF9086bC",
+    "totalCollateralBase": "127813010",
+    "formatTotalCollateralBase": 1.2781301e-10,
+    "totalDebtBase": "101023442",
+    "formatTotalDebtBase": 1.01023442e-10,
+    "healthFactor": "1012145359291955228",
+    "formattedHF": 1.0121453592919551,
+    "userConfiguration": "2065"
+  },
+  {
+    "user": "0x5d573d976f87085D165C92eA888cb3e7E58fEE32",
+    "totalCollateralBase": "469",
+    "formatTotalCollateralBase": 4.69e-16,
+    "totalDebtBase": "371",
+    "formatTotalDebtBase": 3.71e-16,
+    "healthFactor": "1010781671159029650",
+    "formattedHF": 1.0107816711590296,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0xfFFb609CDA6131468b17391E6E4F3124cF180333",
+    "totalCollateralBase": "9598",
+    "formatTotalCollateralBase": 9.598e-15,
+    "totalDebtBase": "7613",
+    "formatTotalDebtBase": 7.613e-15,
+    "healthFactor": "1008538027058978064",
+    "formattedHF": 1.008538027058978,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x9d7C3CD6325c7CB762d19416ca548d68FD6eb1a9",
+    "totalCollateralBase": "200282148",
+    "formatTotalCollateralBase": 2.00282148e-10,
+    "totalDebtBase": "165445291",
+    "formatTotalDebtBase": 1.65445291e-10,
+    "healthFactor": "1028979579721008802",
+    "formattedHF": 1.0289795797210088,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x4c00D380942581b8e95a7e7A1DCb2795Cb134d84",
+    "totalCollateralBase": "10113432",
+    "formatTotalCollateralBase": 1.0113432e-11,
+    "totalDebtBase": "8328108",
+    "formatTotalDebtBase": 8.328108e-12,
+    "healthFactor": "1032217281524206939",
+    "formattedHF": 1.032217281524207,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x77d25848b2396250df5860ae566F7c341d81efac",
+    "totalCollateralBase": "148847397",
+    "formatTotalCollateralBase": 1.48847397e-10,
+    "totalDebtBase": "122962434",
+    "formatTotalDebtBase": 1.22962434e-10,
+    "healthFactor": "1028934471157264177",
+    "formattedHF": 1.028934471157264,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x769cB1E5188523C1Cce06C8003eC412b54100efb",
+    "totalCollateralBase": "13507",
+    "formatTotalCollateralBase": 1.3507e-14,
+    "totalDebtBase": "10709",
+    "formatTotalDebtBase": 1.0709e-14,
+    "healthFactor": "1009057801848912130",
+    "formattedHF": 1.009057801848912,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x563b149c40b798ABB7a41455C6B8F32aEEFB990A",
+    "totalCollateralBase": "250344560",
+    "formatTotalCollateralBase": 2.5034456e-10,
+    "totalDebtBase": "203618961",
+    "formatTotalDebtBase": 2.03618961e-10,
+    "healthFactor": "1045054325760949149",
+    "formattedHF": 1.0450543257609493,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xe6aF68Cb97dbbd2Bb4ddf1df904bcFAA87c58734",
+    "totalCollateralBase": "170240481",
+    "formatTotalCollateralBase": 1.70240481e-10,
+    "totalDebtBase": "140543309",
+    "formatTotalDebtBase": 1.40543309e-10,
+    "healthFactor": "1029607243700231933",
+    "formattedHF": 1.029607243700232,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x892D6723f050a3fE32A1c15E3839a57ebc564559",
+    "totalCollateralBase": "100",
+    "formatTotalCollateralBase": 1e-16,
+    "totalDebtBase": "84",
+    "formatTotalDebtBase": 8.4e-17,
+    "healthFactor": "1011904761904761905",
+    "formattedHF": 1.0119047619047619,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x5BFDA9c2B452BCb6a1cDaF20C0e1E4529D1b4c47",
+    "totalCollateralBase": "214619250",
+    "formatTotalCollateralBase": 2.1461925e-10,
+    "totalDebtBase": "176711352",
+    "formatTotalDebtBase": 1.76711352e-10,
+    "healthFactor": "1030276255257217431",
+    "formattedHF": 1.0302762552572173,
+    "userConfiguration": "51"
+  },
+  {
+    "user": "0x3be9909766f2D5c3bf3e587fF4E53790ba4E40aF",
+    "totalCollateralBase": "307386509",
+    "formatTotalCollateralBase": 3.07386509e-10,
+    "totalDebtBase": "248877334",
+    "formatTotalDebtBase": 2.48877334e-10,
+    "healthFactor": "1045629245610610728",
+    "formattedHF": 1.0456292456106107,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0x758597A5671231211ed2DD13075c2f66cFaf4A9F",
+    "totalCollateralBase": "149213134",
+    "formatTotalCollateralBase": 1.49213134e-10,
+    "totalDebtBase": "123260984",
+    "formatTotalDebtBase": 1.23260984e-10,
+    "healthFactor": "1028964396390020706",
+    "formattedHF": 1.0289643963900208,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xB5A48fED4d5aBa3e52CfC81b21356857a7B48b4c",
+    "totalCollateralBase": "51301288",
+    "formatTotalCollateralBase": 5.1301288e-11,
+    "totalDebtBase": "41835147",
+    "formatTotalDebtBase": 4.1835147e-11,
+    "healthFactor": "1029455711007780133",
+    "formattedHF": 1.0294557110077802,
+    "userConfiguration": "33072"
+  },
+  {
+    "user": "0x6F0AfA79aD2564670479189bfFF7bdf983D4e954",
+    "totalCollateralBase": "186279819",
+    "formatTotalCollateralBase": 1.86279819e-10,
+    "totalDebtBase": "159302198",
+    "formatTotalDebtBase": 1.59302198e-10,
+    "healthFactor": "993946398655466135",
+    "formattedHF": 0.9939463986554662,
+    "userConfiguration": "16416"
+  },
+  {
+    "user": "0x43C0576D11AFbBE05f1158AcAb724c735492607c",
+    "totalCollateralBase": "4002805484",
+    "formatTotalCollateralBase": 4.002805484e-9,
+    "totalDebtBase": "3805428132",
+    "formatTotalDebtBase": 3.805428132e-9,
+    "healthFactor": "1025570635320041829",
+    "formattedHF": 1.0255706353200418,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x15a42E7C5887D064765Ac6AF62a704f4EbFAc3f0",
+    "totalCollateralBase": "4767132711885",
+    "formatTotalCollateralBase": 0.000004767132711885,
+    "totalDebtBase": "4430983573537",
+    "formatTotalDebtBase": 0.000004430983573537,
+    "healthFactor": "1048966739991275716",
+    "formattedHF": 1.0489667399912757,
+    "userConfiguration": "2064"
+  },
+  {
+    "user": "0xF9b1D7f0bfdfF12351Fe0688cceD3Bb4a427070F",
+    "totalCollateralBase": "28456626609",
+    "formatTotalCollateralBase": 2.8456626609e-8,
+    "totalDebtBase": "27601777829",
+    "formatTotalDebtBase": 2.7601777829e-8,
+    "healthFactor": "1005196517263801066",
+    "formattedHF": 1.005196517263801,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x917718bbB47Fb439b86b2B482D3AaEF1cC0af851",
+    "totalCollateralBase": "5295571875",
+    "formatTotalCollateralBase": 5.295571875e-9,
+    "totalDebtBase": "5105918412",
+    "formatTotalDebtBase": 5.105918412e-9,
+    "healthFactor": "1011215252845681389",
+    "formattedHF": 1.0112152528456815,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x93930373Fda4A7eD4866CAf09C139032D85649DE",
+    "totalCollateralBase": "20902",
+    "formatTotalCollateralBase": 2.0902e-14,
+    "totalDebtBase": "20303",
+    "formatTotalDebtBase": 2.0303e-14,
+    "healthFactor": "1003743289169088312",
+    "formattedHF": 1.0037432891690883,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x18d71c365bD7322adBb8c908905cfe7b70134172",
+    "totalCollateralBase": "2401958238",
+    "formatTotalCollateralBase": 2.401958238e-9,
+    "totalDebtBase": "2303824619",
+    "formatTotalDebtBase": 2.303824619e-9,
+    "healthFactor": "1016531059997323520",
+    "formattedHF": 1.0165310599973236,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x8d49EAa4b9eA0454A7A180A839A5b855a8808862",
+    "totalCollateralBase": "2653790250",
+    "formatTotalCollateralBase": 2.65379025e-9,
+    "totalDebtBase": "2554244387",
+    "formatTotalDebtBase": 2.554244387e-9,
+    "healthFactor": "1012998406561634934",
+    "formattedHF": 1.0129984065616349,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xafA2d4FCF335d031F770977249F74312E2b60a5B",
+    "totalCollateralBase": "142071827673",
+    "formatTotalCollateralBase": 1.42071827673e-7,
+    "totalDebtBase": "135243628226",
+    "formatTotalDebtBase": 1.35243628226e-7,
+    "healthFactor": "1024225938019977829",
+    "formattedHF": 1.0242259380199779,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x0308956443B95fCcF4496b8297BB26e0DA706c05",
+    "totalCollateralBase": "253141245",
+    "formatTotalCollateralBase": 2.53141245e-10,
+    "totalDebtBase": "244487042",
+    "formatTotalDebtBase": 2.44487042e-10,
+    "healthFactor": "1009512455060910754",
+    "formattedHF": 1.0095124550609107,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xDAA27d84ea816F28F4c420F7b0AD6a9998B7e305",
+    "totalCollateralBase": "39538314335",
+    "formatTotalCollateralBase": 3.9538314335e-8,
+    "totalDebtBase": "37044563234",
+    "formatTotalDebtBase": 3.7044563234e-8,
+    "healthFactor": "1040634660300662461",
+    "formattedHF": 1.0406346603006624,
+    "userConfiguration": "18"
+  },
+  {
+    "user": "0x92Bf9C4687CE8F6eE318411a451946f10A3319FD",
+    "totalCollateralBase": "3681893319",
+    "formatTotalCollateralBase": 3.681893319e-9,
+    "totalDebtBase": "3510536981",
+    "formatTotalDebtBase": 3.510536981e-9,
+    "healthFactor": "1022591701904649441",
+    "formattedHF": 1.0225917019046495,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x6791c6FeFe1ca771BC4e23DD7C2B16ED26341077",
+    "totalCollateralBase": "19310618871",
+    "formatTotalCollateralBase": 1.9310618871e-8,
+    "totalDebtBase": "18003287375",
+    "formatTotalDebtBase": 1.8003287375e-8,
+    "healthFactor": "1045800858855645523",
+    "formattedHF": 1.0458008588556456,
+    "userConfiguration": "1058"
+  },
+  {
+    "user": "0x5Baf07C13DF692185c02Ea08E19A82Fa066b75D9",
+    "totalCollateralBase": "48150160",
+    "formatTotalCollateralBase": 4.815016e-11,
+    "totalDebtBase": "20793915",
+    "formatTotalDebtBase": 2.0793915e-11,
+    "healthFactor": "1042015031801370738",
+    "formattedHF": 1.0420150318013708,
+    "userConfiguration": "2359296"
+  },
+  {
+    "user": "0xb0FC7EFc69B6BAed53578Aa22Ac1B4c6473aFf76",
+    "totalCollateralBase": "19636789030",
+    "formatTotalCollateralBase": 1.963678903e-8,
+    "totalDebtBase": "18968521927",
+    "formatTotalDebtBase": 1.8968521927e-8,
+    "healthFactor": "1009349562273882912",
+    "formattedHF": 1.0093495622738828,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0xa4DCC4cAE643777D0E42ca847995655e845b94d5",
+    "totalCollateralBase": "20773934409",
+    "formatTotalCollateralBase": 2.0773934409e-8,
+    "totalDebtBase": "20078704030",
+    "formatTotalDebtBase": 2.007870403e-8,
+    "healthFactor": "1008759630040724297",
+    "formattedHF": 1.0087596300407242,
+    "userConfiguration": "268435489"
+  },
+  {
+    "user": "0x0cC22a45Ca51D735Cf0694E58A1E6b7F0a0B196A",
+    "totalCollateralBase": "10018798887",
+    "formatTotalCollateralBase": 1.0018798887e-8,
+    "totalDebtBase": "9634815525",
+    "formatTotalDebtBase": 9.634815525e-9,
+    "healthFactor": "1013857389345293147",
+    "formattedHF": 1.0138573893452931,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x5D5950F50fbb081Bab24ab5fda90A592D30327AC",
+    "totalCollateralBase": "14827",
+    "formatTotalCollateralBase": 1.4827e-14,
+    "totalDebtBase": "19467",
+    "formatTotalDebtBase": 1.9467e-14,
+    "healthFactor": "628345405044434171",
+    "formattedHF": 0.6283454050444341,
+    "userConfiguration": "16896"
+  },
+  {
+    "user": "0x249dfdF045F6B497c70066Bb8EcfFaaAb657042d",
+    "totalCollateralBase": "118872636",
+    "formatTotalCollateralBase": 1.18872636e-10,
+    "totalDebtBase": "111651437",
+    "formatTotalDebtBase": 1.11651437e-10,
+    "healthFactor": "1038059366848990936",
+    "formattedHF": 1.038059366848991,
+    "userConfiguration": "268435488"
+  },
+  {
+    "user": "0x1a55a5aAa3b462e8273BEE6bd813fea4744f651a",
+    "totalCollateralBase": "310000329",
+    "formatTotalCollateralBase": 3.10000329e-10,
+    "totalDebtBase": "252016632",
+    "formatTotalDebtBase": 2.52016632e-10,
+    "healthFactor": "1039785651924750744",
+    "formattedHF": 1.0397856519247508,
+    "userConfiguration": "32817"
+  },
+  {
+    "user": "0x35f6ed911E12e4Fd070dABE045cbAE0A21429E23",
+    "totalCollateralBase": "10019057552",
+    "formatTotalCollateralBase": 1.0019057552e-8,
+    "totalDebtBase": "9635417203",
+    "formatTotalDebtBase": 9.635417203e-9,
+    "healthFactor": "1013820253673970572",
+    "formattedHF": 1.0138202536739707,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x31b47E17b24931088f5330e697262aBD6AC98cCF",
+    "totalCollateralBase": "3976",
+    "formatTotalCollateralBase": 3.976e-15,
+    "totalDebtBase": "3310",
+    "formatTotalDebtBase": 3.31e-15,
+    "healthFactor": "1017522658610271903",
+    "formattedHF": 1.017522658610272,
+    "userConfiguration": "32801"
+  },
+  {
+    "user": "0x97b102e00d88F02DEBfD6b1e4B901Dd6931bB982",
+    "totalCollateralBase": "200301450",
+    "formatTotalCollateralBase": 2.0030145e-10,
+    "totalDebtBase": "165474394",
+    "formatTotalDebtBase": 1.65474394e-10,
+    "healthFactor": "1028897758042250331",
+    "formattedHF": 1.0288977580422503,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x27C7E978e4dA4581588BB40a521d5a7A6d31b33D",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "15796527",
+    "formatTotalDebtBase": 1.5796527e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "561"
+  },
+  {
+    "user": "0xf89E70A3B3A19C058ceeB060188084AEDCB4A22f",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "359236",
+    "formatTotalDebtBase": 3.59236e-13,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x119a98C8f6B1D49D07CEf5c2bE6c52CbcBaB1498",
+    "totalCollateralBase": "194",
+    "formatTotalCollateralBase": 1.94e-16,
+    "totalDebtBase": "200",
+    "formatTotalDebtBase": 2e-16,
+    "healthFactor": "800000000000000000",
+    "formattedHF": 0.8,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x8C6337e5828853f81E91F99604D9d65927b6e0d9",
+    "totalCollateralBase": "1602458510",
+    "formatTotalCollateralBase": 1.60245851e-9,
+    "totalDebtBase": "1505652411",
+    "formatTotalDebtBase": 1.505652411e-9,
+    "healthFactor": "1037687739604064567",
+    "formattedHF": 1.0376877396040645,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x05CCa6ff180c7F8039060424dD6eE51dB7619b75",
+    "totalCollateralBase": "6485272489",
+    "formatTotalCollateralBase": 6.485272489e-9,
+    "totalDebtBase": "5144850089",
+    "formatTotalDebtBase": 5.144850089e-9,
+    "healthFactor": "1039942799196301325",
+    "formattedHF": 1.0399427991963013,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0xcA1C8b35273896A4f7423f6D7e8EfE3454D30464",
+    "totalCollateralBase": "120054596423",
+    "formatTotalCollateralBase": 1.20054596423e-7,
+    "totalDebtBase": "115910943658",
+    "formatTotalDebtBase": 1.15910943658e-7,
+    "healthFactor": "1009854874940630000",
+    "formattedHF": 1.00985487494063,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x2f08D099C60823Ce5955e747909D216dCBC9bF21",
+    "totalCollateralBase": "189",
+    "formatTotalCollateralBase": 1.89e-16,
+    "totalDebtBase": "82",
+    "formatTotalDebtBase": 8.2e-17,
+    "healthFactor": "1036585365853658537",
+    "formattedHF": 1.0365853658536586,
+    "userConfiguration": "3145728"
+  },
+  {
+    "user": "0x8fFeb06D34604F0bA20A5a339A797C0F0654188f",
+    "totalCollateralBase": "500383488",
+    "formatTotalCollateralBase": 5.00383488e-10,
+    "totalDebtBase": "413147382",
+    "formatTotalDebtBase": 4.13147382e-10,
+    "healthFactor": "1029477575147747154",
+    "formattedHF": 1.0294775751477472,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xB35e0532A59E59571BeeE11FC3dFd7f90B7C037E",
+    "totalCollateralBase": "130334344",
+    "formatTotalCollateralBase": 1.30334344e-10,
+    "totalDebtBase": "109334255",
+    "formatTotalDebtBase": 1.09334255e-10,
+    "healthFactor": "983459703457072991",
+    "formattedHF": 0.983459703457073,
+    "userConfiguration": "16896"
+  },
+  {
+    "user": "0xd84B12d186d05e673F72f3A24D0bC0Bd730Eb569",
+    "totalCollateralBase": "3000",
+    "formatTotalCollateralBase": 3e-15,
+    "totalDebtBase": "3691",
+    "formatTotalDebtBase": 3.691e-15,
+    "healthFactor": "690869683012733677",
+    "formattedHF": 0.6908696830127337,
+    "userConfiguration": "288"
+  },
+  {
+    "user": "0x856A78b10C403c620E15498721EB6A68218944CE",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "5710901",
+    "formatTotalDebtBase": 5.710901e-12,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "16386"
+  },
+  {
+    "user": "0xe81f75bDcb0d23E5e0D2330C6aAC487Cb98C1d51",
+    "totalCollateralBase": "1061841476",
+    "formatTotalCollateralBase": 1.061841476e-9,
+    "totalDebtBase": "1011474671",
+    "formatTotalDebtBase": 1.011474671e-9,
+    "healthFactor": "1023550533377617322",
+    "formattedHF": 1.0235505333776174,
+    "userConfiguration": "2064"
+  },
+  {
+    "user": "0xF7B790cFCA2C293ce7cafF7755c10B568a1202Bd",
+    "totalCollateralBase": "123512",
+    "formatTotalCollateralBase": 1.23512e-13,
+    "totalDebtBase": "185444",
+    "formatTotalDebtBase": 1.85444e-13,
+    "healthFactor": "566127779814930653",
+    "formattedHF": 0.5661277798149307,
+    "userConfiguration": "16416"
+  },
+  {
+    "user": "0x4ea0A60ADd507589555B0c76E4926539E3212d49",
+    "totalCollateralBase": "2179599",
+    "formatTotalCollateralBase": 2.179599e-12,
+    "totalDebtBase": "1727196",
+    "formatTotalDebtBase": 1.727196e-12,
+    "healthFactor": "1009543213393268627",
+    "formattedHF": 1.0095432133932687,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x699BaeE28CDf1912C989411Ed7f9d863F67118b6",
+    "totalCollateralBase": "2861583863",
+    "formatTotalCollateralBase": 2.861583863e-9,
+    "totalDebtBase": "2230751659",
+    "formatTotalDebtBase": 2.230751659e-9,
+    "healthFactor": "1018406248779125081",
+    "formattedHF": 1.018406248779125,
+    "userConfiguration": "32835"
+  },
+  {
+    "user": "0xdEd808E6aFEcFa06e41be42992C2Bd52b3bFD2cF",
+    "totalCollateralBase": "378",
+    "formatTotalCollateralBase": 3.78e-16,
+    "totalDebtBase": "300",
+    "formatTotalDebtBase": 3e-16,
+    "healthFactor": "1006666666666666667",
+    "formattedHF": 1.0066666666666666,
+    "userConfiguration": "1026"
+  },
+  {
+    "user": "0x930cDc8362C191Fe65f9223F002DE7a235F9fA79",
+    "totalCollateralBase": "5128313198",
+    "formatTotalCollateralBase": 5.128313198e-9,
+    "totalDebtBase": "4320623196",
+    "formatTotalDebtBase": 4.320623196e-9,
+    "healthFactor": "1008897564137411996",
+    "formattedHF": 1.008897564137412,
+    "userConfiguration": "17457"
+  },
+  {
+    "user": "0x175DBB56722A4fC22D86443bd57031a77F562703",
+    "totalCollateralBase": "8300",
+    "formatTotalCollateralBase": 8.3e-15,
+    "totalDebtBase": "6900",
+    "formatTotalDebtBase": 6.9e-15,
+    "healthFactor": "1022463768115942029",
+    "formattedHF": 1.022463768115942,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xe4FbD6749208698627cCfbeea608f93f24Bf85c2",
+    "totalCollateralBase": "111987534",
+    "formatTotalCollateralBase": 1.11987534e-10,
+    "totalDebtBase": "109401426",
+    "formatTotalDebtBase": 1.09401426e-10,
+    "healthFactor": "865384158703744867",
+    "formattedHF": 0.8653841587037449,
+    "userConfiguration": "16930"
+  },
+  {
+    "user": "0x7046D49D24650e54DC56B77aE10D4c8DCBe74a3C",
+    "totalCollateralBase": "173251988",
+    "formatTotalCollateralBase": 1.73251988e-10,
+    "totalDebtBase": "164120417",
+    "formatTotalDebtBase": 1.64120417e-10,
+    "healthFactor": "897293540266839561",
+    "formattedHF": 0.8972935402668396,
+    "userConfiguration": "16416"
+  },
+  {
+    "user": "0xD04aFD098d763316F03a737d1ceD5BD1d04b7fF4",
+    "totalCollateralBase": "10226",
+    "formatTotalCollateralBase": 1.0226e-14,
+    "totalDebtBase": "8345",
+    "formatTotalDebtBase": 8.345e-15,
+    "healthFactor": "1039664469742360695",
+    "formattedHF": 1.0396644697423607,
+    "userConfiguration": "800"
+  },
+  {
+    "user": "0x371B3AcB5Ae446A778DdfD196d38301593E85dAB",
+    "totalCollateralBase": "17859851781",
+    "formatTotalCollateralBase": 1.7859851781e-8,
+    "totalDebtBase": "14614337192",
+    "formatTotalDebtBase": 1.4614337192e-8,
+    "healthFactor": "1038643616168179624",
+    "formattedHF": 1.0386436161681796,
+    "userConfiguration": "49184"
+  },
+  {
+    "user": "0x3f84Ca021bFe503c8739fD776c821DF31E00Ee51",
+    "totalCollateralBase": "20871267108",
+    "formatTotalCollateralBase": 2.0871267108e-8,
+    "totalDebtBase": "20239300376",
+    "formatTotalDebtBase": 2.0239300376e-8,
+    "healthFactor": "1005444113776317028",
+    "formattedHF": 1.005444113776317,
+    "userConfiguration": "1342177331"
+  },
+  {
+    "user": "0xdA208FbbC8f515d85B435Eeb3bC76Bb02566fC18",
+    "totalCollateralBase": "14701",
+    "formatTotalCollateralBase": 1.4701e-14,
+    "totalDebtBase": "14093",
+    "formatTotalDebtBase": 1.4093e-14,
+    "healthFactor": "886681331157312141",
+    "formattedHF": 0.8866813311573122,
+    "userConfiguration": "288"
+  },
+  {
+    "user": "0x8b0f1F7F6067c4Ff6B47F0266d6A3864b0041761",
+    "totalCollateralBase": "31102804670",
+    "formatTotalCollateralBase": 3.110280467e-8,
+    "totalDebtBase": "24732798515",
+    "formatTotalDebtBase": 2.4732798515e-8,
+    "healthFactor": "1037481214972004958",
+    "formattedHF": 1.037481214972005,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0xB89Db2813541287A4DD1fc6801EeC30595EcDC6C",
+    "totalCollateralBase": "178541829",
+    "formatTotalCollateralBase": 1.78541829e-10,
+    "totalDebtBase": "150378953",
+    "formatTotalDebtBase": 1.50378953e-10,
+    "healthFactor": "1009187469206545147",
+    "formattedHF": 1.0091874692065452,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x0bec5f8917f8D614C60d59C466543fc765B831Eb",
+    "totalCollateralBase": "8805214539639",
+    "formatTotalCollateralBase": 0.000008805214539639,
+    "totalDebtBase": "7138513505141",
+    "formatTotalDebtBase": 0.000007138513505141,
+    "healthFactor": "1041797314640242679",
+    "formattedHF": 1.0417973146402426,
+    "userConfiguration": "49712"
+  },
+  {
+    "user": "0x4Dde676B18B36b3141219006F58010EC4B6Ab9b1",
+    "totalCollateralBase": "1001200",
+    "formatTotalCollateralBase": 1.0012e-12,
+    "totalDebtBase": "821855",
+    "formatTotalDebtBase": 8.21855e-13,
+    "healthFactor": "1035486795115926775",
+    "formattedHF": 1.0354867951159268,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xcc9A94E93180616F7819231bC8f4E6C2A2dA4868",
+    "totalCollateralBase": "28072490",
+    "formatTotalCollateralBase": 2.807249e-11,
+    "totalDebtBase": "12341937",
+    "formatTotalDebtBase": 1.2341937e-11,
+    "healthFactor": "1023552542846394371",
+    "formattedHF": 1.0235525428463943,
+    "userConfiguration": "3145728"
+  },
+  {
+    "user": "0x3D77d7E110d82b9BE44899e3D464408470187ccb",
+    "totalCollateralBase": "1802143806",
+    "formatTotalCollateralBase": 1.802143806e-9,
+    "totalDebtBase": "1703923690",
+    "formatTotalDebtBase": 1.70392369e-9,
+    "healthFactor": "1031202407309684156",
+    "formattedHF": 1.0312024073096842,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x701F6597437706de23f6ca2EBA3F38091CfEe531",
+    "totalCollateralBase": "100119105",
+    "formatTotalCollateralBase": 1.00119105e-10,
+    "totalDebtBase": "115657634",
+    "formatTotalDebtBase": 1.15657634e-10,
+    "healthFactor": "735803042624925217",
+    "formattedHF": 0.7358030426249252,
+    "userConfiguration": "16416"
+  },
+  {
+    "user": "0x766C1EE5FE7c684b22beCEf250E110F61842a01e",
+    "totalCollateralBase": "114018595",
+    "formatTotalCollateralBase": 1.14018595e-10,
+    "totalDebtBase": "94127135",
+    "formatTotalDebtBase": 9.4127135e-11,
+    "healthFactor": "1029626642731662873",
+    "formattedHF": 1.029626642731663,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x86F402775Fa27796D6E37BccaF04b9d353D6f08C",
+    "totalCollateralBase": "3507940683",
+    "formatTotalCollateralBase": 3.507940683e-9,
+    "totalDebtBase": "3374811699",
+    "formatTotalDebtBase": 3.374811699e-9,
+    "healthFactor": "1013461630174347692",
+    "formattedHF": 1.0134616301743478,
+    "userConfiguration": "268435504"
+  },
+  {
+    "user": "0x8c976A43F34fE14313E65B90EC5A396617cfb525",
+    "totalCollateralBase": "1001200",
+    "formatTotalCollateralBase": 1.0012e-12,
+    "totalDebtBase": "966185",
+    "formatTotalDebtBase": 9.66185e-13,
+    "healthFactor": "1010334459756671859",
+    "formattedHF": 1.010334459756672,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x9d0f1734606Ea68d18c021074c22A2E0BAD80773",
+    "totalCollateralBase": "58105",
+    "formatTotalCollateralBase": 5.8105e-14,
+    "totalDebtBase": "49029",
+    "formatTotalDebtBase": 4.9029e-14,
+    "healthFactor": "1007342593159150707",
+    "formattedHF": 1.0073425931591506,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xcD3671a9598D31F875e5CD7c653ec33A97027eAE",
+    "totalCollateralBase": "62488645",
+    "formatTotalCollateralBase": 6.2488645e-11,
+    "totalDebtBase": "51092729",
+    "formatTotalDebtBase": 5.1092729e-11,
+    "healthFactor": "1039587217977728299",
+    "formattedHF": 1.0395872179777284,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x921f4C7ec62e47967304cBf196CD8A1701502C43",
+    "totalCollateralBase": "5006000",
+    "formatTotalCollateralBase": 5.006e-12,
+    "totalDebtBase": "4132921",
+    "formatTotalDebtBase": 4.132921e-12,
+    "healthFactor": "1029562384570138166",
+    "formattedHF": 1.0295623845701383,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x99BBb9d0D812Bec6A03C38bFB11828cE1Cc7FD87",
+    "totalCollateralBase": "94852478",
+    "formatTotalCollateralBase": 9.4852478e-11,
+    "totalDebtBase": "75199712",
+    "formatTotalDebtBase": 7.5199712e-11,
+    "healthFactor": "1009072774108496586",
+    "formattedHF": 1.0090727741084966,
+    "userConfiguration": "3072"
+  },
+  {
+    "user": "0xbdCB37B74C66172a30a908E6495A58E3DE28cD8e",
+    "totalCollateralBase": "100998079",
+    "formatTotalCollateralBase": 1.00998079e-10,
+    "totalDebtBase": "82689084",
+    "formatTotalDebtBase": 8.2689084e-11,
+    "healthFactor": "1036496788378983615",
+    "formattedHF": 1.0364967883789835,
+    "userConfiguration": "32801"
+  },
+  {
+    "user": "0xd13f03272D9584466E06bcD94A9Da996FE592c40",
+    "totalCollateralBase": "504536323",
+    "formatTotalCollateralBase": 5.04536323e-10,
+    "totalDebtBase": "414379027",
+    "formatTotalDebtBase": 4.14379027e-10,
+    "healthFactor": "1034936246906144697",
+    "formattedHF": 1.0349362469061447,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x7f7ED468F43084fa6E57d48488E1D511bb5Bc81a",
+    "totalCollateralBase": "3261825",
+    "formatTotalCollateralBase": 3.261825e-12,
+    "totalDebtBase": "2695811",
+    "formatTotalDebtBase": 2.695811e-12,
+    "healthFactor": "1028466387294955025",
+    "formattedHF": 1.028466387294955,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xb3Df80fFAFd551B710ceCE42B772e556Cb919Aa4",
+    "totalCollateralBase": "20023901",
+    "formatTotalCollateralBase": 2.0023901e-11,
+    "totalDebtBase": "16534378",
+    "formatTotalDebtBase": 1.6534378e-11,
+    "healthFactor": "1029389554297113565",
+    "formattedHF": 1.0293895542971137,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xACc7Fc40F3301eFfe63aC2A1e1d1ba1011d60e81",
+    "totalCollateralBase": "124369129",
+    "formatTotalCollateralBase": 1.24369129e-10,
+    "totalDebtBase": "102791096",
+    "formatTotalDebtBase": 1.02791096e-10,
+    "healthFactor": "1028433046379814843",
+    "formattedHF": 1.0284330463798148,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x15d82D9f6E6A79E40a8685541ad80000aF739C4a",
+    "totalCollateralBase": "745674",
+    "formatTotalCollateralBase": 7.45674e-13,
+    "totalDebtBase": "628163",
+    "formatTotalDebtBase": 6.28163e-13,
+    "healthFactor": "1009010400166835678",
+    "formattedHF": 1.0090104001668356,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB8A9C37240E8B72F42a88f1099E6c61DC3e96756",
+    "totalCollateralBase": "100119805",
+    "formatTotalCollateralBase": 1.00119805e-10,
+    "totalDebtBase": "82701070",
+    "formatTotalDebtBase": 8.270107e-11,
+    "healthFactor": "1029029418845487731",
+    "formattedHF": 1.0290294188454878,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xd234665a49baCbAcA10A1C2D1e6682a663bDb9f7",
+    "totalCollateralBase": "596577021",
+    "formatTotalCollateralBase": 5.96577021e-10,
+    "totalDebtBase": "492944354",
+    "formatTotalDebtBase": 4.92944354e-10,
+    "healthFactor": "1028697182319284663",
+    "formattedHF": 1.0286971823192848,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xd6C3280E7b610b58EbD4C36Ca707D717c2683c3E",
+    "totalCollateralBase": "2843584",
+    "formatTotalCollateralBase": 2.843584e-12,
+    "totalDebtBase": "2332860",
+    "formatTotalDebtBase": 2.33286e-12,
+    "healthFactor": "1036087034798487693",
+    "formattedHF": 1.0360870347984876,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x076B9d3dDd46dB415ED7fEb632EF6A485E6bbC79",
+    "totalCollateralBase": "26266468",
+    "formatTotalCollateralBase": 2.6266468e-11,
+    "totalDebtBase": "21147910",
+    "formatTotalDebtBase": 2.114791e-11,
+    "healthFactor": "1046912248066120955",
+    "formattedHF": 1.046912248066121,
+    "userConfiguration": "32801"
+  },
+  {
+    "user": "0x48eA51763F3e752a5B1bF9bfED063d217Cb40a7B",
+    "totalCollateralBase": "6087408",
+    "formatTotalCollateralBase": 6.087408e-12,
+    "totalDebtBase": "5029403",
+    "formatTotalDebtBase": 5.029403e-12,
+    "healthFactor": "1028809383539159618",
+    "formattedHF": 1.0288093835391596,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xFD73d18cf5372084eBE4A6D40F19b88019317F28",
+    "totalCollateralBase": "10099850",
+    "formatTotalCollateralBase": 1.009985e-11,
+    "totalDebtBase": "8293648",
+    "formatTotalDebtBase": 8.293648e-12,
+    "healthFactor": "1033409303119688706",
+    "formattedHF": 1.0334093031196887,
+    "userConfiguration": "32801"
+  },
+  {
+    "user": "0xCc4f1cb6064A69aC83A5133FFCf09217ae33c2CF",
+    "totalCollateralBase": "20902506",
+    "formatTotalCollateralBase": 2.0902506e-11,
+    "totalDebtBase": "16845162",
+    "formatTotalDebtBase": 1.6845162e-11,
+    "healthFactor": "1046790407833418284",
+    "formattedHF": 1.0467904078334183,
+    "userConfiguration": "32801"
+  },
+  {
+    "user": "0xDEEd762B0464f3Cf49f82F0A392A00254aF2B789",
+    "totalCollateralBase": "5006000",
+    "formatTotalCollateralBase": 5.006e-12,
+    "totalDebtBase": "4111299",
+    "formatTotalDebtBase": 4.111299e-12,
+    "healthFactor": "1034977023077134502",
+    "formattedHF": 1.0349770230771345,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB88C11865C9DB986c511a1E3467D7667DBD0965a",
+    "totalCollateralBase": "206141401",
+    "formatTotalCollateralBase": 2.06141401e-10,
+    "totalDebtBase": "170379808",
+    "formatTotalDebtBase": 1.70379808e-10,
+    "healthFactor": "1028409369964778925",
+    "formattedHF": 1.028409369964779,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x3AD003b970504937a6269C1097DCD8Eb08BFBE23",
+    "totalCollateralBase": "4004800",
+    "formatTotalCollateralBase": 4.0048e-12,
+    "totalDebtBase": "3309815",
+    "formatTotalDebtBase": 3.309815e-12,
+    "healthFactor": "1028480443771026477",
+    "formattedHF": 1.0284804437710264,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xfeBd9b9c6d3b1f1D9bA79643594BDbf41BA01514",
+    "totalCollateralBase": "1189818",
+    "formatTotalCollateralBase": 1.189818e-12,
+    "totalDebtBase": "1002757",
+    "formatTotalDebtBase": 1.002757e-12,
+    "healthFactor": "1008564387982332709",
+    "formattedHF": 1.0085643879823327,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xcc040BDE0393D32924E5CFeeaf30235c1329cA35",
+    "totalCollateralBase": "4095409",
+    "formatTotalCollateralBase": 4.095409e-12,
+    "totalDebtBase": "3385126",
+    "formatTotalDebtBase": 3.385126e-12,
+    "healthFactor": "1028351086488361142",
+    "formattedHF": 1.0283510864883612,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x248cdC1961f72347Ed22d0D41574729D25D5F308",
+    "totalCollateralBase": "3003600",
+    "formatTotalCollateralBase": 3.0036e-12,
+    "totalDebtBase": "2482281",
+    "formatTotalDebtBase": 2.482281e-12,
+    "healthFactor": "1028513693655150243",
+    "formattedHF": 1.0285136936551502,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xa731614453FD77C62cca4BD9aF59D92710A0cbB7",
+    "totalCollateralBase": "1525252",
+    "formatTotalCollateralBase": 1.525252e-12,
+    "totalDebtBase": "1260094",
+    "formatTotalDebtBase": 1.260094e-12,
+    "healthFactor": "1028862926099164031",
+    "formattedHF": 1.028862926099164,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x4884CBb5AD10fB5253BE27019f3F66f45150574b",
+    "totalCollateralBase": "2279127",
+    "formatTotalCollateralBase": 2.279127e-12,
+    "totalDebtBase": "1883166",
+    "formatTotalDebtBase": 1.883166e-12,
+    "healthFactor": "1028723968041054267",
+    "formattedHF": 1.0287239680410543,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x626125D30A86D3B069dcc3A72c81E4174A4EAF90",
+    "totalCollateralBase": "123753767",
+    "formatTotalCollateralBase": 1.23753767e-10,
+    "totalDebtBase": "102202678",
+    "formatTotalDebtBase": 1.02202678e-10,
+    "healthFactor": "1029236259347333345",
+    "formattedHF": 1.0292362593473334,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xAaf19A21E8DeA9Ec4d7634161BeabFAcc9934611",
+    "totalCollateralBase": "228658252",
+    "formatTotalCollateralBase": 2.28658252e-10,
+    "totalDebtBase": "188921215",
+    "formatTotalDebtBase": 1.88921215e-10,
+    "healthFactor": "1028786068308950903",
+    "formattedHF": 1.028786068308951,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x6C67d054c83a72af6A227d16A27fEF11b143Fcfe",
+    "totalCollateralBase": "10012000",
+    "formatTotalCollateralBase": 1.0012e-11,
+    "totalDebtBase": "8222649",
+    "formatTotalDebtBase": 8.222649e-12,
+    "healthFactor": "1034970603755553715",
+    "formattedHF": 1.0349706037555537,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x7616cBBBc04b19332a9716a8C84935957705d36e",
+    "totalCollateralBase": "1189518",
+    "formatTotalCollateralBase": 1.189518e-12,
+    "totalDebtBase": "1002763",
+    "formatTotalDebtBase": 1.002763e-12,
+    "healthFactor": "1008304055893566077",
+    "formattedHF": 1.008304055893566,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x15f05B82e9f0865feF307803acfE68491B6312f4",
+    "totalCollateralBase": "10012000",
+    "formatTotalCollateralBase": 1.0012e-11,
+    "totalDebtBase": "8222663",
+    "formatTotalDebtBase": 8.222663e-12,
+    "healthFactor": "1034968841602775159",
+    "formattedHF": 1.0349688416027751,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xcd87A33C6F6f66c089A11bED0397F8727586AEfd",
+    "totalCollateralBase": "1001200",
+    "formatTotalCollateralBase": 1.0012e-12,
+    "totalDebtBase": "819716",
+    "formatTotalDebtBase": 8.19716e-13,
+    "healthFactor": "1038188836133490136",
+    "formattedHF": 1.0381888361334901,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x580146a0CA29680B83E0FF6340d3dD7C1D5b8d13",
+    "totalCollateralBase": "12001",
+    "formatTotalCollateralBase": 1.2001e-14,
+    "totalDebtBase": "10027",
+    "formatTotalDebtBase": 1.0027e-14,
+    "healthFactor": "1017353146504438017",
+    "formattedHF": 1.017353146504438,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xCE852f576F1F6DD7aCD8191a4e4F11b10483a96d",
+    "totalCollateralBase": "5493056476",
+    "formatTotalCollateralBase": 5.493056476e-9,
+    "totalDebtBase": "5318124423",
+    "formatTotalDebtBase": 5.318124423e-9,
+    "healthFactor": "1007071222485386367",
+    "formattedHF": 1.0070712224853864,
+    "userConfiguration": "268435504"
+  },
+  {
+    "user": "0x370f869d1DC76bD9c503C68f96928828E5BC2A3b",
+    "totalCollateralBase": "6468286014",
+    "formatTotalCollateralBase": 6.468286014e-9,
+    "totalDebtBase": "6220286749",
+    "formatTotalDebtBase": 6.220286749e-9,
+    "healthFactor": "1013872690839192050",
+    "formattedHF": 1.013872690839192,
+    "userConfiguration": "268435474"
+  },
+  {
+    "user": "0xE4fc6c4F34563211474730Ea46d744F1Cc51622D",
+    "totalCollateralBase": "2036243948",
+    "formatTotalCollateralBase": 2.036243948e-9,
+    "totalDebtBase": "1907351394",
+    "formatTotalDebtBase": 1.907351394e-9,
+    "healthFactor": "1030425051819266398",
+    "formattedHF": 1.0304250518192664,
+    "userConfiguration": "268436016"
+  },
+  {
+    "user": "0x89A1968FF101E6466198CEe3C76C3F27bF01ab23",
+    "totalCollateralBase": "2508989548",
+    "formatTotalCollateralBase": 2.508989548e-9,
+    "totalDebtBase": "2409031464",
+    "formatTotalDebtBase": 2.409031464e-9,
+    "healthFactor": "1015455732129864785",
+    "formattedHF": 1.0154557321298647,
+    "userConfiguration": "268435504"
+  },
+  {
+    "user": "0x19D61F4993a4298326Fd15ACf2cdC48Cec811171",
+    "totalCollateralBase": "2715360233",
+    "formatTotalCollateralBase": 2.715360233e-9,
+    "totalDebtBase": "2613855907",
+    "formatTotalDebtBase": 2.613855907e-9,
+    "healthFactor": "1012862346355804685",
+    "formattedHF": 1.0128623463558046,
+    "userConfiguration": "268435474"
+  },
+  {
+    "user": "0x660Bc2766867E1E19252ad30A413fe20d08A85c4",
+    "totalCollateralBase": "150185309",
+    "formatTotalCollateralBase": 1.50185309e-10,
+    "totalDebtBase": "124045497",
+    "formatTotalDebtBase": 1.24045497e-10,
+    "healthFactor": "1029118477392210376",
+    "formattedHF": 1.0291184773922104,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x28F8D42B47f53D1091d95150dbb839eF93BcE0ed",
+    "totalCollateralBase": "124668030",
+    "formatTotalCollateralBase": 1.2466803e-10,
+    "totalDebtBase": "100282411",
+    "formatTotalDebtBase": 1.00282411e-10,
+    "healthFactor": "1012437205962269894",
+    "formattedHF": 1.01243720596227,
+    "userConfiguration": "16419"
+  },
+  {
+    "user": "0xcB49735D72Ff7747dBA184faC99AC53aA441C668",
+    "totalCollateralBase": "210284215",
+    "formatTotalCollateralBase": 2.10284215e-10,
+    "totalDebtBase": "173601001",
+    "formatTotalDebtBase": 1.73601001e-10,
+    "healthFactor": "1029611476721842174",
+    "formattedHF": 1.0296114767218423,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0xa9811f9f6B8bCA7f9F91f850A98310e63FBB7326",
+    "totalCollateralBase": "600",
+    "formatTotalCollateralBase": 6e-16,
+    "totalDebtBase": "488",
+    "formatTotalDebtBase": 4.88e-16,
+    "healthFactor": "1045081967213114754",
+    "formattedHF": 1.0450819672131149,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x5Ea050A392bB21BcB90655aae318e0cBFdA3fBf2",
+    "totalCollateralBase": "11013600",
+    "formatTotalCollateralBase": 1.10136e-11,
+    "totalDebtBase": "9025420",
+    "formatTotalDebtBase": 9.02542e-12,
+    "healthFactor": "1037243696138240658",
+    "formattedHF": 1.0372436961382407,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xB9b2ade9761e12c123f528C4F18699bdEfDd0Ec8",
+    "totalCollateralBase": "370634241",
+    "formatTotalCollateralBase": 3.70634241e-10,
+    "totalDebtBase": "301307851",
+    "formatTotalDebtBase": 3.01307851e-10,
+    "healthFactor": "1045572174619505683",
+    "formattedHF": 1.0455721746195057,
+    "userConfiguration": "1057"
+  },
+  {
+    "user": "0x348e64D870652d1FD4973E79672949aEc40C5F24",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "20893488",
+    "formatTotalDebtBase": 2.0893488e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xAD3d32174faCF18CCBE4495E270fE84877b4889E",
+    "totalCollateralBase": "15977096",
+    "formatTotalCollateralBase": 1.5977096e-11,
+    "totalDebtBase": "13076175",
+    "formatTotalDebtBase": 1.3076175e-11,
+    "healthFactor": "1038570682940538804",
+    "formattedHF": 1.0385706829405388,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x7A142782e63Eea3dE9b42197637705B956e84378",
+    "totalCollateralBase": "11258888920",
+    "formatTotalCollateralBase": 1.125888892e-8,
+    "totalDebtBase": "10859323307",
+    "formatTotalDebtBase": 1.0859323307e-8,
+    "healthFactor": "1010874838759416632",
+    "formattedHF": 1.0108748387594166,
+    "userConfiguration": "35"
+  },
+  {
+    "user": "0x73C3b47E9cC1f34F342E2F8CC5066013b3C038Ea",
+    "totalCollateralBase": "6131912",
+    "formatTotalCollateralBase": 6.131912e-12,
+    "totalDebtBase": "5188723",
+    "formatTotalDebtBase": 5.188723e-12,
+    "healthFactor": "1004510165603367148",
+    "formattedHF": 1.0045101656033673,
+    "userConfiguration": "16417"
+  },
+  {
+    "user": "0x42Ae216F5A6C99C9D7dcD98E9114B0d8F6f248b5",
+    "totalCollateralBase": "11953794",
+    "formatTotalCollateralBase": 1.1953794e-11,
+    "totalDebtBase": "14855090",
+    "formatTotalDebtBase": 1.485509e-11,
+    "healthFactor": "683989460851465727",
+    "formattedHF": 0.6839894608514657,
+    "userConfiguration": "16416"
+  },
+  {
+    "user": "0x31f2e5F03e14Ee83DA3Bf1d77989298495226776",
+    "totalCollateralBase": "12154687086861",
+    "formatTotalCollateralBase": 0.000012154687086861,
+    "totalDebtBase": "11338104412499",
+    "formatTotalDebtBase": 0.000011338104412499,
+    "healthFactor": "1045220565849154480",
+    "formattedHF": 1.0452205658491545,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xeE7034D487C7fc908cde124722Bd21237DD6F6e4",
+    "totalCollateralBase": "10803690399937",
+    "formatTotalCollateralBase": 0.000010803690399937,
+    "totalDebtBase": "10060264409827",
+    "formatTotalDebtBase": 0.000010060264409827,
+    "healthFactor": "1047049829987534057",
+    "formattedHF": 1.0470498299875342,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x0E61A8fb14f6AC999646212D30b2192cd02080Dd",
+    "totalCollateralBase": "99209",
+    "formatTotalCollateralBase": 9.9209e-14,
+    "totalDebtBase": "83403",
+    "formatTotalDebtBase": 8.3403e-14,
+    "healthFactor": "1011090728151265542",
+    "formattedHF": 1.0110907281512655,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x468d1Ef7A1204D592537Dab35794aaC640C97505",
+    "totalCollateralBase": "3623962",
+    "formatTotalCollateralBase": 3.623962e-12,
+    "totalDebtBase": "3509954",
+    "formatTotalDebtBase": 3.509954e-12,
+    "healthFactor": "1006669318173400563",
+    "formattedHF": 1.0066693181734006,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x537037C5ae805b9D4CeCAB5Ee07F12a8e59A15B2",
+    "totalCollateralBase": "1847340",
+    "formatTotalCollateralBase": 1.84734e-12,
+    "totalDebtBase": "1526840",
+    "formatTotalDebtBase": 1.52684e-12,
+    "healthFactor": "998176626234575987",
+    "formattedHF": 0.998176626234576,
+    "userConfiguration": "16896"
+  },
+  {
+    "user": "0xF90B955c753f96124344857A6697f8754cE1E6a5",
+    "totalCollateralBase": "22883966823",
+    "formatTotalCollateralBase": 2.2883966823e-8,
+    "totalDebtBase": "22042820743",
+    "formatTotalDebtBase": 2.2042820743e-8,
+    "healthFactor": "1012205647913071177",
+    "formattedHF": 1.0122056479130712,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x76Bc46a76C3c9D5dE9d81409f4AA13d6CC679763",
+    "totalCollateralBase": "50608538",
+    "formatTotalCollateralBase": 5.0608538e-11,
+    "totalDebtBase": "53993996",
+    "formatTotalDebtBase": 5.3993996e-11,
+    "healthFactor": "773271976387893202",
+    "formattedHF": 0.7732719763878932,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x65CaA7cb0A780420253795c059152731c2f61032",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "2",
+    "formatTotalDebtBase": 2e-18,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "294912"
+  },
+  {
+    "user": "0xBEb9EB15441a29B4071A175F4149ba743E9baFB7",
+    "totalCollateralBase": "28929224186",
+    "formatTotalCollateralBase": 2.8929224186e-8,
+    "totalDebtBase": "28058260484",
+    "formatTotalDebtBase": 2.8058260484e-8,
+    "healthFactor": "1005265226512678633",
+    "formattedHF": 1.0052652265126787,
+    "userConfiguration": "268435504"
+  },
+  {
+    "user": "0x252d731F5D75fEcfD7B2C220215F5DEFe96b78d8",
+    "totalCollateralBase": "17574183564",
+    "formatTotalCollateralBase": 1.7574183564e-8,
+    "totalDebtBase": "16565121818",
+    "formatTotalDebtBase": 1.6565121818e-8,
+    "healthFactor": "1034391969057598149",
+    "formattedHF": 1.0343919690575982,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x07b13B9192f0edFad9B014fc533fE81D31773574",
+    "totalCollateralBase": "45084635058",
+    "formatTotalCollateralBase": 4.5084635058e-8,
+    "totalDebtBase": "42270129377",
+    "formatTotalDebtBase": 4.2270129377e-8,
+    "healthFactor": "1039919201333652450",
+    "formattedHF": 1.0399192013336525,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xa8f6b644edaf9DE7F61b8e4C35E01cc76Be237b7",
+    "totalCollateralBase": "489048",
+    "formatTotalCollateralBase": 4.89048e-13,
+    "totalDebtBase": "412141",
+    "formatTotalDebtBase": 4.12141e-13,
+    "healthFactor": "1008613557010828818",
+    "formattedHF": 1.0086135570108288,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x0B7Ee3E5cd2239505f55f64d5934b840a3388833",
+    "totalCollateralBase": "4005865146",
+    "formatTotalCollateralBase": 4.005865146e-9,
+    "totalDebtBase": "3827518794",
+    "formatTotalDebtBase": 3.827518794e-9,
+    "healthFactor": "1020430918098321427",
+    "formattedHF": 1.0204309180983215,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x894eb2F36769be80171F9D700B39695C1500B9f6",
+    "totalCollateralBase": "7152355",
+    "formatTotalCollateralBase": 7.152355e-12,
+    "totalDebtBase": "6935955",
+    "formatTotalDebtBase": 6.935955e-12,
+    "healthFactor": "1005419729510932525",
+    "formattedHF": 1.0054197295109326,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x1c34816c32eBa4b8cF2efaBec763A29534C28E1f",
+    "totalCollateralBase": "407322889154",
+    "formatTotalCollateralBase": 4.07322889154e-7,
+    "totalDebtBase": "384739383123",
+    "formatTotalDebtBase": 3.84739383123e-7,
+    "healthFactor": "1032230736820710708",
+    "formattedHF": 1.0322307368207106,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x1278c11c0bECDD5C47F48E5e630c75CAe09444E9",
+    "totalCollateralBase": "319571042133",
+    "formatTotalCollateralBase": 3.19571042133e-7,
+    "totalDebtBase": "308223134923",
+    "formatTotalDebtBase": 3.08223134923e-7,
+    "healthFactor": "1010896752308482781",
+    "formattedHF": 1.0108967523084829,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x91BAa6F549adED15a62D9E13385F45Cfe5647ee5",
+    "totalCollateralBase": "2600709614",
+    "formatTotalCollateralBase": 2.600709614e-9,
+    "totalDebtBase": "2479431714",
+    "formatTotalDebtBase": 2.479431714e-9,
+    "healthFactor": "1022690747917085003",
+    "formattedHF": 1.022690747917085,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xBa77229F0e608EE58F5C64a2a493d247d1aEf57A",
+    "totalCollateralBase": "1940393",
+    "formatTotalCollateralBase": 1.940393e-12,
+    "totalDebtBase": "1634163",
+    "formatTotalDebtBase": 1.634163e-12,
+    "healthFactor": "1009283651630834868",
+    "formattedHF": 1.0092836516308348,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xfee26A46856a93b2559d29BD2D80D3CF7d1BA24E",
+    "totalCollateralBase": "626281639093",
+    "formatTotalCollateralBase": 6.26281639093e-7,
+    "totalDebtBase": "596841569513",
+    "formatTotalDebtBase": 5.96841569513e-7,
+    "healthFactor": "1023093278529922818",
+    "formattedHF": 1.0230932785299227,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x0F2597fFE69cDdd29A0c6E216eFF631d778eA99c",
+    "totalCollateralBase": "686356442369",
+    "formatTotalCollateralBase": 6.86356442369e-7,
+    "totalDebtBase": "641011848554",
+    "formatTotalDebtBase": 6.41011848554e-7,
+    "healthFactor": "1043970611182276121",
+    "formattedHF": 1.0439706111822762,
+    "userConfiguration": "3088"
+  },
+  {
+    "user": "0x0E67363e19333c95Ee6Af6f3c3Fb73f93298Eb8f",
+    "totalCollateralBase": "100190728962",
+    "formatTotalCollateralBase": 1.00190728962e-7,
+    "totalDebtBase": "82798600493",
+    "formatTotalDebtBase": 8.2798600493e-8,
+    "healthFactor": "1028545399450318219",
+    "formattedHF": 1.0285453994503182,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x89507fB9326896F07EE1422c8190f6E3Bee2C93c",
+    "totalCollateralBase": "261489008240",
+    "formatTotalCollateralBase": 2.6148900824e-7,
+    "totalDebtBase": "206556441883",
+    "formatTotalDebtBase": 2.06556441883e-7,
+    "healthFactor": "1044277684736554908",
+    "formattedHF": 1.044277684736555,
+    "userConfiguration": "49984"
+  },
+  {
+    "user": "0x09283B4dd598EaC35C6E4B5c85edEFDFaED29cB9",
+    "totalCollateralBase": "1614440139",
+    "formatTotalCollateralBase": 1.614440139e-9,
+    "totalDebtBase": "1560324114",
+    "formatTotalDebtBase": 1.560324114e-9,
+    "healthFactor": "1008815490241151269",
+    "formattedHF": 1.0088154902411512,
+    "userConfiguration": "268468227"
+  },
+  {
+    "user": "0x4a03c2A9F3A11B1fc154C8bc9B825E0fF503B028",
+    "totalCollateralBase": "1639407759930",
+    "formatTotalCollateralBase": 0.00000163940775993,
+    "totalDebtBase": "1266923359734",
+    "formatTotalDebtBase": 0.000001266923359734,
+    "healthFactor": "1035205640394352426",
+    "formattedHF": 1.0352056403943524,
+    "userConfiguration": "2064"
+  },
+  {
+    "user": "0x5fA4383B6736209DbE865a332DE57C7b4cF93C0c",
+    "totalCollateralBase": "6506170523",
+    "formatTotalCollateralBase": 6.506170523e-9,
+    "totalDebtBase": "6228260270",
+    "formatTotalDebtBase": 6.22826027e-9,
+    "healthFactor": "1018505326528366163",
+    "formattedHF": 1.0185053265283661,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0x21EADF0DEA1145D35Ef444Dd7FFd12e5f58f8a30",
+    "totalCollateralBase": "40804",
+    "formatTotalCollateralBase": 4.0804e-14,
+    "totalDebtBase": "34501",
+    "formatTotalDebtBase": 3.4501e-14,
+    "healthFactor": "1005275209414219878",
+    "formattedHF": 1.0052752094142199,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x630fC8E5D356D6E6b817DD8C4FFFF3dDF837f41f",
+    "totalCollateralBase": "7515176866",
+    "formatTotalCollateralBase": 7.515176866e-9,
+    "totalDebtBase": "7062913007",
+    "formatTotalDebtBase": 7.062913007e-9,
+    "healthFactor": "1037432775504663667",
+    "formattedHF": 1.0374327755046637,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xdFFf31b59aBad56b5680D6E5d73EC492a1f24707",
+    "totalCollateralBase": "959097433",
+    "formatTotalCollateralBase": 9.59097433e-10,
+    "totalDebtBase": "784625850",
+    "formatTotalDebtBase": 7.8462585e-10,
+    "healthFactor": "1008449290830782595",
+    "formattedHF": 1.0084492908307825,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x96E7520Ef135EC17aFCC5305d7C06156e3540171",
+    "totalCollateralBase": "196707",
+    "formatTotalCollateralBase": 1.96707e-13,
+    "totalDebtBase": "133786",
+    "formatTotalDebtBase": 1.33786e-13,
+    "healthFactor": "1029218303858400730",
+    "formattedHF": 1.0292183038584006,
+    "userConfiguration": "49152"
+  },
+  {
+    "user": "0xd824D163841834d6274b426b82CB204cb0F303bB",
+    "totalCollateralBase": "14276580301",
+    "formatTotalCollateralBase": 1.4276580301e-8,
+    "totalDebtBase": "13358088007",
+    "formatTotalDebtBase": 1.3358088007e-8,
+    "healthFactor": "1042040281940478160",
+    "formattedHF": 1.0420402819404782,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xfc3A30c8dd887Ed3536C0e20053c4D9af6dd761E",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "14203720",
+    "formatTotalDebtBase": 1.420372e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "33409"
+  },
+  {
+    "user": "0x3E243dbCe54D902303960D7E8E5531264E47b001",
+    "totalCollateralBase": "783436399",
+    "formatTotalCollateralBase": 7.83436399e-10,
+    "totalDebtBase": "627714251",
+    "formatTotalDebtBase": 6.27714251e-10,
+    "healthFactor": "1029664418117536095",
+    "formattedHF": 1.029664418117536,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0xA6d568FE16689D534F6686A9EC0cE4C196282e86",
+    "totalCollateralBase": "24097016256",
+    "formatTotalCollateralBase": 2.4097016256e-8,
+    "totalDebtBase": "22601150559",
+    "formatTotalDebtBase": 2.2601150559e-8,
+    "healthFactor": "1039530743741018234",
+    "formattedHF": 1.0395307437410182,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xda9aD6284300b15bC802C3fBF6dbBDf7CeB27Fe8",
+    "totalCollateralBase": "177603",
+    "formatTotalCollateralBase": 1.77603e-13,
+    "totalDebtBase": "145288",
+    "formatTotalDebtBase": 1.45288e-13,
+    "healthFactor": "1008493475028908100",
+    "formattedHF": 1.008493475028908,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x0eEc442c632f5DA69CAC03439cecd6Cc001f1a71",
+    "totalCollateralBase": "61",
+    "formatTotalCollateralBase": 6.1e-17,
+    "totalDebtBase": "50",
+    "formatTotalDebtBase": 5e-17,
+    "healthFactor": "1000000000000000000",
+    "formattedHF": 1,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x9BF203C76624080B674721972883AEE8E9FA00E4",
+    "totalCollateralBase": "9039157373",
+    "formatTotalCollateralBase": 9.039157373e-9,
+    "totalDebtBase": "8753701674",
+    "formatTotalDebtBase": 8.753701674e-9,
+    "healthFactor": "1006794470181301269",
+    "formattedHF": 1.0067944701813012,
+    "userConfiguration": "49"
+  },
+  {
+    "user": "0x8230deF4FBEc1C6854A6b64dc0466a098F788347",
+    "totalCollateralBase": "392498988",
+    "formatTotalCollateralBase": 3.92498988e-10,
+    "totalDebtBase": "377997150",
+    "formatTotalDebtBase": 3.7799715e-10,
+    "healthFactor": "1012405815758134684",
+    "formattedHF": 1.0124058157581346,
+    "userConfiguration": "3072"
+  },
+  {
+    "user": "0x6e543Fd8a391fCe4514f31EeE7CD48889437aeA3",
+    "totalCollateralBase": "981",
+    "formatTotalCollateralBase": 9.81e-16,
+    "totalDebtBase": "802",
+    "formatTotalDebtBase": 8.02e-16,
+    "healthFactor": "1008728179551122195",
+    "formattedHF": 1.0087281795511223,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0xf961E5E6C5276164aDB2865B7e80Cf82dC04E920",
+    "totalCollateralBase": "43001490353418",
+    "formatTotalCollateralBase": 0.000043001490353418,
+    "totalDebtBase": "40853163322376",
+    "formatTotalDebtBase": 0.000040853163322376,
+    "healthFactor": "1026271889002513061",
+    "formattedHF": 1.026271889002513,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xFF46d35d4d1C5De91Ee13418BaEcD7F657b011d9",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "11925363",
+    "formatTotalDebtBase": 1.1925363e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "513"
+  },
+  {
+    "user": "0xdDDff3048C1d89FA8fE1221b7bC35624622B9058",
+    "totalCollateralBase": "5006",
+    "formatTotalCollateralBase": 5.006e-15,
+    "totalDebtBase": "2900",
+    "formatTotalDebtBase": 2.9e-15,
+    "healthFactor": "776896551724137931",
+    "formattedHF": 0.776896551724138,
+    "userConfiguration": "2098176"
+  },
+  {
+    "user": "0x8Ffc27E740CC9D0AB9F5Fa811D71457A54e950CB",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "15793847",
+    "formatTotalDebtBase": 1.5793847e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "32769"
+  },
+  {
+    "user": "0x34BF0Cc163900E881210e128961ED0011B2cfcB0",
+    "totalCollateralBase": "91296846907",
+    "formatTotalCollateralBase": 9.1296846907e-8,
+    "totalDebtBase": "86514299740",
+    "formatTotalDebtBase": 8.651429974e-8,
+    "healthFactor": "1028898413343384706",
+    "formattedHF": 1.0288984133433847,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xa3EEf804C5472AB998Ac4669fed4749C816a1653",
+    "totalCollateralBase": "95191762165",
+    "formatTotalCollateralBase": 9.5191762165e-8,
+    "totalDebtBase": "89831296540",
+    "formatTotalDebtBase": 8.983129654e-8,
+    "healthFactor": "1033180769796334501",
+    "formattedHF": 1.0331807697963344,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x13D1D41430F3B674B4a51F2808E7df972Ab57370",
+    "totalCollateralBase": "21216222",
+    "formatTotalCollateralBase": 2.1216222e-11,
+    "totalDebtBase": "94245777",
+    "formatTotalDebtBase": 9.4245777e-11,
+    "healthFactor": "118703610454609547",
+    "formattedHF": 0.11870361045460955,
+    "userConfiguration": "8553097"
+  },
+  {
+    "user": "0x3543be68329D2646C3dfbc5ea67827427289c4b0",
+    "totalCollateralBase": "1069684083639",
+    "formatTotalCollateralBase": 0.000001069684083639,
+    "totalDebtBase": "996207711281",
+    "formatTotalDebtBase": 9.96207711281e-7,
+    "healthFactor": "1046912174778195106",
+    "formattedHF": 1.046912174778195,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0x8067855433fd785e0Da154559Da86943dE6F2dbB",
+    "totalCollateralBase": "3165820",
+    "formatTotalCollateralBase": 3.16582e-12,
+    "totalDebtBase": "3014601",
+    "formatTotalDebtBase": 3.014601e-12,
+    "healthFactor": "787621645451587125",
+    "formattedHF": 0.7876216454515871,
+    "userConfiguration": "144"
+  },
+  {
+    "user": "0xdA8bb907dE3DDD24C3445c0bF04ea649BBDbf83F",
+    "totalCollateralBase": "29725087925",
+    "formatTotalCollateralBase": 2.9725087925e-8,
+    "totalDebtBase": "28838824888",
+    "formatTotalDebtBase": 2.8838824888e-8,
+    "healthFactor": "1004963303447900183",
+    "formattedHF": 1.0049633034479002,
+    "userConfiguration": "268435504"
+  },
+  {
+    "user": "0x0c250BbDbe90E4CB0f677B2aD90a36b33344F418",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "2068887",
+    "formatTotalDebtBase": 2.068887e-12,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "4227093"
+  },
+  {
+    "user": "0xB7EA1c547dE99ecB0aCA9E8E0FE9acb3b8ddE0E9",
+    "totalCollateralBase": "16954333141",
+    "formatTotalCollateralBase": 1.6954333141e-8,
+    "totalDebtBase": "16430794551",
+    "formatTotalDebtBase": 1.6430794551e-8,
+    "healthFactor": "1005963486896258253",
+    "formattedHF": 1.0059634868962584,
+    "userConfiguration": "268436610"
+  },
+  {
+    "user": "0xBC4517fEb9443e23D58B888aefa35c87Dd8A2ccc",
+    "totalCollateralBase": "102665114452",
+    "formatTotalCollateralBase": 1.02665114452e-7,
+    "totalDebtBase": "97304043067",
+    "formatTotalDebtBase": 9.7304043067e-8,
+    "healthFactor": "1028718678442537568",
+    "formattedHF": 1.0287186784425375,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xea6E4bde62B6A30f09FE2cc876e417B07A8361CE",
+    "totalCollateralBase": "72740224458",
+    "formatTotalCollateralBase": 7.2740224458e-8,
+    "totalDebtBase": "69359690008",
+    "formatTotalDebtBase": 6.9359690008e-8,
+    "healthFactor": "1022520700983811121",
+    "formattedHF": 1.022520700983811,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x55A8E91eD190aEe46dF588AfE09AF180AB7b3F96",
+    "totalCollateralBase": "1133042580065",
+    "formatTotalCollateralBase": 0.000001133042580065,
+    "totalDebtBase": "918397093115",
+    "formatTotalDebtBase": 9.18397093115e-7,
+    "healthFactor": "1048536516520113049",
+    "formattedHF": 1.048536516520113,
+    "userConfiguration": "33328"
+  },
+  {
+    "user": "0x207CA570D2f5cA9f801e17935f82576A722D42dF",
+    "totalCollateralBase": "19856931042",
+    "formatTotalCollateralBase": 1.9856931042e-8,
+    "totalDebtBase": "16386103476",
+    "formatTotalDebtBase": 1.6386103476e-8,
+    "healthFactor": "1029800649295008761",
+    "formattedHF": 1.0298006492950087,
+    "userConfiguration": "9760"
+  },
+  {
+    "user": "0x096701f7E94A562b24C001B57bBe45D882D0C68c",
+    "totalCollateralBase": "6911756",
+    "formatTotalCollateralBase": 6.911756e-12,
+    "totalDebtBase": "10053204",
+    "formatTotalDebtBase": 1.0053204e-11,
+    "healthFactor": "567202157640489539",
+    "formattedHF": 0.5672021576404895,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x95f6303317c12Cd07CaE23C5c16b131C0b819e10",
+    "totalCollateralBase": "23123388",
+    "formatTotalCollateralBase": 2.3123388e-11,
+    "totalDebtBase": "20129848",
+    "formatTotalDebtBase": 2.0129848e-11,
+    "healthFactor": "804098073666527437",
+    "formattedHF": 0.8040980736665274,
+    "userConfiguration": "32769"
+  },
+  {
+    "user": "0xb58377FBA2e23c8889cd6287e5B57506418adcfb",
+    "totalCollateralBase": "70",
+    "formatTotalCollateralBase": 7e-17,
+    "totalDebtBase": "100",
+    "formatTotalDebtBase": 1e-16,
+    "healthFactor": "580000000000000000",
+    "formattedHF": 0.58,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xd6aDd065B12dDA5C09C405FC6147E80aC3025f37",
+    "totalCollateralBase": "70",
+    "formatTotalCollateralBase": 7e-17,
+    "totalDebtBase": "100",
+    "formatTotalDebtBase": 1e-16,
+    "healthFactor": "580000000000000000",
+    "formattedHF": 0.58,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x93BF342D7cF6bBE3aeDe8194d7Be560EDAEC959C",
+    "totalCollateralBase": "974036",
+    "formatTotalCollateralBase": 9.74036e-13,
+    "totalDebtBase": "862586",
+    "formatTotalDebtBase": 8.62586e-13,
+    "healthFactor": "790442923951930590",
+    "formattedHF": 0.7904429239519306,
+    "userConfiguration": "32784"
+  },
+  {
+    "user": "0xBD1a627bD8ca4f6e49C66891871182eC1f9B90B3",
+    "totalCollateralBase": "104489404",
+    "formatTotalCollateralBase": 1.04489404e-10,
+    "totalDebtBase": "101302197",
+    "formatTotalDebtBase": 1.01302197e-10,
+    "healthFactor": "1005675809775379304",
+    "formattedHF": 1.0056758097753793,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0xf3279Ea624bB907f20205DB65D449eF7542fcd00",
+    "totalCollateralBase": "952703",
+    "formatTotalCollateralBase": 9.52703e-13,
+    "totalDebtBase": "716571",
+    "formatTotalDebtBase": 7.16571e-13,
+    "healthFactor": "930671210529033411",
+    "formattedHF": 0.9306712105290335,
+    "userConfiguration": "32784"
+  },
+  {
+    "user": "0xAe829A534a396225138e444cbe735EEdE969d2c1",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "14933457",
+    "formatTotalDebtBase": 1.4933457e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "33792"
+  },
+  {
+    "user": "0xc16a35BE3e48DEb2f404133c7959ebfaf49dEAB1",
+    "totalCollateralBase": "1479161322398",
+    "formatTotalCollateralBase": 0.000001479161322398,
+    "totalDebtBase": "1426599800599",
+    "formatTotalDebtBase": 0.000001426599800599,
+    "healthFactor": "1010922817129553244",
+    "formattedHF": 1.0109228171295532,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xC7f243b0cce8C9B98f74AEA6A4f75D35CCc92828",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "9787331",
+    "formatTotalDebtBase": 9.787331e-12,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "1536"
+  },
+  {
+    "user": "0x0b2E2920ebd87cf4A36F07DCdC4C823E1A4CEA9e",
+    "totalCollateralBase": "146436707199",
+    "formatTotalCollateralBase": 1.46436707199e-7,
+    "totalDebtBase": "141927592578",
+    "formatTotalDebtBase": 1.41927592578e-7,
+    "healthFactor": "1005873088205465749",
+    "formattedHF": 1.0058730882054658,
+    "userConfiguration": "515"
+  },
+  {
+    "user": "0x54ed5A54b6DD89559c2bFE9395f0692949e5874E",
+    "totalCollateralBase": "367836",
+    "formatTotalCollateralBase": 3.67836e-13,
+    "totalDebtBase": "310030",
+    "formatTotalDebtBase": 3.1003e-13,
+    "healthFactor": "1008486275521723704",
+    "formattedHF": 1.0084862755217237,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x880Daa969160DfEE9db363eCd0F486E9Bd54a845",
+    "totalCollateralBase": "690897900943",
+    "formatTotalCollateralBase": 6.90897900943e-7,
+    "totalDebtBase": "660607111381",
+    "formatTotalDebtBase": 6.60607111381e-7,
+    "healthFactor": "1019706633207119341",
+    "formattedHF": 1.0197066332071194,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x0C363232Db3fd1817D2F3098f6d6A7Cbe5e8e018",
+    "totalCollateralBase": "127193225792",
+    "formatTotalCollateralBase": 1.27193225792e-7,
+    "totalDebtBase": "119270296874",
+    "formatTotalDebtBase": 1.19270296874e-7,
+    "healthFactor": "1039767640370768278",
+    "formattedHF": 1.0397676403707683,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x5864B2Aec623d5198553a14c58C12CBE0a58940d",
+    "totalCollateralBase": "281875633153",
+    "formatTotalCollateralBase": 2.81875633153e-7,
+    "totalDebtBase": "266699219422",
+    "formatTotalDebtBase": 2.66699219422e-7,
+    "healthFactor": "1030481989859657595",
+    "formattedHF": 1.0304819898596576,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xc301Ec318BdEA3F7BCF284B611c267Aab872220a",
+    "totalCollateralBase": "233665103993",
+    "formatTotalCollateralBase": 2.33665103993e-7,
+    "totalDebtBase": "219433900426",
+    "formatTotalDebtBase": 2.19433900426e-7,
+    "healthFactor": "1038232816126919406",
+    "formattedHF": 1.0382328161269194,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xe863651539c3ec378d491258Bf7b2d268cA6a9EC",
+    "totalCollateralBase": "8210374151",
+    "formatTotalCollateralBase": 8.210374151e-9,
+    "totalDebtBase": "6360548369",
+    "formatTotalDebtBase": 6.360548369e-9,
+    "healthFactor": "1032662427820301668",
+    "formattedHF": 1.0326624278203016,
+    "userConfiguration": "3072"
+  },
+  {
+    "user": "0xC6aAb28F488f18Dc678804D83B9baFfBE24F1c2D",
+    "totalCollateralBase": "5",
+    "formatTotalCollateralBase": 5e-18,
+    "totalDebtBase": "38840010",
+    "formatTotalDebtBase": 3.884001e-11,
+    "healthFactor": "102986585225",
+    "formattedHF": 1.02986585225e-7,
+    "userConfiguration": "34304"
+  },
+  {
+    "user": "0x8b44fA309ed10468AD3e604F841e9fB0dbbE9810",
+    "totalCollateralBase": "2651968937",
+    "formatTotalCollateralBase": 2.651968937e-9,
+    "totalDebtBase": "2193471715",
+    "formatTotalDebtBase": 2.193471715e-9,
+    "healthFactor": "1027673883636106062",
+    "formattedHF": 1.0276738836361061,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x136F1522675D741959679e9242EDE5f80EcaFD8a",
+    "totalCollateralBase": "2517487890",
+    "formatTotalCollateralBase": 2.51748789e-9,
+    "totalDebtBase": "2418778731",
+    "formatTotalDebtBase": 2.418778731e-9,
+    "healthFactor": "1014789265980196020",
+    "formattedHF": 1.014789265980196,
+    "userConfiguration": "2049"
+  },
+  {
+    "user": "0xa9F2Fc40F4111D7C331F68A8b9AD4F1bCd4ea353",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "22240622",
+    "formatTotalDebtBase": 2.2240622e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "32784"
+  },
+  {
+    "user": "0x5873d899B4F4dB948F7121F310A532cF82b6d617",
+    "totalCollateralBase": "6091653",
+    "formatTotalCollateralBase": 6.091653e-12,
+    "totalDebtBase": "10074206",
+    "formatTotalDebtBase": 1.0074206e-11,
+    "healthFactor": "498859562728814559",
+    "formattedHF": 0.49885956272881454,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x257077Eee791328337aADbE5c6B6AEf9409f1fEB",
+    "totalCollateralBase": "12415830745",
+    "formatTotalCollateralBase": 1.2415830745e-8,
+    "totalDebtBase": "12089570422",
+    "formatTotalDebtBase": 1.2089570422e-8,
+    "healthFactor": "1001312251258417791",
+    "formattedHF": 1.0013122512584178,
+    "userConfiguration": "1058"
+  },
+  {
+    "user": "0x4d7ebA419917717EF563F05e6E076DA8660Ea49d",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "14010170",
+    "formatTotalDebtBase": 1.401017e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "1342177920"
+  },
+  {
+    "user": "0x504Dcc5d9052A5f722f21CE9A8979bdB98fE2BF5",
+    "totalCollateralBase": "2820696900",
+    "formatTotalCollateralBase": 2.8206969e-9,
+    "totalDebtBase": "2260725181",
+    "formatTotalDebtBase": 2.260725181e-9,
+    "healthFactor": "1029348884401177464",
+    "formattedHF": 1.0293488844011776,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0xad91104b93AABa4EDfD2833833663b711C8DDA56",
+    "totalCollateralBase": "512297515",
+    "formatTotalCollateralBase": 5.12297515e-10,
+    "totalDebtBase": "380418499",
+    "formatTotalDebtBase": 3.80418499e-10,
+    "healthFactor": "1010001188191429145",
+    "formattedHF": 1.0100011881914293,
+    "userConfiguration": "192"
+  },
+  {
+    "user": "0x955d601Efb2E216e580A1D426F31635EFd99f311",
+    "totalCollateralBase": "12018750",
+    "formatTotalCollateralBase": 1.201875e-11,
+    "totalDebtBase": "10085074",
+    "formatTotalDebtBase": 1.0085074e-11,
+    "healthFactor": "933844709518244487",
+    "formattedHF": 0.9338447095182445,
+    "userConfiguration": "32771"
+  },
+  {
+    "user": "0x8aE928CB080Aa43a50393CD08DE208eF2b1BB86A",
+    "totalCollateralBase": "26221660658",
+    "formatTotalCollateralBase": 2.6221660658e-8,
+    "totalDebtBase": "24797825600",
+    "formatTotalDebtBase": 2.47978256e-8,
+    "healthFactor": "1017341605910802115",
+    "formattedHF": 1.017341605910802,
+    "userConfiguration": "539099827"
+  },
+  {
+    "user": "0x8B42455fc2594D4B23b1aa1360456c02B8273C6e",
+    "totalCollateralBase": "7223511339",
+    "formatTotalCollateralBase": 7.223511339e-9,
+    "totalDebtBase": "6129268759",
+    "formatTotalDebtBase": 6.129268759e-9,
+    "healthFactor": "1001630460074919355",
+    "formattedHF": 1.0016304600749193,
+    "userConfiguration": "176"
+  },
+  {
+    "user": "0x8DE36d91abe878aE8f46102C059d284137Ad103C",
+    "totalCollateralBase": "91721",
+    "formatTotalCollateralBase": 9.1721e-14,
+    "totalDebtBase": "71576",
+    "formatTotalDebtBase": 7.1576e-14,
+    "healthFactor": "1025162065496814575",
+    "formattedHF": 1.0251620654968145,
+    "userConfiguration": "131075"
+  },
+  {
+    "user": "0x9D61Deec92A6D11F9918Ab68254a9C46fb9B4221",
+    "totalCollateralBase": "182571746",
+    "formatTotalCollateralBase": 1.82571746e-10,
+    "totalDebtBase": "151006151",
+    "formatTotalDebtBase": 1.51006151e-10,
+    "healthFactor": "1027679885702139378",
+    "formattedHF": 1.0276798857021394,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xd55B2805CC131b12067DBAA0c2D80F61BBE91aE5",
+    "totalCollateralBase": "10401383314",
+    "formatTotalCollateralBase": 1.0401383314e-8,
+    "totalDebtBase": "8651754392",
+    "formatTotalDebtBase": 8.651754392e-9,
+    "healthFactor": "1021893990099297308",
+    "formattedHF": 1.0218939900992974,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x188c2B65388d145E04c2407ce2B7fC5A47f020d0",
+    "totalCollateralBase": "15328",
+    "formatTotalCollateralBase": 1.5328e-14,
+    "totalDebtBase": "12519",
+    "formatTotalDebtBase": 1.2519e-14,
+    "healthFactor": "1010144580238038182",
+    "formattedHF": 1.0101445802380382,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x497Fb5527aED1fa545c91586Fd848a4c3e91eE8b",
+    "totalCollateralBase": "27",
+    "formatTotalCollateralBase": 2.7e-17,
+    "totalDebtBase": "1191032931",
+    "formatTotalDebtBase": 1.191032931e-9,
+    "healthFactor": "15952539603",
+    "formattedHF": 1.5952539603e-8,
+    "userConfiguration": "163888"
+  },
+  {
+    "user": "0x3203D088071a75f9Fd75893Bc989759798b7509f",
+    "totalCollateralBase": "5974345326",
+    "formatTotalCollateralBase": 5.974345326e-9,
+    "totalDebtBase": "5781334521",
+    "formatTotalDebtBase": 5.781334521e-9,
+    "healthFactor": "1007550535579880173",
+    "formattedHF": 1.0075505355798802,
+    "userConfiguration": "32819"
+  },
+  {
+    "user": "0xc122bA2FeaE1413a5152338d19357a46535DCEFf",
+    "totalCollateralBase": "4882439151",
+    "formatTotalCollateralBase": 4.882439151e-9,
+    "totalDebtBase": "4715740919",
+    "formatTotalDebtBase": 4.715740919e-9,
+    "healthFactor": "1009465586376926234",
+    "formattedHF": 1.0094655863769262,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x0C0178A008C1d50A7231f88EbAD57026CEdecAc7",
+    "totalCollateralBase": "147173882",
+    "formatTotalCollateralBase": 1.47173882e-10,
+    "totalDebtBase": "117579946",
+    "formatTotalDebtBase": 1.17579946e-10,
+    "healthFactor": "1001353632191666426",
+    "formattedHF": 1.0013536321916665,
+    "userConfiguration": "3088"
+  },
+  {
+    "user": "0xC9a06C3EB24226ebff1E4dce5E6a4bfE76BEE344",
+    "totalCollateralBase": "6963382141",
+    "formatTotalCollateralBase": 6.963382141e-9,
+    "totalDebtBase": "5887717842",
+    "formatTotalDebtBase": 5.887717842e-9,
+    "healthFactor": "1005173590314180684",
+    "formattedHF": 1.0051735903141807,
+    "userConfiguration": "1184"
+  },
+  {
+    "user": "0x21bfBdEb3bCC34BA701Ccb2bD4da6468C21D55C1",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "13688713",
+    "formatTotalDebtBase": 1.3688713e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "513"
+  },
+  {
+    "user": "0x5521059Effad873558F4bbD36113D41c317eCe9c",
+    "totalCollateralBase": "6401771",
+    "formatTotalCollateralBase": 6.401771e-12,
+    "totalDebtBase": "10068806",
+    "formatTotalDebtBase": 1.0068806e-11,
+    "healthFactor": "524536970917902282",
+    "formattedHF": 0.5245369709179023,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xf16d5Dc0B4cDBACafD72aDF4eB147A829df3c741",
+    "totalCollateralBase": "6292581",
+    "formatTotalCollateralBase": 6.292581e-12,
+    "totalDebtBase": "10068806",
+    "formatTotalDebtBase": 1.0068806e-11,
+    "healthFactor": "515590329181036957",
+    "formattedHF": 0.515590329181037,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xCBbCF45a1aEdDAF93ED0c8A558fCb8f021225610",
+    "totalCollateralBase": "57398081300",
+    "formatTotalCollateralBase": 5.73980813e-8,
+    "totalDebtBase": "56677359635",
+    "formatTotalDebtBase": 5.6677359635e-8,
+    "healthFactor": "987398312631364342",
+    "formattedHF": 0.9873983126313643,
+    "userConfiguration": "134217744"
+  },
+  {
+    "user": "0x6Dd90a4d19834CE94a8545CeE5F70723dcA04959",
+    "totalCollateralBase": "223468085602",
+    "formatTotalCollateralBase": 2.23468085602e-7,
+    "totalDebtBase": "213728295008",
+    "formatTotalDebtBase": 2.13728295008e-7,
+    "healthFactor": "1019431626747616861",
+    "formattedHF": 1.019431626747617,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xfAEb76990ae84FaeB6f64fd5797CCF38f829F999",
+    "totalCollateralBase": "264947548360",
+    "formatTotalCollateralBase": 2.6494754836e-7,
+    "totalDebtBase": "250439939570",
+    "formatTotalDebtBase": 2.5043993957e-7,
+    "healthFactor": "1031480282635974603",
+    "formattedHF": 1.0314802826359746,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xF456619310CCb683cA7ff037a9598f0310e6a36f",
+    "totalCollateralBase": "2462",
+    "formatTotalCollateralBase": 2.462e-15,
+    "totalDebtBase": "2600",
+    "formatTotalDebtBase": 2.6e-15,
+    "healthFactor": "781153846153846154",
+    "formattedHF": 0.7811538461538462,
+    "userConfiguration": "1536"
+  },
+  {
+    "user": "0x4a012527DD7F4a82447fE91795A552BD0A19d4Dc",
+    "totalCollateralBase": "3416132343",
+    "formatTotalCollateralBase": 3.416132343e-9,
+    "totalDebtBase": "2737462584",
+    "formatTotalDebtBase": 2.737462584e-9,
+    "healthFactor": "1029533407861913630",
+    "formattedHF": 1.0295334078619136,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x9C261aC0064fC99DD23506293F62e93B61b3EB4f",
+    "totalCollateralBase": "2586409802",
+    "formatTotalCollateralBase": 2.586409802e-9,
+    "totalDebtBase": "2043570154",
+    "formatTotalDebtBase": 2.043570154e-9,
+    "healthFactor": "1038072177677732907",
+    "formattedHF": 1.0380721776777329,
+    "userConfiguration": "67666786"
+  },
+  {
+    "user": "0x84110ff373d5457E9bB4B3Fba12Df77c6Ca3E367",
+    "totalCollateralBase": "1003631602",
+    "formatTotalCollateralBase": 1.003631602e-9,
+    "totalDebtBase": "829885738",
+    "formatTotalDebtBase": 8.29885738e-10,
+    "healthFactor": "1027957010149269489",
+    "formattedHF": 1.0279570101492694,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x5052158E4dC7ED66b43e37bc645e573aBCf3815a",
+    "totalCollateralBase": "281804951944",
+    "formatTotalCollateralBase": 2.81804951944e-7,
+    "totalDebtBase": "236337404262",
+    "formatTotalDebtBase": 2.36337404262e-7,
+    "healthFactor": "1012095584094809457",
+    "formattedHF": 1.0120955840948094,
+    "userConfiguration": "32816"
+  },
+  {
+    "user": "0x986b3b04523C0Fd690B2fCf7CD114Fc2b7D9E740",
+    "totalCollateralBase": "99968822685",
+    "formatTotalCollateralBase": 9.9968822685e-8,
+    "totalDebtBase": "82935864063",
+    "formatTotalDebtBase": 8.2935864063e-8,
+    "healthFactor": "1024568806776428653",
+    "formattedHF": 1.0245688067764287,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x4f543b118C6D06CEcce4b20b85D54aeF489CDE60",
+    "totalCollateralBase": "182418",
+    "formatTotalCollateralBase": 1.82418e-13,
+    "totalDebtBase": "161368",
+    "formatTotalDebtBase": 1.61368e-13,
+    "healthFactor": "960878241039115562",
+    "formattedHF": 0.9608782410391156,
+    "userConfiguration": "288"
+  },
+  {
+    "user": "0x048E0296D6F8DA58a2c1E5Dc8C5c119dFfC754b4",
+    "totalCollateralBase": "170604529443",
+    "formatTotalCollateralBase": 1.70604529443e-7,
+    "totalDebtBase": "160673821570",
+    "formatTotalDebtBase": 1.6067382157e-7,
+    "healthFactor": "1035155286211569506",
+    "formattedHF": 1.0351552862115696,
+    "userConfiguration": "132128"
+  },
+  {
+    "user": "0x6c5E984E08ec6Bc3E174FC011F8b4B72cA6887eF",
+    "totalCollateralBase": "2234",
+    "formatTotalCollateralBase": 2.234e-15,
+    "totalDebtBase": "1757",
+    "formatTotalDebtBase": 1.757e-15,
+    "healthFactor": "1048947068867387592",
+    "formattedHF": 1.0489470688673876,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x5e6C30578b224C61D4cF89201975d3523b9a7c0e",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "16262756",
+    "formatTotalDebtBase": 1.6262756e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "294912"
+  },
+  {
+    "user": "0x0c72D878Be36dc04F54BEe286ddA44029D9640E3",
+    "totalCollateralBase": "3511723043",
+    "formatTotalCollateralBase": 3.511723043e-9,
+    "totalDebtBase": "3363801513",
+    "formatTotalDebtBase": 3.363801513e-9,
+    "healthFactor": "1017875149222575428",
+    "formattedHF": 1.0178751492225755,
+    "userConfiguration": "515"
+  },
+  {
+    "user": "0x140aA6Ea999cf0DB14eB4116995EFC6C21b7982C",
+    "totalCollateralBase": "90629884051",
+    "formatTotalCollateralBase": 9.0629884051e-8,
+    "totalDebtBase": "84508050735",
+    "formatTotalDebtBase": 8.4508050735e-8,
+    "healthFactor": "1045629809011828937",
+    "formattedHF": 1.045629809011829,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x94E9f28b35296a03BbAd4AA12946a1205767aeFE",
+    "totalCollateralBase": "23505472575",
+    "formatTotalCollateralBase": 2.3505472575e-8,
+    "totalDebtBase": "18522030048",
+    "formatTotalDebtBase": 1.8522030048e-8,
+    "healthFactor": "1046970273978901171",
+    "formattedHF": 1.046970273978901,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0x957e5816460dA7B72bf8821C84b740232D458821",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "12868886",
+    "formatTotalDebtBase": 1.2868886e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x9CbFa891bA2Cf2bb2E5F8fd130EB0D668a429FF1",
+    "totalCollateralBase": "158973837047",
+    "formatTotalCollateralBase": 1.58973837047e-7,
+    "totalDebtBase": "149464691502",
+    "formatTotalDebtBase": 1.49464691502e-7,
+    "healthFactor": "1037030816866376353",
+    "formattedHF": 1.0370308168663764,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xF8a8b869D4E6219AD262019D6440Ee526f00c5D4",
+    "totalCollateralBase": "2530769625",
+    "formatTotalCollateralBase": 2.530769625e-9,
+    "totalDebtBase": "2354884547",
+    "formatTotalDebtBase": 2.354884547e-9,
+    "healthFactor": "1047822232789911802",
+    "formattedHF": 1.0478222327899118,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x3cD8bbef9DaF93c3B0aD3Af5aBe99e045f8529fD",
+    "totalCollateralBase": "21527174626",
+    "formatTotalCollateralBase": 2.1527174626e-8,
+    "totalDebtBase": "20503694725",
+    "formatTotalDebtBase": 2.0503694725e-8,
+    "healthFactor": "1023668930966294417",
+    "formattedHF": 1.0236689309662945,
+    "userConfiguration": "1073741872"
+  },
+  {
+    "user": "0x252364479C17b9Cac7c03B8F3A47341A44350894",
+    "totalCollateralBase": "28",
+    "formatTotalCollateralBase": 2.8e-17,
+    "totalDebtBase": "1459739380572",
+    "formatTotalDebtBase": 0.000001459739380572,
+    "healthFactor": "15071183",
+    "formattedHF": 1.5071183e-11,
+    "userConfiguration": "1073872896"
+  },
+  {
+    "user": "0x019cDd8d6B180fD9055fB94CA1d9dE37D009F63a",
+    "totalCollateralBase": "9806580",
+    "formatTotalCollateralBase": 9.80658e-12,
+    "totalDebtBase": "8298765",
+    "formatTotalDebtBase": 8.298765e-12,
+    "healthFactor": "1004437768752338450",
+    "formattedHF": 1.0044377687523385,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x8C6d52329C31820F9f3Cf468E29309F9848f7942",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "2931881604",
+    "formatTotalDebtBase": 2.931881604e-9,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "268444160"
+  },
+  {
+    "user": "0xBE3D2BCb007741a72B00D83FF919b8c54510d96B",
+    "totalCollateralBase": "3873620825",
+    "formatTotalCollateralBase": 3.873620825e-9,
+    "totalDebtBase": "3029831158",
+    "formatTotalDebtBase": 3.029831158e-9,
+    "healthFactor": "1022795165274354869",
+    "formattedHF": 1.0227951652743548,
+    "userConfiguration": "3072"
+  },
+  {
+    "user": "0xC35b4c096d7B412cA1fECe0D94ec747424892bC2",
+    "totalCollateralBase": "129387130",
+    "formatTotalCollateralBase": 1.2938713e-10,
+    "totalDebtBase": "109097603",
+    "formatTotalDebtBase": 1.09097603e-10,
+    "healthFactor": "1008079535899610920",
+    "formattedHF": 1.0080795358996109,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x316a2970e1E06DbB92A774Dd9501F450c073337D",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "5716644",
+    "formatTotalDebtBase": 5.716644e-12,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "513"
+  },
+  {
+    "user": "0xB026673D25c01D32e20051609f79d3ad9415b426",
+    "totalCollateralBase": "681273886",
+    "formatTotalCollateralBase": 6.81273886e-10,
+    "totalDebtBase": "645520513",
+    "formatTotalDebtBase": 6.45520513e-10,
+    "healthFactor": "1029002217006231683",
+    "formattedHF": 1.0290022170062316,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x13f5cF79E491970bD1fb884e3dD4C65b61f4452a",
+    "totalCollateralBase": "1469327729",
+    "formatTotalCollateralBase": 1.469327729e-9,
+    "totalDebtBase": "1413108807",
+    "formatTotalDebtBase": 1.413108807e-9,
+    "healthFactor": "1013789263008959508",
+    "formattedHF": 1.0137892630089596,
+    "userConfiguration": "3"
+  },
+  {
+    "user": "0xBab42dd21444Ae5B1E1064f6D7dca68c34B47bE5",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "19188117",
+    "formatTotalDebtBase": 1.9188117e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x8d61eff2F1EED647a5948E630334975dAb07EE6f",
+    "totalCollateralBase": "281750939491",
+    "formatTotalCollateralBase": 2.81750939491e-7,
+    "totalDebtBase": "270964625629",
+    "formatTotalDebtBase": 2.70964625629e-7,
+    "healthFactor": "1013811914991900900",
+    "formattedHF": 1.013811914991901,
+    "userConfiguration": "33"
+  },
+  {
+    "user": "0xA00E1cC80F7224B9447EE9C6332192F45A921189",
+    "totalCollateralBase": "5",
+    "formatTotalCollateralBase": 5e-18,
+    "totalDebtBase": "803414040",
+    "formatTotalDebtBase": 8.0341404e-10,
+    "healthFactor": "4978752923",
+    "formattedHF": 4.978752923e-9,
+    "userConfiguration": "268566528"
+  },
+  {
+    "user": "0x2a90A3a9695b478733d4886211bfeE20aB1f5ee0",
+    "totalCollateralBase": "91212",
+    "formatTotalCollateralBase": 9.1212e-14,
+    "totalDebtBase": "141838",
+    "formatTotalDebtBase": 1.41838e-13,
+    "healthFactor": "530534835516575248",
+    "formattedHF": 0.5305348355165752,
+    "userConfiguration": "1049088"
+  },
+  {
+    "user": "0x207a3cC60232d9B031f319d18c9274C5FdFB86fA",
+    "totalCollateralBase": "189727549873",
+    "formatTotalCollateralBase": 1.89727549873e-7,
+    "totalDebtBase": "156035583665",
+    "formatTotalDebtBase": 1.56035583665e-7,
+    "healthFactor": "1033536156331075176",
+    "formattedHF": 1.0335361563310752,
+    "userConfiguration": "263200"
+  },
+  {
+    "user": "0x6b538E81e1031a4020eD30EAE2706eb654A7b7B1",
+    "totalCollateralBase": "4427042",
+    "formatTotalCollateralBase": 4.427042e-12,
+    "totalDebtBase": "4092953",
+    "formatTotalDebtBase": 4.092953e-12,
+    "healthFactor": "919381678704837314",
+    "formattedHF": 0.9193816787048373,
+    "userConfiguration": "96"
+  },
+  {
+    "user": "0x52552CC03A2391C819901a4fb6E8FC13d0C8aFe8",
+    "totalCollateralBase": "6566483",
+    "formatTotalCollateralBase": 6.566483e-12,
+    "totalDebtBase": "10092508",
+    "formatTotalDebtBase": 1.0092508e-11,
+    "healthFactor": "536769254976067396",
+    "formattedHF": 0.5367692549760674,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xADFFE9EBFA93985F33D7640e4Feb5EC3F16302dC",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "31313429",
+    "formatTotalDebtBase": 3.1313429e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xdd13F2D54592F0E98B5cf1433ea7D7F4542D41D3",
+    "totalCollateralBase": "20160210011",
+    "formatTotalCollateralBase": 2.0160210011e-8,
+    "totalDebtBase": "19097848539",
+    "formatTotalDebtBase": 1.9097848539e-8,
+    "healthFactor": "1029236603319990337",
+    "formattedHF": 1.0292366033199902,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0xfB08A9cd3A9519f6B8d8E7B9bdca1511cF9c5511",
+    "totalCollateralBase": "10840527302",
+    "formatTotalCollateralBase": 1.0840527302e-8,
+    "totalDebtBase": "8965545016",
+    "formatTotalDebtBase": 8.965545016e-9,
+    "healthFactor": "1027762192990588404",
+    "formattedHF": 1.0277621929905885,
+    "userConfiguration": "48"
+  },
+  {
+    "user": "0x53A4f24D697F441990DdB711DB6F971bbFFb2FB8",
+    "totalCollateralBase": "14318222263",
+    "formatTotalCollateralBase": 1.4318222263e-8,
+    "totalDebtBase": "13797367060",
+    "formatTotalDebtBase": 1.379736706e-8,
+    "healthFactor": "1011806574782826717",
+    "formattedHF": 1.0118065747828267,
+    "userConfiguration": "67109920"
+  },
+  {
+    "user": "0x08a087eBF22693f2f89ABdFeA83B0F1E60A29741",
+    "totalCollateralBase": "32810439075",
+    "formatTotalCollateralBase": 3.2810439075e-8,
+    "totalDebtBase": "27065942502",
+    "formatTotalDebtBase": 2.7065942502e-8,
+    "healthFactor": "1030404657511527289",
+    "formattedHF": 1.0304046575115273,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0xdD9545231134b28e6BF582c895f3C2f33171395B",
+    "totalCollateralBase": "6221529",
+    "formatTotalCollateralBase": 6.221529e-12,
+    "totalDebtBase": "10071506",
+    "formatTotalDebtBase": 1.0071506e-11,
+    "healthFactor": "509631925950299786",
+    "formattedHF": 0.5096319259502998,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x1F452f2beeA8C1105cd5363b18A0995367a87D97",
+    "totalCollateralBase": "165153706571",
+    "formatTotalCollateralBase": 1.65153706571e-7,
+    "totalDebtBase": "153237151513",
+    "formatTotalDebtBase": 1.53237151513e-7,
+    "healthFactor": "1036487027074016503",
+    "formattedHF": 1.0364870270740165,
+    "userConfiguration": "558264"
+  },
+  {
+    "user": "0x5731560cB7Af29B4a9CFbABd6fF8a5ff9340A461",
+    "totalCollateralBase": "103151300",
+    "formatTotalCollateralBase": 1.031513e-10,
+    "totalDebtBase": "101264742",
+    "formatTotalDebtBase": 1.01264742e-10,
+    "healthFactor": "993164215043376104",
+    "formattedHF": 0.9931642150433762,
+    "userConfiguration": "134217745"
+  },
+  {
+    "user": "0x41c3713B8108E954f8616c33965439897F0910fd",
+    "totalCollateralBase": "6295947",
+    "formatTotalCollateralBase": 6.295947e-12,
+    "totalDebtBase": "10070406",
+    "formatTotalDebtBase": 1.0070406e-11,
+    "healthFactor": "515784169972888879",
+    "formattedHF": 0.5157841699728889,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xEc7eC48Ef00070cc23791d5d690685c273CE97F7",
+    "totalCollateralBase": "5872882498",
+    "formatTotalCollateralBase": 5.872882498e-9,
+    "totalDebtBase": "11146638430",
+    "formatTotalDebtBase": 1.114663843e-8,
+    "healthFactor": "421499811580413845",
+    "formattedHF": 0.42149981158041383,
+    "userConfiguration": "1073873408"
+  },
+  {
+    "user": "0x3D4460b270160d6072B2473B0b0F72A9038d0927",
+    "totalCollateralBase": "3333533",
+    "formatTotalCollateralBase": 3.333533e-12,
+    "totalDebtBase": "2958975",
+    "formatTotalDebtBase": 2.958975e-12,
+    "healthFactor": "957596127037234177",
+    "formattedHF": 0.9575961270372342,
+    "userConfiguration": "65572"
+  },
+  {
+    "user": "0x48BdceCd0602ecb2aF5C4aF5Bd36bc44F02719Fe",
+    "totalCollateralBase": "2",
+    "formatTotalCollateralBase": 2e-18,
+    "totalDebtBase": "4235565537",
+    "formatTotalDebtBase": 4.235565537e-9,
+    "healthFactor": "472191962",
+    "formattedHF": 4.72191962e-10,
+    "userConfiguration": "268476928"
+  },
+  {
+    "user": "0x7014C40574451FC1DB495Ce8B136bB53eE831F14",
+    "totalCollateralBase": "6338638",
+    "formatTotalCollateralBase": 6.338638e-12,
+    "totalDebtBase": "10071106",
+    "formatTotalDebtBase": 1.0071106e-11,
+    "healthFactor": "519245453279907887",
+    "formattedHF": 0.5192454532799079,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0xF5b0616D5Ea863a010f5602eBC740c04b77Df1FD",
+    "totalCollateralBase": "0",
+    "formatTotalCollateralBase": 0,
+    "totalDebtBase": "33386665",
+    "formatTotalDebtBase": 3.3386665e-11,
+    "healthFactor": "0",
+    "formattedHF": 0,
+    "userConfiguration": "513"
+  },
+  {
+    "user": "0x780704E3Cdf0b292bf0477815b58D27d32DF3e58",
+    "totalCollateralBase": "1364742629",
+    "formatTotalCollateralBase": 1.364742629e-9,
+    "totalDebtBase": "1057986980",
+    "formatTotalDebtBase": 1.05798698e-9,
+    "healthFactor": "1040854800500474968",
+    "formattedHF": 1.040854800500475,
+    "userConfiguration": "820385"
+  },
+  {
+    "user": "0xBded1A6d67E60FC96eA1473b6e210d8076141b6f",
+    "totalCollateralBase": "6339184",
+    "formatTotalCollateralBase": 6.339184e-12,
+    "totalDebtBase": "10083807",
+    "formatTotalDebtBase": 1.0083807e-11,
+    "healthFactor": "518636165884571174",
+    "formattedHF": 0.5186361658845712,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x5259807D3815A0Db38955d965F5570F38e1F1705",
+    "totalCollateralBase": "5025214119",
+    "formatTotalCollateralBase": 5.025214119e-9,
+    "totalDebtBase": "4249150166",
+    "formatTotalDebtBase": 4.249150166e-9,
+    "healthFactor": "1005243833267717938",
+    "formattedHF": 1.005243833267718,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x999cBE7F3A2B78464ABdd25322A99476342690aa",
+    "totalCollateralBase": "634016384",
+    "formatTotalCollateralBase": 6.34016384e-10,
+    "totalDebtBase": "513713900",
+    "formatTotalDebtBase": 5.137139e-10,
+    "healthFactor": "1025234882684700570",
+    "formattedHF": 1.0252348826847006,
+    "userConfiguration": "67141664"
+  },
+  {
+    "user": "0x93F61efb6C7bB56c9df5A7B1a8F88CeD22F4c33A",
+    "totalCollateralBase": "70469700",
+    "formatTotalCollateralBase": 7.04697e-11,
+    "totalDebtBase": "70307426",
+    "formatTotalDebtBase": 7.0307426e-11,
+    "healthFactor": "977250368972404138",
+    "formattedHF": 0.9772503689724041,
+    "userConfiguration": "134217744"
+  },
+  {
+    "user": "0xe0cC58231a3B8EA27f9601A014815688D4f7c80C",
+    "totalCollateralBase": "2241576",
+    "formatTotalCollateralBase": 2.241576e-12,
+    "totalDebtBase": "3148414",
+    "formatTotalDebtBase": 3.148414e-12,
+    "healthFactor": "587375103782412351",
+    "formattedHF": 0.5873751037824123,
+    "userConfiguration": "528"
+  },
+  {
+    "user": "0x77cd91170F3543f19ee82DFccCA6DebF4f60a87B",
+    "totalCollateralBase": "30009909",
+    "formatTotalCollateralBase": 3.0009909e-11,
+    "totalDebtBase": "38639536083",
+    "formatTotalDebtBase": 3.8639536083e-8,
+    "healthFactor": "621330622304304",
+    "formattedHF": 0.000621330622304304,
+    "userConfiguration": "1073872928"
+  },
+  {
+    "user": "0xCc1FeC6Ec19d53470e26171B01bE4e61b5c9f16E",
+    "totalCollateralBase": "37439",
+    "formatTotalCollateralBase": 3.7439e-14,
+    "totalDebtBase": "30596",
+    "formatTotalDebtBase": 3.0596e-14,
+    "healthFactor": "1009511047195711858",
+    "formattedHF": 1.0095110471957118,
+    "userConfiguration": "768"
+  },
+  {
+    "user": "0xf25E15016c0e8D6fDFbCE296Cb59dB78e5B5Bb40",
+    "totalCollateralBase": "1914839569",
+    "formatTotalCollateralBase": 1.914839569e-9,
+    "totalDebtBase": "1624033335",
+    "formatTotalDebtBase": 1.624033335e-9,
+    "healthFactor": "1002204572358731787",
+    "formattedHF": 1.0022045723587318,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x4d50b6d67D0f9079d6B3d9FC060523331f0e866f",
+    "totalCollateralBase": "1584238828",
+    "formatTotalCollateralBase": 1.584238828e-9,
+    "totalDebtBase": "1522547165",
+    "formatTotalDebtBase": 1.522547165e-9,
+    "healthFactor": "1014505752273362251",
+    "formattedHF": 1.0145057522733623,
+    "userConfiguration": "1056"
+  },
+  {
+    "user": "0x5F4a5E69248f6580c438B31AEdC648e518bD9828",
+    "totalCollateralBase": "153227",
+    "formatTotalCollateralBase": 1.53227e-13,
+    "totalDebtBase": "90452",
+    "formatTotalDebtBase": 9.0452e-14,
+    "healthFactor": "762304868880732322",
+    "formattedHF": 0.7623048688807323,
+    "userConfiguration": "8388672"
+  },
+  {
+    "user": "0xa434187047120684940f946F367Ba9a16dB11b4c",
+    "totalCollateralBase": "4367465215",
+    "formatTotalCollateralBase": 4.367465215e-9,
+    "totalDebtBase": "4145098484",
+    "formatTotalDebtBase": 4.145098484e-9,
+    "healthFactor": "1018453938620581156",
+    "formattedHF": 1.018453938620581,
+    "userConfiguration": "32819"
+  },
+  {
+    "user": "0xB8d095B23282A6c5c94ac9d463f60511cECE53c9",
+    "totalCollateralBase": "592245",
+    "formatTotalCollateralBase": 5.92245e-13,
+    "totalDebtBase": "543423",
+    "formatTotalDebtBase": 5.43423e-13,
+    "healthFactor": "899119102430335116",
+    "formattedHF": 0.8991191024303351,
+    "userConfiguration": "1536"
+  },
+  {
+    "user": "0x54a180De579d0eF7c7112EDe8439Ce77a320B29d",
+    "totalCollateralBase": "5803572597",
+    "formatTotalCollateralBase": 5.803572597e-9,
+    "totalDebtBase": "4455350546",
+    "formatTotalDebtBase": 4.455350546e-9,
+    "healthFactor": "1042085921200598612",
+    "formattedHF": 1.0420859212005986,
+    "userConfiguration": "1073872898"
+  },
+  {
+    "user": "0x6c1620c19Fdf8D07732Ef73449DfDc3e586D03Df",
+    "totalCollateralBase": "1503586670",
+    "formatTotalCollateralBase": 1.50358667e-9,
+    "totalDebtBase": "1184571545",
+    "formatTotalDebtBase": 1.184571545e-9,
+    "healthFactor": "1015446758853218950",
+    "formattedHF": 1.015446758853219,
+    "userConfiguration": "1073905666"
+  },
+  {
+    "user": "0x4ae31BD2f11De332707A113D333b94C3F20175c5",
+    "totalCollateralBase": "27864",
+    "formatTotalCollateralBase": 2.7864e-14,
+    "totalDebtBase": "22102",
+    "formatTotalDebtBase": 2.2102e-14,
+    "healthFactor": "1008551262329200977",
+    "formattedHF": 1.008551262329201,
+    "userConfiguration": "18"
+  },
+  {
+    "user": "0x8F01B4f8DdEAE75966977537D48DA40623511A41",
+    "totalCollateralBase": "54935571",
+    "formatTotalCollateralBase": 5.4935571e-11,
+    "totalDebtBase": "101929689",
+    "formatTotalDebtBase": 1.01929689e-10,
+    "healthFactor": "444638323187663214",
+    "formattedHF": 0.4446383231876632,
+    "userConfiguration": "1536"
+  }
+]

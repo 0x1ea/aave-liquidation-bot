@@ -1,35 +1,27 @@
 const fs = require("fs");
 const { ethers } = require("ethers");
-
-const LendingPoolABI = require("../artifacts/contracts/interfaces/ILendingPool.sol/ILendingPool.json");
-const erc20ABI = require("../artifacts/contracts/interfaces/IWeth.sol/IWeth.json");
-const chainData = require("../constants/reservesList.json");
 require("dotenv").config();
+const aave = require("../constants/aave.json");
+const config = require("../constants/config.json");
+const { convertConfiguration } = require("../utils/convertConfiguration");
 
 // Valores que modificar antes de hacer el llamado a la funcion
-const FOLDER_NAME = "data_polygon";
-const INPUT_FILE_NAME = "users_data_polygon";
-const OUTPUT_FILE_NAME = "formatted_users_data_polygon";
+const FOLDER_NAME = "polygon_v3";
+const INPUT_FILE_NAME = "users_polygon_v3";
+const OUTPUT_FILE_NAME = "formatted_users";
+const HEALTH_FACTOR_LIMIT = 1.05;
+const RPC_URL = config.rpcUrl.polygon.public;
+const KEY = config.keys.fake;
 
-const key = {
-  dev: "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80",
-  production: process.env.PRIVATE_KEY
-};
+/**
+ * LendingPool:
+ * Mainnet: 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
+ * Polygon: 0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
+ */
 
-const rpcUrl = {
-  dev: "http://127.0.0.1:8545/",
-  public: process.env.PUBLIC_FORK_RPC_URL,
-  production: process.env.FORK_RPC_URL
-};
-
-async function formatUserData() {
-  const provider = new ethers.providers.JsonRpcProvider(rpcUrl.production);
-  const deployer = new ethers.Wallet(key.dev, provider);
-
-  // const wethAddress = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
-  // const wmaticAddress = "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270";
-  // const mainTokenAddress = wmaticAddress;
-  // const erc20AddressDebt = TOKEN_DEBT_ADDRESS;
+async function formatUserData(decimals) {
+  const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
+  const deployer = new ethers.Wallet(KEY, provider);
 
   fs.readFile(`./${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
@@ -37,21 +29,25 @@ async function formatUserData() {
     const newUser = [];
     const end = data.length;
     for (let i = 0; i <= end; i++) {
-      if (data[i]?.formattedHF <= 1) {
+      if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT) {
         const VICTIM_ADDRESS = data[i].user;
-        const lendingPool = await getLendingPool(deployer);
+        const lendingPool = await getLendingPool(
+          aave.polygon.v3.pool.address,
+          aave.polygon.v3.pool.abi,
+          deployer
+        );
         const configuration = await getUserConfiguration(lendingPool, VICTIM_ADDRESS);
-        console.log(data[i].user);
-        console.log(configuration);
-        console.log("\n");
+        console.log(`${data[i].user}, ${configuration} \n`);
         const info = {
           user: data[i].user,
-          totalCollateralETH: data[i].totalCollateralETH,
-          formatTotalCollateralETH: parseFloat(
-            ethers.utils.formatEther(data[i].totalCollateralETH)
+          totalCollateralBase: data[i].totalCollateralBase,
+          formatTotalCollateralBase: parseFloat(
+            ethers.utils.formatUnits(data[i].totalCollateralBase, decimals)
           ),
-          totalDebtETH: data[i].totalDebtETH,
-          formatTotalDebtETH: parseFloat(ethers.utils.formatEther(data[i].totalDebtETH)),
+          totalDebtBase: data[i].totalDebtBase,
+          formatTotalDebtBase: parseFloat(
+            ethers.utils.formatUnits(data[i].totalDebtBase, decimals)
+          ),
           healthFactor: data[i].healthFactor,
           formattedHF: data[i].formattedHF,
           userConfiguration: configuration
@@ -77,20 +73,19 @@ async function getUserConfiguration(lendingPool, account) {
   return configuration.toString();
 }
 
-async function getLendingPool(account) {
-  /**
-   * LendingPool:
-   * Mainnet: 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
-   * Polygon: 0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
-   */
-  const lendingPool = new ethers.Contract(
-    "0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf",
-    LendingPoolABI.abi,
-    account
-  );
+async function getLendingPool(address, abi, account) {
+  const lendingPool = new ethers.Contract(address, abi, account);
   return lendingPool;
 }
 
-// formatUserData();
+formatUserData(aave.polygon.v3.pool.decimals);
+
+convertConfiguration(
+  FOLDER_NAME,
+  OUTPUT_FILE_NAME,
+  "users_ready",
+  1,
+  aave.polygon.v3.pool.decimals
+);
 
 module.exports = { formatUserData };
