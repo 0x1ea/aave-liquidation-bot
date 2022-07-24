@@ -1,25 +1,25 @@
 const { ethers } = require("ethers");
 const { saveData } = require("../utils/saveData");
-const aave = require("../constants/aave.json");
-const config = require("../constants/config.json");
+const aave = require("../config/aave.json");
+const config = require("../config/config.json");
 require("dotenv").config();
 
 /**
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const OUTPUT_FOLDER_NAME = "polygon_v3";
+const OUTPUT_FOLDER_NAME = "optimism_v3";
 const OUTPUT_FILE_NAME = "users_data";
 const ACCOUNT = config.keys.fake;
-const PROVIDER = config.rpcUrl.polygon.public;
-const CONTRACT_ADDRESS = aave.polygon.v3.pool.address;
+const PROVIDER = config.rpcUrl.optimism.public;
+const CONTRACT_ADDRESS = aave.optimism.v3.l2Pool.address;
 const CONTRACT_ABI = aave.polygon.v3.pool.abi;
 
 async function loadUserDataV3() {
   const startIndex = require(`../${OUTPUT_FOLDER_NAME}/index.json`);
   const uniqueUsers = require(`../${OUTPUT_FOLDER_NAME}/all_users.json`);
-  const provider = new ethers.providers.JsonRpcProvider(PROVIDER);
-  const deployer = new ethers.Wallet(ACCOUNT, provider);
+  const provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER]);
+  const deployer = new ethers.Wallet(process.env[ACCOUNT], provider);
   const myIndex = startIndex.length - 1;
   const start = startIndex[myIndex] || uniqueUsers.length - 1;
 
@@ -70,4 +70,4 @@ async function getBorrowUserData(lendingPool, account, index) {
   saveData(OUTPUT_FOLDER_NAME, "index", infoIindex);
 }
 
-// loadUserDataV3();
+loadUserDataV3();

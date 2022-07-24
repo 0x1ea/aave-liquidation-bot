@@ -1,8 +1,8 @@
 const fs = require("fs");
 const { ethers } = require("ethers");
 require("dotenv").config();
-const aave = require("../constants/aave.json");
-const config = require("../constants/config.json");
+const aave = require("../config/aave.json");
+const config = require("../config/config.json");
 const { convertConfiguration } = require("../utils/convertConfiguration");
 
 /**

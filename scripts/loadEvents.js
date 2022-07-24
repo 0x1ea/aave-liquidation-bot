@@ -3,11 +3,22 @@ const LendingPool = require("../artifacts/contracts/interfaces/ILendingPool.sol/
 const { updateBlocks } = require("../utils/updateBlocks");
 const { saveData } = require("../utils/saveData");
 require("dotenv").config();
-const aave = require("../constants/aave.json");
-const config = require("../constants/config.json");
+const aave = require("../config/aave.json");
+const config = require("../config/config.json");
 const { createBlockData } = require("../utils/createBlockData");
-// ⚠ Recuerda actualizar este valor con los blocksSteps
-// Funcion para crear o actualizar un nuevo archivo dentro de /data
+
+/**
+ * INFORMACION PARA CONFIGURAR
+ * ANTES DE HACER EL LLAMADO
+ */
+const OUTPUT_FOLDER_NAME = "optimism_v3";
+const INPUT_FILE_NAME = "blocks_2000";
+const FROM_BLOCK = 35596;
+const TO_BLOCK = 98552;
+const EVENT_NAME = "Deposit";
+const PROVIDER = config.rpcUrl.optimism.alchemy;
+const CONTRACT_ADDRESS = aave.optimism.erc20.IWeth.address;
+const CONTRACT_ABI = aave.optimism.erc20.IWeth.abi;
 
 /**
  * ⚠  ⚠  ⚠
@@ -23,19 +34,14 @@ const { createBlockData } = require("../utils/createBlockData");
  * @param {string} fileName nombre del archivo que se va actualizar
  * @param {stirng} eventName nombre del evento a pedir. CASE SENSITIVE
  */
-async function loadEvents(provider, folderName, fileName, eventName) {
+async function loadEvents(providerRpc, folderName, fileName, eventName) {
   const blocks = require(`../${folderName}/${fileName}.json`);
   const EVENT = eventName || "Deposit";
-  const provider = process.env[provider];
+  const provider = process.env[providerRpc];
   const web3 = new Web3(provider);
 
-  /**
-   * LendingPool:
-   * Mainnet: 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
-   * Polygon: 0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
-   */
-  const LendingPoolAddress = aave.polygon.v3.pool.address;
-  const contract = new web3.eth.Contract(aave.polygon.v3.pool.abi, LendingPoolAddress);
+  const LendingPoolAddress = CONTRACT_ADDRESS;
+  const contract = new web3.eth.Contract(CONTRACT_ABI, LendingPoolAddress);
 
   /**
    * Verifico la cantidad de steps para leer toda la blockchain
@@ -44,11 +50,6 @@ async function loadEvents(provider, folderName, fileName, eventName) {
    * bloque mas actual
    */
   const calls = blocks.length;
-
-  /**
-   * El backup es porque se me quedo congelada la información en el archivo de 1000
-   */
-  // const backup = 6500;
 
   /**
    * Comienzo a iterar por todo el array de blocks_2000
@@ -84,5 +85,5 @@ async function loadEvents(provider, folderName, fileName, eventName) {
 
 module.exports = { loadEvents };
 
-// createBlockData("polygon_v3", "blocks", 2000, 25826028, 31062807);
-// loadEvents(config.rpcUrl.polygon.alchemy, "polygon_v3", "blocks_2000", "Supply");
+// createBlockData(OUTPUT_FOLDER_NAME, "blocks", 2000, FROM_BLOCK, TO_BLOCK);
+loadEvents(PROVIDER, OUTPUT_FOLDER_NAME, INPUT_FILE_NAME, EVENT_NAME);

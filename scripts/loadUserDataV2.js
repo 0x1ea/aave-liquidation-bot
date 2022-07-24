@@ -1,7 +1,7 @@
 const { ethers } = require("ethers");
 const { saveData } = require("../utils/saveData");
-const aave = require("../constants/aave.json");
-const config = require("../constants/config.json");
+const aave = require("../config/aave.json");
+const config = require("../config/config.json");
 require("dotenv").config();
 
 /**

@@ -33,6 +33,6 @@ async function deleteDuplicates(folderName, inputFile, outputFile) {
   });
 }
 
-deleteDuplicates("polygon_v3", "all_users", "all_users");
+// deleteDuplicates("polygon_v3", "all_users", "all_users");
 
 module.exports = { deleteDuplicates };
