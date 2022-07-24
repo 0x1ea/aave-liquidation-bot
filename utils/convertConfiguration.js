@@ -1,15 +1,21 @@
 const fs = require("fs");
 const { ethers } = require("ethers");
-const chainData = require("../constants/reservesList.json");
 require("dotenv").config();
 
-async function convertConfiguration(folderName, inputFile, outputFile, hf, wei) {
+async function convertConfiguration(
+  folderName,
+  inputFile,
+  outputFile,
+  hf,
+  decimals,
+  chainData
+) {
   // Valores que modificar antes de hacer el llamado a la funcion
   const FOLDER_NAME = folderName;
   const INPUT_FILE_NAME = inputFile;
   const OUTPUT_FILE_NAME = outputFile;
   const HEALTH_FACTOR_LIMIT = hf || 1.01;
-  const WEI_UNITS = wei || 18;
+  const WEI_UNITS = decimals || 18;
   fs.readFile(`./${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
     const data = await JSON.parse(save);
@@ -18,17 +24,13 @@ async function convertConfiguration(folderName, inputFile, outputFile, hf, wei) 
     for (let i = 0; i <= end; i++) {
       const alldebt = data[i]?.totalDebtBase.slice().length;
       if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT && alldebt >= WEI_UNITS) {
-        const configuration = decodeConfiguration(data[i].userConfiguration);
+        const configuration = decodeConfiguration(data[i].userConfiguration, chainData);
         const info = {
           user: data[i].user,
           totalCollateralBase: data[i].totalCollateralBase,
-          formatTotalCollateralBase: parseFloat(
-            ethers.utils.formatEther(data[i].totalCollateralBase)
-          ),
+          formatTotalCollateralBase: data[i].formatTotalCollateralBase,
           totalDebtBase: data[i].totalDebtBase,
-          formatTotalDebtBase: parseFloat(
-            ethers.utils.formatEther(data[i].totalDebtBase)
-          ),
+          formatTotalDebtBase: data[i].formatTotalDebtBase,
           healthFactor: data[i].healthFactor,
           formattedHF: data[i].formattedHF,
           userConfiguration: configuration
@@ -49,7 +51,7 @@ async function convertConfiguration(folderName, inputFile, outputFile, hf, wei) 
   });
 }
 
-function decodeConfiguration(configuration) {
+function decodeConfiguration(configuration, chainData) {
   let binConf = parseInt(configuration).toString(2);
   const confLength = binConf.slice().length;
   const isPair = confLength % 2 ? false : true;
@@ -84,28 +86,28 @@ function decodeConfiguration(configuration) {
         code: bitCouples[i],
         col: true,
         debt: false,
-        chainData: chainData.polygon[i]
+        chainData: chainData[i]
       });
     } else if (bitCouples[i] === "01") {
       data.push({
         code: bitCouples[i],
         col: false,
         debt: true,
-        chainData: chainData.polygon[i]
+        chainData: chainData[i]
       });
     } else if (bitCouples[i] === "11") {
       data.push({
         code: bitCouples[i],
         col: true,
         debt: true,
-        chainData: chainData.polygon[i]
+        chainData: chainData[i]
       });
     } else {
       data.push({
         code: bitCouples[i],
         col: false,
         debt: false,
-        chainData: chainData.polygon[i]
+        chainData: chainData[i]
       });
     }
   }

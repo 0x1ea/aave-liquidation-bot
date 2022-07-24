@@ -78,14 +78,15 @@ async function getLendingPool(address, abi, account) {
   return lendingPool;
 }
 
-formatUserData(aave.polygon.v3.pool.decimals);
+// formatUserData(aave.polygon.v3.pool.decimals);
 
 convertConfiguration(
   FOLDER_NAME,
   OUTPUT_FILE_NAME,
   "users_ready",
   1,
-  aave.polygon.v3.pool.decimals
+  aave.polygon.v3.pool.decimals,
+  aave.polygon.v3.pool.config
 );
 
 module.exports = { formatUserData };
