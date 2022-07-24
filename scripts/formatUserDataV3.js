@@ -3,13 +3,13 @@ const { ethers } = require("ethers");
 require("dotenv").config();
 const aave = require("../config/aave.json");
 const config = require("../config/config.json");
-const { convertConfiguration } = require("../utils/convertConfigurationV2");
+const { convertConfiguration } = require("../utils/convertConfigurationV3");
 
 /**
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const FOLDER_NAME = "polygon_v2";
+const FOLDER_NAME = "polygon_v3";
 const INPUT_FILE_NAME = "users_data";
 const OUTPUT_FILE_NAME = "formatted_users";
 const HEALTH_FACTOR_LIMIT = 1;
@@ -81,6 +81,6 @@ async function getLendingPool(address, abi, account) {
 
 // formatUserData(DECIMALS);
 
-convertConfiguration(FOLDER_NAME, OUTPUT_FILE_NAME, "users_ready", 1, DECIMALS, CONFIG);
+// convertConfiguration(FOLDER_NAME, OUTPUT_FILE_NAME, "users_ready", 1, DECIMALS, CONFIG);
 
 module.exports = { formatUserData };

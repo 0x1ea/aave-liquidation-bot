@@ -7414,5 +7414,33 @@
     "availableBorrowsETH": "0",
     "healthFactor": "844357637622232617",
     "formattedHF": 0.8443576376222326
+  },
+  {
+    "user": "0xf3f5CB0Af8055BD1e63B51999D300B5474a7f619",
+    "totalCollateralETH": "33974486513568",
+    "totalDebtETH": "160679863187858236",
+    "healthFactor": "179725778722938",
+    "formattedHF": 0.000179725778722938
+  },
+  {
+    "user": "0x56d55879479e5cE70587c9c9B10D4a8cF8c08599",
+    "totalCollateralETH": "74431317706504330",
+    "totalDebtETH": "64889224805385247",
+    "healthFactor": "1009405795464024567",
+    "formattedHF": 1.0094057954640245
+  },
+  {
+    "user": "0x809a8c04329344d630bff2097A67648B51Ff0aEC",
+    "totalCollateralETH": "253622791766014580",
+    "totalDebtETH": "199639784430936479",
+    "healthFactor": "889281436274176669",
+    "formattedHF": 0.8892814362741767
+  },
+  {
+    "user": "0x61fbbB579D1386076124a88259F29F2773632011",
+    "totalCollateralETH": "25381290128317980",
+    "totalDebtETH": "32761558000081430",
+    "healthFactor": "542309467998390850",
+    "formattedHF": 0.5423094679983909
   }
 ]

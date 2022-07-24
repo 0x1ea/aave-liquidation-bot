@@ -51,51 +51,45 @@ async function main() {
 
   const AMOUNT = (parseInt(totalDebtETH / YOUR_COL_PRICE) * 3).toString();
   let BORROW_AMOUNT = parseInt(totalDebtETH / 2.01);
-  console.log(`Amount to deposit: ${AMOUNT} wei of base token`);
-  console.log(`Amount to borrow to pay the debt: ${BORROW_AMOUNT} wei of base token`);
   BORROW_AMOUNT = parseInt(BORROW_AMOUNT / HIS_DEBT_PRICE).toString();
-  console.log(`... equivalent to: ${BORROW_AMOUNT} wei of debt token`);
 
   if (formattedHF < 1) {
     await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, AMOUNT);
 
     const balance = await deployer.getBalance();
-    console.log("MATIC balance: ", ethers.utils.formatEther(balance));
+    console.log("My MATIC balance: ", ethers.utils.formatEther(balance));
     await getErc20Balance(baseTokenAddress, deployer);
     await getErc20Balance(debtTokenAddress, deployer);
 
-    // deposit!
-    // approve
     await approveErc20(baseTokenAddress, lendingPool.address, AMOUNT, deployer);
-    console.log("Depositing WMATIC...");
+    console.log("Supplying WMATIC...");
 
     await lendingPool.deposit(baseTokenAddress, AMOUNT, deployer.address, 0, {
       gasPrice: GAS_PRICE,
       gasLimit: "283000"
     });
+    console.log("- Done!\n");
 
-    console.log("Deposited!");
-    console.log(`Pidiendo prestado el ERC20 para pagar la deuda: ${BORROW_AMOUNT}`);
-
+    console.log(`Borrowing  ${BORROW_AMOUNT} weis of ERC20 to repay the debt...`);
     await borrowErc20(debtTokenAddress, lendingPool, BORROW_AMOUNT, deployer);
+    console.log("- Done!\n");
 
-    const midBalance = await deployer.getBalance();
-    console.log("MATIC balance: ", ethers.utils.formatEther(midBalance));
-    await getErc20Balance(baseTokenAddress, deployer);
+    // const midBalance = await deployer.getBalance();
+    // console.log("My MATIC balance: ", ethers.utils.formatEther(midBalance));
+    // await getErc20Balance(baseTokenAddress, deployer);
 
     const erc20Balance = await getErc20Balance(debtTokenAddress, deployer);
 
-    console.log("Aprobando todo el usdt: ", ethers.utils.formatEther(erc20Balance));
+    console.log(`Approving all ${erc20Balance} wei units of ERC20 token borrowed...`);
     await approveErc20(debtTokenAddress, lendingPool.address, erc20Balance, deployer);
+    console.log("- Done!\n");
 
-    /**
-     *
-     */
     const collateralAddress = baseTokenAddress;
     const debt = debtTokenAddress;
     const debtToCover = erc20Balance;
     const receiveAToken = true;
 
+    console.log("Liquidating...");
     await liquidateUser(
       lendingPool,
       collateralAddress,
@@ -107,10 +101,8 @@ async function main() {
 
     console.log("Getting victim data after liquidation...");
     await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
-
     const newBalance = await deployer.getBalance();
-
-    console.log("MATIC balance: ", ethers.utils.formatEther(newBalance));
+    console.log("My MATIC balance: ", ethers.utils.formatEther(newBalance));
     await getErc20Balance(baseTokenAddress, deployer);
     await getErc20Balance(debtTokenAddress, deployer);
   }
@@ -139,8 +131,7 @@ async function getBorrowUserData(lendingPool, account) {
 async function getWeth(address, abi, account, amount) {
   const erc20Contract = new ethers.Contract(address, abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
-  const symbol = await erc20Contract.symbol();
-  console.log(`Depositando ${symbol}`);
+  // const symbol = await erc20Contract.symbol();
   const tx = await erc20Contract.deposit({
     value: amount,
     gasLimit: "60041",
@@ -151,11 +142,6 @@ async function getWeth(address, abi, account, amount) {
 }
 
 async function getLendingPool(address, abi, account) {
-  /**
-   * LendingPool:
-   * Mainnet: 0x7d2768dE32b0b80b7a3454c06BdAc94A69DDc7A9
-   * Polygon: 0x8dFf5E27EA6b7AC08EbFdf9eB090F32ee9a30fcf
-   */
   const lendingPool = new ethers.Contract(address, abi, account);
   return lendingPool;
 }
@@ -166,7 +152,6 @@ async function borrowErc20(erc20Address, lendingPool, borrow, account) {
     gasLimit: "404000"
   });
   await borrowtx.wait(1);
-  console.log(`You've borrowed!`);
 }
 
 async function getErc20Balance(erc20Address, account) {
@@ -174,7 +159,7 @@ async function getErc20Balance(erc20Address, account) {
   const balance = await erc20Contract.balanceOf(account.address);
   const symbol = await erc20Contract.symbol();
   const decimals = await erc20Contract.decimals();
-  console.log(`${symbol} balance: ${ethers.utils.formatUnits(balance, decimals)}`);
+  console.log(`My ${symbol} balance: ${ethers.utils.formatUnits(balance, decimals)}`);
   return balance.toString();
 }
 
@@ -196,7 +181,7 @@ async function liquidateUser(
   );
 
   const response = await liquidateTx.wait(1);
-  console.log(`You've Liquidated!\n`);
+  console.log(`- Done!\n\n`);
 }
 
 async function approveErc20(erc20Address, spenderAddress, amountToSpend, account) {
@@ -206,7 +191,6 @@ async function approveErc20(erc20Address, spenderAddress, amountToSpend, account
     gasPrice: GAS_PRICE
   });
   await tx.wait(2);
-  console.log("Approved!");
 }
 
 main()

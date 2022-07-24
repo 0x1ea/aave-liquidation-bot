@@ -103,12 +103,12 @@ function decodeConfiguration(configuration, chainData) {
         chainData: chainData[i]
       });
     } else {
-      data.push({
-        code: bitCouples[i],
-        col: false,
-        debt: false,
-        chainData: chainData[i]
-      });
+      // data.push({
+      //   code: bitCouples[i],
+      //   col: false,
+      //   debt: false,
+      //   chainData: chainData[i]
+      // });
     }
   }
 

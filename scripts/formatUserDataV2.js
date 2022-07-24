@@ -9,16 +9,16 @@ const { convertConfiguration } = require("../utils/convertConfigurationV2");
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const FOLDER_NAME = "polygon_v2";
+const FOLDER_NAME = "ethereum_v2";
 const INPUT_FILE_NAME = "users_data";
 const OUTPUT_FILE_NAME = "formatted_users";
 const HEALTH_FACTOR_LIMIT = 1;
-const RPC_URL = config.rpcUrl.polygon.public;
+const RPC_URL = config.rpcUrl.eth.public;
 const KEY = config.keys.fake;
 const DECIMALS = aave.polygon.v2.lendingPool.decimals;
-const LENDINGPOOL_ADDRESS = aave.polygon.v2.lendingPool.address;
+const LENDINGPOOL_ADDRESS = aave.mainnet.v2.lendingPool.address;
 const LENDINGPOOL_ABI = aave.polygon.v2.lendingPool.abi;
-const CONFIG = aave.polygon.v2.lendingPool.config;
+const CONFIG = aave.mainnet.v2.lendingPool.config;
 
 async function formatUserData(decimals) {
   const provider = new ethers.providers.JsonRpcProvider(process.env[RPC_URL]);
@@ -81,13 +81,6 @@ async function getLendingPool(address, abi, account) {
 
 // formatUserData(DECIMALS);
 
-convertConfiguration(
-  FOLDER_NAME,
-  OUTPUT_FILE_NAME,
-  "users_ready",
-  1,
-  DECIMALS - 10,
-  CONFIG
-);
+convertConfiguration(FOLDER_NAME, OUTPUT_FILE_NAME, "users_ready", 1, DECIMALS, CONFIG);
 
 module.exports = { formatUserData };
