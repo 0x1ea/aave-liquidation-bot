@@ -8,18 +8,18 @@ require("dotenv").config();
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const OUTPUT_FOLDER_NAME = "polygon_v3";
+const OUTPUT_FOLDER_NAME = "ethereum_v2";
 const OUTPUT_FILE_NAME = "users_data";
 const ACCOUNT = config.keys.fake;
-const PROVIDER = config.rpcUrl.polygon.public;
-const CONTRACT_ADDRESS = aave.polygon.v3.pool.address;
-const CONTRACT_ABI = aave.polygon.v3.pool.abi;
+const PROVIDER = config.rpcUrl.eth.public;
+const CONTRACT_ADDRESS = aave.mainnet.v2.lendingPool.address;
+const CONTRACT_ABI = aave.polygon.v2.lendingPool.abi;
 
 async function loadUserDataV2() {
   const startIndex = require(`../${OUTPUT_FOLDER_NAME}/index.json`);
   const uniqueUsers = require(`../${OUTPUT_FOLDER_NAME}/all_users.json`);
-  const provider = new ethers.providers.JsonRpcProvider(PROVIDER);
-  const deployer = new ethers.Wallet(ACCOUNT, provider);
+  const provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER]);
+  const deployer = new ethers.Wallet(process.env[ACCOUNT], provider);
   const myIndex = startIndex.length - 1;
   const start = startIndex[myIndex] || uniqueUsers.length - 1;
 
@@ -70,4 +70,4 @@ async function getBorrowUserData(lendingPool, account, index) {
   saveData(OUTPUT_FOLDER_NAME, "index", infoIindex);
 }
 
-// loadUserDataV2();
+loadUserDataV2();

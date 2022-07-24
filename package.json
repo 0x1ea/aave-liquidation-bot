@@ -35,7 +35,7 @@
     "loadPolygon": "hardhat run scripts\\loadUserData.js",
     "liquidate": "node scripts\\liquidate.js",
     "dev": "hardhat run scripts\\aaveBorrow.js",
-    "fork": "hardhat node --fork https://polygon-rpc.com/"
+    "fork": "hardhat node --fork https://rpc.ankr.com/polygon"
   },
   "keywords": [],
   "author": "Ardy <cryptoardy@gmail.com>",

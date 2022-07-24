@@ -3,22 +3,26 @@ const { ethers } = require("ethers");
 require("dotenv").config();
 const aave = require("../config/aave.json");
 const config = require("../config/config.json");
-const { convertConfiguration } = require("../utils/convertConfiguration");
+const { convertConfiguration } = require("../utils/convertConfigurationV2");
 
 /**
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const FOLDER_NAME = "polygon_v3";
-const INPUT_FILE_NAME = "users_polygon_v3";
+const FOLDER_NAME = "polygon_v2";
+const INPUT_FILE_NAME = "users_data";
 const OUTPUT_FILE_NAME = "formatted_users";
-const HEALTH_FACTOR_LIMIT = 1.05;
+const HEALTH_FACTOR_LIMIT = 1;
 const RPC_URL = config.rpcUrl.polygon.public;
 const KEY = config.keys.fake;
+const DECIMALS = aave.polygon.v2.lendingPool.decimals;
+const LENDINGPOOL_ADDRESS = aave.polygon.v2.lendingPool.address;
+const LENDINGPOOL_ABI = aave.polygon.v2.lendingPool.abi;
+const CONFIG = aave.polygon.v2.lendingPool.config;
 
 async function formatUserData(decimals) {
-  const provider = new ethers.providers.JsonRpcProvider(RPC_URL);
-  const deployer = new ethers.Wallet(KEY, provider);
+  const provider = new ethers.providers.JsonRpcProvider(process.env[RPC_URL]);
+  const deployer = new ethers.Wallet(process.env[KEY], provider);
 
   fs.readFile(`./${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
@@ -29,21 +33,21 @@ async function formatUserData(decimals) {
       if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT) {
         const VICTIM_ADDRESS = data[i].user;
         const lendingPool = await getLendingPool(
-          aave.polygon.v3.pool.address,
-          aave.polygon.v3.pool.abi,
+          LENDINGPOOL_ADDRESS,
+          LENDINGPOOL_ABI,
           deployer
         );
         const configuration = await getUserConfiguration(lendingPool, VICTIM_ADDRESS);
         console.log(`${data[i].user}, ${configuration} \n`);
         const info = {
           user: data[i].user,
-          totalCollateralBase: data[i].totalCollateralBase,
-          formatTotalCollateralBase: parseFloat(
-            ethers.utils.formatUnits(data[i].totalCollateralBase, decimals)
+          totalCollateralETH: data[i].totalCollateralETH,
+          formatTotalCollateralETH: parseFloat(
+            ethers.utils.formatUnits(data[i].totalCollateralETH, decimals)
           ),
-          totalDebtBase: data[i].totalDebtBase,
-          formatTotalDebtBase: parseFloat(
-            ethers.utils.formatUnits(data[i].totalDebtBase, decimals)
+          totalDebtETH: data[i].totalDebtETH,
+          formatTotalDebtETH: parseFloat(
+            ethers.utils.formatUnits(data[i].totalDebtETH, decimals)
           ),
           healthFactor: data[i].healthFactor,
           formattedHF: data[i].formattedHF,
@@ -75,15 +79,8 @@ async function getLendingPool(address, abi, account) {
   return lendingPool;
 }
 
-// formatUserData(aave.polygon.v3.pool.decimals);
+// formatUserData(DECIMALS);
 
-convertConfiguration(
-  FOLDER_NAME,
-  OUTPUT_FILE_NAME,
-  "users_ready",
-  1,
-  aave.polygon.v3.pool.decimals,
-  aave.polygon.v3.pool.config
-);
+convertConfiguration(FOLDER_NAME, OUTPUT_FILE_NAME, "users_ready", 1, DECIMALS, CONFIG);
 
 module.exports = { formatUserData };
