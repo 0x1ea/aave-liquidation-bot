@@ -4,7 +4,7 @@
     "private": "PRIVATE_KEY"
   },
   "rpcUrl": {
-    "local": "http://127.0.0.1:8545/",
+    "local": "LOCAL",
     "polygon": {
       "public": "PUBLIC_POLYGON_RPC_URL",
       "alchemy": "ALCHEMY_POLYGON_RPC_URL",

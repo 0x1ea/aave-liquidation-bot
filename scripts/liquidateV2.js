@@ -1,6 +1,4 @@
 const { ethers } = require("ethers");
-const erc20ABI = require("../artifacts/contracts/interfaces/IWeth.sol/IWeth.json");
-const chainData = require("../config/reservesList.json");
 const aave = require("../config/aave.json");
 const config = require("../config/config.json");
 require("dotenv").config();
@@ -53,8 +51,9 @@ async function main() {
   let BORROW_AMOUNT = parseInt(totalDebtETH / 2.01);
   BORROW_AMOUNT = parseInt(BORROW_AMOUNT / HIS_DEBT_PRICE).toString();
 
+  // AMOUNT
   if (formattedHF < 1) {
-    await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, AMOUNT);
+    await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, "50000000000000000000");
 
     const balance = await deployer.getBalance();
     console.log("My MATIC balance: ", ethers.utils.formatEther(balance));
@@ -87,7 +86,7 @@ async function main() {
     const collateralAddress = baseTokenAddress;
     const debt = debtTokenAddress;
     const debtToCover = erc20Balance;
-    const receiveAToken = true;
+    const receiveAToken = false;
 
     console.log("Liquidating...");
     await liquidateUser(
@@ -101,7 +100,17 @@ async function main() {
 
     console.log("Getting victim data after liquidation...");
     await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
-    const newBalance = await deployer.getBalance();
+
+    let newBalance = await deployer.getBalance();
+    console.log("My MATIC balance: ", ethers.utils.formatEther(newBalance));
+    await getErc20Balance(baseTokenAddress, deployer);
+    await getErc20Balance(debtTokenAddress, deployer);
+
+    console.log("Swapping WMATIC for MATIC...");
+    await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer);
+    console.log("- Done!\n");
+
+    newBalance = await deployer.getBalance();
     console.log("My MATIC balance: ", ethers.utils.formatEther(newBalance));
     await getErc20Balance(baseTokenAddress, deployer);
     await getErc20Balance(debtTokenAddress, deployer);
@@ -131,13 +140,23 @@ async function getBorrowUserData(lendingPool, account) {
 async function getWeth(address, abi, account, amount) {
   const erc20Contract = new ethers.Contract(address, abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
-  // const symbol = await erc20Contract.symbol();
   const tx = await erc20Contract.deposit({
     value: amount,
     gasLimit: "60041",
     gasPrice: GAS_PRICE
   });
   await tx.wait(1);
+  return balance.toString();
+}
+
+async function getEth(address, abi, account) {
+  const erc20Contract = new ethers.Contract(address, abi, account);
+  const balance = await erc20Contract.balanceOf(account.address);
+  const tx = await erc20Contract.withdraw(balance, {
+    gasLimit: "37041",
+    gasPrice: GAS_PRICE
+  });
+  await tx.wait(2);
   return balance.toString();
 }
 
@@ -155,7 +174,7 @@ async function borrowErc20(erc20Address, lendingPool, borrow, account) {
 }
 
 async function getErc20Balance(erc20Address, account) {
-  const erc20Contract = new ethers.Contract(erc20Address, erc20ABI.abi, account);
+  const erc20Contract = new ethers.Contract(erc20Address, WRAPPER_ABI, account);
   const balance = await erc20Contract.balanceOf(account.address);
   const symbol = await erc20Contract.symbol();
   const decimals = await erc20Contract.decimals();
@@ -185,7 +204,7 @@ async function liquidateUser(
 }
 
 async function approveErc20(erc20Address, spenderAddress, amountToSpend, account) {
-  const erc20Token = new ethers.Contract(erc20Address, erc20ABI.abi, account);
+  const erc20Token = new ethers.Contract(erc20Address, WRAPPER_ABI, account);
   const tx = await erc20Token.approve(spenderAddress, amountToSpend, {
     gasLimit: "60000",
     gasPrice: GAS_PRICE
