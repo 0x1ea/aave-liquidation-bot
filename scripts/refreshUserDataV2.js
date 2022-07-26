@@ -24,16 +24,16 @@ const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
 const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
 const CONFIG = aave[CHAIN].v2.lendingPool.config;
 
-refreshUserData(DECIMALS);
+// refreshUserData(DECIMALS);
 
-// convertConfiguration(
-//   FOLDER_NAME,
-//   OUTPUT_FILE_NAME,
-//   "users_ready",
-//   1,
-//   DECIMALS - 1,
-//   CONFIG
-// );
+convertConfiguration(
+  FOLDER_NAME,
+  OUTPUT_FILE_NAME,
+  "users_ready",
+  1,
+  DECIMALS - 1,
+  CONFIG
+);
 
 async function refreshUserData(decimals) {
   const provider = new ethers.providers.JsonRpcProvider(process.env[RPC_URL]);
@@ -44,6 +44,7 @@ async function refreshUserData(decimals) {
     const data = await JSON.parse(save);
     const newUser = [];
     const end = data.length;
+
     for (let i = 0; i <= end; i++) {
       if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT) {
         const VICTIM_ADDRESS = data[i].user;
@@ -77,8 +78,10 @@ async function refreshUserData(decimals) {
           formattedHF: formattedHF,
           userConfiguration: configuration
         };
-        // saveData(FOLDER_NAME, OUTPUT_FILE_NAME, [info]);
-        updateValues(FOLDER_NAME, OUTPUT_FILE_NAME, info, i);
+
+        if (info.formatTotalDebtETH <= info.formatTotalCollateralETH) {
+          updateValues(FOLDER_NAME, OUTPUT_FILE_NAME, info, i);
+        }
       }
     }
   });
