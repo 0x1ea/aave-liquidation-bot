@@ -10,7 +10,7 @@
       "alchemy": "ALCHEMY_POLYGON_RPC_URL",
       "infura": "INFURA_POLYGON_RPC_URL"
     },
-    "eth": {
+    "mainnet": {
       "public": "PUBLIC_ETH_RPC_URL",
       "alchemy": "ALCHEMY_ETH_RPC_URL",
       "infura": "INFURA_ETH_RPC_URL"

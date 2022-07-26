@@ -1,5 +1,6 @@
 const { ethers } = require("ethers");
 const { saveData } = require("../utils/saveData");
+const { updateValues } = require("../utils/updateValues");
 const aave = require("../config/aave.json");
 const config = require("../config/config.json");
 require("dotenv").config();
@@ -8,12 +9,14 @@ require("dotenv").config();
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const OUTPUT_FOLDER_NAME = "ethereum_v2";
+const CHAIN = "mainnet";
 const OUTPUT_FILE_NAME = "users_data";
 const ACCOUNT = config.keys.fake;
-const PROVIDER = config.rpcUrl.eth.public;
-const CONTRACT_ADDRESS = aave.mainnet.v2.lendingPool.address;
-const CONTRACT_ABI = aave.polygon.v2.lendingPool.abi;
+const PROVIDER = config.rpcUrl[CHAIN].public;
+
+const OUTPUT_FOLDER_NAME = `${CHAIN}_v2`;
+const CONTRACT_ADDRESS = aave[CHAIN].v2.lendingPool.address;
+const CONTRACT_ABI = aave[CHAIN].v2.lendingPool.abi;
 
 async function loadUserDataV2() {
   const startIndex = require(`../${OUTPUT_FOLDER_NAME}/index.json`);
@@ -66,8 +69,8 @@ async function getBorrowUserData(lendingPool, account, index) {
 
     saveData(OUTPUT_FOLDER_NAME, OUTPUT_FILE_NAME, info);
   }
-  const infoIindex = [index];
-  saveData(OUTPUT_FOLDER_NAME, "index", infoIindex);
+
+  updateValues(OUTPUT_FOLDER_NAME, "index", index);
 }
 
 loadUserDataV2();

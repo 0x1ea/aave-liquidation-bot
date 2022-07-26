@@ -61,5 +61,7 @@ module.exports = { getOnlyUsers };
 //   FROM_FILE,
 //   TO_FILE
 // );
+
 // compactFiles(OUTPUT_FOLDER_NAME, "uniqueUsers", "all_users", TO_FILE, TO_FILE);
+
 // deleteDuplicates(OUTPUT_FOLDER_NAME, "all_users", "all_users");

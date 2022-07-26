@@ -8,26 +8,29 @@ require("dotenv").config();
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const GAS_PRICE = "35100000000";
+const CHAIN = "polygon";
+const GAS_PRICE = "40100000000";
 const VICTIM_ADDRESS = "0xF3A92cC865B3e3116304bBB2DA2D6614d356DA6a";
+const TOKEN_DEBT_ADDRESS = "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063";
 const PROVIDER_URL = config.rpcUrl.local;
 const MY_ACCOUNT = config.keys.fake;
 
-const WRAPPER_ADDRESS = aave.polygon.iWeth.address;
-const WRAPPER_ABI = aave.polygon.iWeth.abi;
+const WRAPPER_ADDRESS = aave[CHAIN].iWeth.address;
+const WRAPPER_ABI = aave[CHAIN].iWeth.abi;
 
-const LENDINGPOOL_ADDRESS = aave.polygon.v2.lendingPool.address;
-const LENDINGPOOL_ABI = aave.polygon.v2.lendingPool.abi;
+const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
+const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
 const RECEIVE_A_TOKEN = false;
 
-const TOKEN_DEBT_ADDRESS = "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063";
-const YOUR_COL_PRICE = 0.0005505157; // WMATIC/ETH
-const HIS_DEBT_PRICE = 0.0006579497; // DAI/ETH
+const PRICE_ORACLE_ADDRESS = aave[CHAIN].priceOracle.address;
+const PRICE_ORACLE_ABI = aave[CHAIN].priceOracle.abi;
+// const YOUR_COL_PRICE = 0.0005432525; // WMATIC/ETH
+// const HIS_DEBT_PRICE = 0.0006579497; // DAI/ETH
 
 //---------------------------------------------------------
 
-const EXCHANGE_ADDRESS = uniswap.polygon.swapRouter.address;
-const EXCHANGE_ABI = uniswap.polygon.swapRouter.abi;
+const EXCHANGE_ADDRESS = uniswap[CHAIN].swapRouter.address;
+const EXCHANGE_ABI = uniswap[CHAIN].swapRouter.abi;
 const poolFee = 3000;
 //---------------------------------------------------------
 
@@ -51,8 +54,15 @@ async function cheapLiquidation() {
     VICTIM_ADDRESS
   );
 
-  let SWAP_AMOUNT = parseInt(totalDebtETH / 2.01);
-  SWAP_AMOUNT = parseInt(SWAP_AMOUNT / HIS_DEBT_PRICE).toString();
+  const baseTokenPrice = await getPrice(
+    PRICE_ORACLE_ADDRESS,
+    PRICE_ORACLE_ABI,
+    deployer,
+    baseTokenAddress
+  );
+
+  let SWAP_AMOUNT = parseInt(totalDebtETH / 2);
+  SWAP_AMOUNT = parseInt(SWAP_AMOUNT / baseTokenPrice).toString();
 
   if (formattedHF < 1) {
     console.log("Getting some weth...");
@@ -85,6 +95,7 @@ async function cheapLiquidation() {
       amountOutMinimum: 0,
       sqrtPriceLimitX96: 0
     };
+
     console.log("Swapping WMATIC for debt token...");
     await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params);
     console.log("Done!\n");
@@ -229,6 +240,13 @@ async function liquidateUser(
 
   await liquidateTx.wait(1);
   console.log(`- Done!\n\n`);
+}
+
+async function getPrice(address, abi, account, baseTokenAddress) {
+  const contract = new ethers.Contract(address, abi, account);
+  let price = await contract.getAssetPrice(baseTokenAddress);
+  price = price / 1e18;
+  return price;
 }
 
 cheapLiquidation();
