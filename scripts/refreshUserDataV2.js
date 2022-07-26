@@ -24,6 +24,17 @@ const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
 const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
 const CONFIG = aave[CHAIN].v2.lendingPool.config;
 
+refreshUserData(DECIMALS);
+
+// convertConfiguration(
+//   FOLDER_NAME,
+//   OUTPUT_FILE_NAME,
+//   "users_ready",
+//   1,
+//   DECIMALS - 1,
+//   CONFIG
+// );
+
 async function refreshUserData(decimals) {
   const provider = new ethers.providers.JsonRpcProvider(process.env[RPC_URL]);
   const deployer = new ethers.Wallet(process.env[KEY], provider);
@@ -107,16 +118,5 @@ async function getBorrowUserData(lendingPool, account) {
     formattedHF
   };
 }
-
-// refreshUserData(DECIMALS);
-
-convertConfiguration(
-  FOLDER_NAME,
-  OUTPUT_FILE_NAME,
-  "users_ready",
-  1,
-  DECIMALS - 1,
-  CONFIG
-);
 
 module.exports = { refreshUserData };

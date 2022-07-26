@@ -9,9 +9,10 @@ require("dotenv").config();
  * ANTES DE HACER EL LLAMADO
  */
 const CHAIN = "mainnet";
-const GAS_PRICE = "30100000000";
+let GAS_PRICE = "30000000000";
 const VICTIM_ADDRESS = "0x809a8c04329344d630bff2097A67648B51Ff0aEC";
 const TOKEN_DEBT_ADDRESS = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
+const TOKEN_DEBT_DECIMALS = 6;
 const COL_ADDRESS = "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"; // AAVE Token
 const PROVIDER_URL = config.rpcUrl.local;
 const MY_ACCOUNT = config.keys.fake;
@@ -38,6 +39,10 @@ const poolFee = 3000;
 async function cheapLiquidation() {
   const provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER_URL]);
   const deployer = new ethers.Wallet(process.env[MY_ACCOUNT], provider);
+
+  const gasPrice = await deployer.getGasPrice();
+  GAS_PRICE = parseInt(gasPrice * 1.1);
+  console.log("gasPrice: ", GAS_PRICE);
 
   const baseTokenAddress = WRAPPER_ADDRESS;
   const debtTokenAddress = TOKEN_DEBT_ADDRESS;
@@ -80,7 +85,12 @@ async function cheapLiquidation() {
   // debo pasar la deuda en el precio de usdc a eth
   let SWAP_AMOUNT = parseInt(currentVariableDebt / 2); //parseInt(totalDebtETH / 2);
   console.log(SWAP_AMOUNT);
-  SWAP_AMOUNT = parseInt((SWAP_AMOUNT / 1000000) * baseTokenPrice).toString();
+
+  const MIN_OUTPUT_AMOUNT = parseInt(SWAP_AMOUNT * 0.98);
+
+  SWAP_AMOUNT = parseInt(
+    (SWAP_AMOUNT / 10 ** TOKEN_DEBT_DECIMALS) * baseTokenPrice
+  ).toString();
 
   console.log(SWAP_AMOUNT);
 
@@ -112,7 +122,7 @@ async function cheapLiquidation() {
       recipient: deployer.address,
       deadline: parseInt(Date.now() * 1000),
       amountIn: SWAP_AMOUNT,
-      amountOutMinimum: 0,
+      amountOutMinimum: MIN_OUTPUT_AMOUNT,
       sqrtPriceLimitX96: 0
     };
 
