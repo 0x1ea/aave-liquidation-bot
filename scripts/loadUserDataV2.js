@@ -55,9 +55,7 @@ async function getBorrowUserData(lendingPool, account, index) {
     console.log("Account: ", account);
     console.log(`Have ${totalCollateralETH} worth of ETH deposited.`);
     console.log(`Have ${totalDebtETH} worth of ETH borrowed.`);
-    console.log(`And his healthFactor is: ${ethers.utils.formatEther(healthFactor)}.\n`);
-    
-    console.log(`And his formattedHF is: ${formattedHF}.\n`);
+    console.log(`And his healthFactor is: ${formattedHF}.\n`);
 
     const info = [
       {
