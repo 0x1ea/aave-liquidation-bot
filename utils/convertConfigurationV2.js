@@ -88,7 +88,7 @@ function decodeConfiguration(configuration, chainData) {
         debt: false,
         chainData: chainData[i]
       });
-    } else if (bitCouples[i] === "01") {
+    } else if (bitCouples[i] == "01" || bitCouples[i] == "1") {
       data.push({
         code: bitCouples[i],
         col: false,

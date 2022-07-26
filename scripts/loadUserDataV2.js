@@ -70,7 +70,7 @@ async function getBorrowUserData(lendingPool, account, index) {
     saveData(OUTPUT_FOLDER_NAME, OUTPUT_FILE_NAME, info);
   }
 
-  updateValues(OUTPUT_FOLDER_NAME, "index", index);
+  updateValues(OUTPUT_FOLDER_NAME, "index", index, 0);
 }
 
 loadUserDataV2();

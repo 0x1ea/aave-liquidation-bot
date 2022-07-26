@@ -8,11 +8,27 @@ const fs = require("fs");
  * @param {string} fileName - nombre del archivo que se va a editar
  * @param {array} dataSet - informacion que se va a escribir
  */
-async function updateValues(folderName, fileName, dataSet) {
-  const info = [dataSet];
-  fs.writeFile(`./${folderName}/${fileName}.json`, JSON.stringify(info), err => {
-    if (err) {
-      return console.error(err);
+async function updateValues(folderName, fileName, dataSet, index) {
+  // if (index) {
+  fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
+    if (!buf) {
+      fs.writeFile(`./${folderName}/${fileName}.json`, "[]", err => {
+        if (err) {
+          return console.error(err);
+        }
+      });
+    } else {
+      fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
+        let save = buf.toString();
+        const newSave = await JSON.parse(save);
+        newSave[index] = dataSet;
+
+        fs.writeFile(`./${folderName}/${fileName}.json`, JSON.stringify(newSave), err => {
+          if (err) {
+            return console.error(err);
+          }
+        });
+      });
     }
   });
 }
