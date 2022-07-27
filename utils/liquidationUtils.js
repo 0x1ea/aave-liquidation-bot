@@ -38,7 +38,7 @@ async function getErc20Balance(erc20Address, abi, account) {
 async function swapTokens(address, abi, account, params, gasPrice) {
   const uniswapRouter = new ethers.Contract(address, abi, account);
   await uniswapRouter.exactInputSingle(params, {
-    gasLimit: "300000",
+    gasLimit: "350000",
     gasPrice: gasPrice
   });
 }
@@ -52,12 +52,12 @@ async function getBorrowUserData(lendingPool, account) {
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
 
-  console.log("\nAccount: ", account);
-  console.log(
-    `Have ${ethers.utils.formatEther(totalCollateralETH)} worth of ETH deposited.`
-  );
-  console.log(`Have ${ethers.utils.formatEther(totalDebtETH)} worth of ETH borrowed.`);
-  console.log(`His helthFactor is: ${formattedHF}.\n`);
+  // console.log("\nAccount: ", account);
+  // console.log(
+  //   `Have ${ethers.utils.formatEther(totalCollateralETH)} worth of ETH deposited.`
+  // );
+  // console.log(`Have ${ethers.utils.formatEther(totalDebtETH)} worth of ETH borrowed.`);
+  // console.log(`His helthFactor is: ${formattedHF}.\n`);
 
   return { formattedHF, totalCollateralETH, totalDebtETH };
 }
@@ -92,7 +92,7 @@ async function liquidateUser(
     VICTIM_ADDRESS,
     debtToCover,
     receiveAToken,
-    { gasPrice: gasPrice, gasLimit: "750000" }
+    { gasPrice: gasPrice, gasLimit: "800000" }
   );
   console.log(`- Done!\n\n`);
 }

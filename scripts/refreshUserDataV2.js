@@ -86,7 +86,7 @@ async function refreshUserData(decimals) {
           FOLDER_NAME,
           OUTPUT_FILE_NAME,
           "users_ready",
-          1,
+          1.02,
           // DECIMALS - 1,
           CONFIG
         );
