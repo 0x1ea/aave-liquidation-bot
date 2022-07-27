@@ -19,39 +19,39 @@ const {
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const LIQUIDATION_COST = 1636082;
-const CHAIN = "mainnet";
-let GAS_PRICE = "30000000000";
-const VICTIM_ADDRESS = "0xd940aAf3354D798B0537fA3679eB44faa37b4225";
-const TOKEN_DEBT_ADDRESS = "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72";
-const TOKEN_DEBT_DECIMALS = 18;
-const COL_ADDRESS = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"; // WETH Token
-const PROVIDER_URL = config.rpcUrl.local;
-const MY_ACCOUNT = config.keys.fake;
 
-const WRAPPER_ADDRESS = aave[CHAIN].iWeth.address;
-const WRAPPER_ABI = aave[CHAIN].iWeth.abi;
+async function liquidate(victimAddress, debtToken, colAddress, provider, account) {
+  const LIQUIDATION_COST = 1636082;
+  const CHAIN = "mainnet";
+  const VICTIM_ADDRESS = victimAddress;
+  const TOKEN_DEBT_ADDRESS = debtToken.address;
+  const TOKEN_DEBT_DECIMALS = debtToken.decimals;
+  const COL_ADDRESS = colAddress; // WETH Token
+  const PROVIDER_URL = provider;
+  const MY_ACCOUNT = account;
 
-const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
-const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
-const RECEIVE_A_TOKEN = false;
+  const WRAPPER_ADDRESS = aave[CHAIN].iWeth.address;
+  const WRAPPER_ABI = aave[CHAIN].iWeth.abi;
 
-const PRICE_ORACLE_ADDRESS = aave[CHAIN].priceOracle.address;
-const PRICE_ORACLE_ABI = aave[CHAIN].priceOracle.abi;
+  const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
+  const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
+  const RECEIVE_A_TOKEN = false;
 
-//---------------------------------------------------------
+  const PRICE_ORACLE_ADDRESS = aave[CHAIN].priceOracle.address;
+  const PRICE_ORACLE_ABI = aave[CHAIN].priceOracle.abi;
 
-const EXCHANGE_ADDRESS = uniswap[CHAIN].swapRouter.address;
-const EXCHANGE_ABI = uniswap[CHAIN].swapRouter.abi;
-const poolFee = 3000;
-//---------------------------------------------------------
+  //---------------------------------------------------------
 
-async function cheapLiquidation() {
+  const EXCHANGE_ADDRESS = uniswap[CHAIN].swapRouter.address;
+  const EXCHANGE_ABI = uniswap[CHAIN].swapRouter.abi;
+  const poolFee = 3000;
+  //---------------------------------------------------------
+
   const provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER_URL]);
   const deployer = new ethers.Wallet(process.env[MY_ACCOUNT], provider);
 
   const gasPrice = await deployer.getGasPrice();
-  GAS_PRICE = "30000000000"; //parseInt(gasPrice * 1.1);
+  const GAS_PRICE = "30000000000"; //parseInt(gasPrice * 1.1);
   console.log("gasPrice: ", GAS_PRICE);
 
   const baseTokenAddress = WRAPPER_ADDRESS;
@@ -92,7 +92,6 @@ async function cheapLiquidation() {
   console.log(`Debt/ETH price: ${baseTokenPrice}`);
   console.log(`currentVariableDebt: ${currentVariableDebt}`);
 
-  // debo pasar la deuda en el precio de usdc a eth
   let SWAP_AMOUNT = parseInt(currentVariableDebt / 2); //parseInt(totalDebtETH / 2);
   console.log(SWAP_AMOUNT);
 
@@ -103,6 +102,7 @@ async function cheapLiquidation() {
   ).toString();
 
   console.log(SWAP_AMOUNT);
+  const LIQUIDATION_TOTAL_COST = LIQUIDATION_COST * GAS_PRICE;
 
   if (formattedHF < 1) {
     console.log(`Getting ${SWAP_AMOUNT} weis of weth...`);
@@ -223,4 +223,6 @@ async function cheapLiquidation() {
   }
 }
 
-cheapLiquidation();
+module.exports = { liquidate };
+
+liquidate();

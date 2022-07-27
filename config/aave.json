@@ -5868,57 +5868,68 @@
           {
             "symbol": "USDT",
             "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 6
           },
           {
             "symbol": "WBTC",
             "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
-            "bonus": 0.05
+            "bonus": 0.065,
+            "decimals": 8
           },
           {
             "symbol": "WETH",
             "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-            "bonus": 0.05
+            "bonus": 0.05,
+            "decimals": 18
           },
           {
             "symbol": "YFI",
             "address": "0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "ZRX",
             "address": "0xE41d2489571d322189246DaFA5ebDe1F4699F498",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "UNI",
             "address": "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
-            "bonus": 0.05
+            "bonus": 0.09,
+            "decimals": 18
           },
           {
             "symbol": "AAVE",
             "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "BAT",
             "address": "0x0D8775F648430679A709E98d2b0Cb6250d2887EF",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "BUSD",
             "address": "0x4Fabb145d64652a948d72533023f6E7A623C7C53",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 18
           },
           {
             "symbol": "DAI",
             "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-            "bonus": 0.05
+            "bonus": 0.05,
+            "decimals": 18
           },
           {
             "symbol": "ENJ",
             "address": "0xF629cBd94d3791C9250152BD8dfBDF380E2a3B9c",
-            "bonus": 0.05
+            "bonus": 0.065,
+            "decimals": 18
           },
           {
             "symbol": "KNC",
@@ -5928,107 +5939,128 @@
           {
             "symbol": "LINK",
             "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
-            "bonus": 0.05
+            "bonus": 0.063,
+            "decimals": 18
           },
           {
             "symbol": "MANA",
             "address": "0x0F5D2fB29fb7d3CFeE444a200298f468908cC942",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "MKR",
             "address": "0x9f8F72aA9304c8B593d555F12eF6589cC3A579A2",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "REN",
             "address": "0x408e41876cCCDC0F92210600ef50372656052a38",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "SNX",
             "address": "0xC011a73ee8576Fb46F5E1c5751cA3B9Fe0af2a6F",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "sUSD",
             "address": "0x57Ab1ec28D129707052df4dF418D58a2D46d5f51",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 18
           },
           {
             "symbol": "TUSD",
             "address": "0x0000000000085d4780B73119b644AE5ecd22b376",
-            "bonus": 0.05
+            "bonus": 0.05,
+            "decimals": 18
           },
           {
             "symbol": "USDC",
             "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
-            "bonus": 0.05
+            "bonus": 0.045,
+            "decimals": 6
           },
           {
             "symbol": "CRV",
             "address": "0xD533a949740bb3306d119CC777fa900bA034cd52",
-            "bonus": 0.05
+            "bonus": 0.085,
+            "decimals": 18
           },
           {
             "symbol": "GUSD",
             "address": "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 2
           },
           {
             "symbol": "BAL",
             "address": "0xba100000625a3754423978a60c9317c58a424e3D",
-            "bonus": 0.05
+            "bonus": 0.08,
+            "decimals": 18
           },
           {
             "symbol": "xSUSHI",
             "address": "0x8798249c2E607446EfB7Ad49eC89dD1865Ff4272",
-            "bonus": 0.05
+            "bonus": 0.085,
+            "decimals": 18
           },
           {
             "symbol": "renFIL",
             "address": "0xD5147bc8e386d91Cc5DBE72099DAC6C9b99276F5",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 18
           },
           {
             "symbol": "RAI",
             "address": "0x03ab458634910AaD20eF5f1C8ee96F1D6ac54919",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 18
           },
           {
             "symbol": "AMPL",
             "address": "0xD46bA6D942050d489DBd938a2C909A5d5039A161",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 9
           },
           {
             "symbol": "USDP",
             "address": "0x8E870D67F660D95d5be530380D0eC0bd388289E1",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 18
           },
           {
             "symbol": "DPI",
             "address": "0x1494CA1F11D487c2bBe4543E90080AeBa4BA3C2b",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "FRAX",
             "address": "0x853d955aCEf822Db058eb8505911ED77F175b99e",
-            "bonus": 0.05
+            "bonus": 0.0,
+            "decimals": 18
           },
           {
             "symbol": "FEI",
             "address": "0x956F47F50A910163D8BF957Cf5846D573E7f87CA",
-            "bonus": 0.05
+            "bonus": 0.065,
+            "decimals": 18
           },
           {
             "symbol": "stETH",
             "address": "0xae7ab96520DE3A18E5e111B5EaAb095312D7fE84",
-            "bonus": 0.05
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "ENS",
             "address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72",
-            "bonus": 0.05
+            "bonus": 0.08,
+            "decimals": 18
           },
           {
             "symbol": "UST",
@@ -6038,7 +6070,8 @@
           {
             "symbol": "CVX",
             "address": "0x4e3FBD56CD56c3e72c1403e103b45Db9da5B9D2B",
-            "bonus": 0.05
+            "bonus": 0.085,
+            "decimals": 18
           }
         ]
       }
