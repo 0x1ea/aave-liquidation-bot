@@ -16,7 +16,7 @@ async function convertConfiguration(
   const OUTPUT_FILE_NAME = outputFile;
   const HEALTH_FACTOR_LIMIT = hf || 1.01;
   // const WEI_UNITS = decimals || 18;
-  fs.readFile(`./${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
+  fs.readFile(`./data/${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
     const data = await JSON.parse(save);
     const newUser = [];
@@ -40,7 +40,7 @@ async function convertConfiguration(
     }
 
     fs.writeFile(
-      `./${FOLDER_NAME}/${OUTPUT_FILE_NAME}.json`,
+      `./data/${FOLDER_NAME}/${OUTPUT_FILE_NAME}.json`,
       JSON.stringify(newUser),
       err => {
         if (err) {

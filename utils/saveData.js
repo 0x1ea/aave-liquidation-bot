@@ -8,15 +8,15 @@ const fs = require("fs");
  *                          estar formateado dentro de un array.
  */
 async function saveData(folderName, fileName, dataSet) {
-  fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
+  fs.readFile(`./data/${folderName}/${fileName}.json`, async (err, buf) => {
     if (!buf) {
-      fs.writeFile(`./${folderName}/${fileName}.json`, "[]", err => {
+      fs.writeFile(`./data/${folderName}/${fileName}.json`, "[]", err => {
         if (err) {
           return console.error(err);
         }
       });
     } else {
-      fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
+      fs.readFile(`./data/${folderName}/${fileName}.json`, async (err, buf) => {
         let save = buf.toString();
         const newSave = await JSON.parse(save);
 
@@ -24,11 +24,15 @@ async function saveData(folderName, fileName, dataSet) {
           newSave.push(data);
         });
 
-        fs.writeFile(`./${folderName}/${fileName}.json`, JSON.stringify(newSave), err => {
-          if (err) {
-            return console.error(err);
+        fs.writeFile(
+          `./data/${folderName}/${fileName}.json`,
+          JSON.stringify(newSave),
+          err => {
+            if (err) {
+              return console.error(err);
+            }
           }
-        });
+        );
       });
     }
   });

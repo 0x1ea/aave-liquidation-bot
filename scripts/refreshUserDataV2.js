@@ -31,7 +31,7 @@ async function refreshUserData(decimals) {
   const provider = new ethers.providers.JsonRpcProvider(process.env[RPC_URL]);
   const deployer = new ethers.Wallet(process.env[KEY], provider);
 
-  fs.readFile(`./${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
+  fs.readFile(`./data/${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
     const data = await JSON.parse(save);
     const end = data.length;
