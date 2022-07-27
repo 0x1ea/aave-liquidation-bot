@@ -6,35 +6,27 @@ const config = require("../config/config.json");
 const { convertConfiguration } = require("../utils/convertConfigurationV2");
 const { saveData } = require("../utils/saveData");
 const { updateValues } = require("../utils/updateValues");
+
 /**
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-
-const CHAIN = "mainnet";
-const INPUT_FILE_NAME = "users_data";
-const OUTPUT_FILE_NAME = "updated_users";
+const CHAIN = "polygon";
 const KEY = config.keys.fake;
 const RPC_URL = config.rpcUrl[CHAIN].public;
+const HEALTH_FACTOR_LIMIT = 1.05;
+const MIN_ETH_PRICE = { mainnet: 0.3, polygon: 0.002 };
 
+// CONSTANTS
 const FOLDER_NAME = `${CHAIN}_v2`;
-const HEALTH_FACTOR_LIMIT = 1.04;
+const INPUT_FILE_NAME = "users_data";
+const OUTPUT_FILE_NAME = "updated_users";
 const DECIMALS = aave[CHAIN].v2.lendingPool.decimals;
 const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
 const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
 const CONFIG = aave[CHAIN].v2.lendingPool.config;
 
-// refreshUserData(DECIMALS);
-
-convertConfiguration(
-  FOLDER_NAME,
-  OUTPUT_FILE_NAME,
-  "users_ready",
-  1,
-  DECIMALS - 1,
-  CONFIG
-);
-
+refreshUserData(DECIMALS);
 async function refreshUserData(decimals) {
   const provider = new ethers.providers.JsonRpcProvider(process.env[RPC_URL]);
   const deployer = new ethers.Wallet(process.env[KEY], provider);
@@ -42,11 +34,21 @@ async function refreshUserData(decimals) {
   fs.readFile(`./${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
     const data = await JSON.parse(save);
-    const newUser = [];
     const end = data.length;
 
-    for (let i = 0; i <= end; i++) {
-      if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT) {
+    for (let i = 0; i < end; i++) {
+      const formatTotalDebtETH = ethers.utils
+        .formatEther(data[i].totalDebtETH)
+        .toString();
+      const formatTotalCollateralETH = ethers.utils
+        .formatEther(data[i].totalCollateralETH)
+        .toString();
+
+      if (
+        data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT &&
+        formatTotalDebtETH <= formatTotalCollateralETH &&
+        formatTotalDebtETH > MIN_ETH_PRICE[CHAIN]
+      ) {
         const VICTIM_ADDRESS = data[i].user;
         const lendingPool = await getLendingPool(
           LENDINGPOOL_ADDRESS,
@@ -79,21 +81,18 @@ async function refreshUserData(decimals) {
           userConfiguration: configuration
         };
 
-        if (info.formatTotalDebtETH <= info.formatTotalCollateralETH) {
-          updateValues(FOLDER_NAME, OUTPUT_FILE_NAME, info, i);
-        }
+        updateValues(FOLDER_NAME, OUTPUT_FILE_NAME, info, i);
+        convertConfiguration(
+          FOLDER_NAME,
+          OUTPUT_FILE_NAME,
+          "users_ready",
+          1,
+          // DECIMALS - 1,
+          CONFIG
+        );
       }
     }
   });
-
-  convertConfiguration(
-    FOLDER_NAME,
-    OUTPUT_FILE_NAME,
-    "users_ready",
-    1,
-    DECIMALS - 2,
-    CONFIG
-  );
 }
 
 async function getUserConfiguration(lendingPool, account) {
@@ -122,4 +121,12 @@ async function getBorrowUserData(lendingPool, account) {
   };
 }
 
+// convertConfiguration(
+//   FOLDER_NAME,
+//   OUTPUT_FILE_NAME,
+//   "users_ready",
+//   1,
+//   DECIMALS - 1,
+//   CONFIG
+// );
 module.exports = { refreshUserData };

@@ -9,7 +9,7 @@ require("dotenv").config();
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const CHAIN = "mainnet";
+const CHAIN = "polygon";
 const OUTPUT_FILE_NAME = "users_data";
 const ACCOUNT = config.keys.fake;
 const PROVIDER = config.rpcUrl[CHAIN].public;

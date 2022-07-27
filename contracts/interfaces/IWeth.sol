@@ -1,7 +1,10 @@
-pragma solidity ^0.4.19;
+pragma solidity 0.8.10;
 
 interface IWeth {
-  function allowance(address owner, address spender) external view returns (uint256 remaining);
+  function allowance(address owner, address spender)
+    external
+    view
+    returns (uint256 remaining);
 
   function approve(address spender, uint256 value) external returns (bool success);
 

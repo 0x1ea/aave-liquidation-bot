@@ -1,8 +1,19 @@
+require("dotenv").config();
 const { ethers } = require("ethers");
 const aave = require("../config/aave.json");
 const config = require("../config/config.json");
 const uniswap = require("../config/uniswap.json");
-require("dotenv").config();
+const {
+  getWeth,
+  approveErc20,
+  getErc20Balance,
+  swapTokens,
+  getBorrowUserData,
+  getEth,
+  getLendingPool,
+  liquidateUser,
+  getPrice
+} = require("../utils/liquidationUtils");
 
 /**
  * INFORMACION PARA CONFIGURAR
@@ -11,10 +22,10 @@ require("dotenv").config();
 const LIQUIDATION_COST = 1636082;
 const CHAIN = "mainnet";
 let GAS_PRICE = "30000000000";
-const VICTIM_ADDRESS = "0x1A17a71358B41AfbcaC2C1b891e1509554170640";
-const TOKEN_DEBT_ADDRESS = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2";
+const VICTIM_ADDRESS = "0xd940aAf3354D798B0537fA3679eB44faa37b4225";
+const TOKEN_DEBT_ADDRESS = "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72";
 const TOKEN_DEBT_DECIMALS = 18;
-const COL_ADDRESS = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"; // WETH Token
+const COL_ADDRESS = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"; // WETH Token
 const PROVIDER_URL = config.rpcUrl.local;
 const MY_ACCOUNT = config.keys.fake;
 
@@ -27,8 +38,6 @@ const RECEIVE_A_TOKEN = false;
 
 const PRICE_ORACLE_ADDRESS = aave[CHAIN].priceOracle.address;
 const PRICE_ORACLE_ABI = aave[CHAIN].priceOracle.abi;
-// const YOUR_COL_PRICE = 0.0005432525; // WMATIC/ETH
-// const HIS_DEBT_PRICE = 0.0006579497; // DAI/ETH
 
 //---------------------------------------------------------
 
@@ -61,8 +70,8 @@ async function cheapLiquidation() {
     debtTokenAddress,
     VICTIM_ADDRESS
   );
-
   //---------------------------------------------
+
   const lendingPool = await getLendingPool(
     LENDINGPOOL_ADDRESS,
     LENDINGPOOL_ABI,
@@ -97,14 +106,8 @@ async function cheapLiquidation() {
 
   if (formattedHF < 1) {
     console.log(`Getting ${SWAP_AMOUNT} weis of weth...`);
-    await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, SWAP_AMOUNT);
+    await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, SWAP_AMOUNT, GAS_PRICE);
     console.log("Done!\n");
-
-    // let balance = await deployer.getBalance();
-    // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-    // await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
-    // await getErc20Balance(debtTokenAddress, WRAPPER_ABI, deployer);
-    // console.log("-\n");
 
     if (TOKEN_DEBT_ADDRESS !== aave[CHAIN].iWeth.address) {
       console.log("Approving for Swapping...");
@@ -113,7 +116,8 @@ async function cheapLiquidation() {
         WRAPPER_ABI,
         EXCHANGE_ADDRESS,
         SWAP_AMOUNT,
-        deployer
+        deployer,
+        GAS_PRICE
       );
       console.log("Done!\n");
 
@@ -129,7 +133,7 @@ async function cheapLiquidation() {
       };
 
       console.log("Swapping WETH for debt token...");
-      await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params);
+      await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
       console.log("Done!\n");
     }
 
@@ -145,7 +149,8 @@ async function cheapLiquidation() {
       WRAPPER_ABI,
       lendingPool.address,
       DEBT_TO_COVER,
-      deployer
+      deployer,
+      GAS_PRICE
     );
     console.log("- Done!\n");
 
@@ -153,11 +158,11 @@ async function cheapLiquidation() {
     await liquidateUser(
       lendingPool,
       COL_ADDRESS,
-      // baseTokenAddress,
       debtTokenAddress,
       VICTIM_ADDRESS,
       DEBT_TO_COVER,
-      RECEIVE_A_TOKEN
+      RECEIVE_A_TOKEN,
+      GAS_PRICE
     );
 
     console.log("Getting victim data after liquidation...");
@@ -177,7 +182,8 @@ async function cheapLiquidation() {
         WRAPPER_ABI,
         EXCHANGE_ADDRESS,
         bonusBalance,
-        deployer
+        deployer,
+        GAS_PRICE
       );
       console.log("Done!\n");
 
@@ -193,7 +199,7 @@ async function cheapLiquidation() {
       };
 
       console.log("Swapping col token for WETH...");
-      await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params);
+      await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
       console.log("Done!\n");
 
       balance = await deployer.getBalance();
@@ -203,18 +209,9 @@ async function cheapLiquidation() {
       await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);
       console.log("-\n");
     }
-    // balance = await deployer.getBalance();
-    // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-    // await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
-    // await getErc20Balance(debtTokenAddress, WRAPPER_ABI, deployer);
-    // console.log("-\n");
-
-    // console.log("Swapping WMATIC for MATIC...");
-    // await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer);
-    // console.log("- Done!\n");
 
     console.log("Swapping WETH for ETH...");
-    await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer);
+    await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, GAS_PRICE);
     console.log("- Done!\n");
 
     balance = await deployer.getBalance();
@@ -225,109 +222,5 @@ async function cheapLiquidation() {
     console.log("-\n");
   }
 }
-
-async function getWeth(address, abi, account, amount) {
-  const erc20Contract = new ethers.Contract(address, abi, account);
-  const balance = await erc20Contract.balanceOf(account.address);
-  const tx = await erc20Contract.deposit({
-    value: amount,
-    gasLimit: "60041"
-    // gasPrice: GAS_PRICE
-  });
-  // await tx.wait(1);
-  return balance.toString();
-}
-
-async function approveErc20(erc20Address, abi, spenderAddress, amountToSpend, account) {
-  const erc20Token = new ethers.Contract(erc20Address, abi, account);
-  const tx = await erc20Token.approve(spenderAddress, amountToSpend, {
-    gasLimit: "63000"
-    // gasPrice: GAS_PRICE
-  });
-  await tx.wait(2);
-}
-
-async function getErc20Balance(erc20Address, abi, account) {
-  const erc20Contract = new ethers.Contract(erc20Address, abi, account);
-  const balance = await erc20Contract.balanceOf(account.address);
-  const symbol = await erc20Contract.symbol();
-  const decimals = await erc20Contract.decimals();
-  console.log(`My ${symbol} balance: ${ethers.utils.formatUnits(balance, decimals)}`);
-  return balance.toString();
-}
-
-async function swapTokens(address, abi, account, params) {
-  const uniswapRouter = new ethers.Contract(address, abi, account);
-  await uniswapRouter.exactInputSingle(params, {
-    gasLimit: "300000",
-    gasPrice: GAS_PRICE
-  });
-}
-
-async function getBorrowUserData(lendingPool, account) {
-  const {
-    totalCollateralETH,
-    totalDebtETH,
-    availableBorrowsETH,
-    healthFactor
-  } = await lendingPool.getUserAccountData(account);
-
-  const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
-
-  console.log("\nAccount: ", account);
-  console.log(
-    `Have ${ethers.utils.formatEther(totalCollateralETH)} worth of ETH deposited.`
-  );
-  console.log(`Have ${ethers.utils.formatEther(totalDebtETH)} worth of ETH borrowed.`);
-  console.log(`His helthFactor is: ${formattedHF}.\n`);
-
-  return { formattedHF, totalCollateralETH, totalDebtETH };
-}
-
-async function getEth(address, abi, account) {
-  const erc20Contract = new ethers.Contract(address, abi, account);
-  const balance = await erc20Contract.balanceOf(account.address);
-  const tx = await erc20Contract.withdraw(balance, {
-    gasLimit: "37041",
-    gasPrice: GAS_PRICE
-  });
-  await tx.wait(2);
-  return balance.toString();
-}
-
-async function getLendingPool(address, abi, account) {
-  const lendingPool = new ethers.Contract(address, abi, account);
-  return lendingPool;
-}
-
-async function liquidateUser(
-  lendingPool,
-  collateralAddress,
-  debt,
-  VICTIM_ADDRESS,
-  debtToCover,
-  receiveAToken
-) {
-  const liquidateTx = await lendingPool.liquidationCall(
-    collateralAddress,
-    debt,
-    VICTIM_ADDRESS,
-    debtToCover,
-    receiveAToken,
-    { gasPrice: GAS_PRICE, gasLimit: "750000" }
-  );
-
-  // await liquidateTx.wait(1);
-  console.log(`- Done!\n\n`);
-}
-
-async function getPrice(address, abi, account, baseTokenAddress) {
-  const contract = new ethers.Contract(address, abi, account);
-  let price = await contract.getAssetPrice(baseTokenAddress);
-  // price = price / 1e18;
-  return price;
-}
-
-// async function getUserDebt
 
 cheapLiquidation();

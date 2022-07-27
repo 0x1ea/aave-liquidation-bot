@@ -9,7 +9,6 @@ const fs = require("fs");
  * @param {array} dataSet - informacion que se va a escribir
  */
 async function updateValues(folderName, fileName, dataSet, index) {
-  // if (index) {
   fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
     if (!buf) {
       fs.writeFile(`./${folderName}/${fileName}.json`, "[]", err => {
@@ -21,7 +20,12 @@ async function updateValues(folderName, fileName, dataSet, index) {
       fs.readFile(`./${folderName}/${fileName}.json`, async (err, buf) => {
         let save = buf.toString();
         const newSave = await JSON.parse(save);
-        newSave[index] = dataSet;
+
+        if (newSave.length > 1) {
+          newSave[index] = dataSet;
+        } else {
+          newSave.push(dataSet);
+        }
 
         fs.writeFile(`./${folderName}/${fileName}.json`, JSON.stringify(newSave), err => {
           if (err) {

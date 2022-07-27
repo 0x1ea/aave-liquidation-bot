@@ -1,9 +1,12 @@
 // SPDX-License-Identifier: agpl-3.0
-pragma solidity 0.6.12;
+pragma solidity 0.8.10;
 pragma experimental ABIEncoderV2;
-
-import {ILendingPoolAddressesProvider} from "@aave/protocol-v2/contracts/interfaces/ILendingPoolAddressesProvider.sol";
-import {DataTypes} from "@aave/protocol-v2/contracts/protocol/libraries/types/DataTypes.sol";
+/**
+@aave/protocol-v2/contracts/interfaces
+@aave/protocol-v2/contracts/protocol/libraries/types/
+ */
+import {ILendingPoolAddressesProvider} from "./ILendingPoolAddressesProvider.sol";
+import {DataTypes} from "./DataTypes.sol";
 
 interface ILendingPool {
   /**
@@ -29,7 +32,12 @@ interface ILendingPool {
    * @param to Address that will receive the underlying
    * @param amount The amount to be withdrawn
    **/
-  event Withdraw(address indexed reserve, address indexed user, address indexed to, uint256 amount);
+  event Withdraw(
+    address indexed reserve,
+    address indexed user,
+    address indexed to,
+    uint256 amount
+  );
 
   /**
    * @dev Emitted on borrow() and flashLoan() when debt needs to be opened
@@ -345,8 +353,10 @@ interface ILendingPool {
     address interestRateStrategyAddress
   ) external;
 
-  function setReserveInterestRateStrategyAddress(address reserve, address rateStrategyAddress)
-    external;
+  function setReserveInterestRateStrategyAddress(
+    address reserve,
+    address rateStrategyAddress
+  ) external;
 
   function setConfiguration(address reserve, uint256 configuration) external;
 
@@ -382,14 +392,20 @@ interface ILendingPool {
    * @param asset The address of the underlying asset of the reserve
    * @return The reserve normalized variable debt
    */
-  function getReserveNormalizedVariableDebt(address asset) external view returns (uint256);
+  function getReserveNormalizedVariableDebt(address asset)
+    external
+    view
+    returns (uint256);
 
   /**
    * @dev Returns the state and configuration of the reserve
    * @param asset The address of the underlying asset of the reserve
    * @return The state of the reserve
    **/
-  function getReserveData(address asset) external view returns (DataTypes.ReserveData memory);
+  function getReserveData(address asset)
+    external
+    view
+    returns (DataTypes.ReserveData memory);
 
   function finalizeTransfer(
     address asset,
