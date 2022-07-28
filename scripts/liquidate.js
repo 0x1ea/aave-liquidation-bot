@@ -29,7 +29,7 @@ async function liquidate(
   const VICTIM_ADDRESS = victimAddress;
   const TOKEN_DEBT_ADDRESS = debtToken.address;
   const TOKEN_DEBT_DECIMALS = debtToken.decimals;
-  const COL_ADDRESS = colToken.address; // WETH Token
+  const COL_ADDRESS = colToken.address;
   const TOKEN_COL_BONUS = colToken.bonus;
 
   const WRAPPER_ADDRESS = aave[CHAIN].iWeth.address;
@@ -58,9 +58,6 @@ async function liquidate(
   const baseTokenAddress = WRAPPER_ADDRESS;
   const debtTokenAddress = TOKEN_DEBT_ADDRESS;
 
-  // console.log(`My account: ${deployer.address}\n`);
-  // console.log("Getting victim data before liquidation...");
-
   const lendingPool = await getLendingPool(
     LENDINGPOOL_ADDRESS,
     LENDINGPOOL_ABI,
@@ -87,9 +84,6 @@ async function liquidate(
       debtTokenAddress
     );
 
-    // console.log(`Debt/ETH price: ${baseTokenPrice}`);
-    // console.log(`currentVariableDebt: ${currentVariableDebt}`);
-
     let SWAP_AMOUNT = parseInt(currentVariableDebt / 2);
 
     const MIN_OUTPUT_AMOUNT = parseInt(SWAP_AMOUNT * 0.98).toString();
@@ -99,12 +93,6 @@ async function liquidate(
     ).toString();
 
     let LIQUIDATION_TOTAL_COST = LIQUIDATION_COST * GAS_PRICE;
-    /*     // console.log("\nliquidation cost: ", LIQUIDATION_TOTAL_COST);
-    // console.log("bonus: ", SWAP_AMOUNT * (1 + TOKEN_COL_BONUS));
-    // console.log(
-    //   "profitable: ",
-    //   SWAP_AMOUNT * (1 + TOKEN_COL_BONUS) > LIQUIDATION_TOTAL_COST
-    // ); */
 
     let reward = parseInt(SWAP_AMOUNT * TOKEN_COL_BONUS);
 
@@ -117,39 +105,27 @@ async function liquidate(
       );
       const matic_price_eth = ethers.utils.formatEther(matic_price_wei).toString();
       LIQUIDATION_TOTAL_COST = parseInt(LIQUIDATION_TOTAL_COST * matic_price_eth);
-      // reward = parseInt(reward * matic_price_eth);
     }
 
     reward = parseFloat(ethers.utils.formatEther(reward.toString()));
     LIQUIDATION_TOTAL_COST = parseFloat(
       ethers.utils.formatEther(LIQUIDATION_TOTAL_COST.toString())
     );
-    const PROFITABLE = reward > LIQUIDATION_TOTAL_COST;
-    /* 
-    // balance = await deployer.getBalance();
-    // console.log("My MATIC balance: ", ethers.utils.formatEther(balance));
-    // await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
-    // await getErc20Balance(debtTokenAddress, WRAPPER_ABI, deployer);
-    // console.log("-\n");
- */
-    // const bonus = (SWAP_AMOUNT * (1 + TOKEN_COL_BONUS)).toString;
 
-    console.log("Gas cost:", LIQUIDATION_TOTAL_COST);
-    console.log("Bonus:", reward);
-    console.log("Victim:", VICTIM_ADDRESS);
-    console.log("Debt token", TOKEN_DEBT_ADDRESS);
-    console.log("Col token:", COL_ADDRESS);
+    const PROFITABLE = reward > LIQUIDATION_TOTAL_COST;
 
     if (PROFITABLE) {
       console.log("MEV found...\n");
+      console.log("Col token:", COL_ADDRESS);
+      console.log("Victim:", VICTIM_ADDRESS);
+      console.log("Debt token", TOKEN_DEBT_ADDRESS);
+      console.log("Gas cost:", LIQUIDATION_TOTAL_COST);
+      console.log("Bonus:", reward, "\n");
       provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
       deployer = new ethers.Wallet(process.env[myAccount], provider);
-      // console.log(`Getting ${SWAP_AMOUNT} weis of weth...`);
       await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, SWAP_AMOUNT, GAS_PRICE);
-      // console.log("Done!\n");
 
       if (TOKEN_DEBT_ADDRESS !== aave[CHAIN].iWeth.address) {
-        // console.log("Approving for Swapping...");
         await approveErc20(
           baseTokenAddress,
           WRAPPER_ABI,
@@ -158,7 +134,6 @@ async function liquidate(
           deployer,
           GAS_PRICE
         );
-        // console.log("Done!\n");
 
         let params = {
           tokenIn: baseTokenAddress,
@@ -170,23 +145,16 @@ async function liquidate(
           amountOutMinimum: MIN_OUTPUT_AMOUNT,
           sqrtPriceLimitX96: 0 //parseInt(Math.sqrt(baseTokenPrice) * 2 * 96)
         };
-
-        // console.log("Swapping WETH for debt token...");
         await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
-        // console.log("Done!\n");
       }
 
       balance = await deployer.getBalance();
-      // console.log("My MATIC balance: ", ethers.utils.formatEther(balance));
       await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
       const DEBT_TO_COVER = await getErc20Balance(
         debtTokenAddress,
         WRAPPER_ABI,
         deployer
       );
-      // console.log("-\n");
-
-      // console.log(`Approving all ${DEBT_TO_COVER} wei units of ERC20 token borrowed...`);
       await approveErc20(
         debtTokenAddress,
         WRAPPER_ABI,
@@ -195,9 +163,6 @@ async function liquidate(
         deployer,
         GAS_PRICE
       );
-      // console.log("- Done!\n");
-
-      // console.log("Liquidating...");
       await liquidateUser(
         lendingPool,
         COL_ADDRESS,
@@ -208,18 +173,11 @@ async function liquidate(
         GAS_PRICE
       );
 
-      // console.log("Getting victim data after liquidation...");
       await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
 
       if (COL_ADDRESS !== aave[CHAIN].iWeth.address) {
-        // balance = await deployer.getBalance();
-        // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-        // await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
-        // await getErc20Balance(debtTokenAddress, WRAPPER_ABI, deployer);
         const bonusBalance = await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);
-        // console.log("-\n");
 
-        // console.log("Approving for Swapping the col token for weth...");
         await approveErc20(
           COL_ADDRESS,
           WRAPPER_ABI,
@@ -228,7 +186,6 @@ async function liquidate(
           deployer,
           GAS_PRICE
         );
-        // console.log("Done!\n");
 
         params = {
           tokenIn: COL_ADDRESS,
@@ -241,28 +198,11 @@ async function liquidate(
           sqrtPriceLimitX96: 0
         };
 
-        // console.log("Swapping col token for WETH...");
         await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
-        // console.log("Done!\n");
-
-        // balance = await deployer.getBalance();
-        // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-        // await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
-        // await getErc20Balance(debtTokenAddress, WRAPPER_ABI, deployer);
-        // await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);
-        // console.log("-\n");
       }
 
-      // console.log("Swapping WETH for ETH...");
       await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, GAS_PRICE);
-      // console.log("- Done!\n");
 
-      // balance = await deployer.getBalance();
-      // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-      // await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
-      // await getErc20Balance(debtTokenAddress, WRAPPER_ABI, deployer);
-      // await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);
-      // console.log("-\n");
       console.log("MEV extracted...\n");
     }
   }

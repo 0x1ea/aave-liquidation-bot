@@ -9,6 +9,7 @@ const { liquidate } = require("./liquidate");
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
+// const CHAIN = "mainnet";
 const CHAIN = "polygon";
 const FOLDER_NAME = `${CHAIN}_v2`;
 const INPUT_FILE_NAME = "users_ready";
