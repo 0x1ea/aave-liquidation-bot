@@ -11,23 +11,25 @@ const { updateValues } = require("../utils/updateValues");
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const CHAIN = "polygon";
-const KEY = config.keys.fake;
-const RPC_URL = config.rpcUrl[CHAIN].public;
-const HEALTH_FACTOR_LIMIT = 1.05;
-const MIN_ETH_PRICE = { mainnet: 0.3, polygon: 0.001 };
 
-// CONSTANTS
-const FOLDER_NAME = `${CHAIN}_v2`;
-const INPUT_FILE_NAME = "users_data";
-const OUTPUT_FILE_NAME = "updated_users";
-const DECIMALS = aave[CHAIN].v2.lendingPool.decimals;
-const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
-const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
-const CONFIG = aave[CHAIN].v2.lendingPool.config;
+refreshUserData("polygon");
+refreshUserData("mainnet");
 
-refreshUserData(DECIMALS);
-async function refreshUserData(decimals) {
+async function refreshUserData(chain) {
+  const CHAIN = chain;
+  const KEY = config.keys.fake;
+  const RPC_URL = config.rpcUrl[CHAIN].public;
+  const HEALTH_FACTOR_LIMIT = 1.05;
+  const MIN_ETH_PRICE = { mainnet: 0.3, polygon: 0.001 };
+
+  // CONSTANTS
+  const FOLDER_NAME = `${CHAIN}_v2`;
+  const INPUT_FILE_NAME = "users_data";
+  const OUTPUT_FILE_NAME = "updated_users";
+  const DECIMALS = aave[CHAIN].v2.lendingPool.decimals;
+  const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
+  const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
+  const CONFIG = aave[CHAIN].v2.lendingPool.config;
   const provider = new ethers.providers.JsonRpcProvider(process.env[RPC_URL]);
   const deployer = new ethers.Wallet(process.env[KEY], provider);
 
@@ -70,11 +72,11 @@ async function refreshUserData(decimals) {
           user: VICTIM_ADDRESS,
           totalCollateralETH: totalCollateralETH.toString(),
           formatTotalCollateralETH: parseFloat(
-            ethers.utils.formatUnits(totalCollateralETH.toString(), decimals)
+            ethers.utils.formatUnits(totalCollateralETH.toString(), DECIMALS)
           ),
           totalDebtETH: totalDebtETH.toString(),
           formatTotalDebtETH: parseFloat(
-            ethers.utils.formatUnits(totalDebtETH.toString(), decimals)
+            ethers.utils.formatUnits(totalDebtETH.toString(), DECIMALS)
           ),
           healthFactor: healthFactor.toString(),
           formattedHF: formattedHF,
@@ -121,12 +123,4 @@ async function getBorrowUserData(lendingPool, account) {
   };
 }
 
-// convertConfiguration(
-//   FOLDER_NAME,
-//   OUTPUT_FILE_NAME,
-//   "users_ready",
-//   1,
-//   DECIMALS - 1,
-//   CONFIG
-// );
 module.exports = { refreshUserData };

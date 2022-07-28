@@ -22,7 +22,8 @@ async function liquidate(
   publicProvider,
   privateProvider,
   myAccount,
-  chain
+  chain,
+  securityWall
 ) {
   const LIQUIDATION_COST = 1500000; //1636082;
   const CHAIN = chain;
@@ -42,12 +43,9 @@ async function liquidate(
   const PRICE_ORACLE_ADDRESS = aave[CHAIN].priceOracle.address;
   const PRICE_ORACLE_ABI = aave[CHAIN].priceOracle.abi;
 
-  //---------------------------------------------------------
-
   const EXCHANGE_ADDRESS = uniswap[CHAIN].swapRouter.address;
   const EXCHANGE_ABI = uniswap[CHAIN].swapRouter.abi;
   const poolFee = 3000;
-  //---------------------------------------------------------
 
   let provider = new ethers.providers.JsonRpcProvider(process.env[publicProvider]);
   let deployer = new ethers.Wallet(process.env[myAccount], provider);
@@ -64,6 +62,7 @@ async function liquidate(
     deployer
   );
   const { formattedHF } = await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
+
   if (formattedHF < 1) {
     //---------------------------------------------
     const dataProvider = new ethers.Contract(
@@ -113,97 +112,115 @@ async function liquidate(
     );
 
     const PROFITABLE = reward > LIQUIDATION_TOTAL_COST;
-
     if (PROFITABLE) {
       console.log("MEV found...\n");
-      console.log("Col token:", COL_ADDRESS);
       console.log("Victim:", VICTIM_ADDRESS);
+      console.log("Col token:", COL_ADDRESS);
       console.log("Debt token", TOKEN_DEBT_ADDRESS);
       console.log("Gas cost:", LIQUIDATION_TOTAL_COST);
       console.log("Bonus:", reward, "\n");
-      provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
-      deployer = new ethers.Wallet(process.env[myAccount], provider);
-      await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, SWAP_AMOUNT, GAS_PRICE);
 
-      if (TOKEN_DEBT_ADDRESS !== aave[CHAIN].iWeth.address) {
-        await approveErc20(
-          baseTokenAddress,
+      // CALCULANDO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
+      //---------------------------------------------
+      let ethCompromised = parseInt(SWAP_AMOUNT * (1 + TOKEN_COL_BONUS));
+      ethCompromised = ethers.utils.formatEther(ethCompromised.toString());
+      const totalEthCompromised =
+        parseFloat(ethCompromised) + parseFloat(LIQUIDATION_TOTAL_COST);
+
+      let balance = await deployer.getBalance();
+      console.log("My balance:", ethers.utils.formatEther(balance));
+      console.log("EthCompromised (debt + gasCost):", totalEthCompromised);
+      const residuo = parseFloat(balance) - totalEthCompromised;
+      console.log("Result balance:", residuo);
+      //---------------------------------------------
+
+      if (residuo >= securityWall) {
+        provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
+        deployer = new ethers.Wallet(process.env[myAccount], provider);
+        await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, SWAP_AMOUNT, GAS_PRICE);
+
+        if (TOKEN_DEBT_ADDRESS !== aave[CHAIN].iWeth.address) {
+          await approveErc20(
+            baseTokenAddress,
+            WRAPPER_ABI,
+            EXCHANGE_ADDRESS,
+            SWAP_AMOUNT,
+            deployer,
+            GAS_PRICE
+          );
+
+          let params = {
+            tokenIn: baseTokenAddress,
+            tokenOut: debtTokenAddress,
+            fee: poolFee,
+            recipient: deployer.address,
+            deadline: parseInt(Date.now() * 1000),
+            amountIn: SWAP_AMOUNT,
+            amountOutMinimum: MIN_OUTPUT_AMOUNT,
+            sqrtPriceLimitX96: 0 //parseInt(Math.sqrt(baseTokenPrice) * 2 * 96)
+          };
+          await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
+        }
+
+        balance = await deployer.getBalance();
+        await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
+        const DEBT_TO_COVER = await getErc20Balance(
+          debtTokenAddress,
           WRAPPER_ABI,
-          EXCHANGE_ADDRESS,
-          SWAP_AMOUNT,
+          deployer
+        );
+        await approveErc20(
+          debtTokenAddress,
+          WRAPPER_ABI,
+          lendingPool.address,
+          DEBT_TO_COVER,
           deployer,
           GAS_PRICE
         );
-
-        let params = {
-          tokenIn: baseTokenAddress,
-          tokenOut: debtTokenAddress,
-          fee: poolFee,
-          recipient: deployer.address,
-          deadline: parseInt(Date.now() * 1000),
-          amountIn: SWAP_AMOUNT,
-          amountOutMinimum: MIN_OUTPUT_AMOUNT,
-          sqrtPriceLimitX96: 0 //parseInt(Math.sqrt(baseTokenPrice) * 2 * 96)
-        };
-        await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
-      }
-
-      balance = await deployer.getBalance();
-      await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
-      const DEBT_TO_COVER = await getErc20Balance(
-        debtTokenAddress,
-        WRAPPER_ABI,
-        deployer
-      );
-      await approveErc20(
-        debtTokenAddress,
-        WRAPPER_ABI,
-        lendingPool.address,
-        DEBT_TO_COVER,
-        deployer,
-        GAS_PRICE
-      );
-      await liquidateUser(
-        lendingPool,
-        COL_ADDRESS,
-        debtTokenAddress,
-        VICTIM_ADDRESS,
-        DEBT_TO_COVER,
-        RECEIVE_A_TOKEN,
-        GAS_PRICE
-      );
-
-      await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
-
-      if (COL_ADDRESS !== aave[CHAIN].iWeth.address) {
-        const bonusBalance = await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);
-
-        await approveErc20(
+        await liquidateUser(
+          lendingPool,
           COL_ADDRESS,
-          WRAPPER_ABI,
-          EXCHANGE_ADDRESS,
-          bonusBalance,
-          deployer,
+          debtTokenAddress,
+          VICTIM_ADDRESS,
+          DEBT_TO_COVER,
+          RECEIVE_A_TOKEN,
           GAS_PRICE
         );
 
-        params = {
-          tokenIn: COL_ADDRESS,
-          tokenOut: baseTokenAddress,
-          fee: poolFee,
-          recipient: deployer.address,
-          deadline: parseInt(Date.now() * 1000),
-          amountIn: bonusBalance,
-          amountOutMinimum: 0,
-          sqrtPriceLimitX96: 0
-        };
+        await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
 
-        await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
+        if (COL_ADDRESS !== aave[CHAIN].iWeth.address) {
+          const bonusBalance = await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);
+
+          await approveErc20(
+            COL_ADDRESS,
+            WRAPPER_ABI,
+            EXCHANGE_ADDRESS,
+            bonusBalance,
+            deployer,
+            GAS_PRICE
+          );
+
+          params = {
+            tokenIn: COL_ADDRESS,
+            tokenOut: baseTokenAddress,
+            fee: poolFee,
+            recipient: deployer.address,
+            deadline: parseInt(Date.now() * 1000),
+            amountIn: bonusBalance,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+          };
+
+          await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
+        }
+
+        await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, GAS_PRICE);
+
+        console.log("MEV extracted...\n");
+      } else {
+        console.log("insufficient funds...");
       }
-
-      await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, GAS_PRICE);
-
-      console.log("MEV extracted...\n");
     }
   }
 }
