@@ -66,11 +66,7 @@ async function liquidate(
     LENDINGPOOL_ABI,
     deployer
   );
-  const { formattedHF, totalDebtETH } = await getBorrowUserData(
-    lendingPool,
-    VICTIM_ADDRESS
-  );
-
+  const { formattedHF } = await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
   if (formattedHF < 1) {
     //---------------------------------------------
     const dataProvider = new ethers.Contract(
@@ -110,7 +106,7 @@ async function liquidate(
     //   SWAP_AMOUNT * (1 + TOKEN_COL_BONUS) > LIQUIDATION_TOTAL_COST
     // ); */
 
-    let reward = SWAP_AMOUNT * (1 + TOKEN_COL_BONUS);
+    let reward = parseInt(SWAP_AMOUNT * TOKEN_COL_BONUS);
 
     if (CHAIN == "polygon") {
       const matic_price_wei = await getPrice(
@@ -119,15 +115,15 @@ async function liquidate(
         deployer,
         WRAPPER_ADDRESS
       );
-      const matic_price_eth = matic_price_wei / 1e18;
-      LIQUIDATION_TOTAL_COST = (
-        LIQUIDATION_COST *
-        GAS_PRICE *
-        matic_price_eth
-      ).toString();
-      reward = parseInt(reward * matic_price_eth).toString();
+      const matic_price_eth = ethers.utils.formatEther(matic_price_wei).toString();
+      LIQUIDATION_TOTAL_COST = parseInt(LIQUIDATION_TOTAL_COST * matic_price_eth);
+      // reward = parseInt(reward * matic_price_eth);
     }
 
+    reward = parseFloat(ethers.utils.formatEther(reward.toString()));
+    LIQUIDATION_TOTAL_COST = parseFloat(
+      ethers.utils.formatEther(LIQUIDATION_TOTAL_COST.toString())
+    );
     const PROFITABLE = reward > LIQUIDATION_TOTAL_COST;
     /* 
     // balance = await deployer.getBalance();
@@ -138,13 +134,14 @@ async function liquidate(
  */
     // const bonus = (SWAP_AMOUNT * (1 + TOKEN_COL_BONUS)).toString;
 
+    console.log("Gas cost:", LIQUIDATION_TOTAL_COST);
+    console.log("Bonus:", reward);
+    console.log("Victim:", VICTIM_ADDRESS);
+    console.log("Debt token", TOKEN_DEBT_ADDRESS);
+    console.log("Col token:", COL_ADDRESS);
+
     if (PROFITABLE) {
       console.log("MEV found...\n");
-      console.log(
-        "\nliquidation cost: ",
-        ethers.utils.formatEther(LIQUIDATION_TOTAL_COST)
-      );
-      console.log("bonus: ", ethers.utils.formatEther(reward));
       provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
       deployer = new ethers.Wallet(process.env[myAccount], provider);
       // console.log(`Getting ${SWAP_AMOUNT} weis of weth...`);
