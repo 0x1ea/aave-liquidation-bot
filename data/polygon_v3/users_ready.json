@@ -1,12 +1,529 @@
 [
   {
-    "user": "0xCe9cc2efb00a730009346B173045DbA73fd3327c",
-    "totalCollateralBase": "30037566",
-    "formatTotalCollateralBase": 0.30037566,
-    "totalDebtBase": "25534449",
-    "formatTotalDebtBase": 0.25534449,
-    "healthFactor": "999901388120808873",
-    "formattedHF": 0.9999013881208089,
+    "user": "0x00AF144D2CAc137Db127976bf87071728A2a1476",
+    "totalCollateralBase": "19927905710",
+    "formatTotalCollateralBase": 199.2790571,
+    "totalDebtBase": "19335395367",
+    "formatTotalDebtBase": 193.35395367,
+    "healthFactor": "1004877722860581628",
+    "formattedHF": 1.0048777228605816,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x00AF144D2CAc137Db127976bf87071728A2a1476",
+    "totalCollateralBase": "19933119659",
+    "formatTotalCollateralBase": 199.33119659,
+    "totalDebtBase": "19340477420",
+    "formatTotalDebtBase": 193.4047742,
+    "healthFactor": "1004876521191895169",
+    "formattedHF": 1.004876521191895,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8f22E0d0Ef5DE906A67A22a699B6314E6BaF7358",
+    "totalCollateralBase": "224035",
+    "formatTotalCollateralBase": 0.00224035,
+    "totalDebtBase": "220131",
+    "formatTotalDebtBase": 0.00220131,
+    "healthFactor": "865075795776151473",
+    "formattedHF": 0.8650757957761515,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xf712e2303e389A850A339D3fed5882e07880f90c",
+    "totalCollateralBase": "19841379471",
+    "formatTotalCollateralBase": 198.41379471,
+    "totalDebtBase": "19216891868",
+    "formatTotalDebtBase": 192.16891868,
+    "healthFactor": "1006684385637507819",
+    "formattedHF": 1.0066843856375078,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x62D926d67A069bcB81457adbb6D34c4b65356CcA",
+    "totalCollateralBase": "630188509",
+    "formatTotalCollateralBase": 6.30188509,
+    "totalDebtBase": "611339014",
+    "formatTotalDebtBase": 6.11339014,
+    "healthFactor": "1005062300833298364",
+    "formattedHF": 1.0050623008332984,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x0518026dF3BeC50e1E45D414Ece78ED1Da83709b",
+    "totalCollateralBase": "4005036",
+    "formatTotalCollateralBase": 0.04005036,
+    "totalDebtBase": "3419292",
+    "formatTotalDebtBase": 0.03419292,
+    "healthFactor": "995609909887777938",
+    "formattedHF": 0.995609909887778,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "jEUR",
+          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
+          "bonus": 0,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x0578db25d3D0a97C2362Ada9f112F84152d2e4AF",
+    "totalCollateralBase": "215709981",
+    "formatTotalCollateralBase": 2.15709981,
+    "totalDebtBase": "175446851",
+    "formatTotalDebtBase": 1.75446851,
+    "healthFactor": "1014328458935977141",
+    "formattedHF": 1.0143284589359771,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xe6d00E795cC153FF5b08650bdfB4175dE0f1870f",
+    "totalCollateralBase": "5733430",
+    "formatTotalCollateralBase": 0.0573343,
+    "totalDebtBase": "5647095",
+    "formatTotalDebtBase": 0.05647095,
+    "healthFactor": "812230713313659501",
+    "formattedHF": 0.8122307133136595,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x1D88930365556868f3eAd8f389147e15f5AB69cb",
+    "totalCollateralBase": "24945658426",
+    "formatTotalCollateralBase": 249.45658426,
+    "totalDebtBase": "24118100629",
+    "formatTotalDebtBase": 241.18100629,
+    "healthFactor": "1008454908582428239",
+    "formattedHF": 1.0084549085824281,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x00273C9eaBC182EbF0C6f02cF466226EbF760604",
+    "totalCollateralBase": "1000732",
+    "formatTotalCollateralBase": 0.01000732,
+    "totalDebtBase": "971352",
+    "formatTotalDebtBase": 0.00971352,
+    "healthFactor": "1004490648086378573",
+    "formattedHF": 1.0044906480863787,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xcb1aDd8E055cf9A9F17565C946CF528eEb1c5Cc8",
+    "totalCollateralBase": "23950449773",
+    "formatTotalCollateralBase": 239.50449773,
+    "totalDebtBase": "23263384980",
+    "formatTotalDebtBase": 232.6338498,
+    "healthFactor": "1003795816863105534",
+    "formattedHF": 1.0037958168631056,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xB6199B8AD856ee465ABaCaffFbE8ae1B08259088",
+    "totalCollateralBase": "1303931",
+    "formatTotalCollateralBase": 0.01303931,
+    "totalDebtBase": "1032064",
+    "formatTotalDebtBase": 0.01032064,
+    "healthFactor": "1010736737256604242",
+    "formattedHF": 1.0107367372566043,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xF96CC95271fd5beEB01A7F4B860063FAe8b1d64f",
+    "totalCollateralBase": "12115091677",
+    "formatTotalCollateralBase": 121.15091677,
+    "totalDebtBase": "11748392367",
+    "formatTotalDebtBase": 117.48392367,
+    "healthFactor": "1005432404367023810",
+    "formattedHF": 1.0054324043670237,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x54e5a49858bCdFe36063E770a43d49ca9CfB95Ff",
+    "totalCollateralBase": "29976052033",
+    "formatTotalCollateralBase": 299.76052033,
+    "totalDebtBase": "29084747302",
+    "formatTotalDebtBase": 290.84747302,
+    "healthFactor": "1004878963826866121",
+    "formattedHF": 1.004878963826866,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x26F6B7C13Cea67E8563F315E435C1aD69062F9f2",
+    "totalCollateralBase": "9946273203",
+    "formatTotalCollateralBase": 99.46273203,
+    "totalDebtBase": "9643192609",
+    "formatTotalDebtBase": 96.43192609,
+    "healthFactor": "1005643749555433151",
+    "formattedHF": 1.0056437495554331,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9ff90f97ff3cB91e36801Dc63855081B65613BcD",
+    "totalCollateralBase": "70524198989",
+    "formatTotalCollateralBase": 705.24198989,
+    "totalDebtBase": "68032552824",
+    "formatTotalDebtBase": 680.32552824,
+    "healthFactor": "1010605052141237286",
+    "formattedHF": 1.0106050521412373,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "SUSHI",
+          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "BAL",
+          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "EURS",
+          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
+          "bonus": 0.075,
+          "decimals": 2
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xF351025Dd54E2c7DA1bE857fb5085cAEBf44a11a",
+    "totalCollateralBase": "7137434",
+    "formatTotalCollateralBase": 0.07137434,
+    "totalDebtBase": "6020122",
+    "formatTotalDebtBase": 0.06020122,
+    "healthFactor": "1007756819546181954",
+    "formattedHF": 1.007756819546182,
     "userConfiguration": [
       {
         "code": "01",
@@ -15,17 +532,635 @@
         "chainData": {
           "symbol": "DAI",
           "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
-        "code": "00",
-        "col": false,
+        "code": "10",
+        "col": true,
         "debt": false,
         "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xcA5C5382b3c67654b6e8c27Ce10c0Af8C46Fd94f",
+    "totalCollateralBase": "1189989",
+    "formatTotalCollateralBase": 0.01189989,
+    "totalDebtBase": "1003354",
+    "formatTotalDebtBase": 0.01003354,
+    "healthFactor": "1008109799731699879",
+    "formattedHF": 1.0081097997317,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xc96a13C2242064F9f06dF49377329689223ae0D3",
+    "totalCollateralBase": "1189889",
+    "formatTotalCollateralBase": 0.01189889,
+    "totalDebtBase": "1003354",
+    "formatTotalDebtBase": 0.01003354,
+    "healthFactor": "1008025083868704366",
+    "formattedHF": 1.0080250838687044,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x2511A3B81294eB42919D2402334c61Ee44a3cB8a",
+    "totalCollateralBase": "1189789",
+    "formatTotalCollateralBase": 0.01189789,
+    "totalDebtBase": "1003354",
+    "formatTotalDebtBase": 0.01003354,
+    "healthFactor": "1007940368005708853",
+    "formattedHF": 1.0079403680057089,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x117c2c3058627eE290C698BcA83A7d5B6eEC3333",
+    "totalCollateralBase": "3079333",
+    "formatTotalCollateralBase": 0.03079333,
+    "totalDebtBase": "2603439",
+    "formatTotalDebtBase": 0.02603439,
+    "healthFactor": "1005375197959314584",
+    "formattedHF": 1.0053751979593146,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x2164835E8a8bDeFf2E73fd041B821e1BbAAf909A",
+    "totalCollateralBase": "1189590",
+    "formatTotalCollateralBase": 0.0118959,
+    "totalDebtBase": "1003355",
+    "formatTotalDebtBase": 0.01003355,
+    "healthFactor": "1007770928534765861",
+    "formattedHF": 1.0077709285347658,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x00067c68C96f8bF2D2258630BADF8E4379234179",
+    "totalCollateralBase": "1190490",
+    "formatTotalCollateralBase": 0.0119049,
+    "totalDebtBase": "1003356",
+    "formatTotalDebtBase": 0.01003356,
+    "healthFactor": "1008532365381778751",
+    "formattedHF": 1.0085323653817788,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xE677a09dc505fa07406F6e9c54C7C7E118b91eC5",
+    "totalCollateralBase": "1189590",
+    "formatTotalCollateralBase": 0.0118959,
+    "totalDebtBase": "1003356",
+    "formatTotalDebtBase": 0.01003356,
+    "healthFactor": "1007769924134604268",
+    "formattedHF": 1.0077699241346043,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x41C790BD6B26CDE1eD0e8CF3d306329d4541Cfab",
+    "totalCollateralBase": "1189990",
+    "formatTotalCollateralBase": 0.0118999,
+    "totalDebtBase": "1003357",
+    "formatTotalDebtBase": 0.01003357,
+    "healthFactor": "1008107782175237727",
+    "formattedHF": 1.0081077821752378,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x30Dd92f3c1f8Ad7242E202F8F16fa0bc61a2747E",
+    "totalCollateralBase": "1189690",
+    "formatTotalCollateralBase": 0.0118969,
+    "totalDebtBase": "1003358",
+    "formatTotalDebtBase": 0.01003358,
+    "healthFactor": "1007852630865553471",
+    "formattedHF": 1.0078526308655535,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xcB327254C1EAb5B6a6f7B3ADCd648786795bC93B",
+    "totalCollateralBase": "1189357",
+    "formatTotalCollateralBase": 0.01189357,
+    "totalDebtBase": "1003358",
+    "formatTotalDebtBase": 0.01003358,
+    "healthFactor": "1007569581345840667",
+    "formattedHF": 1.0075695813458407,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xb1504168B4fd9a311F0897aA6591cB18c19116E3",
+    "totalCollateralBase": "1189457",
+    "formatTotalCollateralBase": 0.01189457,
+    "totalDebtBase": "1003359",
+    "formatTotalDebtBase": 0.01003359,
+    "healthFactor": "1007653292590189553",
+    "formattedHF": 1.0076532925901895,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x04bc2f339Bbf1e042d2b692537853E296AD472E8",
+    "totalCollateralBase": "1189357",
+    "formatTotalCollateralBase": 0.01189357,
+    "totalDebtBase": "1003055",
+    "formatTotalDebtBase": 0.01003055,
+    "healthFactor": "1007873945097726446",
+    "formattedHF": 1.0078739450977265,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x7Ff1DDA877D51Bf29bc87Bb2eD30d4f2D4Dac7f0",
+    "totalCollateralBase": "1189457",
+    "formatTotalCollateralBase": 0.01189457,
+    "totalDebtBase": "1003056",
+    "formatTotalDebtBase": 0.01003056,
+    "healthFactor": "1007957681325868147",
+    "formattedHF": 1.0079576813258682,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x10E026c908DA0A82Bc8f6ba9cF533CC698E23908",
+    "totalCollateralBase": "1189957",
+    "formatTotalCollateralBase": 0.01189957,
+    "totalDebtBase": "1003057",
+    "formatTotalDebtBase": 0.01003057,
+    "healthFactor": "1008380381174748793",
+    "formattedHF": 1.0083803811747487,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x3741aA478895bA085D734fe20c6882C33B36263A",
+    "totalCollateralBase": "1189857",
+    "formatTotalCollateralBase": 0.01189857,
+    "totalDebtBase": "1003058",
+    "formatTotalDebtBase": 0.01003058,
+    "healthFactor": "1008294635006151190",
+    "formattedHF": 1.0082946350061512,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8710500A88c6F9B6dD0728374f809D09c7E6dF9f",
+    "totalCollateralBase": "119078482",
+    "formatTotalCollateralBase": 1.19078482,
+    "totalDebtBase": "100305819",
+    "formatTotalDebtBase": 1.00305819,
+    "healthFactor": "1009081138154108487",
+    "formattedHF": 1.0090811381541085,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x7786d88cF95CA9EBf18E27014B29456B8A794113",
+    "totalCollateralBase": "1190057",
+    "formatTotalCollateralBase": 0.01190057,
+    "totalDebtBase": "1003059",
+    "formatTotalDebtBase": 0.01003059,
+    "healthFactor": "1008463111342403587",
+    "formattedHF": 1.0084631113424036,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5eC5A375F27Eb6254cA45Ec967cD7483eB7e03E2",
+    "totalCollateralBase": "1189257",
+    "formatTotalCollateralBase": 0.01189257,
+    "totalDebtBase": "1003046",
+    "formatTotalDebtBase": 0.01003046,
+    "healthFactor": "1007798246541036004",
+    "formattedHF": 1.007798246541036,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xCe9cc2efb00a730009346B173045DbA73fd3327c",
+    "totalCollateralBase": "30039858",
+    "formatTotalCollateralBase": 0.30039858,
+    "totalDebtBase": "25532305",
+    "formatTotalDebtBase": 0.25532305,
+    "healthFactor": "1000061647391412565",
+    "formattedHF": 1.0000616473914126,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
@@ -35,47 +1170,8 @@
         "chainData": {
           "symbol": "USDC",
           "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
+          "bonus": 0.04,
+          "decimals": 6
         }
       },
       {
@@ -85,19 +1181,20 @@
         "chainData": {
           "symbol": "WMATIC",
           "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
+          "bonus": 0.1,
+          "decimals": 18
         }
       }
     ]
   },
   {
     "user": "0x39a4C9b04fD4a50944D63598DB0B6F050A7BFef4",
-    "totalCollateralBase": "50064911",
-    "formatTotalCollateralBase": 0.50064911,
-    "totalDebtBase": "43589320",
-    "formatTotalDebtBase": 0.4358932,
-    "healthFactor": "976275243568837504",
-    "formattedHF": 0.9762752435688375,
+    "totalCollateralBase": "50067615",
+    "formatTotalCollateralBase": 0.50067615,
+    "totalDebtBase": "43594319",
+    "formatTotalDebtBase": 0.43594319,
+    "healthFactor": "976216029432642359",
+    "formattedHF": 0.9762160294326424,
     "userConfiguration": [
       {
         "code": "01",
@@ -106,17 +1203,8 @@
         "chainData": {
           "symbol": "DAI",
           "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
@@ -126,47 +1214,8 @@
         "chainData": {
           "symbol": "USDC",
           "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
+          "bonus": 0.04,
+          "decimals": 6
         }
       },
       {
@@ -176,19 +1225,152 @@
         "chainData": {
           "symbol": "WMATIC",
           "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
+          "bonus": 0.1,
+          "decimals": 18
         }
       }
     ]
   },
   {
-    "user": "0xe0fda19799b5100192f2bA402CB9150aDfc42501",
-    "totalCollateralBase": "12460272",
-    "formatTotalCollateralBase": 0.12460272,
-    "totalDebtBase": "12546464",
-    "formatTotalDebtBase": 0.12546464,
-    "healthFactor": "844160633625537841",
-    "formattedHF": 0.8441606336255378,
+    "user": "0x630999EEe371D5C96526344EA1e513F31afB113c",
+    "totalCollateralBase": "9490946581",
+    "formatTotalCollateralBase": 94.90946581,
+    "totalDebtBase": "7535061967",
+    "formatTotalDebtBase": 75.35061967,
+    "healthFactor": "1008160739257262169",
+    "formattedHF": 1.0081607392572622,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5c182c4089770D1d1cf4a2f9AdAB651cA833b0F7",
+    "totalCollateralBase": "124879287",
+    "formatTotalCollateralBase": 1.24879287,
+    "totalDebtBase": "100325427",
+    "formatTotalDebtBase": 1.00325427,
+    "healthFactor": "1008116666176760952",
+    "formattedHF": 1.0081166661767609,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xebf6CAF61dAF53dC92B6a9B030Cf642FD4c1103c",
+    "totalCollateralBase": "505634194",
+    "formatTotalCollateralBase": 5.05634194,
+    "totalDebtBase": "401609138",
+    "formatTotalDebtBase": 4.01609138,
+    "healthFactor": "1007216511592422979",
+    "formattedHF": 1.007216511592423,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xde38c6964f840afeEB6D891cb4F6B132498579AE",
+    "totalCollateralBase": "119160300",
+    "formatTotalCollateralBase": 1.191603,
+    "totalDebtBase": "100267900",
+    "formatTotalDebtBase": 1.002679,
+    "healthFactor": "1010156341162026930",
+    "formattedHF": 1.010156341162027,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xB73C28354B4ecC2d4Ce98948EA229E2340eF1868",
+    "totalCollateralBase": "119102",
+    "formatTotalCollateralBase": 0.00119102,
+    "totalDebtBase": "100357",
+    "formatTotalDebtBase": 0.00100357,
+    "healthFactor": "1008768695756150543",
+    "formattedHF": 1.0087686957561506,
     "userConfiguration": [
       {
         "code": "01",
@@ -197,17 +1379,8 @@
         "chainData": {
           "symbol": "DAI",
           "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
@@ -217,47 +1390,591 @@
         "chainData": {
           "symbol": "USDC",
           "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x2ce27805DaFb6a38cf1022bA1B13f36075a2d4C8",
+    "totalCollateralBase": "264754328",
+    "formatTotalCollateralBase": 2.64754328,
+    "totalDebtBase": "223116386",
+    "formatTotalDebtBase": 2.23116386,
+    "healthFactor": "1008626856299115566",
+    "formattedHF": 1.0086268562991156,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
-        "code": "00",
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xF2EeBB119Be9313BaFC22a031A29A94AFC79e3c9",
+    "totalCollateralBase": "17862433",
+    "formatTotalCollateralBase": 0.17862433,
+    "totalDebtBase": "15050716",
+    "formatTotalDebtBase": 0.15050716,
+    "healthFactor": "1008793734464194262",
+    "formattedHF": 1.0087937344641942,
+    "userConfiguration": [
+      {
+        "code": "01",
         "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
         "debt": false,
         "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x88763f7072c48fe590F76C81c2dF9b8795bdc783",
+    "totalCollateralBase": "1001385",
+    "formatTotalCollateralBase": 0.01001385,
+    "totalDebtBase": "963165",
+    "formatTotalDebtBase": 0.00963165,
+    "healthFactor": "1013689243276074193",
+    "formattedHF": 1.0136892432760742,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
-        "code": "00",
-        "col": false,
+        "code": "10",
+        "col": true,
         "debt": false,
         "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xf5936E806bB5D2BCB1A6E596ed2aAaa4B115c47c",
+    "totalCollateralBase": "1189161",
+    "formatTotalCollateralBase": 0.01189161,
+    "totalDebtBase": "1003157",
+    "formatTotalDebtBase": 0.01003157,
+    "healthFactor": "1007605987896211660",
+    "formattedHF": 1.0076059878962116,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
-        "code": "00",
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x35524A1a02D6C89C8FceAd21644cB61b032BD3DE",
+    "totalCollateralBase": "1189261",
+    "formatTotalCollateralBase": 0.01189261,
+    "totalDebtBase": "1003157",
+    "formatTotalDebtBase": 0.01003157,
+    "healthFactor": "1007690720395710741",
+    "formattedHF": 1.0076907203957108,
+    "userConfiguration": [
+      {
+        "code": "01",
         "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5c883C1E4FF1bc136C43880E7B1a4BD58E2E7D08",
+    "totalCollateralBase": "5884203",
+    "formatTotalCollateralBase": 0.05884203,
+    "totalDebtBase": "4958179",
+    "formatTotalDebtBase": 0.04958179,
+    "healthFactor": "1008752003507739434",
+    "formattedHF": 1.0087520035077395,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9421cE448fA5ff121D4B34F61824bd2e16D68255",
+    "totalCollateralBase": "483024",
+    "formatTotalCollateralBase": 0.00483024,
+    "totalDebtBase": "407232",
+    "formatTotalDebtBase": 0.00407232,
+    "healthFactor": "1008196801823039447",
+    "formattedHF": 1.0081968018230394,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xf17547CF659Aa3796EBcf6F12d17F56f459Bb64b",
+    "totalCollateralBase": "1190561",
+    "formatTotalCollateralBase": 0.01190561,
+    "totalDebtBase": "1003159",
+    "formatTotalDebtBase": 0.01003159,
+    "healthFactor": "1008790231658191772",
+    "formattedHF": 1.0087902316581918,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5b197E3eE6770518f6F2735274522F48aBd69864",
+    "totalCollateralBase": "190389065",
+    "formatTotalCollateralBase": 1.90389065,
+    "totalDebtBase": "160461959",
+    "formatTotalDebtBase": 1.60461959,
+    "healthFactor": "1008530034212034019",
+    "formattedHF": 1.008530034212034,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xDAe4cF3C22e9E71a22fcB354A3634f99Bd500244",
+    "totalCollateralBase": "119070634",
+    "formatTotalCollateralBase": 1.19070634,
+    "totalDebtBase": "100275965",
+    "formatTotalDebtBase": 1.00275965,
+    "healthFactor": "1009315033767064720",
+    "formattedHF": 1.0093150337670647,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x4F80DB384eb7C2F529274ccA0Afb4cD9882DCAa0",
+    "totalCollateralBase": "11914222",
+    "formatTotalCollateralBase": 0.11914222,
+    "totalDebtBase": "10033198",
+    "formatTotalDebtBase": 0.10033198,
+    "healthFactor": "1009358033201378065",
+    "formattedHF": 1.009358033201378,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xC43c1C007F24F21303623E2F124BD1E2772D24c6",
+    "totalCollateralBase": "249858516",
+    "formatTotalCollateralBase": 2.49858516,
+    "totalDebtBase": "210629294",
+    "formatTotalDebtBase": 2.10629294,
+    "healthFactor": "1008310548674202934",
+    "formattedHF": 1.008310548674203,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xdDC78a3F6a609283e9fD74EEcEFB2cBFB0064548",
+    "totalCollateralBase": "118981788",
+    "formatTotalCollateralBase": 1.18981788,
+    "totalDebtBase": "100270842",
+    "formatTotalDebtBase": 1.00270842,
+    "healthFactor": "1008613451156618392",
+    "formattedHF": 1.0086134511566185,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xbBCC7228A94Cb8b5d23c2903ed32a61A64105e69",
+    "totalCollateralBase": "2497906795",
+    "formatTotalCollateralBase": 24.97906795,
+    "totalDebtBase": "2416341088",
+    "formatTotalDebtBase": 24.16341088,
+    "healthFactor": "1007911977781176562",
+    "formattedHF": 1.0079119777811765,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9267821374562fdA4Ac8d29ffc3A0d465ABE005A",
+    "totalCollateralBase": "178489942",
+    "formatTotalCollateralBase": 1.78489942,
+    "totalDebtBase": "150423288",
+    "formatTotalDebtBase": 1.50423288,
+    "healthFactor": "1008596827108313176",
+    "formattedHF": 1.0085968271083132,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x173cF719Ca24B025404CEdb2A0BD178B2650cD25",
+    "totalCollateralBase": "237986956",
+    "formatTotalCollateralBase": 2.37986956,
+    "totalDebtBase": "200564985",
+    "formatTotalDebtBase": 2.00564985,
+    "healthFactor": "1008595358756165739",
+    "formattedHF": 1.0085953587561658,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x760F755D7e14B1CbFfF86FE705101F0a19a58097",
+    "totalCollateralBase": "151175",
+    "formatTotalCollateralBase": 0.00151175,
+    "totalDebtBase": "119853",
+    "formatTotalDebtBase": 0.00119853,
+    "healthFactor": "1009069443401500171",
+    "formattedHF": 1.0090694434015002,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xB8441d056E83b1b79DFefc4CC63260d2CF9086bC",
+    "totalCollateralBase": "127837324",
+    "formatTotalCollateralBase": 1.27837324,
+    "totalDebtBase": "101038353",
+    "formatTotalDebtBase": 1.01038353,
+    "healthFactor": "1012188500341053659",
+    "formattedHF": 1.0121885003410536,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
         "debt": false,
         "chainData": {
           "symbol": "USDT",
           "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xB5A48fED4d5aBa3e52CfC81b21356857a7B48b4c",
+    "totalCollateralBase": "51622178",
+    "formatTotalCollateralBase": 0.51622178,
+    "totalDebtBase": "43228464",
+    "formatTotalDebtBase": 0.43228464,
+    "healthFactor": "1001551223286582655",
+    "formattedHF": 1.0015512232865826,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
         }
       },
       {
-        "code": "00",
+        "code": "01",
         "col": false,
-        "debt": false,
+        "debt": true,
         "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
@@ -267,40 +1984,21 @@
         "chainData": {
           "symbol": "WMATIC",
           "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
+          "bonus": 0.1,
+          "decimals": 18
         }
       }
     ]
   },
   {
     "user": "0x6F0AfA79aD2564670479189bfFF7bdf983D4e954",
-    "totalCollateralBase": "186279819",
-    "formatTotalCollateralBase": 1.86279819,
-    "totalDebtBase": "159302198",
-    "formatTotalDebtBase": 1.59302198,
-    "healthFactor": "993946398655466135",
-    "formattedHF": 0.9939463986554662,
+    "totalCollateralBase": "186302478",
+    "formatTotalCollateralBase": 1.86302478,
+    "totalDebtBase": "173440140",
+    "formatTotalDebtBase": 1.7344014,
+    "healthFactor": "913036082650763543",
+    "formattedHF": 0.9130360826507635,
     "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
       {
         "code": "10",
         "col": true,
@@ -308,69 +2006,229 @@
         "chainData": {
           "symbol": "USDC",
           "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
+          "bonus": 0.04,
+          "decimals": 6
         }
       },
       {
         "code": "1",
         "col": false,
-        "debt": false,
+        "debt": true,
         "chainData": {
           "symbol": "WMATIC",
           "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
+          "bonus": 0.1,
+          "decimals": 18
         }
       }
     ]
   },
   {
-    "user": "0x27C7E978e4dA4581588BB40a521d5a7A6d31b33D",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "15796527",
-    "formatTotalDebtBase": 0.15796527,
-    "healthFactor": "0",
-    "formattedHF": 0,
+    "user": "0xF9b1D7f0bfdfF12351Fe0688cceD3Bb4a427070F",
+    "totalCollateralBase": "28460080315",
+    "formatTotalCollateralBase": 284.60080315,
+    "totalDebtBase": "27608338894",
+    "formatTotalDebtBase": 276.08338894,
+    "healthFactor": "1005079603432080357",
+    "formattedHF": 1.0050796034320804,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x917718bbB47Fb439b86b2B482D3AaEF1cC0af851",
+    "totalCollateralBase": "5296214553",
+    "formatTotalCollateralBase": 52.96214553,
+    "totalDebtBase": "5107132121",
+    "formatTotalDebtBase": 51.07132121,
+    "healthFactor": "1011097631049517937",
+    "formattedHF": 1.0110976310495179,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x164eb72FAa46ef8b1b00bc6B1F2a08F6dAB26262",
+    "totalCollateralBase": "4790980310",
+    "formatTotalCollateralBase": 47.9098031,
+    "totalDebtBase": "4006098982",
+    "formatTotalDebtBase": 40.06098982,
+    "healthFactor": "1016533361331709602",
+    "formattedHF": 1.0165333613317096,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x18d71c365bD7322adBb8c908905cfe7b70134172",
+    "totalCollateralBase": "2402249621",
+    "formatTotalCollateralBase": 24.02249621,
+    "totalDebtBase": "2304371901",
+    "formatTotalDebtBase": 23.04371901,
+    "healthFactor": "1016412923184659159",
+    "formattedHF": 1.0164129231846593,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8d49EAa4b9eA0454A7A180A839A5b855a8808862",
+    "totalCollateralBase": "2654112173",
+    "formatTotalCollateralBase": 26.54112173,
+    "totalDebtBase": "2554851127",
+    "formatTotalDebtBase": 25.54851127,
+    "healthFactor": "1012880688683665911",
+    "formattedHF": 1.0128806886836659,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x0308956443B95fCcF4496b8297BB26e0DA706c05",
+    "totalCollateralBase": "253171971",
+    "formatTotalCollateralBase": 2.53171971,
+    "totalDebtBase": "244577267",
+    "formatTotalDebtBase": 2.44577267,
+    "healthFactor": "1009262532972862110",
+    "formattedHF": 1.0092625329728622,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5Baf07C13DF692185c02Ea08E19A82Fa066b75D9",
+    "totalCollateralBase": "48458068",
+    "formatTotalCollateralBase": 0.48458068,
+    "totalDebtBase": "25088412",
+    "formatTotalDebtBase": 0.25088412,
+    "healthFactor": "869171432611996327",
+    "formattedHF": 0.8691714326119964,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "SUSHI",
+          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "GHST",
+          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
+          "bonus": 0.15,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xb0FC7EFc69B6BAed53578Aa22Ac1B4c6473aFf76",
+    "totalCollateralBase": "19642090850",
+    "formatTotalCollateralBase": 196.4209085,
+    "totalDebtBase": "18976611252",
+    "formatTotalDebtBase": 189.76611252,
+    "healthFactor": "1009191700492974824",
+    "formattedHF": 1.009191700492975,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xa4DCC4cAE643777D0E42ca847995655e845b94d5",
+    "totalCollateralBase": "20776453693",
+    "formatTotalCollateralBase": 207.76453693,
+    "totalDebtBase": "20085652055",
+    "formatTotalDebtBase": 200.85652055,
+    "healthFactor": "1008532971472904468",
+    "formattedHF": 1.0085329714729045,
     "userConfiguration": [
       {
         "code": "01",
@@ -379,37 +2237,8 @@
         "chainData": {
           "symbol": "DAI",
           "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "11",
-        "col": true,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
@@ -417,62 +2246,56 @@
         "col": true,
         "debt": false,
         "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "jEUR",
+          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
+          "bonus": 0,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xcA1C8b35273896A4f7423f6D7e8EfE3454D30464",
+    "totalCollateralBase": "120060053997",
+    "formatTotalCollateralBase": 1200.60053997,
+    "totalDebtBase": "115929664307",
+    "formatTotalDebtBase": 1159.29664307,
+    "healthFactor": "1009737700412989431",
+    "formattedHF": 1.0097377004129895,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
         }
       }
     ]
   },
   {
     "user": "0xB35e0532A59E59571BeeE11FC3dFd7f90B7C037E",
-    "totalCollateralBase": "130334344",
-    "formatTotalCollateralBase": 1.30334344,
-    "totalDebtBase": "109334255",
-    "formatTotalDebtBase": 1.09334255,
-    "healthFactor": "983459703457072991",
-    "formattedHF": 0.983459703457073,
+    "totalCollateralBase": "145689700",
+    "formatTotalCollateralBase": 1.456897,
+    "totalDebtBase": "119037370",
+    "formatTotalDebtBase": 1.1903737,
+    "healthFactor": "1009716553717542651",
+    "formattedHF": 1.0097165537175425,
     "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
       {
         "code": "10",
         "col": true,
@@ -480,1566 +2303,31 @@
         "chainData": {
           "symbol": "WETH",
           "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
         "code": "1",
         "col": false,
-        "debt": false,
+        "debt": true,
         "chainData": {
           "symbol": "WMATIC",
           "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
+          "bonus": 0.1,
+          "decimals": 18
         }
       }
     ]
   },
   {
-    "user": "0xe4FbD6749208698627cCfbeea608f93f24Bf85c2",
-    "totalCollateralBase": "111987534",
-    "formatTotalCollateralBase": 1.11987534,
-    "totalDebtBase": "109401426",
-    "formatTotalDebtBase": 1.09401426,
-    "healthFactor": "865384158703744867",
-    "formattedHF": 0.8653841587037449,
-    "userConfiguration": [
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x7046D49D24650e54DC56B77aE10D4c8DCBe74a3C",
-    "totalCollateralBase": "173251988",
-    "formatTotalCollateralBase": 1.73251988,
-    "totalDebtBase": "164120417",
-    "formatTotalDebtBase": 1.64120417,
-    "healthFactor": "897293540266839561",
-    "formattedHF": 0.8972935402668396,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x701F6597437706de23f6ca2EBA3F38091CfEe531",
-    "totalCollateralBase": "100119105",
-    "formatTotalCollateralBase": 1.00119105,
-    "totalDebtBase": "115657634",
-    "formatTotalDebtBase": 1.15657634,
-    "healthFactor": "735803042624925217",
-    "formattedHF": 0.7358030426249252,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x348e64D870652d1FD4973E79672949aEc40C5F24",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "20893488",
-    "formatTotalDebtBase": 0.20893488,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x42Ae216F5A6C99C9D7dcD98E9114B0d8F6f248b5",
-    "totalCollateralBase": "11953794",
-    "formatTotalCollateralBase": 0.11953794,
-    "totalDebtBase": "14855090",
-    "formatTotalDebtBase": 0.1485509,
-    "healthFactor": "683989460851465727",
-    "formattedHF": 0.6839894608514657,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x76Bc46a76C3c9D5dE9d81409f4AA13d6CC679763",
-    "totalCollateralBase": "50608538",
-    "formatTotalCollateralBase": 0.50608538,
-    "totalDebtBase": "53993996",
-    "formatTotalDebtBase": 0.53993996,
-    "healthFactor": "773271976387893202",
-    "formattedHF": 0.7732719763878932,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xfc3A30c8dd887Ed3536C0e20053c4D9af6dd761E",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "14203720",
-    "formatTotalDebtBase": 0.1420372,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xFF46d35d4d1C5De91Ee13418BaEcD7F657b011d9",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "11925363",
-    "formatTotalDebtBase": 0.11925363,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x8Ffc27E740CC9D0AB9F5Fa811D71457A54e950CB",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "15793847",
-    "formatTotalDebtBase": 0.15793847,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x13D1D41430F3B674B4a51F2808E7df972Ab57370",
-    "totalCollateralBase": "21216222",
-    "formatTotalCollateralBase": 0.21216222,
-    "totalDebtBase": "94245777",
-    "formatTotalDebtBase": 0.94245777,
-    "healthFactor": "118703610454609547",
-    "formattedHF": 0.11870361045460955,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x096701f7E94A562b24C001B57bBe45D882D0C68c",
-    "totalCollateralBase": "6911756",
-    "formatTotalCollateralBase": 0.06911756,
-    "totalDebtBase": "10053204",
-    "formatTotalDebtBase": 0.10053204,
-    "healthFactor": "567202157640489539",
-    "formattedHF": 0.5672021576404895,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x95f6303317c12Cd07CaE23C5c16b131C0b819e10",
-    "totalCollateralBase": "23123388",
-    "formatTotalCollateralBase": 0.23123388,
-    "totalDebtBase": "20129848",
-    "formatTotalDebtBase": 0.20129848,
-    "healthFactor": "804098073666527437",
-    "formattedHF": 0.8040980736665274,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xAe829A534a396225138e444cbe735EEdE969d2c1",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "14933457",
-    "formatTotalDebtBase": 0.14933457,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xC6aAb28F488f18Dc678804D83B9baFfBE24F1c2D",
-    "totalCollateralBase": "5",
-    "formatTotalCollateralBase": 5e-8,
-    "totalDebtBase": "38840010",
-    "formatTotalDebtBase": 0.3884001,
-    "healthFactor": "102986585225",
-    "formattedHF": 1.02986585225e-7,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xa9F2Fc40F4111D7C331F68A8b9AD4F1bCd4ea353",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "22240622",
-    "formatTotalDebtBase": 0.22240622,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x5873d899B4F4dB948F7121F310A532cF82b6d617",
-    "totalCollateralBase": "6091653",
-    "formatTotalCollateralBase": 0.06091653,
-    "totalDebtBase": "10074206",
-    "formatTotalDebtBase": 0.10074206,
-    "healthFactor": "498859562728814559",
-    "formattedHF": 0.49885956272881454,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x4d7ebA419917717EF563F05e6E076DA8660Ea49d",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "14010170",
-    "formatTotalDebtBase": 0.1401017,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "jEUR",
-          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-          "bonus": 0
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "agEUR",
-          "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-          "bonus": 0
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x955d601Efb2E216e580A1D426F31635EFd99f311",
-    "totalCollateralBase": "12018750",
-    "formatTotalCollateralBase": 0.1201875,
-    "totalDebtBase": "10085074",
-    "formatTotalDebtBase": 0.10085074,
-    "healthFactor": "933844709518244487",
-    "formattedHF": 0.9338447095182445,
+    "user": "0x4ea0A60ADd507589555B0c76E4926539E3212d49",
+    "totalCollateralBase": "2180187",
+    "formatTotalCollateralBase": 0.02180187,
+    "totalDebtBase": "1727931",
+    "formatTotalDebtBase": 0.01727931,
+    "healthFactor": "1009386370173346042",
+    "formattedHF": 1.009386370173346,
     "userConfiguration": [
       {
         "code": "11",
@@ -2048,108 +2336,30 @@
         "chainData": {
           "symbol": "DAI",
           "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
+          "bonus": 0.05,
+          "decimals": 18
         }
       }
     ]
   },
   {
-    "user": "0x497Fb5527aED1fa545c91586Fd848a4c3e91eE8b",
-    "totalCollateralBase": "27",
-    "formatTotalCollateralBase": 2.7e-7,
-    "totalDebtBase": "1191032931",
-    "formatTotalDebtBase": 11.91032931,
-    "healthFactor": "15952539603",
-    "formattedHF": 1.5952539603e-8,
+    "user": "0x930cDc8362C191Fe65f9223F002DE7a235F9fA79",
+    "totalCollateralBase": "5128545980",
+    "formatTotalCollateralBase": 51.2854598,
+    "totalDebtBase": "4321443503",
+    "formatTotalDebtBase": 43.21443503,
+    "healthFactor": "1008751839512363052",
+    "formattedHF": 1.0087518395123631,
     "userConfiguration": [
       {
-        "code": "00",
+        "code": "01",
         "col": false,
-        "debt": false,
+        "debt": true,
         "chainData": {
           "symbol": "DAI",
           "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
@@ -2159,2430 +2369,85 @@
         "chainData": {
           "symbol": "USDC",
           "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
+          "bonus": 0.04,
+          "decimals": 6
         }
       },
       {
-        "code": "00",
+        "code": "01",
         "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
+        "debt": true,
         "chainData": {
           "symbol": "USDT",
           "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x21bfBdEb3bCC34BA701Ccb2bD4da6468C21D55C1",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "13688713",
-    "formatTotalDebtBase": 0.13688713,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x5521059Effad873558F4bbD36113D41c317eCe9c",
-    "totalCollateralBase": "6401771",
-    "formatTotalCollateralBase": 0.06401771,
-    "totalDebtBase": "10068806",
-    "formatTotalDebtBase": 0.10068806,
-    "healthFactor": "524536970917902282",
-    "formattedHF": 0.5245369709179023,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xf16d5Dc0B4cDBACafD72aDF4eB147A829df3c741",
-    "totalCollateralBase": "6292581",
-    "formatTotalCollateralBase": 0.06292581,
-    "totalDebtBase": "10068806",
-    "formatTotalDebtBase": 0.10068806,
-    "healthFactor": "515590329181036957",
-    "formattedHF": 0.515590329181037,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xCBbCF45a1aEdDAF93ED0c8A558fCb8f021225610",
-    "totalCollateralBase": "57398081300",
-    "formatTotalCollateralBase": 573.980813,
-    "totalDebtBase": "56677359635",
-    "formatTotalDebtBase": 566.77359635,
-    "healthFactor": "987398312631364342",
-    "formattedHF": 0.9873983126313643,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x5e6C30578b224C61D4cF89201975d3523b9a7c0e",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "16262756",
-    "formatTotalDebtBase": 0.16262756,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
+          "bonus": 0.05,
+          "decimals": 6
         }
       },
       {
         "code": "1",
         "col": false,
-        "debt": false,
+        "debt": true,
         "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
         }
       }
     ]
   },
   {
-    "user": "0x957e5816460dA7B72bf8821C84b740232D458821",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "12868886",
-    "formatTotalDebtBase": 0.12868886,
-    "healthFactor": "0",
-    "formattedHF": 0,
+    "user": "0x3f84Ca021bFe503c8739fD776c821DF31E00Ee51",
+    "totalCollateralBase": "22907748988",
+    "formatTotalCollateralBase": 229.07748988,
+    "totalDebtBase": "22223286668",
+    "formatTotalDebtBase": 222.23286668,
+    "healthFactor": "1005029345869031113",
+    "formattedHF": 1.0050293458690311,
     "userConfiguration": [
       {
-        "code": "00",
-        "col": false,
-        "debt": false,
+        "code": "11",
+        "col": true,
+        "debt": true,
         "chainData": {
           "symbol": "DAI",
           "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
+          "bonus": 0.05,
+          "decimals": 18
         }
       },
       {
-        "code": "00",
-        "col": false,
-        "debt": false,
+        "code": "11",
+        "col": true,
+        "debt": true,
         "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.04,
+          "decimals": 6
         }
       },
       {
         "code": "01",
         "col": false,
         "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x252364479C17b9Cac7c03B8F3A47341A44350894",
-    "totalCollateralBase": "28",
-    "formatTotalCollateralBase": 2.8e-7,
-    "totalDebtBase": "1459739380572",
-    "formatTotalDebtBase": 14597.39380572,
-    "healthFactor": "15071183",
-    "formattedHF": 1.5071183e-11,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
         "chainData": {
           "symbol": "jEUR",
           "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-          "bonus": 0
+          "bonus": 0,
+          "decimals": 18
         }
       },
       {
         "code": "1",
         "col": false,
-        "debt": false,
+        "debt": true,
         "chainData": {
           "symbol": "agEUR",
           "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-          "bonus": 0
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x8C6d52329C31820F9f3Cf468E29309F9848f7942",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "2931881604",
-    "formatTotalDebtBase": 29.31881604,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "jEUR",
-          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-          "bonus": 0
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xBab42dd21444Ae5B1E1064f6D7dca68c34B47bE5",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "19188117",
-    "formatTotalDebtBase": 0.19188117,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xA00E1cC80F7224B9447EE9C6332192F45A921189",
-    "totalCollateralBase": "5",
-    "formatTotalCollateralBase": 5e-8,
-    "totalDebtBase": "803414040",
-    "formatTotalDebtBase": 8.0341404,
-    "healthFactor": "4978752923",
-    "formattedHF": 4.978752923e-9,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "jEUR",
-          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-          "bonus": 0
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x52552CC03A2391C819901a4fb6E8FC13d0C8aFe8",
-    "totalCollateralBase": "6566483",
-    "formatTotalCollateralBase": 0.06566483,
-    "totalDebtBase": "10092508",
-    "formatTotalDebtBase": 0.10092508,
-    "healthFactor": "536769254976067396",
-    "formattedHF": 0.5367692549760674,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xADFFE9EBFA93985F33D7640e4Feb5EC3F16302dC",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "31313429",
-    "formatTotalDebtBase": 0.31313429,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xdD9545231134b28e6BF582c895f3C2f33171395B",
-    "totalCollateralBase": "6221529",
-    "formatTotalCollateralBase": 0.06221529,
-    "totalDebtBase": "10071506",
-    "formatTotalDebtBase": 0.10071506,
-    "healthFactor": "509631925950299786",
-    "formattedHF": 0.5096319259502998,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x5731560cB7Af29B4a9CFbABd6fF8a5ff9340A461",
-    "totalCollateralBase": "103151300",
-    "formatTotalCollateralBase": 1.031513,
-    "totalDebtBase": "101264742",
-    "formatTotalDebtBase": 1.01264742,
-    "healthFactor": "993164215043376104",
-    "formattedHF": 0.9931642150433762,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x41c3713B8108E954f8616c33965439897F0910fd",
-    "totalCollateralBase": "6295947",
-    "formatTotalCollateralBase": 0.06295947,
-    "totalDebtBase": "10070406",
-    "formatTotalDebtBase": 0.10070406,
-    "healthFactor": "515784169972888879",
-    "formattedHF": 0.5157841699728889,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xEc7eC48Ef00070cc23791d5d690685c273CE97F7",
-    "totalCollateralBase": "5872882498",
-    "formatTotalCollateralBase": 58.72882498,
-    "totalDebtBase": "11146638430",
-    "formatTotalDebtBase": 111.4663843,
-    "healthFactor": "421499811580413845",
-    "formattedHF": 0.42149981158041383,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "jEUR",
-          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-          "bonus": 0
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "agEUR",
-          "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-          "bonus": 0
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x48BdceCd0602ecb2aF5C4aF5Bd36bc44F02719Fe",
-    "totalCollateralBase": "2",
-    "formatTotalCollateralBase": 2e-8,
-    "totalDebtBase": "4235565537",
-    "formatTotalDebtBase": 42.35565537,
-    "healthFactor": "472191962",
-    "formattedHF": 4.72191962e-10,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "jEUR",
-          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-          "bonus": 0
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x7014C40574451FC1DB495Ce8B136bB53eE831F14",
-    "totalCollateralBase": "6338638",
-    "formatTotalCollateralBase": 0.06338638,
-    "totalDebtBase": "10071106",
-    "formatTotalDebtBase": 0.10071106,
-    "healthFactor": "519245453279907887",
-    "formattedHF": 0.5192454532799079,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xF5b0616D5Ea863a010f5602eBC740c04b77Df1FD",
-    "totalCollateralBase": "0",
-    "formatTotalCollateralBase": 0,
-    "totalDebtBase": "33386665",
-    "formatTotalDebtBase": 0.33386665,
-    "healthFactor": "0",
-    "formattedHF": 0,
-    "userConfiguration": [
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0xBded1A6d67E60FC96eA1473b6e210d8076141b6f",
-    "totalCollateralBase": "6339184",
-    "formatTotalCollateralBase": 0.06339184,
-    "totalDebtBase": "10083807",
-    "formatTotalDebtBase": 0.10083807,
-    "healthFactor": "518636165884571174",
-    "formattedHF": 0.5186361658845712,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x93F61efb6C7bB56c9df5A7B1a8F88CeD22F4c33A",
-    "totalCollateralBase": "70469700",
-    "formatTotalCollateralBase": 0.704697,
-    "totalDebtBase": "70307426",
-    "formatTotalDebtBase": 0.70307426,
-    "healthFactor": "977250368972404138",
-    "formattedHF": 0.9772503689724041,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "01",
-        "col": false,
-        "debt": true,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x77cd91170F3543f19ee82DFccCA6DebF4f60a87B",
-    "totalCollateralBase": "30009909",
-    "formatTotalCollateralBase": 0.30009909,
-    "totalDebtBase": "38639536083",
-    "formatTotalDebtBase": 386.39536083,
-    "healthFactor": "621330622304304",
-    "formattedHF": 0.000621330622304304,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "AAVE",
-          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WMATIC",
-          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "CRV",
-          "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "SUSHI",
-          "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "GHST",
-          "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-          "bonus": 0.15
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "BAL",
-          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DPI",
-          "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-          "bonus": 0.1
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "EURS",
-          "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "jEUR",
-          "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-          "bonus": 0
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "agEUR",
-          "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-          "bonus": 0
-        }
-      }
-    ]
-  },
-  {
-    "user": "0x8F01B4f8DdEAE75966977537D48DA40623511A41",
-    "totalCollateralBase": "54935571",
-    "formatTotalCollateralBase": 0.54935571,
-    "totalDebtBase": "101929689",
-    "formatTotalDebtBase": 1.01929689,
-    "healthFactor": "444638323187663214",
-    "formattedHF": 0.4446383231876632,
-    "userConfiguration": [
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "DAI",
-          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "LINK",
-          "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-          "bonus": 0.075
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDC",
-          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-          "bonus": 0.04
-        }
-      },
-      {
-        "code": "00",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "WBTC",
-          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-          "bonus": 0.065
-        }
-      },
-      {
-        "code": "10",
-        "col": true,
-        "debt": false,
-        "chainData": {
-          "symbol": "WETH",
-          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-          "bonus": 0.05
-        }
-      },
-      {
-        "code": "1",
-        "col": false,
-        "debt": false,
-        "chainData": {
-          "symbol": "USDT",
-          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-          "bonus": 0.05
+          "bonus": 0,
+          "decimals": 18
         }
       }
     ]

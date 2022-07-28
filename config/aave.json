@@ -1099,7 +1099,6 @@
           }
         ]
       },
-
       "dataProvider": {
         "address": "0x7551b5D2763519d4e37e8B81929D336De671d46d",
         "abi": [
@@ -1313,10 +1312,168 @@
             "type": "function"
           }
         ]
+      },
+      "priceOracle": {
+        "address": "0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d",
+        "abi": [
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" },
+              { "internalType": "address[]", "name": "sources", "type": "address[]" },
+              { "internalType": "address", "name": "fallbackOracle", "type": "address" },
+              { "internalType": "address", "name": "weth", "type": "address" }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "source",
+                "type": "address"
+              }
+            ],
+            "name": "AssetSourceUpdated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fallbackOracle",
+                "type": "address"
+              }
+            ],
+            "name": "FallbackOracleUpdated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+              }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "weth",
+                "type": "address"
+              }
+            ],
+            "name": "WethSet",
+            "type": "event"
+          },
+          {
+            "inputs": [],
+            "name": "WETH",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getAssetPrice",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" }
+            ],
+            "name": "getAssetsPrices",
+            "outputs": [{ "internalType": "uint256[]", "name": "", "type": "uint256[]" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getFallbackOracle",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getSourceOfAsset",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" },
+              { "internalType": "address[]", "name": "sources", "type": "address[]" }
+            ],
+            "name": "setAssetSources",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address", "name": "fallbackOracle", "type": "address" }
+            ],
+            "name": "setFallbackOracle",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address", "name": "newOwner", "type": "address" }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          }
+        ]
       }
     },
     "v3": {
-      "pool": {
+      "lendingPool": {
         "name": "IPool",
         "decimals": 8,
         "address": "0x794a61358D6845594F94dc1DB02A252b5b4814aD",
@@ -3002,85 +3159,551 @@
           {
             "symbol": "DAI",
             "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
-            "bonus": 0.05
+            "bonus": 0.05,
+            "decimals": 18
           },
           {
             "symbol": "LINK",
             "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39",
-            "bonus": 0.075
+            "bonus": 0.075,
+            "decimals": 18
           },
 
           {
             "symbol": "USDC",
             "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
-            "bonus": 0.04
+            "bonus": 0.04,
+            "decimals": 6
           },
           {
             "symbol": "WBTC",
             "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
-            "bonus": 0.065
+            "bonus": 0.065,
+            "decimals": 8
           },
           {
             "symbol": "WETH",
             "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
-            "bonus": 0.05
+            "bonus": 0.05,
+            "decimals": 18
           },
           {
             "symbol": "USDT",
             "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
-            "bonus": 0.05
+            "bonus": 0.05,
+            "decimals": 6
           },
 
           {
             "symbol": "AAVE",
             "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
-            "bonus": 0.075
+            "bonus": 0.075,
+            "decimals": 18
           },
           {
             "symbol": "WMATIC",
             "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
-            "bonus": 0.1
+            "bonus": 0.1,
+            "decimals": 18
           },
           {
             "symbol": "CRV",
             "address": "0x172370d5Cd63279eFa6d502DAB29171933a610AF",
-            "bonus": 0.05
+            "bonus": 0.05,
+            "decimals": 18
           },
           {
             "symbol": "SUSHI",
             "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a",
-            "bonus": 0.1
+            "bonus": 0.1,
+            "decimals": 18
           },
           {
             "symbol": "GHST",
             "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
-            "bonus": 0.15
+            "bonus": 0.15,
+            "decimals": 18
           },
           {
             "symbol": "BAL",
             "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
-            "bonus": 0.1
+            "bonus": 0.1,
+            "decimals": 18
           },
 
           {
             "symbol": "DPI",
             "address": "0x85955046df4668e1dd369d2de9f3aeb98dd2a369",
-            "bonus": 0.1
+            "bonus": 0.1,
+            "decimals": 18
           },
           {
             "symbol": "EURS",
             "address": "0xE111178A87A3BFf0c8d18DECBa5798827539Ae99",
-            "bonus": 0.075
+            "bonus": 0.075,
+            "decimals": 2
           },
           {
             "symbol": "jEUR",
             "address": "0x4e3Decbb3645551B8A19f0eA1678079FCB33fB4c",
-            "bonus": 0.0
+            "bonus": 0.0,
+            "decimals": 18
           },
           {
             "symbol": "agEUR",
             "address": "0xE0B52e49357Fd4DAf2c15e02058DCE6BC0057db4",
-            "bonus": 0.0
+            "bonus": 0.0,
+            "decimals": 18
+          }
+        ]
+      },
+      "dataProvider": {
+        "address": "0x69FA688f1Dc47d4B5d8029D5a35FB7a548310654",
+        "abi": [
+          {
+            "inputs": [
+              {
+                "internalType": "contract IPoolAddressesProvider",
+                "name": "addressesProvider",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "inputs": [],
+            "name": "ADDRESSES_PROVIDER",
+            "outputs": [
+              {
+                "internalType": "contract IPoolAddressesProvider",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getATokenTotalSupply",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getAllATokens",
+            "outputs": [
+              {
+                "components": [
+                  { "internalType": "string", "name": "symbol", "type": "string" },
+                  { "internalType": "address", "name": "tokenAddress", "type": "address" }
+                ],
+                "internalType": "struct AaveProtocolDataProvider.TokenData[]",
+                "name": "",
+                "type": "tuple[]"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getAllReservesTokens",
+            "outputs": [
+              {
+                "components": [
+                  { "internalType": "string", "name": "symbol", "type": "string" },
+                  { "internalType": "address", "name": "tokenAddress", "type": "address" }
+                ],
+                "internalType": "struct AaveProtocolDataProvider.TokenData[]",
+                "name": "",
+                "type": "tuple[]"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getDebtCeiling",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getDebtCeilingDecimals",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "pure",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getInterestRateStrategyAddress",
+            "outputs": [
+              {
+                "internalType": "address",
+                "name": "irStrategyAddress",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getLiquidationProtocolFee",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getPaused",
+            "outputs": [{ "internalType": "bool", "name": "isPaused", "type": "bool" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getReserveCaps",
+            "outputs": [
+              { "internalType": "uint256", "name": "borrowCap", "type": "uint256" },
+              { "internalType": "uint256", "name": "supplyCap", "type": "uint256" }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getReserveConfigurationData",
+            "outputs": [
+              { "internalType": "uint256", "name": "decimals", "type": "uint256" },
+              { "internalType": "uint256", "name": "ltv", "type": "uint256" },
+              {
+                "internalType": "uint256",
+                "name": "liquidationThreshold",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "liquidationBonus",
+                "type": "uint256"
+              },
+              { "internalType": "uint256", "name": "reserveFactor", "type": "uint256" },
+              {
+                "internalType": "bool",
+                "name": "usageAsCollateralEnabled",
+                "type": "bool"
+              },
+              { "internalType": "bool", "name": "borrowingEnabled", "type": "bool" },
+              {
+                "internalType": "bool",
+                "name": "stableBorrowRateEnabled",
+                "type": "bool"
+              },
+              { "internalType": "bool", "name": "isActive", "type": "bool" },
+              { "internalType": "bool", "name": "isFrozen", "type": "bool" }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getReserveData",
+            "outputs": [
+              { "internalType": "uint256", "name": "unbacked", "type": "uint256" },
+              {
+                "internalType": "uint256",
+                "name": "accruedToTreasuryScaled",
+                "type": "uint256"
+              },
+              { "internalType": "uint256", "name": "totalAToken", "type": "uint256" },
+              { "internalType": "uint256", "name": "totalStableDebt", "type": "uint256" },
+              {
+                "internalType": "uint256",
+                "name": "totalVariableDebt",
+                "type": "uint256"
+              },
+              { "internalType": "uint256", "name": "liquidityRate", "type": "uint256" },
+              {
+                "internalType": "uint256",
+                "name": "variableBorrowRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "stableBorrowRate",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "averageStableBorrowRate",
+                "type": "uint256"
+              },
+              { "internalType": "uint256", "name": "liquidityIndex", "type": "uint256" },
+              {
+                "internalType": "uint256",
+                "name": "variableBorrowIndex",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint40",
+                "name": "lastUpdateTimestamp",
+                "type": "uint40"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getReserveEModeCategory",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getReserveTokensAddresses",
+            "outputs": [
+              { "internalType": "address", "name": "aTokenAddress", "type": "address" },
+              {
+                "internalType": "address",
+                "name": "stableDebtTokenAddress",
+                "type": "address"
+              },
+              {
+                "internalType": "address",
+                "name": "variableDebtTokenAddress",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getSiloedBorrowing",
+            "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getTotalDebt",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getUnbackedMintCap",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address", "name": "asset", "type": "address" },
+              { "internalType": "address", "name": "user", "type": "address" }
+            ],
+            "name": "getUserReserveData",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "currentATokenBalance",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "currentStableDebt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "currentVariableDebt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "principalStableDebt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "scaledVariableDebt",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "stableBorrowRate",
+                "type": "uint256"
+              },
+              { "internalType": "uint256", "name": "liquidityRate", "type": "uint256" },
+              {
+                "internalType": "uint40",
+                "name": "stableRateLastUpdated",
+                "type": "uint40"
+              },
+              {
+                "internalType": "bool",
+                "name": "usageAsCollateralEnabled",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ]
+      },
+      "priceOracle": {
+        "address": "0xb023e699F5a33916Ea823A16485e259257cA8Bd1",
+        "abi": [
+          {
+            "inputs": [
+              {
+                "internalType": "contract IPoolAddressesProvider",
+                "name": "provider",
+                "type": "address"
+              },
+              { "internalType": "address[]", "name": "assets", "type": "address[]" },
+              { "internalType": "address[]", "name": "sources", "type": "address[]" },
+              { "internalType": "address", "name": "fallbackOracle", "type": "address" },
+              { "internalType": "address", "name": "baseCurrency", "type": "address" },
+              { "internalType": "uint256", "name": "baseCurrencyUnit", "type": "uint256" }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "source",
+                "type": "address"
+              }
+            ],
+            "name": "AssetSourceUpdated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "baseCurrency",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "baseCurrencyUnit",
+                "type": "uint256"
+              }
+            ],
+            "name": "BaseCurrencySet",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fallbackOracle",
+                "type": "address"
+              }
+            ],
+            "name": "FallbackOracleUpdated",
+            "type": "event"
+          },
+          {
+            "inputs": [],
+            "name": "ADDRESSES_PROVIDER",
+            "outputs": [
+              {
+                "internalType": "contract IPoolAddressesProvider",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "BASE_CURRENCY",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "BASE_CURRENCY_UNIT",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getAssetPrice",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" }
+            ],
+            "name": "getAssetsPrices",
+            "outputs": [{ "internalType": "uint256[]", "name": "", "type": "uint256[]" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getFallbackOracle",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getSourceOfAsset",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" },
+              { "internalType": "address[]", "name": "sources", "type": "address[]" }
+            ],
+            "name": "setAssetSources",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address", "name": "fallbackOracle", "type": "address" }
+            ],
+            "name": "setFallbackOracle",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
           }
         ]
       }
@@ -3280,164 +3903,6 @@
           ],
           "payable": false,
           "stateMutability": "view",
-          "type": "function"
-        }
-      ]
-    },
-    "priceOracle": {
-      "address": "0x0229F777B0fAb107F9591a41d5F02E4e98dB6f2d",
-      "abi": [
-        {
-          "inputs": [
-            { "internalType": "address[]", "name": "assets", "type": "address[]" },
-            { "internalType": "address[]", "name": "sources", "type": "address[]" },
-            { "internalType": "address", "name": "fallbackOracle", "type": "address" },
-            { "internalType": "address", "name": "weth", "type": "address" }
-          ],
-          "stateMutability": "nonpayable",
-          "type": "constructor"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "asset",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "source",
-              "type": "address"
-            }
-          ],
-          "name": "AssetSourceUpdated",
-          "type": "event"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "fallbackOracle",
-              "type": "address"
-            }
-          ],
-          "name": "FallbackOracleUpdated",
-          "type": "event"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "weth",
-              "type": "address"
-            }
-          ],
-          "name": "WethSet",
-          "type": "event"
-        },
-        {
-          "inputs": [],
-          "name": "WETH",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
-          "name": "getAssetPrice",
-          "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address[]", "name": "assets", "type": "address[]" }
-          ],
-          "name": "getAssetsPrices",
-          "outputs": [{ "internalType": "uint256[]", "name": "", "type": "uint256[]" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [],
-          "name": "getFallbackOracle",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
-          "name": "getSourceOfAsset",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [],
-          "name": "owner",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [],
-          "name": "renounceOwnership",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address[]", "name": "assets", "type": "address[]" },
-            { "internalType": "address[]", "name": "sources", "type": "address[]" }
-          ],
-          "name": "setAssetSources",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address", "name": "fallbackOracle", "type": "address" }
-          ],
-          "name": "setFallbackOracle",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address", "name": "newOwner", "type": "address" }
-          ],
-          "name": "transferOwnership",
-          "outputs": [],
-          "stateMutability": "nonpayable",
           "type": "function"
         }
       ]
@@ -6301,6 +6766,164 @@
             "type": "function"
           }
         ]
+      },
+      "priceOracle": {
+        "address": "0xA50ba011c48153De246E5192C8f9258A2ba79Ca9",
+        "abi": [
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" },
+              { "internalType": "address[]", "name": "sources", "type": "address[]" },
+              { "internalType": "address", "name": "fallbackOracle", "type": "address" },
+              { "internalType": "address", "name": "weth", "type": "address" }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "asset",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "source",
+                "type": "address"
+              }
+            ],
+            "name": "AssetSourceUpdated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "fallbackOracle",
+                "type": "address"
+              }
+            ],
+            "name": "FallbackOracleUpdated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+              }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "weth",
+                "type": "address"
+              }
+            ],
+            "name": "WethSet",
+            "type": "event"
+          },
+          {
+            "inputs": [],
+            "name": "WETH",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getAssetPrice",
+            "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" }
+            ],
+            "name": "getAssetsPrices",
+            "outputs": [{ "internalType": "uint256[]", "name": "", "type": "uint256[]" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "getFallbackOracle",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
+            "name": "getSourceOfAsset",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address[]", "name": "assets", "type": "address[]" },
+              { "internalType": "address[]", "name": "sources", "type": "address[]" }
+            ],
+            "name": "setAssetSources",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address", "name": "fallbackOracle", "type": "address" }
+            ],
+            "name": "setFallbackOracle",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              { "internalType": "address", "name": "newOwner", "type": "address" }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          }
+        ]
       }
     },
     "iWeth": {
@@ -6498,164 +7121,6 @@
           ],
           "payable": false,
           "stateMutability": "view",
-          "type": "function"
-        }
-      ]
-    },
-    "priceOracle": {
-      "address": "0xA50ba011c48153De246E5192C8f9258A2ba79Ca9",
-      "abi": [
-        {
-          "inputs": [
-            { "internalType": "address[]", "name": "assets", "type": "address[]" },
-            { "internalType": "address[]", "name": "sources", "type": "address[]" },
-            { "internalType": "address", "name": "fallbackOracle", "type": "address" },
-            { "internalType": "address", "name": "weth", "type": "address" }
-          ],
-          "stateMutability": "nonpayable",
-          "type": "constructor"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "asset",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "source",
-              "type": "address"
-            }
-          ],
-          "name": "AssetSourceUpdated",
-          "type": "event"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "fallbackOracle",
-              "type": "address"
-            }
-          ],
-          "name": "FallbackOracleUpdated",
-          "type": "event"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "previousOwner",
-              "type": "address"
-            },
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "newOwner",
-              "type": "address"
-            }
-          ],
-          "name": "OwnershipTransferred",
-          "type": "event"
-        },
-        {
-          "anonymous": false,
-          "inputs": [
-            {
-              "indexed": true,
-              "internalType": "address",
-              "name": "weth",
-              "type": "address"
-            }
-          ],
-          "name": "WethSet",
-          "type": "event"
-        },
-        {
-          "inputs": [],
-          "name": "WETH",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
-          "name": "getAssetPrice",
-          "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address[]", "name": "assets", "type": "address[]" }
-          ],
-          "name": "getAssetsPrices",
-          "outputs": [{ "internalType": "uint256[]", "name": "", "type": "uint256[]" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [],
-          "name": "getFallbackOracle",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [{ "internalType": "address", "name": "asset", "type": "address" }],
-          "name": "getSourceOfAsset",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [],
-          "name": "owner",
-          "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
-          "stateMutability": "view",
-          "type": "function"
-        },
-        {
-          "inputs": [],
-          "name": "renounceOwnership",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address[]", "name": "assets", "type": "address[]" },
-            { "internalType": "address[]", "name": "sources", "type": "address[]" }
-          ],
-          "name": "setAssetSources",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address", "name": "fallbackOracle", "type": "address" }
-          ],
-          "name": "setFallbackOracle",
-          "outputs": [],
-          "stateMutability": "nonpayable",
-          "type": "function"
-        },
-        {
-          "inputs": [
-            { "internalType": "address", "name": "newOwner", "type": "address" }
-          ],
-          "name": "transferOwnership",
-          "outputs": [],
-          "stateMutability": "nonpayable",
           "type": "function"
         }
       ]

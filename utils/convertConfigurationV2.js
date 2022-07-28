@@ -1,29 +1,18 @@
 require("dotenv").config();
 const fs = require("fs");
-// const { ethers } = require("ethers");
 
-async function convertConfiguration(
-  folderName,
-  inputFile,
-  outputFile,
-  hf,
-  // decimals,
-  chainData
-) {
-  // Valores que modificar antes de hacer el llamado a la funcion
+async function convertConfiguration(folderName, inputFile, outputFile, hf, chainData) {
   const FOLDER_NAME = folderName;
   const INPUT_FILE_NAME = inputFile;
   const OUTPUT_FILE_NAME = outputFile;
   const HEALTH_FACTOR_LIMIT = hf || 1.01;
-  // const WEI_UNITS = decimals || 18;
   fs.readFile(`./data/${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
     const data = await JSON.parse(save);
     const newUser = [];
     const end = data.length;
     for (let i = 0; i <= end; i++) {
-      // const alldebt = data[i]?.totalDebtETH.slice().length;
-      if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT /* && alldebt >= WEI_UNITS */) {
+      if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT) {
         const configuration = decodeConfiguration(data[i].userConfiguration, chainData);
         const info = {
           user: data[i].user,
@@ -102,13 +91,6 @@ function decodeConfiguration(configuration, chainData) {
         debt: true,
         chainData: chainData[i]
       });
-    } else {
-      // data.push({
-      //   code: bitCouples[i],
-      //   col: false,
-      //   debt: false,
-      //   chainData: chainData[i]
-      // });
     }
   }
 

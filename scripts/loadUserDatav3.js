@@ -1,5 +1,6 @@
 const { ethers } = require("ethers");
 const { saveData } = require("../utils/saveData");
+const { updateValues } = require("../utils/updateValues");
 const aave = require("../config/aave.json");
 const config = require("../config/config.json");
 require("dotenv").config();
@@ -8,16 +9,18 @@ require("dotenv").config();
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const OUTPUT_FOLDER_NAME = "optimism_v3";
+const CHAIN = "polygon";
 const OUTPUT_FILE_NAME = "users_data";
 const ACCOUNT = config.keys.fake;
-const PROVIDER = config.rpcUrl.optimism.public;
-const CONTRACT_ADDRESS = aave.optimism.v3.l2Pool.address;
-const CONTRACT_ABI = aave.polygon.v3.pool.abi;
+const PROVIDER = config.rpcUrl[CHAIN].public;
 
-async function loadUserDataV3() {
-  const startIndex = require(`../${OUTPUT_FOLDER_NAME}/index.json`);
-  const uniqueUsers = require(`../${OUTPUT_FOLDER_NAME}/all_users.json`);
+const OUTPUT_FOLDER_NAME = `${CHAIN}_v3`;
+const CONTRACT_ADDRESS = aave[CHAIN].v3.lendingPool.address;
+const CONTRACT_ABI = aave[CHAIN].v3.lendingPool.abi;
+
+async function loadUserDataV2() {
+  const startIndex = require(`../data/${OUTPUT_FOLDER_NAME}/index.json`);
+  const uniqueUsers = require(`../data/${OUTPUT_FOLDER_NAME}/all_users.json`);
   const provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER]);
   const deployer = new ethers.Wallet(process.env[ACCOUNT], provider);
   const myIndex = startIndex.length - 1;
@@ -25,7 +28,6 @@ async function loadUserDataV3() {
 
   console.log(`Total users: ${uniqueUsers.length}`);
   console.log("Starting from: ", start);
-
   for (let index = start; index >= 0; index--) {
     const account = uniqueUsers[index];
     const lendingPool = await getLendingPool(CONTRACT_ADDRESS, CONTRACT_ABI, deployer);
@@ -33,26 +35,27 @@ async function loadUserDataV3() {
   }
 }
 
-// ⚠ ACUERDATE QUE EL RESULTADO VARIA ENTRE V2 Y V3 ⚠
 async function getLendingPool(address, abi, account) {
   const lendingPool = new ethers.Contract(address, abi, account);
   return lendingPool;
 }
 
+// ⚠ ACUERDATE QUE EL RESULTADO VARIA ENTRE V2 Y V3 ⚠
 async function getBorrowUserData(lendingPool, account, index) {
   const {
     totalCollateralBase,
     totalDebtBase,
+    availableBorrowsBase,
     healthFactor
   } = await lendingPool.getUserAccountData(account);
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
 
-  if (formattedHF <= 1.1) {
+  if (formattedHF < 1.1) {
     console.log("Account: ", account);
     console.log(`Have ${totalCollateralBase} worth of ETH deposited.`);
     console.log(`Have ${totalDebtBase} worth of ETH borrowed.`);
-    console.log(`And his healthFactor is: ${ethers.utils.formatEther(healthFactor)}.\n`);
+    console.log(`And his healthFactor is: ${formattedHF}.\n`);
 
     const info = [
       {
@@ -66,8 +69,8 @@ async function getBorrowUserData(lendingPool, account, index) {
 
     saveData(OUTPUT_FOLDER_NAME, OUTPUT_FILE_NAME, info);
   }
-  const infoIindex = [index];
-  saveData(OUTPUT_FOLDER_NAME, "index", infoIindex);
+
+  updateValues(OUTPUT_FOLDER_NAME, "index", index, 0);
 }
 
-loadUserDataV3();
+loadUserDataV2();

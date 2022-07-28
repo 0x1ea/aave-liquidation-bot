@@ -1,9 +1,6 @@
 require("dotenv").config();
-const { ethers } = require("ethers");
-const aave = require("../config/aave.json");
 const config = require("../config/config.json");
-const uniswap = require("../config/uniswap.json");
-const { liquidate } = require("./liquidate");
+const { liquidate } = require("./liquidateV2");
 
 /**
  * INFORMACION PARA CONFIGURAR
@@ -17,6 +14,7 @@ const PUBLIC_PROVIDER_URL = config.rpcUrl[CHAIN].public;
 const PROVIDER_URL = config.rpcUrl[CHAIN].alchemy;
 const MY_ACCOUNT = config.keys.private;
 const MIN_ACCOUNT_RESERVE = 0.07;
+
 async function bot() {
   const data = require(`../data/${FOLDER_NAME}/${INPUT_FILE_NAME}.json`);
 

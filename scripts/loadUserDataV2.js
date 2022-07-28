@@ -19,8 +19,8 @@ const CONTRACT_ADDRESS = aave[CHAIN].v2.lendingPool.address;
 const CONTRACT_ABI = aave[CHAIN].v2.lendingPool.abi;
 
 async function loadUserDataV2() {
-  const startIndex = require(`../${OUTPUT_FOLDER_NAME}/index.json`);
-  const uniqueUsers = require(`../${OUTPUT_FOLDER_NAME}/all_users.json`);
+  const startIndex = require(`../data/${OUTPUT_FOLDER_NAME}/index.json`);
+  const uniqueUsers = require(`../data/${OUTPUT_FOLDER_NAME}/all_users.json`);
   const provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER]);
   const deployer = new ethers.Wallet(process.env[ACCOUNT], provider);
   const myIndex = startIndex.length - 1;

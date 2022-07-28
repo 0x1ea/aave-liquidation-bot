@@ -1,7 +1,6 @@
 require("dotenv").config();
 const { ethers } = require("ethers");
 const aave = require("../config/aave.json");
-const config = require("../config/config.json");
 const uniswap = require("../config/uniswap.json");
 const {
   getWeth,
@@ -15,6 +14,17 @@ const {
   getPrice
 } = require("../utils/liquidationUtils");
 
+/**
+ *
+ * @param {string} victimAddress
+ * @param {object} debtToken
+ * @param {object} colToken
+ * @param {string} publicProvider
+ * @param {string} privateProvider
+ * @param {string} myAccount
+ * @param {string} chain
+ * @param {float} securityWall
+ */
 async function liquidate(
   victimAddress,
   debtToken,
@@ -40,8 +50,8 @@ async function liquidate(
   const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
   const RECEIVE_A_TOKEN = false;
 
-  const PRICE_ORACLE_ADDRESS = aave[CHAIN].priceOracle.address;
-  const PRICE_ORACLE_ABI = aave[CHAIN].priceOracle.abi;
+  const PRICE_ORACLE_ADDRESS = aave[CHAIN].v2.priceOracle.address;
+  const PRICE_ORACLE_ABI = aave[CHAIN].v2.priceOracle.abi;
 
   const EXCHANGE_ADDRESS = uniswap[CHAIN].swapRouter.address;
   const EXCHANGE_ABI = uniswap[CHAIN].swapRouter.abi;
@@ -49,9 +59,6 @@ async function liquidate(
 
   let provider = new ethers.providers.JsonRpcProvider(process.env[publicProvider]);
   let deployer = new ethers.Wallet(process.env[myAccount], provider);
-
-  const gasPrice = await deployer.getGasPrice();
-  const GAS_PRICE = parseInt(gasPrice * 1.1);
 
   const baseTokenAddress = WRAPPER_ADDRESS;
   const debtTokenAddress = TOKEN_DEBT_ADDRESS;
@@ -63,8 +70,12 @@ async function liquidate(
   );
   const { formattedHF } = await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
 
+  /**
+   * ⚠  ⚠  ⚠
+   * ⚠ CONTROL DE SEGURIDAD #1: verifico que la victima se pueda liquidar.
+   * ⚠  ⚠  ⚠
+   */
   if (formattedHF < 1) {
-    //---------------------------------------------
     const dataProvider = new ethers.Contract(
       aave[CHAIN].v2.dataProvider.address,
       aave[CHAIN].v2.dataProvider.abi,
@@ -74,8 +85,8 @@ async function liquidate(
       debtTokenAddress,
       VICTIM_ADDRESS
     );
-    //---------------------------------------------
 
+    // Get price in TOKEN/ETH | TOKEN/BASE_TOKEN
     const baseTokenPrice = await getPrice(
       PRICE_ORACLE_ADDRESS,
       PRICE_ORACLE_ABI,
@@ -83,35 +94,48 @@ async function liquidate(
       debtTokenAddress
     );
 
-    let SWAP_AMOUNT = parseInt(currentVariableDebt / 2);
+    let SWAP_AMOUNT_IN_BASE_TOKEN = parseInt(currentVariableDebt / 2);
 
-    const MIN_OUTPUT_AMOUNT = parseInt(SWAP_AMOUNT * 0.98).toString();
+    const MIN_OUTPUT_AMOUNT = parseInt(SWAP_AMOUNT_IN_BASE_TOKEN * 0.98).toString();
 
-    SWAP_AMOUNT = parseInt(
-      (SWAP_AMOUNT / 10 ** TOKEN_DEBT_DECIMALS) * baseTokenPrice
+    // Convierto el precio base de la deuda al precio en ETH
+    const SWAP_AMOUNT = parseInt(
+      (SWAP_AMOUNT_IN_BASE_TOKEN / 10 ** TOKEN_DEBT_DECIMALS) * baseTokenPrice
     ).toString();
 
+    // Estimo el coste total de la liquidacion
+    const gasPrice = await deployer.getGasPrice();
+    const GAS_PRICE = parseInt(gasPrice * 1.1);
     let LIQUIDATION_TOTAL_COST = LIQUIDATION_COST * GAS_PRICE;
 
     let reward = parseInt(SWAP_AMOUNT * TOKEN_COL_BONUS);
 
     if (CHAIN == "polygon") {
+      // Si la cadena es Polygon, el precio del base token es en MATIC
       const matic_price_wei = await getPrice(
         PRICE_ORACLE_ADDRESS,
         PRICE_ORACLE_ABI,
         deployer,
         WRAPPER_ADDRESS
       );
-      const matic_price_eth = ethers.utils.formatEther(matic_price_wei).toString();
-      LIQUIDATION_TOTAL_COST = parseInt(LIQUIDATION_TOTAL_COST * matic_price_eth);
+      const MATIC_PRICE_IN_ETH = ethers.utils.formatEther(matic_price_wei).toString();
+      LIQUIDATION_TOTAL_COST = parseInt(LIQUIDATION_TOTAL_COST * MATIC_PRICE_IN_ETH);
     }
 
     reward = parseFloat(ethers.utils.formatEther(reward.toString()));
+
     LIQUIDATION_TOTAL_COST = parseFloat(
       ethers.utils.formatEther(LIQUIDATION_TOTAL_COST.toString())
     );
 
     const PROFITABLE = reward > LIQUIDATION_TOTAL_COST;
+
+    /**
+     * ⚠  ⚠  ⚠
+     * ⚠ CONTROL DE SEGURIDAD #2: verifico que sea rentable la liquidacion.
+     * ⚠   El coste del gas debe ser menor al liquidationBonus
+     * ⚠  ⚠  ⚠
+     */
     if (PROFITABLE) {
       console.log("MEV found...\n");
       console.log("Victim:", VICTIM_ADDRESS);
@@ -120,7 +144,7 @@ async function liquidate(
       console.log("Gas cost:", LIQUIDATION_TOTAL_COST);
       console.log("Bonus:", reward, "\n");
 
-      // CALCULANDO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
+      // CALCULO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
       //---------------------------------------------
       let ethCompromised = parseInt(SWAP_AMOUNT * (1 + TOKEN_COL_BONUS));
       ethCompromised = ethers.utils.formatEther(ethCompromised.toString());
@@ -134,6 +158,12 @@ async function liquidate(
       console.log("Result balance:", residuo);
       //---------------------------------------------
 
+      /**
+       * ⚠  ⚠  ⚠
+       * ⚠ CONTROL DE SEGURIDAD #3: verifico que tenga suficiente fondos en la cuenta
+       * ⚠   antes y después de la liquidación.
+       * ⚠  ⚠  ⚠
+       */
       if (residuo >= securityWall) {
         provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
         deployer = new ethers.Wallet(process.env[myAccount], provider);
@@ -187,7 +217,7 @@ async function liquidate(
           GAS_PRICE
         );
 
-        await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
+        // await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
 
         if (COL_ADDRESS !== aave[CHAIN].iWeth.address) {
           const bonusBalance = await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);

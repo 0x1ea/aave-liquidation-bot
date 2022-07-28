@@ -1,29 +1,19 @@
-const fs = require("fs");
-const { ethers } = require("ethers");
 require("dotenv").config();
+const fs = require("fs");
 
-async function convertConfiguration(
-  folderName,
-  inputFile,
-  outputFile,
-  hf,
-  decimals,
-  chainData
-) {
+async function convertConfiguration(folderName, inputFile, outputFile, hf, chainData) {
   // Valores que modificar antes de hacer el llamado a la funcion
   const FOLDER_NAME = folderName;
   const INPUT_FILE_NAME = inputFile;
   const OUTPUT_FILE_NAME = outputFile;
   const HEALTH_FACTOR_LIMIT = hf || 1.01;
-  const WEI_UNITS = decimals || 18;
   fs.readFile(`./data/${FOLDER_NAME}/${INPUT_FILE_NAME}.json`, async (err, buf) => {
     let save = buf.toString();
     const data = await JSON.parse(save);
     const newUser = [];
     const end = data.length;
     for (let i = 0; i <= end; i++) {
-      const alldebt = data[i]?.totalDebtBase.slice().length;
-      if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT && alldebt >= WEI_UNITS) {
+      if (data[i]?.formattedHF <= HEALTH_FACTOR_LIMIT) {
         const configuration = decodeConfiguration(data[i].userConfiguration, chainData);
         const info = {
           user: data[i].user,
@@ -88,7 +78,7 @@ function decodeConfiguration(configuration, chainData) {
         debt: false,
         chainData: chainData[i]
       });
-    } else if (bitCouples[i] === "01") {
+    } else if (bitCouples[i] == "01" || bitCouples[i] == "1") {
       data.push({
         code: bitCouples[i],
         col: false,
@@ -114,7 +104,5 @@ function decodeConfiguration(configuration, chainData) {
 
   return data;
 }
-
-// convertConfiguration("data_polygon", "formatted_users_data_polygon", "users_ready");
 
 module.exports = { convertConfiguration };

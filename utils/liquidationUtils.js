@@ -62,6 +62,24 @@ async function getBorrowUserData(lendingPool, account) {
   return { formattedHF, totalCollateralETH, totalDebtETH };
 }
 
+async function getBorrowUserDataV3(lendingPool, account) {
+  const {
+    totalCollateralBase,
+    totalDebtBase,
+    healthFactor
+  } = await lendingPool.getUserAccountData(account);
+
+  const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
+
+  // console.log("\nAccount: ", account);
+  // console.log(
+  //   `Have ${ethers.utils.formatEther(totalCollateralETH)} worth of ETH deposited.`
+  // );
+  // console.log(`Have ${ethers.utils.formatEther(totalDebtETH)} worth of ETH borrowed.`);
+  // console.log(`His helthFactor is: ${formattedHF}.\n`);
+
+  return { formattedHF, totalCollateralBase, totalDebtBase };
+}
 async function getEth(address, abi, account, gasPrice) {
   const erc20Contract = new ethers.Contract(address, abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
@@ -108,6 +126,7 @@ module.exports = {
   getErc20Balance,
   swapTokens,
   getBorrowUserData,
+  getBorrowUserDataV3,
   getEth,
   getLendingPool,
   liquidateUser,
