@@ -3,7 +3,7 @@ const { ethers } = require("ethers");
 async function getWeth(address, abi, account, amount, gasPrice) {
   const erc20Contract = new ethers.Contract(address, abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
-  const tx = await erc20Contract.deposit({
+  await erc20Contract.deposit({
     value: amount,
     gasLimit: "60041",
     gasPrice: gasPrice
@@ -20,7 +20,7 @@ async function approveErc20(
   gasPrice
 ) {
   const erc20Token = new ethers.Contract(erc20Address, abi, account);
-  const tx = await erc20Token.approve(spenderAddress, amountToSpend, {
+  await erc20Token.approve(spenderAddress, amountToSpend, {
     gasLimit: "63000",
     gasPrice: gasPrice
   });
@@ -29,9 +29,9 @@ async function approveErc20(
 async function getErc20Balance(erc20Address, abi, account) {
   const erc20Contract = new ethers.Contract(erc20Address, abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
-  const symbol = await erc20Contract.symbol();
-  const decimals = await erc20Contract.decimals();
-  console.log(`My ${symbol} balance: ${ethers.utils.formatUnits(balance, decimals)}`);
+  // const symbol = await erc20Contract.symbol();
+  // const decimals = await erc20Contract.decimals();
+  // console.log(`My ${symbol} balance: ${ethers.utils.formatUnits(balance, decimals)}`);
   return balance.toString();
 }
 
@@ -65,7 +65,7 @@ async function getBorrowUserData(lendingPool, account) {
 async function getEth(address, abi, account, gasPrice) {
   const erc20Contract = new ethers.Contract(address, abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
-  const tx = await erc20Contract.withdraw(balance, {
+  await erc20Contract.withdraw(balance, {
     gasLimit: "37041",
     gasPrice: gasPrice
   });
@@ -94,13 +94,13 @@ async function liquidateUser(
     receiveAToken,
     { gasPrice: gasPrice, gasLimit: "800000" }
   );
-  console.log(`- Done!\n\n`);
+  // console.log(`- Done!\n\n`);
 }
 
 async function getPrice(address, abi, account, baseTokenAddress) {
   const contract = new ethers.Contract(address, abi, account);
   let price = await contract.getAssetPrice(baseTokenAddress);
-  return price;
+  return price.toString();
 }
 
 module.exports = {
