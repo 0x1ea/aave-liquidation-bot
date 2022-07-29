@@ -4,13 +4,14 @@
     "private": "PRIVATE_KEY"
   },
   "rpcUrl": {
-    "local": "LOCAL",
     "polygon": {
+      "local": "LOCAL",
       "public": "PUBLIC_POLYGON_RPC_URL",
       "alchemy": "ALCHEMY_POLYGON_RPC_URL",
       "infura": "INFURA_POLYGON_RPC_URL"
     },
     "mainnet": {
+      "local": "LOCAL",
       "public": "PUBLIC_ETH_RPC_URL",
       "alchemy": "ALCHEMY_ETH_RPC_URL",
       "infura": "INFURA_ETH_RPC_URL"

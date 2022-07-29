@@ -1,4 +1,5 @@
 require("dotenv").config();
+const { BigNumber } = require("ethers");
 const { ethers } = require("ethers");
 const aave = require("../config/aave.json");
 const uniswap = require("../config/uniswap.json");
@@ -23,7 +24,7 @@ const {
  * @param {string} privateProvider
  * @param {string} myAccount
  * @param {string} chain
- * @param {float} securityWall
+ * @param {string} securityWall
  */
 async function liquidate(
   victimAddress,
@@ -33,15 +34,19 @@ async function liquidate(
   privateProvider,
   myAccount,
   chain,
-  securityWall
+  securityWall,
+  nonce
 ) {
-  const LIQUIDATION_COST = 1500000; //1636082;
+  const LIQUIDATION_COST = BigNumber.from(1500000);
   const CHAIN = chain;
   const VICTIM_ADDRESS = victimAddress;
   const TOKEN_DEBT_ADDRESS = debtToken.address;
   const TOKEN_DEBT_DECIMALS = debtToken.decimals;
   const COL_ADDRESS = colToken.address;
-  const TOKEN_COL_BONUS = colToken.bonus;
+  // const TOKEN_COL_BONUS = parseInt(colToken.bonus * 100);
+  const TOKEN_COL_BONUS = 100000;
+  const SECURITY_WALL = ethers.utils.parseEther(securityWall);
+  let NONCE = nonce;
 
   const WRAPPER_ADDRESS = aave[CHAIN].iWeth.address;
   const WRAPPER_ABI = aave[CHAIN].iWeth.abi;
@@ -94,21 +99,26 @@ async function liquidate(
       debtTokenAddress
     );
 
-    let SWAP_AMOUNT_IN_BASE_TOKEN = parseInt(currentVariableDebt / 2);
+    let swap_amount_in_base_token = currentVariableDebt.div(2);
 
-    const MIN_OUTPUT_AMOUNT = parseInt(SWAP_AMOUNT_IN_BASE_TOKEN * 0.98).toString();
+    let MIN_OUTPUT_AMOUNT = swap_amount_in_base_token.mul(98);
+    MIN_OUTPUT_AMOUNT = MIN_OUTPUT_AMOUNT.div(100);
 
     // Convierto el precio base de la deuda al precio en ETH
-    const SWAP_AMOUNT = parseInt(
-      (SWAP_AMOUNT_IN_BASE_TOKEN / 10 ** TOKEN_DEBT_DECIMALS) * baseTokenPrice
-    ).toString();
+    let input_swap_amount_in_eth = swap_amount_in_base_token.div(
+      BigNumber.from(10).pow(TOKEN_DEBT_DECIMALS)
+    );
+    input_swap_amount_in_eth = input_swap_amount_in_eth.mul(baseTokenPrice);
 
     // Estimo el coste total de la liquidacion
     const gasPrice = await deployer.getGasPrice();
-    const GAS_PRICE = parseInt(gasPrice * 1.1);
-    let LIQUIDATION_TOTAL_COST = LIQUIDATION_COST * GAS_PRICE;
+    let GAS_PRICE = gasPrice.mul(20);
+    GAS_PRICE = GAS_PRICE.div(100);
 
-    let reward = parseInt(SWAP_AMOUNT * TOKEN_COL_BONUS);
+    let LIQUIDATION_TOTAL_COST = LIQUIDATION_COST.mul(GAS_PRICE);
+
+    let reward = input_swap_amount_in_eth.mul(TOKEN_COL_BONUS);
+    reward = reward.div(100);
 
     if (CHAIN == "polygon") {
       // Si la cadena es Polygon, el precio del base token es en MATIC
@@ -118,17 +128,11 @@ async function liquidate(
         deployer,
         WRAPPER_ADDRESS
       );
-      const MATIC_PRICE_IN_ETH = ethers.utils.formatEther(matic_price_wei).toString();
-      LIQUIDATION_TOTAL_COST = parseInt(LIQUIDATION_TOTAL_COST * MATIC_PRICE_IN_ETH);
+      const MATIC_PRICE_IN_ETH = ethers.utils.formatEther(matic_price_wei);
+      LIQUIDATION_TOTAL_COST = LIQUIDATION_TOTAL_COST.mul(MATIC_PRICE_IN_ETH);
     }
 
-    reward = parseFloat(ethers.utils.formatEther(reward.toString()));
-
-    LIQUIDATION_TOTAL_COST = parseFloat(
-      ethers.utils.formatEther(LIQUIDATION_TOTAL_COST.toString())
-    );
-
-    const PROFITABLE = reward > LIQUIDATION_TOTAL_COST;
+    const PROFITABLE = reward.gt(LIQUIDATION_TOTAL_COST);
 
     /**
      * ⚠  ⚠  ⚠
@@ -141,43 +145,83 @@ async function liquidate(
       console.log("Victim:", VICTIM_ADDRESS);
       console.log("Col token:", COL_ADDRESS);
       console.log("Debt token", TOKEN_DEBT_ADDRESS);
-      console.log("Gas cost:", LIQUIDATION_TOTAL_COST);
-      console.log("Bonus:", reward, "\n");
+      console.log("Gas cost:", ethers.utils.formatEther(LIQUIDATION_TOTAL_COST));
+      console.log("Bonus:", ethers.utils.formatEther(reward), "\n");
 
       // CALCULO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
       //---------------------------------------------
-      let ethCompromised = parseInt(SWAP_AMOUNT * (1 + TOKEN_COL_BONUS));
-      ethCompromised = ethers.utils.formatEther(ethCompromised.toString());
-      const totalEthCompromised =
-        parseFloat(ethCompromised) + parseFloat(LIQUIDATION_TOTAL_COST);
-
+      let totalEthCompromised = input_swap_amount_in_eth.add(LIQUIDATION_TOTAL_COST);
       let balance = await deployer.getBalance();
       console.log("My balance:", ethers.utils.formatEther(balance));
-      console.log("EthCompromised (debt + gasCost):", totalEthCompromised);
-      const residuo = parseFloat(balance) - totalEthCompromised;
-      console.log("Result balance:", residuo);
+      console.log(
+        "EthCompromised (debt + gasCost):",
+        ethers.utils.formatEther(totalEthCompromised)
+      );
+      let residuo = balance.sub(totalEthCompromised);
+      console.log("Result balance:", ethers.utils.formatEther(residuo));
       //---------------------------------------------
+
+      const is_hight_debt = residuo.lt(SECURITY_WALL);
+      if (is_hight_debt) {
+        // CALCULO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
+        // EN CASO DE QUE EL MONTO A LIQUIDAR SEA SUPERIOR AL
+        // SALDO DE MI CUENTA
+        input_swap_amount_in_eth = BigNumber.from("300000000000000000");
+        let totalEthCompromised = input_swap_amount_in_eth.add(LIQUIDATION_TOTAL_COST);
+        residuo = balance.sub(totalEthCompromised);
+
+        balance = await deployer.getBalance();
+        console.log("My balance:", ethers.utils.formatEther(balance));
+        console.log(
+          "curated ethCompromised (debt + gasCost):",
+          ethers.utils.formatEther(totalEthCompromised)
+        );
+        console.log("curated result balance:", ethers.utils.formatEther(residuo));
+      }
 
       /**
        * ⚠  ⚠  ⚠
-       * ⚠ CONTROL DE SEGURIDAD #3: verifico que tenga suficiente fondos en la cuenta
+       * ⚠ CONTROL DE SEGURIDAD #3: verifico que quede suficiente fondos en la cuenta
        * ⚠   antes y después de la liquidación.
        * ⚠  ⚠  ⚠
        */
-      if (residuo >= securityWall) {
+      const enought_balance = residuo.gt(SECURITY_WALL);
+      if (enought_balance) {
+        console.log("nonce:", NONCE);
         provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
         deployer = new ethers.Wallet(process.env[myAccount], provider);
-        await getWeth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, SWAP_AMOUNT, GAS_PRICE);
+
+        try {
+          await getWeth(
+            WRAPPER_ADDRESS,
+            WRAPPER_ABI,
+            deployer,
+            input_swap_amount_in_eth,
+            GAS_PRICE,
+            NONCE
+          );
+          NONCE++;
+        } catch (e) {
+          NONCE++;
+          return NONCE;
+        }
 
         if (TOKEN_DEBT_ADDRESS !== aave[CHAIN].iWeth.address) {
-          await approveErc20(
-            baseTokenAddress,
-            WRAPPER_ABI,
-            EXCHANGE_ADDRESS,
-            SWAP_AMOUNT,
-            deployer,
-            GAS_PRICE
-          );
+          try {
+            await approveErc20(
+              baseTokenAddress,
+              WRAPPER_ABI,
+              EXCHANGE_ADDRESS,
+              input_swap_amount_in_eth,
+              deployer,
+              GAS_PRICE,
+              NONCE
+            );
+            NONCE++;
+          } catch (error) {
+            NONCE++;
+            return NONCE;
+          }
 
           let params = {
             tokenIn: baseTokenAddress,
@@ -185,51 +229,85 @@ async function liquidate(
             fee: poolFee,
             recipient: deployer.address,
             deadline: parseInt(Date.now() * 1000),
-            amountIn: SWAP_AMOUNT,
+            amountIn: input_swap_amount_in_eth,
             amountOutMinimum: MIN_OUTPUT_AMOUNT,
             sqrtPriceLimitX96: 0 //parseInt(Math.sqrt(baseTokenPrice) * 2 * 96)
           };
-          await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
+
+          try {
+            await swapTokens(
+              EXCHANGE_ADDRESS,
+              EXCHANGE_ABI,
+              deployer,
+              params,
+              GAS_PRICE,
+              NONCE
+            );
+            NONCE++;
+          } catch (error) {
+            NONCE++;
+            return NONCE;
+          }
         }
 
-        balance = await deployer.getBalance();
-        await getErc20Balance(baseTokenAddress, WRAPPER_ABI, deployer);
         const DEBT_TO_COVER = await getErc20Balance(
           debtTokenAddress,
           WRAPPER_ABI,
           deployer
         );
-        await approveErc20(
-          debtTokenAddress,
-          WRAPPER_ABI,
-          lendingPool.address,
-          DEBT_TO_COVER,
-          deployer,
-          GAS_PRICE
-        );
-        await liquidateUser(
-          lendingPool,
-          COL_ADDRESS,
-          debtTokenAddress,
-          VICTIM_ADDRESS,
-          DEBT_TO_COVER,
-          RECEIVE_A_TOKEN,
-          GAS_PRICE
-        );
 
-        // await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
+        try {
+          await approveErc20(
+            debtTokenAddress,
+            WRAPPER_ABI,
+            lendingPool.address,
+            DEBT_TO_COVER,
+            deployer,
+            GAS_PRICE,
+            NONCE
+          );
+          NONCE++;
+        } catch (error) {
+          NONCE++;
+          return NONCE;
+        }
+
+        try {
+          await liquidateUser(
+            lendingPool,
+            COL_ADDRESS,
+            debtTokenAddress,
+            VICTIM_ADDRESS,
+            DEBT_TO_COVER,
+            RECEIVE_A_TOKEN,
+            GAS_PRICE,
+            NONCE
+          );
+          NONCE++;
+        } catch (error) {
+          NONCE++;
+          onsole.log("error liquidando...");
+          return NONCE;
+        }
 
         if (COL_ADDRESS !== aave[CHAIN].iWeth.address) {
           const bonusBalance = await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer);
 
-          await approveErc20(
-            COL_ADDRESS,
-            WRAPPER_ABI,
-            EXCHANGE_ADDRESS,
-            bonusBalance,
-            deployer,
-            GAS_PRICE
-          );
+          try {
+            await approveErc20(
+              COL_ADDRESS,
+              WRAPPER_ABI,
+              EXCHANGE_ADDRESS,
+              bonusBalance,
+              deployer,
+              GAS_PRICE,
+              NONCE
+            );
+            NONCE++;
+          } catch (error) {
+            NONCE++;
+            return NONCE;
+          }
 
           params = {
             tokenIn: COL_ADDRESS,
@@ -242,10 +320,38 @@ async function liquidate(
             sqrtPriceLimitX96: 0
           };
 
-          await swapTokens(EXCHANGE_ADDRESS, EXCHANGE_ABI, deployer, params, GAS_PRICE);
-        }
+          try {
+            await swapTokens(
+              EXCHANGE_ADDRESS,
+              EXCHANGE_ABI,
+              deployer,
+              params,
+              GAS_PRICE,
+              NONCE
+            );
+            NONCE++;
+          } catch (error) {
+            NONCE++;
+            console.log("error haciendo swap...");
+            return NONCE;
+          }
 
-        await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, GAS_PRICE);
+          try {
+            await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, GAS_PRICE, NONCE);
+            NONCE++;
+          } catch (error) {
+            NONCE++;
+            return NONCE;
+          }
+        } else {
+          try {
+            await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, GAS_PRICE, NONCE);
+            NONCE++;
+          } catch (error) {
+            NONCE++;
+            return NONCE;
+          }
+        }
 
         console.log("MEV extracted...\n");
       } else {
@@ -253,6 +359,7 @@ async function liquidate(
       }
     }
   }
+  return NONCE;
 }
 
 module.exports = { liquidate };
