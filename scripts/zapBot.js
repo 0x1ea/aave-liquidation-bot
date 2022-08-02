@@ -10,7 +10,7 @@ const { zapLiquidator } = require("./zapLiquidator");
 const CHAIN = "polygon";
 const PUBLIC_PROVIDER_URL = config.rpcUrl[CHAIN].local;
 const PROVIDER_URL = config.rpcUrl[CHAIN].local;
-const MY_ACCOUNT = config.keys.private;
+const MY_ACCOUNT = config.keys.fake;
 const MIN_ACCOUNT_RESERVE = "0.07";
 
 const FOLDER_NAME = `${CHAIN}_v2`;

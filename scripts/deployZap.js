@@ -2,25 +2,44 @@ const ethers = require("ethers");
 const config = require("../config/config.json");
 const metadata = require("../artifacts/contracts/Liquidator.sol/Liquidator.json");
 require("dotenv").config();
-// const IERC20 = require("../artifacts/contracts/interfaces/IERC20.sol/IERC20.json");
-// const aave = require("../config/aave.json");
-// const CHAIN = "mainnet";
-const PROVIDER_URL = config.rpcUrl.polygon.local;
+const uniswap = require("../config/uniswap.json");
+const aave = require("../config/aave.json");
+
+const CHAIN = "polygon";
 const MY_ACCOUNT = config.keys.private;
+const PROVIDER_URL = config.rpcUrl[CHAIN].local;
+
+const WETH_ADDRESS = aave[CHAIN].iWeth.address;
+const SWAPROUTER_ADDRESS = uniswap[CHAIN].swapRouter.address;
+const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
 
 async function deploy() {
   const provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER_URL]);
   const deployer = new ethers.Wallet(process.env[MY_ACCOUNT], provider);
 
+  let gasPrice = await deployer.getFeeData();
+  gasPrice.gasPrice = gasPrice.gasPrice.mul(20);
+  gasPrice.gasPrice = gasPrice.gasPrice.div(100);
+
+  console.log("maxFeePerGas:", gasPrice.maxFeePerGas.toString());
+  console.log("maxPriorityFeePerGas:", gasPrice.maxPriorityFeePerGas.toString());
+
   const options = {
-    gasLimit: 2000000,
-    gasPrice: "35000000000"
+    gasLimit: 1500000,
+    // gasPrice: "35000000000"
+    maxFeePerGas: gasPrice.maxFeePerGas,
+    maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas
   };
 
   // Deploy the contract
   const factory = new ethers.ContractFactory(metadata.abi, metadata.bytecode, deployer);
 
-  const contract = await factory.deploy(options);
+  const contract = await factory.deploy(
+    WETH_ADDRESS,
+    SWAPROUTER_ADDRESS,
+    LENDINGPOOL_ADDRESS,
+    options
+  );
   await contract.deployed();
   console.log(`Deployment successful! Contract Address: ${contract.address}`);
 

@@ -195,6 +195,9 @@ async function zapLiquidator(
           gasPrice.gasPrice = gasPrice.gasPrice.mul(20);
           gasPrice.gasPrice = gasPrice.gasPrice.div(100);
 
+          console.log("maxFeePerGas:", gasPrice.maxFeePerGas.toString());
+          console.log("maxPriorityFeePerGas:", gasPrice.maxPriorityFeePerGas.toString());
+
           console.log("Contract data:");
           balance = await provider.getBalance(contract.address);
           console.log("ETH balance: ", ethers.utils.formatEther(balance));
@@ -215,11 +218,12 @@ async function zapLiquidator(
           await getBorrowUserData(lendingPool, VICTIM_ADDRESS, true);
 
           console.log("liquidando...");
+
           await contract.liquidate(TOKEN_DEBT_ADDRESS, COL_ADDRESS, VICTIM_ADDRESS, {
             value: input_swap_amount_in_eth,
             gasLimit: 2000000,
-            maxFeePerGas: gasPrice.maxFeePerGas,
-            maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas
+            maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas,
+            maxFeePerGas: gasPrice.maxFeePerGas
           });
           NONCE++;
           console.log("Done!");
