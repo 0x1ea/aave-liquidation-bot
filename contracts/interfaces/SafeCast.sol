@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // OpenZeppelin Contracts v4.4.1 (utils/math/SafeCast.sol)
-pragma solidity 0.8.10;
+pragma solidity 0.8.9;
 
 /**
  * @dev Wrappers over Solidity's uintXX/intXX casting operators with added overflow
@@ -131,7 +131,7 @@ library SafeCast {
    * - input must be greater than or equal to 0.
    */
   function toUint256(int256 value) internal pure returns (uint256) {
-    require(value >= 0, 'SafeCast: value must be positive');
+    require(value >= 0, "SafeCast: value must be positive");
     return uint256(value);
   }
 
@@ -249,7 +249,10 @@ library SafeCast {
    */
   function toInt256(uint256 value) internal pure returns (int256) {
     // Note: Unsafe cast below is okay because `type(int256).max` is guaranteed to be positive
-    require(value <= uint256(type(int256).max), "SafeCast: value doesn't fit in an int256");
+    require(
+      value <= uint256(type(int256).max),
+      "SafeCast: value doesn't fit in an int256"
+    );
     return int256(value);
   }
 }

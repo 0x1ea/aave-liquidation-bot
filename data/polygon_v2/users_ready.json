@@ -1,1 +1,2180 @@
-[{"user":"0xAe516bB25C4AFfB47a05C9956382D48Ce355265F","totalCollateralETH":"84456258928947399","formatTotalCollateralETH":0.0844562589289474,"totalDebtETH":"67079603936515152","formatTotalDebtETH":0.06707960393651516,"healthFactor":"1007236226485507543","formattedHF":1.0072362264855075,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0xbF5d0717F71f80e06f9a20eFf26Bd6d638455845","totalCollateralETH":"1504442034705727828","formatTotalCollateralETH":1.504442034705728,"totalDebtETH":"1218824903481211066","formatTotalDebtETH":1.218824903481211,"healthFactor":"1018328945435236402","formattedHF":1.0183289454352364,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"WETH","address":"0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619","bonus":0.05,"decimals":18}}]},{"user":"0xbF5d0717F71f80e06f9a20eFf26Bd6d638455845","totalCollateralETH":"1504452125025473346","formatTotalCollateralETH":1.5044521250254734,"totalDebtETH":"1218858606481285835","formatTotalDebtETH":1.2188586064812859,"healthFactor":"1018307617098548409","formattedHF":1.0183076170985483,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"WETH","address":"0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619","bonus":0.05,"decimals":18}}]},{"user":"0x2dB715B38f2c795FB2346FcEd98EBeF4AE94bE39","totalCollateralETH":"7179793888699388","formatTotalCollateralETH":0.007179793888699388,"totalDebtETH":"6053489539848297","formatTotalDebtETH":0.006053489539848297,"healthFactor":"1008149888625630526","formattedHF":1.0081498886256306,"userConfiguration":[{"code":"01","col":false,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}},{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x8Ea5A1C2C1B07Fc4eE65e58DC887A1882C743F16","totalCollateralETH":"64577624747727570","formatTotalCollateralETH":0.06457762474772757,"totalDebtETH":"53953002583557369","formatTotalDebtETH":0.05395300258355737,"healthFactor":"1017385101979420193","formattedHF":1.0173851019794202,"userConfiguration":[{"code":"10","col":true,"debt":false,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"1","col":false,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}}]},{"user":"0x5f905b1a8f94455cDcBf2cC05f6de192E6E54af0","totalCollateralETH":"50151995683171894","formatTotalCollateralETH":0.05015199568317189,"totalDebtETH":"40637650380672195","formatTotalDebtETH":0.04063765038067219,"healthFactor":"1018154249840573947","formattedHF":1.018154249840574,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"WETH","address":"0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619","bonus":0.05,"decimals":18}}]},{"user":"0x9569A1305E75EC9666843f94731a10Db176326F2","totalCollateralETH":"51364186595824912","formatTotalCollateralETH":0.05136418659582491,"totalDebtETH":"43298494762080927","formatTotalDebtETH":0.043298494762080926,"healthFactor":"1008338946800673845","formattedHF":1.0083389468006738,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x14B11644b112C875C667Fd7Ce894e5c814801FDc","totalCollateralETH":"85893689516974571","formatTotalCollateralETH":0.08589368951697457,"totalDebtETH":"72268528085497970","formatTotalDebtETH":0.07226852808549797,"healthFactor":"1010254920413677723","formattedHF":1.0102549204136777,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xd42C18Aec32C965E829A47530Bdd16189EFd09b6","totalCollateralETH":"34559461412112260","formatTotalCollateralETH":0.03455946141211226,"totalDebtETH":"29061489748438380","formatTotalDebtETH":0.02906148974843838,"healthFactor":"1010806481518171883","formattedHF":1.0108064815181719,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x7c8b8077Fd50430C0cA9acd8da759134Ea1ac4A9","totalCollateralETH":"10689280562033781","formatTotalCollateralETH":0.010689280562033781,"totalDebtETH":"8466847137344344","formatTotalDebtETH":0.008466847137344344,"healthFactor":"1009105492828519171","formattedHF":1.0091054928285192,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"WMATIC","address":"0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270","bonus":0.1,"decimals":18}}]},{"user":"0x332291BbB16AE8b49c3ff555E91788bDe335BA77","totalCollateralETH":"3638847380057017","formatTotalCollateralETH":0.003638847380057017,"totalDebtETH":"2858850287807125","formatTotalDebtETH":0.002858850287807125,"healthFactor":"1018268748266125569","formattedHF":1.0182687482661257,"userConfiguration":[{"code":"10","col":true,"debt":false,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}},{"code":"1","col":false,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}}]},{"user":"0x781aacB7D52D2d28CEdAe74197b3cd494A010e66","totalCollateralETH":"21152011916122049","formatTotalCollateralETH":0.021152011916122048,"totalDebtETH":"16778143012745758","formatTotalDebtETH":0.016778143012745758,"healthFactor":"1008550798502724324","formattedHF":1.0085507985027242,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0xd48038d37b33D0dCa2b3Eb1d53e7983f01266192","totalCollateralETH":"35858314396570230","formatTotalCollateralETH":0.03585831439657023,"totalDebtETH":"30205408261772512","formatTotalDebtETH":0.030205408261772513,"healthFactor":"1009076486334374605","formattedHF":1.0090764863343746,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xa75F0b1aCceFbd709aBa5AF330ec0CBCbF1ac85b","totalCollateralETH":"155727263712529278","formatTotalCollateralETH":0.1557272637125293,"totalDebtETH":"130993749247981042","formatTotalDebtETH":0.13099374924798105,"healthFactor":"1010492293835081810","formattedHF":1.0104922938350818,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x72Ea5652297706cB872547BAA5dB72EC84b2E6b9","totalCollateralETH":"98737724055069606","formatTotalCollateralETH":0.0987377240550696,"totalDebtETH":"83653535540543280","formatTotalDebtETH":0.08365353554054328,"healthFactor":"1003269794928551666","formattedHF":1.0032697949285516,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xB90366DA8E156f57ab9C2a80c4821059943EFe21","totalCollateralETH":"31087639323851003","formatTotalCollateralETH":0.031087639323851002,"totalDebtETH":"25380835456006557","formatTotalDebtETH":0.025380835456006556,"healthFactor":"1010498747633126422","formattedHF":1.0104987476331264,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"WETH","address":"0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619","bonus":0.05,"decimals":18}}]},{"user":"0x9cBa52657deF5f27FC315137E9A0Bf4A8120Fe5d","totalCollateralETH":"774268805646508632","formatTotalCollateralETH":0.7742688056465087,"totalDebtETH":"611907251343978986","formatTotalDebtETH":0.6119072513439789,"healthFactor":"1012269495347110164","formattedHF":1.01226949534711,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0x1EE1242c05e4B582cdF5a5fAF37606De989bC9e1","totalCollateralETH":"5386775706206875","formatTotalCollateralETH":0.005386775706206875,"totalDebtETH":"4497124261528322","formatTotalDebtETH":0.004497124261528322,"healthFactor":"1018152731390121469","formattedHF":1.0181527313901215,"userConfiguration":[{"code":"10","col":true,"debt":false,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"1","col":false,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}}]},{"user":"0x94c14158517d5528728CAa1c40a57499655aC8Da","totalCollateralETH":"35840085990026232","formatTotalCollateralETH":0.035840085990026235,"totalDebtETH":"29893748038588532","formatTotalDebtETH":0.029893748038588533,"healthFactor":"1010086537413085282","formattedHF":1.0100865374130852,"userConfiguration":[{"code":"10","col":true,"debt":false,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}},{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x8da2f4BC122387cDfCD25CBfE63761f2219c467F","totalCollateralETH":"28556608239800792","formatTotalCollateralETH":0.02855660823980079,"totalDebtETH":"24086371085663139","formatTotalDebtETH":0.02408637108566314,"healthFactor":"1007753177824229829","formattedHF":1.00775317782423,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xfEdc1e24BFd341E1dDA4FaF5a0369b51d6Eb8501","totalCollateralETH":"76013488032721088","formatTotalCollateralETH":0.0760134880327211,"totalDebtETH":"60600450761613739","formatTotalDebtETH":0.06060045076161374,"healthFactor":"1003470925742624457","formattedHF":1.0034709257426244,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0x2f9460A3eDBA85BC012cA664eced4bD63AB89e86","totalCollateralETH":"2312365897017903","formatTotalCollateralETH":0.002312365897017903,"totalDebtETH":"1948610947907896","formatTotalDebtETH":0.001948610947907896,"healthFactor":"1008672877762216497","formattedHF":1.0086728777622165,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x9b873Abb4fe7Aaa849c3aa1D62D9Dbd750FfA06C","totalCollateralETH":"21038318612962811","formatTotalCollateralETH":0.02103831861296281,"totalDebtETH":"17539979238229648","formatTotalDebtETH":0.01753997923822965,"healthFactor":"1019532040382467385","formattedHF":1.0195320403824675,"userConfiguration":[{"code":"10","col":true,"debt":false,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"1","col":false,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}}]},{"user":"0x0DBEbb3250964b0d686e0F6a27d450C1858F9eB5","totalCollateralETH":"1796514172565085","formatTotalCollateralETH":0.001796514172565085,"totalDebtETH":"1514092558060190","formatTotalDebtETH":0.00151409255806019,"healthFactor":"1008549337721279134","formattedHF":1.008549337721279,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xF56669E4C9de4ea3F2858A479D7836bcd9C34144","totalCollateralETH":"472807469095972638","formatTotalCollateralETH":0.47280746909597265,"totalDebtETH":"372554045726640159","formatTotalDebtETH":0.37255404572664014,"healthFactor":"1015278131093802102","formattedHF":1.0152781310938022,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0x8d14c4E5C8d981F2b52501f0EaC91a5726168726","totalCollateralETH":"130631474943463734","formatTotalCollateralETH":0.13063147494346372,"totalDebtETH":"96815512863266522","formatTotalDebtETH":0.09681551286326652,"healthFactor":"1012906354982144585","formattedHF":1.0129063549821447,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}},{"code":"11","col":true,"debt":true,"chainData":{"symbol":"WMATIC","address":"0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270","bonus":0.1,"decimals":18}}]},{"user":"0x81042cCe5A30Ab820Ef285Ca249609805d8Aab16","totalCollateralETH":"106848785934033841","formatTotalCollateralETH":0.10684878593403384,"totalDebtETH":"84936131753242812","formatTotalDebtETH":0.08493613175324281,"healthFactor":"1006391826220217917","formattedHF":1.0063918262202178,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0x1Bf05f61272476f848f70253C15001475C7736AF","totalCollateralETH":"1796915656550484","formatTotalCollateralETH":0.001796915656550484,"totalDebtETH":"1514666023608076","formatTotalDebtETH":0.001514666023608076,"healthFactor":"1008392797000591028","formattedHF":1.008392797000591,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x5a68B814a2539a0719276c3820d835D452979F65","totalCollateralETH":"2152850621444794105","formatTotalCollateralETH":2.152850621444794,"totalDebtETH":"1812091998712583071","formatTotalDebtETH":1.812091998712583,"healthFactor":"1009840024418274642","formattedHF":1.0098400244182746,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x878450e9dfbe85a1ED74Bc059f0f596B406bFd86","totalCollateralETH":"19222205514499768","formatTotalCollateralETH":0.01922220551449977,"totalDebtETH":"16185694980106180","formatTotalDebtETH":0.01618569498010618,"healthFactor":"1009463894346637325","formattedHF":1.0094638943466374,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xe9090ddF1C136310C01e752d94D1d75049972251","totalCollateralETH":"35913010343628866","formatTotalCollateralETH":0.035913010343628864,"totalDebtETH":"29945034434581065","formatTotalDebtETH":0.029945034434581064,"healthFactor":"1019403028531251031","formattedHF":1.019403028531251,"userConfiguration":[{"code":"01","col":false,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xBcb02c5BCeBA57eDE4474Be233d7A8D06Ab481bD","totalCollateralETH":"2104819593242994","formatTotalCollateralETH":0.002104819593242994,"totalDebtETH":"1772215385657150","formatTotalDebtETH":0.00177221538565715,"healthFactor":"1009525517460246688","formattedHF":1.0095255174602467,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x54daf7fD97f72eAaC992Cd2ED56f1EA8f9779275","totalCollateralETH":"777239465138510713","formatTotalCollateralETH":0.7772394651385107,"totalDebtETH":"654751711899253932","formatTotalDebtETH":0.654751711899254,"healthFactor":"1009013849618446334","formattedHF":1.0090138496184464,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xbE97Dc715E0aFf4E413ba2E3Eb9Ab796eA1dccd1","totalCollateralETH":"63060599206804434","formatTotalCollateralETH":0.06306059920680443,"totalDebtETH":"52629561858496021","formatTotalDebtETH":0.05262956185849602,"healthFactor":"1018467709647688164","formattedHF":1.0184677096476882,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xE507D273508F30b374D0f4014eA7843E38903DDB","totalCollateralETH":"1227573373145530329","formatTotalCollateralETH":1.2275733731455303,"totalDebtETH":"1001507497289245253","formatTotalDebtETH":1.0015074972892453,"healthFactor":"1010488180628064029","formattedHF":1.0104881806280641,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"WETH","address":"0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619","bonus":0.05,"decimals":18}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"WMATIC","address":"0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270","bonus":0.1,"decimals":18}}]},{"user":"0x41B27476Eb84fe52a2aa939E3Eb8CCCbFcea2068","totalCollateralETH":"136500262468918821","formatTotalCollateralETH":0.13650026246891883,"totalDebtETH":"113923467101225432","formatTotalDebtETH":0.11392346710122543,"healthFactor":"1018448841584921867","formattedHF":1.0184488415849218,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x49Be2E655D2ffE78f747b96F63c595f3C8F784a6","totalCollateralETH":"15891540554270451","formatTotalCollateralETH":0.01589154055427045,"totalDebtETH":"11077350936403344","formatTotalDebtETH":0.011077350936403343,"healthFactor":"1004218287553968542","formattedHF":1.0042182875539685,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"WMATIC","address":"0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270","bonus":0.1,"decimals":18}}]},{"user":"0x47fb1f6d2Eb2e823aa617e7F90A56CdF10614582","totalCollateralETH":"103328105885175005","formatTotalCollateralETH":0.103328105885175,"totalDebtETH":"86571194032845253","formatTotalDebtETH":0.08657119403284526,"healthFactor":"1010708481511404570","formattedHF":1.0107084815114045,"userConfiguration":[{"code":"10","col":true,"debt":false,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}},{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"CRV","address":"0x172370d5cd63279efa6d502dab29171933a610af","bonus":0.1,"decimals":18}}]},{"user":"0x0B75B7f58593789D9f8455E0f10b41702a7b870a","totalCollateralETH":"11482196792489129","formatTotalCollateralETH":0.011482196792489128,"totalDebtETH":"9679669222070373","formatTotalDebtETH":0.009679669222070373,"healthFactor":"1008285205796343683","formattedHF":1.0082852057963436,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"1","col":false,"debt":true,"chainData":{"symbol":"GHST","address":"0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7","bonus":0.125,"decimals":18}}]},{"user":"0xc9CA38193963C18DB5F1E303FFfCA61B15566583","totalCollateralETH":"17521715736700173","formatTotalCollateralETH":0.017521715736700173,"totalDebtETH":"14886396354234605","formatTotalDebtETH":0.014886396354234605,"healthFactor":"1000474394325698115","formattedHF":1.0004743943256982,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x9B0C088A5eEfFA684Ef8Ad31303F954093045F86","totalCollateralETH":"69484314485181893","formatTotalCollateralETH":0.06948431448518189,"totalDebtETH":"58802211434569143","formatTotalDebtETH":0.058802211434569145,"healthFactor":"1004294182824534075","formattedHF":1.004294182824534,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"01","col":false,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"WBTC","address":"0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6","bonus":0.1,"decimals":8}}]},{"user":"0xD1768eC59D6bA181194C02d5247C720670491093","totalCollateralETH":"19209064031458146","formatTotalCollateralETH":0.019209064031458147,"totalDebtETH":"16209582405709249","formatTotalDebtETH":0.016209582405709248,"healthFactor":"1007287172369633083","formattedHF":1.007287172369633,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x6bFD91215f323104ef757eF1Ad0b01DED084A9eA","totalCollateralETH":"42028232512950550","formatTotalCollateralETH":0.04202823251295055,"totalDebtETH":"34940772101401444","formatTotalDebtETH":0.034940772101401445,"healthFactor":"1016762447037401454","formattedHF":1.0167624470374015,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"WBTC","address":"0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6","bonus":0.1,"decimals":8}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"AAVE","address":"0xd6df932a45c0f255f85145f286ea0b292b21c90b","bonus":0.1,"decimals":18}}]},{"user":"0x96e23013Ccd56d2aF78C21739df4a186BCF49e2F","totalCollateralETH":"796180044453232087","formatTotalCollateralETH":0.7961800444532321,"totalDebtETH":"670325237926670543","formatTotalDebtETH":0.6703252379266705,"healthFactor":"1009589076309371918","formattedHF":1.009589076309372,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x1e475A0e1DA295D6B69c8523b4C615060E7cA6bD","totalCollateralETH":"130219584542065780","formatTotalCollateralETH":0.13021958454206578,"totalDebtETH":"103227052580989519","formatTotalDebtETH":0.10322705258098952,"healthFactor":"1009441894786318959","formattedHF":1.0094418947863188,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x40FDbC49dAF882fB6244DbDe916Ae6fd9fD5184A","totalCollateralETH":"2138219762838751138","formatTotalCollateralETH":2.138219762838751,"totalDebtETH":"1757522015366054990","formatTotalDebtETH":1.757522015366055,"healthFactor":"1017816356182782977","formattedHF":1.0178163561827829,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"WMATIC","address":"0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270","bonus":0.1,"decimals":18}},{"code":"10","col":true,"debt":false,"chainData":{"symbol":"CRV","address":"0x172370d5cd63279efa6d502dab29171933a610af","bonus":0.1,"decimals":18}}]},{"user":"0x89fD8F86Eb637A1999F2C4cE40b98258224E99F2","totalCollateralETH":"329773876799026248","formatTotalCollateralETH":0.32977387679902626,"totalDebtETH":"274879672765064749","formatTotalDebtETH":0.27487967276506475,"healthFactor":"1019747267811785018","formattedHF":1.019747267811785,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x8c4f05BDbc7358B8844813C03a334991a607Fb6E","totalCollateralETH":"589119930231396766","formatTotalCollateralETH":0.5891199302313967,"totalDebtETH":"495450489339774086","formatTotalDebtETH":0.4954504893397741,"healthFactor":"1010700264650011259","formattedHF":1.0107002646500112,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"1","col":false,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}}]},{"user":"0x92e0B7aFd7F31e7494B619148b2A2CFED9a3fa2E","totalCollateralETH":"9792098535787748","formatTotalCollateralETH":0.009792098535787748,"totalDebtETH":"8257231478051814","formatTotalDebtETH":0.008257231478051814,"healthFactor":"1007999324900039762","formattedHF":1.0079993249000399,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}},{"code":"1","col":false,"debt":true,"chainData":{"symbol":"USDT","address":"0xc2132d05d31c914a87c6611c10748aeb04b58e8f","bonus":0,"decimals":6}}]},{"user":"0x533Fa4018bD4c5e2eF06A610F73EC8342886359b","totalCollateralETH":"21058870990698743","formatTotalCollateralETH":0.021058870990698742,"totalDebtETH":"17631187811410767","formatTotalDebtETH":0.017631187811410768,"healthFactor":"1015248690760878047","formattedHF":1.015248690760878,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x37C3bB41F28fb595A51319565b4aE3de89f2E309","totalCollateralETH":"10530343337212159","formatTotalCollateralETH":0.010530343337212159,"totalDebtETH":"8816423310031226","formatTotalDebtETH":0.008816423310031227,"healthFactor":"1015240707243063751","formattedHF":1.0152407072430638,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xf020e01bBf105e89E573750528bd42096b7D3D92","totalCollateralETH":"1405447273090875","formatTotalCollateralETH":0.001405447273090875,"totalDebtETH":"1175104697004618","formatTotalDebtETH":0.001175104697004618,"healthFactor":"1016615953601748958","formattedHF":1.016615953601749,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x3379f70Ee861F04498cDEd24A017aEf47E05d88D","totalCollateralETH":"7021870075889762","formatTotalCollateralETH":0.007021870075889762,"totalDebtETH":"5875884878711831","formatTotalDebtETH":0.005875884878711831,"healthFactor":"1015777144669789826","formattedHF":1.0157771446697899,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xCa9C030cDf0A3aA3Dd77121ec930fB79592C872d","totalCollateralETH":"7022518492861840","formatTotalCollateralETH":0.00702251849286184,"totalDebtETH":"5879187389526606","formatTotalDebtETH":0.005879187389526606,"healthFactor":"1015300299760168228","formattedHF":1.0153002997601683,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xB3E6449331ef9fE6944A71f71968A0A53bf1F400","totalCollateralETH":"7330397733848956","formatTotalCollateralETH":0.007330397733848956,"totalDebtETH":"5852760601014373","formatTotalDebtETH":0.005852760601014373,"healthFactor":"1001974723870097966","formattedHF":1.001974723870098,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0xdc627f4929F5E056A3c2D5f23b09bc866c3AA4F6","totalCollateralETH":"7021354712221095","formatTotalCollateralETH":0.007021354712221095,"totalDebtETH":"5879588292493213","formatTotalDebtETH":0.005879588292493213,"healthFactor":"1015062825573653078","formattedHF":1.0150628255736531,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xE72FB9F798Bd414B57fB43F3e6d2b07c60A0c793","totalCollateralETH":"7330685343954940","formatTotalCollateralETH":0.00733068534395494,"totalDebtETH":"5853539649702417","formatTotalDebtETH":0.005853539649702417,"healthFactor":"1001880678379293913","formattedHF":1.001880678379294,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"DAI","address":"0x8f3cf7ad23cd3cadbd9735aff958023239c6a063","bonus":0.05,"decimals":18}}]},{"user":"0x7cfe028d7A4395A50555ecDe3366734a67FCdbD7","totalCollateralETH":"6861917926476621","formatTotalCollateralETH":0.006861917926476621,"totalDebtETH":"5804339967698646","formatTotalDebtETH":0.005804339967698646,"healthFactor":"1004873985666573346","formattedHF":1.0048739856665734,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0x55Acb075c91366B3f99F943E14a70448BcB2C066","totalCollateralETH":"1398819417422792371","formatTotalCollateralETH":1.3988194174227924,"totalDebtETH":"1176140468166088331","formatTotalDebtETH":1.1761404681660883,"healthFactor":"1010930698323246303","formattedHF":1.0109306983232462,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]},{"user":"0xE770748e5781f171a0364fbd013188Bc0b33E72f","totalCollateralETH":"2641054032134238586","formatTotalCollateralETH":2.6410540321342384,"totalDebtETH":"2227922534408584845","formatTotalDebtETH":2.227922534408585,"healthFactor":"1007618484324915561","formattedHF":1.0076184843249156,"userConfiguration":[{"code":"11","col":true,"debt":true,"chainData":{"symbol":"USDC","address":"0x2791bca1f2de4661ed88a30c99a7a9449aa84174","bonus":0.05,"decimals":6}}]}]
+[
+  {
+    "user": "0xAe516bB25C4AFfB47a05C9956382D48Ce355265F",
+    "totalCollateralETH": "89993469284437486",
+    "formatTotalCollateralETH": 0.08999346928443748,
+    "totalDebtETH": "71484625547240310",
+    "formatTotalDebtETH": 0.0714846255472403,
+    "healthFactor": "1007136497902930870",
+    "formattedHF": 1.007136497902931,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xbF5d0717F71f80e06f9a20eFf26Bd6d638455845",
+    "totalCollateralETH": "1504460810262281227",
+    "formatTotalCollateralETH": 1.5044608102622812,
+    "totalDebtETH": "1218919136544875621",
+    "formatTotalDebtETH": 1.2189191365448757,
+    "healthFactor": "1018262927584029140",
+    "formattedHF": 1.0182629275840291,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x2dB715B38f2c795FB2346FcEd98EBeF4AE94bE39",
+    "totalCollateralETH": "7560254680340247",
+    "formatTotalCollateralETH": 0.007560254680340247,
+    "totalDebtETH": "6374758292970968",
+    "formatTotalDebtETH": 0.006374758292970968,
+    "healthFactor": "1008072178262034123",
+    "formattedHF": 1.008072178262034,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8Ea5A1C2C1B07Fc4eE65e58DC887A1882C743F16",
+    "totalCollateralETH": "67999628606039432",
+    "formatTotalCollateralETH": 0.06799962860603943,
+    "totalDebtETH": "57060628009550876",
+    "formatTotalDebtETH": 0.057060628009550876,
+    "healthFactor": "1012952123580885525",
+    "formattedHF": 1.0129521235808856,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5f905b1a8f94455cDcBf2cC05f6de192E6E54af0",
+    "totalCollateralETH": "50152285221803489",
+    "formatTotalCollateralETH": 0.05015228522180349,
+    "totalDebtETH": "40639668690567688",
+    "formatTotalDebtETH": 0.04063966869056769,
+    "healthFactor": "1018109562433293287",
+    "formattedHF": 1.0181095624332932,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9569A1305E75EC9666843f94731a10Db176326F2",
+    "totalCollateralETH": "54086003188060636",
+    "formatTotalCollateralETH": 0.05408600318806064,
+    "totalDebtETH": "45596416022254554",
+    "formatTotalDebtETH": 0.04559641602225455,
+    "healthFactor": "1008261322280530447",
+    "formattedHF": 1.0082613222805303,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x14B11644b112C875C667Fd7Ce894e5c814801FDc",
+    "totalCollateralETH": "90445243474172895",
+    "formatTotalCollateralETH": 0.09044524347417289,
+    "totalDebtETH": "76103935508124802",
+    "formatTotalDebtETH": 0.0761039355081248,
+    "healthFactor": "1010177153648505755",
+    "formattedHF": 1.0101771536485058,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xd42C18Aec32C965E829A47530Bdd16189EFd09b6",
+    "totalCollateralETH": "36390786425721119",
+    "formatTotalCollateralETH": 0.03639078642572112,
+    "totalDebtETH": "30603829916168999",
+    "formatTotalDebtETH": 0.030603829916168997,
+    "healthFactor": "1010728675025098086",
+    "formattedHF": 1.0107286750250981,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x7c8b8077Fd50430C0cA9acd8da759134Ea1ac4A9",
+    "totalCollateralETH": "11386109153361745",
+    "formatTotalCollateralETH": 0.011386109153361745,
+    "totalDebtETH": "9022852859712467",
+    "formatTotalDebtETH": 0.009022852859712467,
+    "healthFactor": "1008778021620917353",
+    "formattedHF": 1.0087780216209175,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x781aacB7D52D2d28CEdAe74197b3cd494A010e66",
+    "totalCollateralETH": "22538802420934262",
+    "formatTotalCollateralETH": 0.022538802420934263,
+    "totalDebtETH": "17879939625162479",
+    "formatTotalDebtETH": 0.01787993962516248,
+    "healthFactor": "1008450940817064303",
+    "formattedHF": 1.0084509408170643,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xd48038d37b33D0dCa2b3Eb1d53e7983f01266192",
+    "totalCollateralETH": "37758466114939707",
+    "formatTotalCollateralETH": 0.03775846611493971,
+    "totalDebtETH": "31808458203437881",
+    "formatTotalDebtETH": 0.03180845820343788,
+    "healthFactor": "1008998801275754170",
+    "formattedHF": 1.0089988012757543,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xa75F0b1aCceFbd709aBa5AF330ec0CBCbF1ac85b",
+    "totalCollateralETH": "163979337115669109",
+    "formatTotalCollateralETH": 0.16397933711566912,
+    "totalDebtETH": "137945798529827636",
+    "formatTotalDebtETH": 0.13794579852982763,
+    "healthFactor": "1010414510871677377",
+    "formattedHF": 1.0104145108716773,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x72Ea5652297706cB872547BAA5dB72EC84b2E6b9",
+    "totalCollateralETH": "103969890381321841",
+    "formatTotalCollateralETH": 0.10396989038132184,
+    "totalDebtETH": "88093163207050479",
+    "formatTotalDebtETH": 0.08809316320705048,
+    "healthFactor": "1003192570306643011",
+    "formattedHF": 1.003192570306643,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xB90366DA8E156f57ab9C2a80c4821059943EFe21",
+    "totalCollateralETH": "31087818792477742",
+    "formatTotalCollateralETH": 0.031087818792477743,
+    "totalDebtETH": "25382095867356153",
+    "formatTotalDebtETH": 0.025382095867356153,
+    "healthFactor": "1010454402103935629",
+    "formattedHF": 1.0104544021039357,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9cBa52657deF5f27FC315137E9A0Bf4A8120Fe5d",
+    "totalCollateralETH": "825032232580148064",
+    "formatTotalCollateralETH": 0.825032232580148,
+    "totalDebtETH": "652090322102257708",
+    "formatTotalDebtETH": 0.6520903221022577,
+    "healthFactor": "1012169271177461734",
+    "formattedHF": 1.0121692711774617,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x1EE1242c05e4B582cdF5a5fAF37606De989bC9e1",
+    "totalCollateralETH": "5672223975539497",
+    "formatTotalCollateralETH": 0.005672223975539497,
+    "totalDebtETH": "4756152780150668",
+    "formatTotalDebtETH": 0.004756152780150668,
+    "healthFactor": "1013716464140968442",
+    "formattedHF": 1.0137164641409684,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x94c14158517d5528728CAa1c40a57499655aC8Da",
+    "totalCollateralETH": "37806746415830495",
+    "formatTotalCollateralETH": 0.0378067464158305,
+    "totalDebtETH": "31480257584925195",
+    "formatTotalDebtETH": 0.031480257584925196,
+    "healthFactor": "1011694491214922783",
+    "formattedHF": 1.0116944912149228,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9dDbb07945d0E221758A4Cf52424014c4a44a5a9",
+    "totalCollateralETH": "494702370611212466",
+    "formatTotalCollateralETH": 0.49470237061121247,
+    "totalDebtETH": "413616602377228967",
+    "formatTotalDebtETH": 0.41361660237722897,
+    "healthFactor": "1016634759346595367",
+    "formattedHF": 1.0166347593465954,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8da2f4BC122387cDfCD25CBfE63761f2219c467F",
+    "totalCollateralETH": "30069838517204649",
+    "formatTotalCollateralETH": 0.03006983851720465,
+    "totalDebtETH": "25364674041933166",
+    "formatTotalDebtETH": 0.025364674041933166,
+    "healthFactor": "1007675584451387960",
+    "formattedHF": 1.007675584451388,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xfEdc1e24BFd341E1dDA4FaF5a0369b51d6Eb8501",
+    "totalCollateralETH": "80997164439353352",
+    "formatTotalCollateralETH": 0.08099716443935336,
+    "totalDebtETH": "64579995492189099",
+    "formatTotalDebtETH": 0.0645799954921891,
+    "healthFactor": "1003371571299039778",
+    "formattedHF": 1.0033715712990399,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x2f9460A3eDBA85BC012cA664eced4bD63AB89e86",
+    "totalCollateralETH": "2434899589852815",
+    "formatTotalCollateralETH": 0.002434899589852815,
+    "totalDebtETH": "2052027316309367",
+    "formatTotalDebtETH": 0.002052027316309367,
+    "healthFactor": "1008595078109022096",
+    "formattedHF": 1.008595078109022,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9b873Abb4fe7Aaa849c3aa1D62D9Dbd750FfA06C",
+    "totalCollateralETH": "22153151124167205",
+    "formatTotalCollateralETH": 0.022153151124167204,
+    "totalDebtETH": "18550259279586808",
+    "formatTotalDebtETH": 0.018550259279586808,
+    "healthFactor": "1015089771616472574",
+    "formattedHF": 1.0150897716164726,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x2178c5cd79CF6a8b8f1158BF7Ec1f28010292De0",
+    "totalCollateralETH": "370313050393300",
+    "formatTotalCollateralETH": 0.0003703130503933,
+    "totalDebtETH": "300382693707766",
+    "formatTotalDebtETH": 0.000300382693707766,
+    "healthFactor": "1017063475939441198",
+    "formattedHF": 1.0170634759394412,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9aa8964c4f1607C0E235e8a5Fb736EC0FDf42fa4",
+    "totalCollateralETH": "14737606259364",
+    "formatTotalCollateralETH": 0.000014737606259364,
+    "totalDebtETH": "13248454667831",
+    "formatTotalDebtETH": 0.000013248454667831,
+    "healthFactor": "723061240632626917",
+    "formattedHF": 0.7230612406326269,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xB6199C20a56a88E7cb0E244798088B7D1A50039f",
+    "totalCollateralETH": "13608124236093",
+    "formatTotalCollateralETH": 0.000013608124236093,
+    "totalDebtETH": "9941353299402",
+    "formatTotalDebtETH": 0.000009941353299402,
+    "healthFactor": "913974614802750931",
+    "formattedHF": 0.9139746148027509,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xdBB54837aC495F75e9172eb030C608A6B23870D7",
+    "totalCollateralETH": "20060190007167",
+    "formatTotalCollateralETH": 0.000020060190007167,
+    "totalDebtETH": "14266093994287",
+    "formatTotalDebtETH": 0.000014266093994287,
+    "healthFactor": "955475206831570706",
+    "formattedHF": 0.9554752068315707,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x03051ABA8bbF9FC5D38Ac4554BfaE1e84b9DD8CA",
+    "totalCollateralETH": "21948231193408",
+    "formatTotalCollateralETH": 0.000021948231193408,
+    "totalDebtETH": "14775921670461",
+    "formatTotalDebtETH": 0.000014775921670461,
+    "healthFactor": "1002351443085980841",
+    "formattedHF": 1.0023514430859808,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x096A0A4dA27c6B7c8F8bC890671BD6191d38be4f",
+    "totalCollateralETH": "16850171811785",
+    "formatTotalCollateralETH": 0.000016850171811785,
+    "totalDebtETH": "12513307446047",
+    "formatTotalDebtETH": 0.000012513307446047,
+    "healthFactor": "900592825383032001",
+    "formattedHF": 0.900592825383032,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xf8D8Fa95E7980648653b9D69dbf8ffF0A8128caD",
+    "totalCollateralETH": "20886068364726",
+    "formatTotalCollateralETH": 0.000020886068364726,
+    "totalDebtETH": "14180654779504",
+    "formatTotalDebtETH": 0.000014180654779504,
+    "healthFactor": "983720799759002773",
+    "formattedHF": 0.9837207997590027,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5d9136171E03CB08821e744D8897bcE94A07D223",
+    "totalCollateralETH": "14840534454195",
+    "formatTotalCollateralETH": 0.000014840534454195,
+    "totalDebtETH": "11984459672201",
+    "formatTotalDebtETH": 0.000011984459672201,
+    "healthFactor": "988918244066600538",
+    "formattedHF": 0.9889182440666006,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x337969B97E2662C06AC649eA731246678F157E8A",
+    "totalCollateralETH": "119735648729804802",
+    "formatTotalCollateralETH": 0.1197356487298048,
+    "totalDebtETH": "100174753983134337",
+    "formatTotalDebtETH": 0.10017475398313434,
+    "healthFactor": "1015977552961789325",
+    "formattedHF": 1.0159775529617894,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x0DBEbb3250964b0d686e0F6a27d450C1858F9eB5",
+    "totalCollateralETH": "1891712433684586",
+    "formatTotalCollateralETH": 0.001891712433684586,
+    "totalDebtETH": "1594447392230733",
+    "formatTotalDebtETH": 0.001594447392230733,
+    "healthFactor": "1008472011348249129",
+    "formattedHF": 1.008472011348249,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xF56669E4C9de4ea3F2858A479D7836bcd9C34144",
+    "totalCollateralETH": "503806170979001685",
+    "formatTotalCollateralETH": 0.5038061709790017,
+    "totalDebtETH": "397019137033537644",
+    "formatTotalDebtETH": 0.39701913703353764,
+    "healthFactor": "1015177605277890378",
+    "formattedHF": 1.0151776052778905,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8d14c4E5C8d981F2b52501f0EaC91a5726168726",
+    "totalCollateralETH": "133528573022448519",
+    "formatTotalCollateralETH": 0.13352857302244853,
+    "totalDebtETH": "98919894418561117",
+    "formatTotalDebtETH": 0.09891989441856111,
+    "healthFactor": "1015503969906574557",
+    "formattedHF": 1.0155039699065747,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x81042cCe5A30Ab820Ef285Ca249609805d8Aab16",
+    "totalCollateralETH": "113854118654696390",
+    "formatTotalCollateralETH": 0.11385411865469638,
+    "totalDebtETH": "90513765912423579",
+    "formatTotalDebtETH": 0.09051376591242358,
+    "healthFactor": "1006292181146065447",
+    "formattedHF": 1.0062921811460654,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x1Bf05f61272476f848f70253C15001475C7736AF",
+    "totalCollateralETH": "1892135177895076",
+    "formatTotalCollateralETH": 0.001892135177895076,
+    "totalDebtETH": "1595051225133416",
+    "formatTotalDebtETH": 0.001595051225133416,
+    "healthFactor": "1008315517312799516",
+    "formattedHF": 1.0083155173127996,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x5a68B814a2539a0719276c3820d835D452979F65",
+    "totalCollateralETH": "2266931357665253535",
+    "formatTotalCollateralETH": 2.2669313576652534,
+    "totalDebtETH": "1908262646835133684",
+    "formatTotalDebtETH": 1.9082626468351336,
+    "healthFactor": "1009762286764470370",
+    "formattedHF": 1.0097622867644704,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8B2077A7d933EDcD791b7822EA31bB31F04D5006",
+    "totalCollateralETH": "144499599577914",
+    "formatTotalCollateralETH": 0.000144499599577914,
+    "totalDebtETH": "121479251659166",
+    "formatTotalDebtETH": 0.000121479251659166,
+    "healthFactor": "1011075208018533136",
+    "formattedHF": 1.0110752080185332,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x878450e9dfbe85a1ED74Bc059f0f596B406bFd86",
+    "totalCollateralETH": "20240800697433877",
+    "formatTotalCollateralETH": 0.020240800697433878,
+    "totalDebtETH": "17044695401735307",
+    "formatTotalDebtETH": 0.017044695401735307,
+    "healthFactor": "1009386215905459949",
+    "formattedHF": 1.0093862159054598,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xBAc1bd5129713ED1d6a5F6D382879c1Ef5407785",
+    "totalCollateralETH": "11228802308972",
+    "formatTotalCollateralETH": 0.000011228802308972,
+    "totalDebtETH": "10528025048492",
+    "formatTotalDebtETH": 0.000010528025048492,
+    "healthFactor": "879914500795086071",
+    "formattedHF": 0.879914500795086,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x37331865C4De2F533C603B7864054fD7dBf5B323",
+    "totalCollateralETH": "19564502706443",
+    "formatTotalCollateralETH": 0.000019564502706443,
+    "totalDebtETH": "14360197238398",
+    "formatTotalDebtETH": 0.000014360197238398,
+    "healthFactor": "1017040436694537963",
+    "formattedHF": 1.017040436694538,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WETH",
+          "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xe9090ddF1C136310C01e752d94D1d75049972251",
+    "totalCollateralETH": "37816060884062687",
+    "formatTotalCollateralETH": 0.03781606088406269,
+    "totalDebtETH": "31911481905331979",
+    "formatTotalDebtETH": 0.03191148190533198,
+    "healthFactor": "1007275432924426883",
+    "formattedHF": 1.007275432924427,
+    "userConfiguration": [
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xBcb02c5BCeBA57eDE4474Be233d7A8D06Ab481bD",
+    "totalCollateralETH": "2216354904110134",
+    "formatTotalCollateralETH": 0.002216354904110134,
+    "totalDebtETH": "1866269472431516",
+    "formatTotalDebtETH": 0.001866269472431516,
+    "healthFactor": "1009447829652984384",
+    "formattedHF": 1.0094478296529843,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x54daf7fD97f72eAaC992Cd2ED56f1EA8f9779275",
+    "totalCollateralETH": "818425811029594274",
+    "formatTotalCollateralETH": 0.8184258110295942,
+    "totalDebtETH": "689500442201365734",
+    "formatTotalDebtETH": 0.6895004422013657,
+    "healthFactor": "1008936175811748007",
+    "formattedHF": 1.008936175811748,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xbE97Dc715E0aFf4E413ba2E3Eb9Ab796eA1dccd1",
+    "totalCollateralETH": "66402214662901799",
+    "formatTotalCollateralETH": 0.0664022146629018,
+    "totalDebtETH": "55422697745544488",
+    "formatTotalDebtETH": 0.05542269774554449,
+    "healthFactor": "1018389301845271052",
+    "formattedHF": 1.018389301845271,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x41B27476Eb84fe52a2aa939E3Eb8CCCbFcea2068",
+    "totalCollateralETH": "143733486123795871",
+    "formatTotalCollateralETH": 0.14373348612379588,
+    "totalDebtETH": "119969569436158558",
+    "formatTotalDebtETH": 0.11996956943615855,
+    "healthFactor": "1018370439932609139",
+    "formattedHF": 1.0183704399326092,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x49Be2E655D2ffE78f747b96F63c595f3C8F784a6",
+    "totalCollateralETH": "15993230316109044",
+    "formatTotalCollateralETH": 0.015993230316109042,
+    "totalDebtETH": "11151288236838352",
+    "formatTotalDebtETH": 0.011151288236838352,
+    "healthFactor": "1003943309822511265",
+    "formattedHF": 1.0039433098225112,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x47fb1f6d2Eb2e823aa617e7F90A56CdF10614582",
+    "totalCollateralETH": "108722454064027363",
+    "formatTotalCollateralETH": 0.10872245406402736,
+    "totalDebtETH": "91165666905321842",
+    "formatTotalDebtETH": 0.09116566690532184,
+    "healthFactor": "1010235475305465740",
+    "formattedHF": 1.0102354753054656,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "CRV",
+          "address": "0x172370d5cd63279efa6d502dab29171933a610af",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x0B75B7f58593789D9f8455E0f10b41702a7b870a",
+    "totalCollateralETH": "12090644707987037",
+    "formatTotalCollateralETH": 0.012090644707987036,
+    "totalDebtETH": "10193394612809287",
+    "formatTotalDebtETH": 0.010193394612809287,
+    "healthFactor": "1008206627149955811",
+    "formattedHF": 1.008206627149956,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "GHST",
+          "address": "0x385eeac5cb85a38a9a07a70c73e0a3271cfb54a7",
+          "bonus": 0.125,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xc9CA38193963C18DB5F1E303FFfCA61B15566583",
+    "totalCollateralETH": "18450201215107883",
+    "formatTotalCollateralETH": 0.018450201215107882,
+    "totalDebtETH": "15676441245347905",
+    "formatTotalDebtETH": 0.015676441245347904,
+    "healthFactor": "1000397398069899617",
+    "formattedHF": 1.0003973980698997,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x9B0C088A5eEfFA684Ef8Ad31303F954093045F86",
+    "totalCollateralETH": "73166320566170536",
+    "formatTotalCollateralETH": 0.07316632056617053,
+    "totalDebtETH": "62041327212945397",
+    "formatTotalDebtETH": 0.0620413272129454,
+    "healthFactor": "1002300541311004717",
+    "formattedHF": 1.0023005413110047,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xD1768eC59D6bA181194C02d5247C720670491093",
+    "totalCollateralETH": "20226962707134195",
+    "formatTotalCollateralETH": 0.020226962707134196,
+    "totalDebtETH": "17069851435297031",
+    "formatTotalDebtETH": 0.01706985143529703,
+    "healthFactor": "1007209603799629878",
+    "formattedHF": 1.0072096037996299,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x6bFD91215f323104ef757eF1Ad0b01DED084A9eA",
+    "totalCollateralETH": "44190233525981546",
+    "formatTotalCollateralETH": 0.044190233525981545,
+    "totalDebtETH": "36886269020669245",
+    "formatTotalDebtETH": 0.03688626902066924,
+    "healthFactor": "1012920076716924224",
+    "formattedHF": 1.0129200767169242,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WBTC",
+          "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6",
+          "bonus": 0.1,
+          "decimals": 8
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "AAVE",
+          "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x96e23013Ccd56d2aF78C21739df4a186BCF49e2F",
+    "totalCollateralETH": "838370061863551236",
+    "formatTotalCollateralETH": 0.8383700618635512,
+    "totalDebtETH": "705900479600692691",
+    "formatTotalDebtETH": 0.7059004796006927,
+    "healthFactor": "1009511359146722517",
+    "formattedHF": 1.0095113591467224,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x1e475A0e1DA295D6B69c8523b4C615060E7cA6bD",
+    "totalCollateralETH": "138750155471405873",
+    "formatTotalCollateralETH": 0.13875015547140587,
+    "totalDebtETH": "110005824935618696",
+    "formatTotalDebtETH": 0.1100058249356187,
+    "healthFactor": "1009290866853627452",
+    "formattedHF": 1.0092908668536273,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x40FDbC49dAF882fB6244DbDe916Ae6fd9fD5184A",
+    "totalCollateralETH": "2245046968347617988",
+    "formatTotalCollateralETH": 2.245046968347618,
+    "totalDebtETH": "1846220305783664999",
+    "formatTotalDebtETH": 1.846220305783665,
+    "healthFactor": "1009542570452364988",
+    "formattedHF": 1.009542570452365,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "BAL",
+          "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x89fD8F86Eb637A1999F2C4cE40b98258224E99F2",
+    "totalCollateralETH": "347248775201199772",
+    "formatTotalCollateralETH": 0.3472487752011998,
+    "totalDebtETH": "289467980883806439",
+    "formatTotalDebtETH": 0.28946798088380643,
+    "healthFactor": "1019668766195936368",
+    "formattedHF": 1.0196687661959363,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x8c4f05BDbc7358B8844813C03a334991a607Fb6E",
+    "totalCollateralETH": "620337718856112380",
+    "formatTotalCollateralETH": 0.6203377188561123,
+    "totalDebtETH": "522282038474013881",
+    "formatTotalDebtETH": 0.5222820384740139,
+    "healthFactor": "1009582988088782737",
+    "formattedHF": 1.0095829880887828,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x92e0B7aFd7F31e7494B619148b2A2CFED9a3fa2E",
+    "totalCollateralETH": "10310987632244009",
+    "formatTotalCollateralETH": 0.01031098763224401,
+    "totalDebtETH": "8711497830273708",
+    "formatTotalDebtETH": 0.008711497830273708,
+    "healthFactor": "1006065737277700700",
+    "formattedHF": 1.0060657372777007,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "1",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x533Fa4018bD4c5e2eF06A610F73EC8342886359b",
+    "totalCollateralETH": "22174791834670351",
+    "formatTotalCollateralETH": 0.02217479183467035,
+    "totalDebtETH": "18566903700434223",
+    "formatTotalDebtETH": 0.018566903700434224,
+    "healthFactor": "1015170507887590736",
+    "formattedHF": 1.0151705078875908,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x37C3bB41F28fb595A51319565b4aE3de89f2E309",
+    "totalCollateralETH": "11088351833151226",
+    "formatTotalCollateralETH": 0.011088351833151227,
+    "totalDebtETH": "9284324869013594",
+    "formatTotalDebtETH": 0.009284324869013594,
+    "healthFactor": "1015162566061726408",
+    "formattedHF": 1.0151625660617265,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x334e70a2E2D1933E0888b893D9B91D3AB1306F36",
+    "totalCollateralETH": "26996898003641",
+    "formatTotalCollateralETH": 0.000026996898003641,
+    "totalDebtETH": "22752325887315",
+    "formatTotalDebtETH": 0.000022752325887315,
+    "healthFactor": "1008572196827082998",
+    "formattedHF": 1.008572196827083,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xf020e01bBf105e89E573750528bd42096b7D3D92",
+    "totalCollateralETH": "1479922865499683",
+    "formatTotalCollateralETH": 0.001479922865499683,
+    "totalDebtETH": "1237468966312470",
+    "formatTotalDebtETH": 0.00123746896631247,
+    "healthFactor": "1016538167759669957",
+    "formattedHF": 1.0165381677596699,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x3379f70Ee861F04498cDEd24A017aEf47E05d88D",
+    "totalCollateralETH": "7393962647300863",
+    "formatTotalCollateralETH": 0.007393962647300863,
+    "totalDebtETH": "6187727197888772",
+    "formatTotalDebtETH": 0.006187727197888772,
+    "healthFactor": "1015698987562041543",
+    "formattedHF": 1.0156989875620415,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xCa9C030cDf0A3aA3Dd77121ec930fB79592C872d",
+    "totalCollateralETH": "7394645400613319",
+    "formatTotalCollateralETH": 0.007394645400613319,
+    "totalDebtETH": "6191205201993891",
+    "formatTotalDebtETH": 0.006191205201993891,
+    "healthFactor": "1015222139382018660",
+    "formattedHF": 1.0152221393820187,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xB3E6449331ef9fE6944A71f71968A0A53bf1F400",
+    "totalCollateralETH": "7811000977888177",
+    "formatTotalCollateralETH": 0.007811000977888177,
+    "totalDebtETH": "6237102981772197",
+    "formatTotalDebtETH": 0.006237102981772197,
+    "healthFactor": "1001875518261047088",
+    "formattedHF": 1.001875518261047,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xdc627f4929F5E056A3c2D5f23b09bc866c3AA4F6",
+    "totalCollateralETH": "7393419993010407",
+    "formatTotalCollateralETH": 0.007393419993010407,
+    "totalDebtETH": "6191627334418259",
+    "formatTotalDebtETH": 0.006191627334418259,
+    "healthFactor": "1014984697015732813",
+    "formattedHF": 1.0149846970157328,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xE72FB9F798Bd414B57fB43F3e6d2b07c60A0c793",
+    "totalCollateralETH": "7811307435892477",
+    "formatTotalCollateralETH": 0.007811307435892477,
+    "totalDebtETH": "6237933167996986",
+    "formatTotalDebtETH": 0.006237933167996986,
+    "healthFactor": "1001781484414422532",
+    "formattedHF": 1.0017814844144226,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "DAI",
+          "address": "0x8f3cf7ad23cd3cadbd9735aff958023239c6a063",
+          "bonus": 0.05,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x830D1Ef0FC4CD9d16d265403F1c4aE74aE1390b9",
+    "totalCollateralETH": "37475225665424491",
+    "formatTotalCollateralETH": 0.037475225665424494,
+    "totalDebtETH": "31467451092907275",
+    "formatTotalDebtETH": 0.03146745109290727,
+    "healthFactor": "1006446728600419971",
+    "formattedHF": 1.00644672860042,
+    "userConfiguration": [
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "01",
+        "col": false,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDT",
+          "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f",
+          "bonus": 0,
+          "decimals": 6
+        }
+      },
+      {
+        "code": "10",
+        "col": true,
+        "debt": false,
+        "chainData": {
+          "symbol": "WMATIC",
+          "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270",
+          "bonus": 0.1,
+          "decimals": 18
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x7cfe028d7A4395A50555ecDe3366734a67FCdbD7",
+    "totalCollateralETH": "7225534868908626",
+    "formatTotalCollateralETH": 0.007225534868908626,
+    "totalDebtETH": "6112385736930910",
+    "formatTotalDebtETH": 0.00611238573693091,
+    "healthFactor": "1004796637991002072",
+    "formattedHF": 1.004796637991002,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0x55Acb075c91366B3f99F943E14a70448BcB2C066",
+    "totalCollateralETH": "1472943625323237639",
+    "formatTotalCollateralETH": 1.4729436253232377,
+    "totalDebtETH": "1238560138251577724",
+    "formatTotalDebtETH": 1.2385601382515776,
+    "healthFactor": "1010852878966498699",
+    "formattedHF": 1.0108528789664988,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  },
+  {
+    "user": "0xE770748e5781f171a0364fbd013188Bc0b33E72f",
+    "totalCollateralETH": "2781004932508984979",
+    "formatTotalCollateralETH": 2.781004932508985,
+    "totalDebtETH": "2346161972979921422",
+    "formatTotalDebtETH": 2.3461619729799215,
+    "healthFactor": "1007540919960544950",
+    "formattedHF": 1.007540919960545,
+    "userConfiguration": [
+      {
+        "code": "11",
+        "col": true,
+        "debt": true,
+        "chainData": {
+          "symbol": "USDC",
+          "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174",
+          "bonus": 0.05,
+          "decimals": 6
+        }
+      }
+    ]
+  }
+]

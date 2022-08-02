@@ -15,17 +15,6 @@ const {
   getPrice
 } = require("../utils/liquidationUtils");
 
-/**
- *
- * @param {string} victimAddress
- * @param {object} debtToken
- * @param {object} colToken
- * @param {string} publicProvider
- * @param {string} privateProvider
- * @param {string} myAccount
- * @param {string} chain
- * @param {string} securityWall
- */
 async function liquidate(
   victimAddress,
   debtToken,
@@ -43,8 +32,8 @@ async function liquidate(
   const TOKEN_DEBT_ADDRESS = debtToken.address;
   const TOKEN_DEBT_DECIMALS = debtToken.decimals;
   const COL_ADDRESS = colToken.address;
-  // const TOKEN_COL_BONUS = parseInt(colToken.bonus * 100);
-  const TOKEN_COL_BONUS = 100000;
+  const TOKEN_COL_BONUS = parseInt(colToken.bonus * 100);
+  // const TOKEN_COL_BONUS = 100000;
   const SECURITY_WALL = ethers.utils.parseEther(securityWall);
   let NONCE = nonce;
 
@@ -114,6 +103,7 @@ async function liquidate(
     const gasPrice = await deployer.getGasPrice();
     let GAS_PRICE = gasPrice.mul(20);
     GAS_PRICE = GAS_PRICE.div(100);
+    // GAS_PRICE = BigNumber.from("100000000000");
 
     let LIQUIDATION_TOTAL_COST = LIQUIDATION_COST.mul(GAS_PRICE);
 
@@ -141,24 +131,17 @@ async function liquidate(
      * ⚠  ⚠  ⚠
      */
     if (PROFITABLE) {
-      console.log("MEV found...\n");
-      console.log("Victim:", VICTIM_ADDRESS);
-      console.log("Col token:", COL_ADDRESS);
-      console.log("Debt token", TOKEN_DEBT_ADDRESS);
-      console.log("Gas cost:", ethers.utils.formatEther(LIQUIDATION_TOTAL_COST));
-      console.log("Bonus:", ethers.utils.formatEther(reward), "\n");
-
       // CALCULO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
       //---------------------------------------------
       let totalEthCompromised = input_swap_amount_in_eth.add(LIQUIDATION_TOTAL_COST);
       let balance = await deployer.getBalance();
-      console.log("My balance:", ethers.utils.formatEther(balance));
-      console.log(
-        "EthCompromised (debt + gasCost):",
-        ethers.utils.formatEther(totalEthCompromised)
-      );
+      // console.log("My balance:", ethers.utils.formatEther(balance));
+      // console.log(
+      //   "EthCompromised (debt + gasCost):",
+      //   ethers.utils.formatEther(totalEthCompromised)
+      // );
       let residuo = balance.sub(totalEthCompromised);
-      console.log("Result balance:", ethers.utils.formatEther(residuo));
+      // console.log("Result balance:", ethers.utils.formatEther(residuo));
       //---------------------------------------------
 
       const is_hight_debt = residuo.lt(SECURITY_WALL);
@@ -187,40 +170,63 @@ async function liquidate(
        */
       const enought_balance = residuo.gt(SECURITY_WALL);
       if (enought_balance) {
-        console.log("nonce:", NONCE);
+        console.log("MEV found...\n");
+        console.log("Victim:", VICTIM_ADDRESS);
+        console.log("Col token:", COL_ADDRESS);
+        console.log("Debt token", TOKEN_DEBT_ADDRESS);
+        balance = await deployer.getBalance();
+        console.log("My balance:", ethers.utils.formatEther(balance));
+        console.log("Gas cost:", ethers.utils.formatEther(LIQUIDATION_TOTAL_COST));
+        console.log("Bonus:", ethers.utils.formatEther(reward), "\n");
+        console.log(
+          "Swap amount in: ",
+          ethers.utils.formatEther(input_swap_amount_in_eth)
+        );
+
         provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
         deployer = new ethers.Wallet(process.env[myAccount], provider);
 
         try {
+          console.log("Consiguiendo el Weth...");
           await getWeth(
             WRAPPER_ADDRESS,
             WRAPPER_ABI,
             deployer,
-            input_swap_amount_in_eth,
+            input_swap_amount_in_eth.toString(),
             GAS_PRICE,
             NONCE
           );
           NONCE++;
-        } catch (e) {
-          NONCE++;
-          return NONCE;
+          console.log("Done!");
+        } catch (error) {
+          console.log("Error consiguiendo WETH...");
+          console.log(error, "\n");
+          return new Promise(resolve => {
+            resolve(NONCE++);
+          });
         }
 
         if (TOKEN_DEBT_ADDRESS !== aave[CHAIN].iWeth.address) {
           try {
+            let amount_in_eth = input_swap_amount_in_eth.toString();
+            console.log("Aprobando el erc20...");
             await approveErc20(
-              baseTokenAddress,
+              WRAPPER_ADDRESS,
               WRAPPER_ABI,
               EXCHANGE_ADDRESS,
-              input_swap_amount_in_eth,
+              amount_in_eth,
               deployer,
               GAS_PRICE,
               NONCE
             );
             NONCE++;
+            console.log("Done!");
           } catch (error) {
-            NONCE++;
-            return NONCE;
+            console.log("Error aprobando antes del primer swap...");
+            console.log(error, "\n");
+            return new Promise(resolve => {
+              resolve(NONCE++);
+            });
           }
 
           let params = {
@@ -229,12 +235,13 @@ async function liquidate(
             fee: poolFee,
             recipient: deployer.address,
             deadline: parseInt(Date.now() * 1000),
-            amountIn: input_swap_amount_in_eth,
+            amountIn: input_swap_amount_in_eth.toString(),
             amountOutMinimum: MIN_OUTPUT_AMOUNT,
             sqrtPriceLimitX96: 0 //parseInt(Math.sqrt(baseTokenPrice) * 2 * 96)
           };
 
           try {
+            console.log("Haciendo el primer swap...");
             await swapTokens(
               EXCHANGE_ADDRESS,
               EXCHANGE_ABI,
@@ -244,9 +251,14 @@ async function liquidate(
               NONCE
             );
             NONCE++;
+            console.log("Done!");
           } catch (error) {
             NONCE++;
-            return NONCE;
+            console.log("Error haciendo el swap de WETH a TOKEN...");
+            console.log(error, "\n");
+            return new Promise(resolve => {
+              resolve(NONCE);
+            });
           }
         }
 
@@ -257,6 +269,7 @@ async function liquidate(
         );
 
         try {
+          console.log("Aprobando el erc20 antes de liquidar...");
           await approveErc20(
             debtTokenAddress,
             WRAPPER_ABI,
@@ -267,12 +280,18 @@ async function liquidate(
             NONCE
           );
           NONCE++;
+          console.log("Done");
         } catch (error) {
           NONCE++;
-          return NONCE;
+          console.log("Error aprobando antes de la liquidacion...");
+          console.log(error.code, "\n");
+          return new Promise(resolve => {
+            resolve(NONCE);
+          });
         }
 
         try {
+          console.log("Liquidando...");
           await liquidateUser(
             lendingPool,
             COL_ADDRESS,
@@ -284,10 +303,14 @@ async function liquidate(
             NONCE
           );
           NONCE++;
+          console.log("Done!");
         } catch (error) {
           NONCE++;
-          onsole.log("error liquidando...");
-          return NONCE;
+          onsole.log("Error liquidando...");
+          console.log(error.code, "\n");
+          return new Promise(resolve => {
+            resolve(NONCE);
+          });
         }
 
         if (COL_ADDRESS !== aave[CHAIN].iWeth.address) {
@@ -306,7 +329,11 @@ async function liquidate(
             NONCE++;
           } catch (error) {
             NONCE++;
-            return NONCE;
+            console.log("Error aprobando despues de la liquidacion...");
+            console.log(error.code, "\n");
+            return new Promise(resolve => {
+              resolve(NONCE);
+            });
           }
 
           params = {
@@ -332,8 +359,11 @@ async function liquidate(
             NONCE++;
           } catch (error) {
             NONCE++;
-            console.log("error haciendo swap...");
-            return NONCE;
+            console.log("Error haciendo el segundo swap...");
+            console.log(error.code, "\n");
+            return new Promise(resolve => {
+              resolve(NONCE);
+            });
           }
 
           try {
@@ -341,7 +371,11 @@ async function liquidate(
             NONCE++;
           } catch (error) {
             NONCE++;
-            return NONCE;
+            console.log("Error obteniendo el ETH...");
+            console.log(error.code, "\n");
+            return new Promise(resolve => {
+              resolve(NONCE);
+            });
           }
         } else {
           try {
@@ -349,7 +383,11 @@ async function liquidate(
             NONCE++;
           } catch (error) {
             NONCE++;
-            return NONCE;
+            console.log("Error obteniendo el ETH...");
+            console.log(error.code, "\n");
+            return new Promise(resolve => {
+              resolve(NONCE);
+            });
           }
         }
 
@@ -359,7 +397,9 @@ async function liquidate(
       }
     }
   }
-  return NONCE;
+  return new Promise(resolve => {
+    resolve(NONCE);
+  });
 }
 
 module.exports = { liquidate };

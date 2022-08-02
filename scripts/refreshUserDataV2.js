@@ -7,14 +7,14 @@ const { convertConfiguration } = require("../utils/convertConfigurationV2");
 const { updateValues } = require("../utils/updateValues");
 
 refreshUserData("polygon");
-refreshUserData("mainnet");
+// refreshUserData("mainnet");
 
 async function refreshUserData(chain) {
   const CHAIN = chain;
   const KEY = config.keys.fake;
   const RPC_URL = config.rpcUrl[CHAIN].public;
   const HEALTH_FACTOR_LIMIT = 1.05;
-  const MIN_ETH_PRICE = { mainnet: 0.3, polygon: 0.001 };
+  const MIN_ETH_PRICE = { mainnet: 0.3, polygon: 0.00001 };
 
   // CONSTANTS
   const FOLDER_NAME = `${CHAIN}_v2`;

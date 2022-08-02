@@ -10,9 +10,12 @@ async function getWeth(address, abi, account, amount, gasPrice, nonce) {
     gasPrice: gasPrice,
     nonce: nonce
   });
-  tx.wait(1);
-  return balance;
+  await tx.wait(1);
+  return new Promise(resolve => {
+    resolve(balance);
+  });
 }
+
 async function approveErc20(
   erc20Address,
   abi,
@@ -28,8 +31,12 @@ async function approveErc20(
     gasPrice: gasPrice,
     nonce: nonce
   });
-  tx.wait(1);
+  await tx.wait(1);
+  return new Promise(resolve => {
+    resolve(tx);
+  });
 }
+
 async function swapTokens(address, abi, account, params, gasPrice, nonce) {
   const uniswapRouter = new ethers.Contract(address, abi, account);
   const tx = await uniswapRouter.exactInputSingle(params, {
@@ -37,19 +44,26 @@ async function swapTokens(address, abi, account, params, gasPrice, nonce) {
     gasPrice: gasPrice,
     nonce: nonce
   });
-  tx.wait(1);
+  await tx.wait(1);
+  return new Promise(resolve => {
+    resolve(tx);
+  });
 }
-async function getEth(address, abi, account, gasPrice, nonce) {
+
+async function getEth(address, abi, account, gasPrice) {
   const erc20Contract = new ethers.Contract(address, abi, account);
   const balance = await erc20Contract.balanceOf(account.address);
   const tx = await erc20Contract.withdraw(balance, {
     gasLimit: "37041",
-    gasPrice: gasPrice,
-    nonce: nonce
+    maxFeePerGas: gasPrice.maxFeePerGas,
+    maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas
   });
-  tx.wait(1);
-  return balance;
+  await tx.wait(1);
+  return new Promise(resolve => {
+    resolve(balance);
+  });
 }
+
 async function liquidateUser(
   lendingPool,
   collateralAddress,
@@ -68,11 +82,14 @@ async function liquidateUser(
     receiveAToken,
     { gasPrice: gasPrice, gasLimit: "850000", nonce: nonce }
   );
-  tx.wait(1);
+  await tx.wait(1);
+  return new Promise(resolve => {
+    resolve(tx);
+  });
 }
 
 // Read functions
-async function getBorrowUserData(lendingPool, account) {
+async function getBorrowUserData(lendingPool, account, print) {
   const {
     totalCollateralETH,
     totalDebtETH,
@@ -80,16 +97,18 @@ async function getBorrowUserData(lendingPool, account) {
   } = await lendingPool.getUserAccountData(account);
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
-
-  // console.log("\nAccount: ", account);
-  // console.log(
-  //   `Have ${ethers.utils.formatEther(totalCollateralETH)} worth of ETH deposited.`
-  // );
-  // console.log(`Have ${ethers.utils.formatEther(totalDebtETH)} worth of ETH borrowed.`);
-  // console.log(`His helthFactor is: ${formattedHF}.\n`);
+  if (print) {
+    console.log("\nAccount: ", account);
+    console.log(
+      `Have ${ethers.utils.formatEther(totalCollateralETH)} worth of ETH deposited.`
+    );
+    console.log(`Have ${ethers.utils.formatEther(totalDebtETH)} worth of ETH borrowed.`);
+    console.log(`His helthFactor is: ${formattedHF}.\n`);
+  }
 
   return { formattedHF, totalCollateralETH, totalDebtETH };
 }
+
 async function getBorrowUserDataV3(lendingPool, account) {
   const {
     totalCollateralBase,
@@ -108,6 +127,7 @@ async function getBorrowUserDataV3(lendingPool, account) {
 
   return { formattedHF, totalCollateralBase, totalDebtBase };
 }
+
 async function getLendingPool(address, abi, account) {
   const lendingPool = new ethers.Contract(address, abi, account);
   return lendingPool;
