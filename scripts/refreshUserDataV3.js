@@ -4,7 +4,6 @@ require("dotenv").config();
 const aave = require("../config/aave.json");
 const config = require("../config/config.json");
 const { convertConfiguration } = require("../utils/convertConfigurationV3");
-const { saveData } = require("../utils/saveData");
 const { updateValues } = require("../utils/updateValues");
 
 /**
@@ -59,12 +58,8 @@ async function refreshUserData(chain) {
         );
 
         const configuration = await getUserConfiguration(lendingPool, VICTIM_ADDRESS);
-        const {
-          totalCollateralBase,
-          totalDebtBase,
-          healthFactor,
-          formattedHF
-        } = await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
+        const { totalCollateralBase, totalDebtBase, healthFactor, formattedHF } =
+          await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
 
         console.log(`${VICTIM_ADDRESS}, ${configuration} \n`);
 
@@ -80,7 +75,7 @@ async function refreshUserData(chain) {
           ),
           healthFactor: healthFactor.toString(),
           formattedHF: formattedHF,
-          userConfiguration: configuration
+          userConfiguration: configuration,
         };
 
         updateValues(FOLDER_NAME, OUTPUT_FILE_NAME, info, i);
@@ -108,18 +103,15 @@ async function getLendingPool(address, abi, account) {
 }
 
 async function getBorrowUserData(lendingPool, account) {
-  const {
-    totalCollateralBase,
-    totalDebtBase,
-    healthFactor
-  } = await lendingPool.getUserAccountData(account);
+  const { totalCollateralBase, totalDebtBase, healthFactor } =
+    await lendingPool.getUserAccountData(account);
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
   return {
     totalCollateralBase,
     totalDebtBase,
     healthFactor,
-    formattedHF
+    formattedHF,
   };
 }
 

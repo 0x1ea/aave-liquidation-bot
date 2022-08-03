@@ -6,17 +6,24 @@ import "./interfaces/ISwapRouter.sol";
 import "./interfaces/IWeth.sol";
 
 contract Liquidator {
+  address public owner;
   address public WETH_ADDRESS;
   address public SWAPROUTER_ADDRESS;
   address public LENDINGPOOL_ADDRESS;
   uint256 public outputAmount;
   uint256 public outputWethAmount;
 
+  modifier onlyOwner() {
+    require(msg.sender == owner);
+    _;
+  }
+
   constructor(
     address _weth,
     address _swapRouter,
     address _lendingPool
   ) {
+    owner = msg.sender;
     WETH_ADDRESS = _weth;
     SWAPROUTER_ADDRESS = _swapRouter;
     LENDINGPOOL_ADDRESS = _lendingPool;
@@ -26,7 +33,7 @@ contract Liquidator {
     address debtAddress,
     address colAddress,
     address victim
-  ) public payable returns (bool) {
+  ) public payable onlyOwner returns (bool) {
     ISwapRouter swapRouter = ISwapRouter(SWAPROUTER_ADDRESS);
     IWeth weth = IWeth(WETH_ADDRESS);
 
@@ -82,5 +89,10 @@ contract Liquidator {
       weth.transfer(msg.sender, wethBalance);
     }
     return success;
+  }
+
+  function transfer(address _token, uint256 _amount) public onlyOwner {
+    IWeth token = IWeth(_token);
+    token.transfer(msg.sender, _amount);
   }
 }

@@ -5,8 +5,8 @@ require("dotenv").config();
 const uniswap = require("../config/uniswap.json");
 const aave = require("../config/aave.json");
 
-const CHAIN = "polygon";
-const MY_ACCOUNT = config.keys.private;
+const CHAIN = "mainnet";
+const MY_ACCOUNT = config.keys.fake;
 const PROVIDER_URL = config.rpcUrl[CHAIN].local;
 
 const WETH_ADDRESS = aave[CHAIN].iWeth.address;

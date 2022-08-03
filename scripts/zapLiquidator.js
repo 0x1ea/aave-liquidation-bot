@@ -167,7 +167,7 @@ async function zapLiquidator(
        */
       const enought_balance = residuo.gt(SECURITY_WALL);
       if (enought_balance) {
-        console.log("MEV found...\n");
+        console.log("Victim found...\n");
         console.log("Victim:", VICTIM_ADDRESS);
         console.log("Col token:", COL_ADDRESS);
         console.log("Debt token", TOKEN_DEBT_ADDRESS);
@@ -186,7 +186,8 @@ async function zapLiquidator(
         try {
           const contract = new ethers.Contract(
             // ZAP_ADDRESS,
-            "0x51d1439B74648Bbb1f7012F6c43DcB8f8591D361",
+            // "0x51d1439B74648Bbb1f7012F6c43DcB8f8591D361", // Polygon
+            "0x0a17FabeA4633ce714F1Fa4a2dcA62C3bAc4758d", // Mainnet
             ZAP_ABI,
             deployer
           );
@@ -257,14 +258,14 @@ async function zapLiquidator(
           await getErc20Balance(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, deployer);
           console.log("-\n");
         } catch (error) {
-          console.log("Error liquidando...");
+          console.log("Liquidation error...");
           console.log(error, "\n");
           return new Promise(resolve => {
             resolve(NONCE++);
           });
         }
 
-        console.log("MEV extracted...\n");
+        console.log("Liquidation excecuted successfully...\n");
       } else {
         console.log("insufficient funds...");
       }

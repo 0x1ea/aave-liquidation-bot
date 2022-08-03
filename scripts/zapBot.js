@@ -7,7 +7,7 @@ const { zapLiquidator } = require("./zapLiquidator");
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-const CHAIN = "polygon";
+const CHAIN = "mainnet";
 const PUBLIC_PROVIDER_URL = config.rpcUrl[CHAIN].local;
 const PROVIDER_URL = config.rpcUrl[CHAIN].local;
 const MY_ACCOUNT = config.keys.fake;
@@ -28,7 +28,6 @@ async function bot(nonce) {
       if (data[index].userConfiguration[i].debt) {
         for (let j = 0; j < iEnd; j++) {
           if (data[index].userConfiguration[j].col) {
-            // try {
             let lastNonce = await zapLiquidator(
               data[index].user,
               data[index].userConfiguration[i].chainData,
@@ -41,12 +40,6 @@ async function bot(nonce) {
               NONCE
             );
             NONCE = lastNonce;
-            // } catch (error) {
-            //   console.log(("Fallo de red ", error.code));
-            //   return new Promise(resolve => {
-            //     resolve(NONCE);
-            //   });
-            // }
           }
         }
       }
