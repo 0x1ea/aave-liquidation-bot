@@ -21,8 +21,8 @@ async function zapLiquidator(
   const LIQUIDATION_COST = BigNumber.from(1200000);
   const DEBT_ADDRESS = _debt_token.address;
   const COL_ADDRESS = _col_token.address;
-  const TOKEN_COL_BONUS = parseInt(_col_token.bonus * 100);
-  // const TOKEN_COL_BONUS = 100000;
+  // const TOKEN_COL_BONUS = parseInt(_col_token.bonus * 100);
+  const TOKEN_COL_BONUS = 100000;
   const margin_of_safety = ethers.utils.parseEther(_security_wall);
 
   const WRAPPER_ADDRESS = aave[_chain].iWeth.address;
@@ -48,7 +48,7 @@ async function zapLiquidator(
     LENDINGPOOL_ABI,
     deployer
   );
-  const { formattedHF } = await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
+  const { formattedHF } = await getBorrowUserData(lendingPool, _victim_address);
 
   /**
    * ⚠  ⚠  ⚠
@@ -177,7 +177,7 @@ async function zapLiquidator(
           console.log("-\n");
 
           console.log("Getting victim data before liquidation...");
-          await getBorrowUserData(lendingPool, VICTIM_ADDRESS, true);
+          await getBorrowUserData(lendingPool, _victim_address, true);
 
           console.log("calling zap contract...");
 
@@ -238,15 +238,11 @@ async function zapLiquidator(
           await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer, deployer);
           await getErc20Balance(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, deployer);
           console.log("-\n");
+          console.log("Liquidation excecuted successfully!\n");
         } catch (error) {
           console.log("Liquidation error...");
-          console.log(error, "\n");
-          return new Promise((resolve) => {
-            resolve(NONCE++);
-          });
+          console.log(error);
         }
-
-        console.log("Liquidation excecuted successfully!\n");
       } else {
         console.log("insufficient funds...");
       }

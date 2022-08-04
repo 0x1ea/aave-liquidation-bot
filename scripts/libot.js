@@ -27,7 +27,7 @@ async function bot() {
           for (let j = 0; j < iEnd; j++) {
             if (data[index].userConfiguration[j].col) {
               try {
-                let lastNonce = await zapLiquidator(
+                await zapLiquidator(
                   data[index].user,
                   data[index].userConfiguration[i].chainData,
                   data[index].userConfiguration[j].chainData,
@@ -35,12 +35,10 @@ async function bot() {
                   PROVIDER_URL,
                   MY_ACCOUNT,
                   CHAIN,
-                  MIN_ACCOUNT_RESERVE,
-                  NONCE
+                  MIN_ACCOUNT_RESERVE
                 );
-                NONCE = lastNonce;
               } catch (error) {
-                console.log(error.code);
+                console.log(error);
               }
             }
           }

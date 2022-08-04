@@ -34,6 +34,8 @@ contract Liquidator {
     address colAddress,
     address victim
   ) public payable onlyOwner returns (bool) {
+    require(msg.value != 0);
+
     ISwapRouter swapRouter = ISwapRouter(SWAPROUTER_ADDRESS);
     IWeth weth = IWeth(WETH_ADDRESS);
 
@@ -91,8 +93,7 @@ contract Liquidator {
     return success;
   }
 
-  function transfer(address _token, uint256 _amount) public onlyOwner {
-    IWeth token = IWeth(_token);
-    token.transfer(msg.sender, _amount);
+  function withdraw(IWeth _token, uint256 _amount) public onlyOwner {
+    _token.transfer(msg.sender, _amount);
   }
 }

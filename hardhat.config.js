@@ -16,7 +16,7 @@ const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "Your etherscan API k
 const POLYGONSCAN_API_KEY = process.env.POLYGONSCAN_API_KEY || "Your polygonscan API key";
 const REPORT_GAS = process.env.REPORT_GAS || false;
 
-const PUBLIC_FORK_RPC_URL = process.env.PUBLIC_ETH_RPC_URL;
+const PUBLIC_FORK_RPC_URL = process.env.ALCHEMY_ETH_RPC_URL;
 
 module.exports = {
   networks: {
@@ -24,13 +24,13 @@ module.exports = {
       // If you want to do some forking, uncomment this
       forking: {
         url: PUBLIC_FORK_RPC_URL,
-        // blockNumber: 15200000,
+        blockNumber: 15271200,
       },
       chainId: 31337,
-      mining: {
-        auto: true,
-        interval: [1000, 2000],
-      },
+      // mining: {
+      //   auto: true,
+      //   interval: [1000, 2000],
+      // },
     },
     localhost: {
       chainId: 31337,
