@@ -18,7 +18,7 @@ async function fakeZap(
   _chain,
   _security_wall
 ) {
-  const LIQUIDATION_COST = BigNumber.from(1200000);
+  const LIQUIDATION_COST = BigNumber.from(1100000);
   const DEBT_ADDRESS = _debt_token.address;
   const COL_ADDRESS = _col_token.address;
   const TOKEN_COL_BONUS = parseInt(_col_token.bonus * 100);

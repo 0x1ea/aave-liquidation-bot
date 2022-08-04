@@ -33,13 +33,14 @@ contract Liquidator {
     address debtAddress,
     address colAddress,
     address victim
-  ) public payable onlyOwner returns (bool) {
+  ) public payable onlyOwner {
     require(msg.value != 0);
 
     ISwapRouter swapRouter = ISwapRouter(SWAPROUTER_ADDRESS);
     IWeth weth = IWeth(WETH_ADDRESS);
 
     (bool success, bytes memory data) = WETH_ADDRESS.call{value: msg.value}("");
+    require(success);
 
     if (debtAddress != WETH_ADDRESS) {
       weth.approve(SWAPROUTER_ADDRESS, msg.value);
@@ -85,12 +86,11 @@ contract Liquidator {
           sqrtPriceLimitX96: 0
         });
 
-      outputWethAmount = swapRouter.exactInputSingle(params);
+      swapRouter.exactInputSingle(params);
     } else {
       uint256 wethBalance = weth.balanceOf(address(this));
       weth.transfer(msg.sender, wethBalance);
     }
-    return success;
   }
 
   function withdraw(IWeth _token, uint256 _amount) public onlyOwner {
