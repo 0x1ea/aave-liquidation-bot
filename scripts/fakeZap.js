@@ -1,87 +1,86 @@
 require("dotenv").config();
-const { BigNumber } = require("ethers");
-const { ethers } = require("ethers");
+const { ethers, BigNumber } = require("ethers");
 const aave = require("../config/aave.json");
 const {
   getBorrowUserData,
   getLendingPool,
   getPrice,
-  // getEth,
 } = require("../utils/liquidationUtils");
 const { saveData } = require("../utils/saveData");
 
 async function fakeZap(
-  victimAddress,
-  debtToken,
-  colToken,
-  publicProvider,
-  privateProvider,
-  myAccount,
-  chain,
-  securityWall,
-  nonce
+  _victim_address,
+  _debt_token,
+  _col_token,
+  _public_provider,
+  _private_provider,
+  _my_account,
+  _chain,
+  _security_wall
 ) {
   const LIQUIDATION_COST = BigNumber.from(1200000);
-  const CHAIN = chain;
-  const VICTIM_ADDRESS = victimAddress;
-  const TOKEN_DEBT_ADDRESS = debtToken.address;
-  const COL_ADDRESS = colToken.address;
-  const TOKEN_COL_BONUS = parseInt(colToken.bonus * 100);
+  const DEBT_ADDRESS = _debt_token.address;
+  const COL_ADDRESS = _col_token.address;
+  const TOKEN_COL_BONUS = parseInt(_col_token.bonus * 100);
   // const TOKEN_COL_BONUS = 100000;
-  const SECURITY_WALL = ethers.utils.parseEther(securityWall);
-  let NONCE = nonce;
+  const margin_of_safety = ethers.utils.parseEther(_security_wall);
 
-  const WRAPPER_ADDRESS = aave[CHAIN].iWeth.address;
-  const WRAPPER_ABI = aave[CHAIN].iWeth.abi;
+  const WRAPPER_ADDRESS = aave[_chain].iWeth.address;
+  const WRAPPER_ABI = aave[_chain].iWeth.abi;
 
-  const LENDINGPOOL_ADDRESS = aave[CHAIN].v2.lendingPool.address;
-  const LENDINGPOOL_ABI = aave[CHAIN].v2.lendingPool.abi;
+  const DATA_PROVIDER_ADDRESS = aave[_chain].v2.dataProvider.address;
+  const DATA_PROVIDER_ABI = aave[_chain].v2.dataProvider.abi;
 
-  const PRICE_ORACLE_ADDRESS = aave[CHAIN].v2.priceOracle.address;
-  const PRICE_ORACLE_ABI = aave[CHAIN].v2.priceOracle.abi;
+  const LENDINGPOOL_ADDRESS = aave[_chain].v2.lendingPool.address;
+  const LENDINGPOOL_ABI = aave[_chain].v2.lendingPool.abi;
 
-  const ZAP_ADDRESS = aave[CHAIN].liquidator.address;
-  const ZAP_ABI = aave[CHAIN].liquidator.abi;
+  const PRICE_ORACLE_ADDRESS = aave[_chain].v2.priceOracle.address;
+  const PRICE_ORACLE_ABI = aave[_chain].v2.priceOracle.abi;
 
-  let provider = new ethers.providers.JsonRpcProvider(process.env[publicProvider]);
-  let deployer = new ethers.Wallet(process.env[myAccount], provider);
+  const ZAP_ADDRESS = aave[_chain].liquidator.address;
+  const ZAP_ABI = aave[_chain].liquidator.abi;
 
-  const debtTokenAddress = TOKEN_DEBT_ADDRESS;
+  let provider = new ethers.providers.JsonRpcProvider(process.env[_public_provider]);
+  let deployer = new ethers.Wallet(process.env[_my_account], provider);
+
+  const debtTokenAddress = DEBT_ADDRESS;
 
   const lendingPool = await getLendingPool(
     LENDINGPOOL_ADDRESS,
     LENDINGPOOL_ABI,
     deployer
   );
-  const { formattedHF } = await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
+  const { formattedHF } = await getBorrowUserData(lendingPool, _victim_address);
 
   /**
    * ⚠  ⚠  ⚠
-   * ⚠ CONTROL DE SEGURIDAD #1: verifico que la victima se pueda liquidar.
+   * ⚠ CONTROL DE SEGURIDAD #1: el hf debe ser menor a 1 para proceder con la
+   * ⚠ liquidación.
    * ⚠  ⚠  ⚠
    */
   if (formattedHF < 1) {
-    // Estimo el coste total de la liquidacion
     let gasPrice = await deployer.getFeeData();
-    // gasPrice.gasPrice = gasPrice.gasPrice.mul(20);
-    // gasPrice.gasPrice = gasPrice.gasPrice.div(100);
+    gasPrice.gasPrice = gasPrice.gasPrice.mul(120);
+    gasPrice.gasPrice = gasPrice.gasPrice.div(100);
 
-    if (CHAIN == "polygon") {
+    if (_chain == "polygon") {
       gasPrice.gasPrice = BigNumber.from("31000000000");
     }
 
     const dataProvider = new ethers.Contract(
-      aave[CHAIN].v2.dataProvider.address,
-      aave[CHAIN].v2.dataProvider.abi,
+      DATA_PROVIDER_ADDRESS,
+      DATA_PROVIDER_ABI,
       deployer
     );
 
     const { currentVariableDebt } = await dataProvider.getUserReserveData(
       debtTokenAddress,
-      VICTIM_ADDRESS
+      _victim_address
     );
+    // La máxima cantidad a liquidar será la mitad de la deuda variable
+    let debt_to_cover = currentVariableDebt.div(2);
 
-    // Get price in TOKEN/ETH | TOKEN/BASE_TOKEN
+    // Get price in TOKEN/ETH
     const baseTokenPrice = await getPrice(
       PRICE_ORACLE_ADDRESS,
       PRICE_ORACLE_ABI,
@@ -89,65 +88,55 @@ async function fakeZap(
       debtTokenAddress
     );
 
-    let swap_amount_in_base_token = currentVariableDebt.div(2);
+    // Convierto el valor de la deuda en ETH
+    let debt_to_cover_in_eth = debt_to_cover.mul(baseTokenPrice);
+    debt_to_cover_in_eth = debt_to_cover_in_eth.div(ethers.utils.parseEther("1"));
 
-    // Convierto el precio base de la deuda al precio en ETH
-    let input_swap_amount_in_eth = swap_amount_in_base_token.mul(baseTokenPrice);
-    input_swap_amount_in_eth = input_swap_amount_in_eth.div(ethers.utils.parseEther("1"));
+    let transaction_cost = LIQUIDATION_COST.mul(gasPrice.gasPrice);
 
-    let LIQUIDATION_TOTAL_COST = LIQUIDATION_COST.mul(gasPrice.gasPrice);
-
-    let reward = input_swap_amount_in_eth.mul(TOKEN_COL_BONUS);
+    let reward = debt_to_cover_in_eth.mul(TOKEN_COL_BONUS);
     reward = reward.div(100);
 
-    if (CHAIN == "polygon") {
-      // Si la cadena es Polygon, el precio del base token es en MATIC
-      const matic_price_wei = await getPrice(
+    if (_chain == "polygon") {
+      /**
+       * Si la cadena es polygon, el debtToCover debe medirse en MATIC y no en ETH
+       */
+      const matic_eth_price = await getPrice(
         PRICE_ORACLE_ADDRESS,
         PRICE_ORACLE_ABI,
         deployer,
         WRAPPER_ADDRESS
       );
 
-      input_swap_amount_in_eth = input_swap_amount_in_eth.mul(
-        ethers.utils.parseEther("1")
-      );
-      input_swap_amount_in_eth = input_swap_amount_in_eth.div(matic_price_wei);
+      debt_to_cover_in_eth = debt_to_cover_in_eth.mul(ethers.utils.parseEther("1"));
+      debt_to_cover_in_eth = debt_to_cover_in_eth.div(matic_eth_price);
     }
-
-    const PROFITABLE = reward.gt(LIQUIDATION_TOTAL_COST);
 
     /**
      * ⚠  ⚠  ⚠
      * ⚠ CONTROL DE SEGURIDAD #2: verifico que sea rentable la liquidacion.
-     * ⚠   El coste del gas debe ser menor al liquidationBonus
+     * ⚠   El coste de la transacción debe ser menor al reward de la liquidación
      * ⚠  ⚠  ⚠
      */
-    // CALCULO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
-    //---------------------------------------------
-    let totalEthCompromised = input_swap_amount_in_eth.add(LIQUIDATION_TOTAL_COST);
-    let balance = await deployer.getBalance();
-    let residuo = balance.sub(totalEthCompromised);
-    //---------------------------------------------
-
+    const PROFITABLE = reward.gt(transaction_cost);
     if (PROFITABLE) {
-      const is_hight_debt = residuo.lt(SECURITY_WALL);
+      /**
+       * Si el debtToCover mas el costo de la transaccion es superior a mi balance menos el margen de seguridad
+       * entonces debo ajustar el debtTocover al maximo valor posible tomando en cuenta el
+       * margen de seguridad
+       */
+      let total_eth_compromised = debt_to_cover_in_eth.add(transaction_cost);
+      let balance = await deployer.getBalance();
+      let leftover_eth = balance.sub(total_eth_compromised);
+      const is_hight_debt = leftover_eth.lt(margin_of_safety);
       // if (is_hight_debt) {
       if (false) {
-        // CALCULO CUÁNTO ME QUEDA EN LA CUENTA POR SEGURIDAD
-        // EN CASO DE QUE EL MONTO A LIQUIDAR SEA SUPERIOR AL
-        // SALDO DE MI CUENTA
-        input_swap_amount_in_eth = BigNumber.from("300000000000000000");
-        let totalEthCompromised = input_swap_amount_in_eth.add(LIQUIDATION_TOTAL_COST);
-        residuo = balance.sub(totalEthCompromised);
-
-        // balance = await deployer.getBalance();
-        // console.log("My balance:", ethers.utils.formatEther(balance));
-        // console.log(
-        //   "curated ethCompromised (debt + gasCost):",
-        //   ethers.utils.formatEther(totalEthCompromised)
-        // );
-        // console.log("curated result balance:", ethers.utils.formatEther(residuo));
+        /**
+         * El nuevo debtToCover sera igual a mi balance menos el margen de seguridad
+         * y menos el costo de la transaccion
+         */
+        debt_to_cover_in_eth = balance.sub(margin_of_safety);
+        debt_to_cover_in_eth = debt_to_cover_in_eth.sub(transaction_cost);
       }
 
       /**
@@ -156,91 +145,41 @@ async function fakeZap(
        * ⚠   antes y después de la liquidación.
        * ⚠  ⚠  ⚠
        */
-      const enought_balance = residuo.gt(SECURITY_WALL);
+      const enought_balance = debt_to_cover_in_eth.gt(0);
       // if (enought_balance) {
       if (true) {
-        // console.log("Victim found...\n");
-        // console.log("Victim:", VICTIM_ADDRESS);
-        // console.log("Col token:", COL_ADDRESS);
-        // console.log("Debt token", TOKEN_DEBT_ADDRESS);
-        // balance = await deployer.getBalance();
-        // console.log("My balance:", ethers.utils.formatEther(balance));
-        // console.log("Gas cost:", ethers.utils.formatEther(LIQUIDATION_TOTAL_COST));
-        // console.log("Bonus:", ethers.utils.formatEther(reward), "\n");
-        // console.log(
-        //   "Swap amount in: ",
-        //   ethers.utils.formatEther(input_swap_amount_in_eth)
-        // );
+        provider = new ethers.providers.JsonRpcProvider(process.env[_private_provider]);
+        deployer = new ethers.Wallet(process.env[_my_account], provider);
 
-        provider = new ethers.providers.JsonRpcProvider(process.env[privateProvider]);
-        deployer = new ethers.Wallet(process.env[myAccount], provider);
-
-        // try {
-        // const contract = new ethers.Contract(ZAP_ADDRESS, ZAP_ABI, deployer);
-
-        // console.log("Contract data:");
-        // balance = await provider.getBalance(contract.address);
-        // console.log("ETH balance: ", ethers.utils.formatEther(balance));
-        // await getErc20Balance(TOKEN_DEBT_ADDRESS, WRAPPER_ABI, deployer, contract);
-        // await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer, contract);
-        // await getErc20Balance(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, contract);
-        // console.log("-\n");
-
-        // console.log("Deployer data:");
-        // balance = await deployer.getBalance();
-        // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-        // await getErc20Balance(TOKEN_DEBT_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // await getErc20Balance(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // console.log("-\n");
-
-        // console.log("Getting victim data before liquidation...");
         const { totalCollateralETH, totalDebtETH, formattedHF } = await getBorrowUserData(
           lendingPool,
-          VICTIM_ADDRESS,
+          _victim_address,
           false
         );
 
         // console.log("calling zap contract...");
-
+        // const contract = new ethers.Contract(ZAP_ADDRESS, ZAP_ABI, deployer);
         // const txGasCost = await contract.estimateGas.liquidate(
-        //   TOKEN_DEBT_ADDRESS,
+        //   DEBT_ADDRESS,
         //   COL_ADDRESS,
-        //   VICTIM_ADDRESS,
+        //   _victim_address,
         //   {
-        //     value: input_swap_amount_in_eth,
-        //     gasLimit: 1500000,
+        //     value: debt_to_cover_in_eth,
         //   }
         // );
-
-        // let options;
-        // if (CHAIN == "mainnet") {
-        //   options = {
-        //     value: input_swap_amount_in_eth,
-        //     gasLimit: txGasCost,
-        //     gasPrice: gasPrice.gasPrice,
-        //     // maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas,
-        //     // maxFeePerGas: gasPrice.maxFeePerGas,
-        //   };
-        // } else if (CHAIN == "polygon") {
-        //   options = {
-        //     value: input_swap_amount_in_eth,
-        //     gasLimit: txGasCost,
-        //     gasPrice: gasPrice.gasPrice,
-        //   };
-        // }
 
         const date = new Date(Date.now());
         const today = date.toLocaleDateString();
         const time = date.toLocaleTimeString();
 
-        const profit = reward.sub(LIQUIDATION_TOTAL_COST);
+        const profit = reward.sub(transaction_cost);
+
         const info = {
           date: today,
           time: time,
-          user: VICTIM_ADDRESS,
-          colToken: colToken,
-          debtToken: debtToken,
+          user: _victim_address,
+          colToken: _col_token,
+          debtToken: _debt_token,
           userData: {
             totalCollateralETH: ethers.utils.formatEther(totalCollateralETH),
             totalDebtETH: ethers.utils.formatEther(totalDebtETH),
@@ -255,70 +194,27 @@ async function fakeZap(
             maxFeePerGas: ethers.utils.formatUnits(gasPrice.maxFeePerGas, 9),
           },
           gasUsed: 1200000, // parseInt(txGasCost.toString()),
-          amountIn: ethers.utils.formatEther(input_swap_amount_in_eth),
-          gasCost: ethers.utils.formatEther(LIQUIDATION_TOTAL_COST),
+          amountIn: ethers.utils.formatEther(debt_to_cover_in_eth),
+          gasCost: ethers.utils.formatEther(transaction_cost),
           reward: ethers.utils.formatEther(reward),
           profit: ethers.utils.formatEther(profit),
         };
 
-        console.log("Saving data!");
-        saveData(`${CHAIN}_v2`, `bot_results`, info);
-        console.log("Done!");
-
-        // console.log("Getting victim data after liquidation...");
-        // await getBorrowUserData(lendingPool, VICTIM_ADDRESS, true);
-
-        // console.log("Contract data:");
-        // balance = await provider.getBalance(contract.address);
-        // console.log("ETH balance: ", ethers.utils.formatEther(balance));
-        // await getErc20Balance(TOKEN_DEBT_ADDRESS, WRAPPER_ABI, deployer, contract);
-        // await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer, contract);
-        // await getErc20Balance(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, contract);
-        // console.log("-\n");
-
-        // console.log("Deployer data:");
-        // balance = await deployer.getBalance();
-        // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-        // await getErc20Balance(TOKEN_DEBT_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // await getErc20Balance(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // console.log("-\n");
-
-        // await getEth(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, gasPrice);
-
-        // console.log("Deployer data:");
-        // balance = await deployer.getBalance();
-        // console.log("My ETH balance: ", ethers.utils.formatEther(balance));
-        // await getErc20Balance(TOKEN_DEBT_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // await getErc20Balance(COL_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // await getErc20Balance(WRAPPER_ADDRESS, WRAPPER_ABI, deployer, deployer);
-        // console.log("-\n");
-        // } catch (error) {
-        //   console.log("Liquidation error...");
-        //   console.log(error, "\n");
-        //   return new Promise((resolve) => {
-        //     resolve(NONCE++);
-        //   });
-        // }
-
-        // console.log("Liquidation excecuted successfully!\n");
+        console.log("Saving data...");
+        try {
+          await saveData(`${_chain}_v2`, `bot_results`, info);
+          console.log("Done!");
+        } catch (error) {
+          console.log("error guardando el archivo!\n");
+        }
       } else {
         // console.log("insufficient funds...");
       }
     }
   }
-  return new Promise((resolve) => {
-    resolve(NONCE);
+  return new Promise(async (resolve) => {
+    resolve(true);
   });
-}
-
-async function getErc20Balance(erc20Address, abi, deployer, account) {
-  const erc20Contract = new ethers.Contract(erc20Address, abi, deployer);
-  const balance = await erc20Contract.balanceOf(account.address);
-  const symbol = await erc20Contract.symbol();
-  const decimals = await erc20Contract.decimals();
-  console.log(`${symbol} balance: ${ethers.utils.formatUnits(balance, decimals)}`);
-  return balance;
 }
 
 module.exports = { fakeZap };

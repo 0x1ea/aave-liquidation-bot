@@ -18,10 +18,6 @@ async function deploy() {
   const deployer = new ethers.Wallet(process.env[MY_ACCOUNT], provider);
 
   let gasPrice = await deployer.getFeeData();
-  gasPrice.gasPrice = gasPrice.gasPrice.mul(20);
-  gasPrice.gasPrice = gasPrice.gasPrice.div(100);
-
-  // console.log("gasPrice2:", gasPrice2.toString());
   console.log("gasPrice: ", gasPrice.gasPrice.toString());
   console.log("maxFeePerGas:", gasPrice.maxFeePerGas.toString());
   console.log("maxPriorityFeePerGas:", gasPrice.maxPriorityFeePerGas.toString());

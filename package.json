@@ -23,7 +23,7 @@
     "typechain": "^8.1.0"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "yarn hardhat test",
     "fork": "hardhat node --fork https://rpc.ankr.com/polygon",
     "forkMainnet": "hardhat node --fork https://rpc.ankr.com/eth --fork-block-number 15271200"
   },

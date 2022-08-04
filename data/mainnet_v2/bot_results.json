@@ -1,1 +1,1378 @@
-[]
+[
+  {
+    "date": "8/4/2022",
+    "time": "10:44:32 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:33 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:34 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:35 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:36 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "13.964486919",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0167573843028",
+    "reward": "41.168054581451444",
+    "profit": "41.151297197148644"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:37 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:37 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:37 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:38 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:38 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:39 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:39 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:40 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:40 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:41 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:41 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:41 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:41 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:42 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:42 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:42 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:43 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:43 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:43 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:44 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:44 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:44 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:45 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:45 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:45 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:46 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:46 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:46 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.714761348",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0176577136176",
+    "reward": "41.168054581451444",
+    "profit": "41.150396867833844"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:47 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:47 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:47 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:48 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:48 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:48 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:49 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "LINK",
+      "address": "0x514910771AF9Ca656af840dff83E8264EcF986CA",
+      "bonus": 0.063,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:49 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:50 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "WETH",
+      "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "14.654720277",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0175856643324",
+    "reward": "41.168054581451444",
+    "profit": "41.150468917119044"
+  },
+  {
+    "date": "8/4/2022",
+    "time": "10:44:50 AM",
+    "user": "0x9bE5D213245be984C0fB806a1d92C03a05448A4D",
+    "colToken": {
+      "symbol": "USDC",
+      "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "bonus": 0.045,
+      "decimals": 6
+    },
+    "debtToken": {
+      "symbol": "DAI",
+      "address": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "bonus": 0.05,
+      "decimals": 18
+    },
+    "userData": {
+      "totalCollateralETH": "0.306581633713832455",
+      "totalDebtETH": "0.274922508608512036",
+      "formattedHF": 0.9702977062320696
+    },
+    "feeData": {
+      "gasPrice": "15.147453472",
+      "maxPriorityFeePerGas": "1.5",
+      "maxFeePerGas": "24.024602248"
+    },
+    "gasUsed": 1200000,
+    "amountIn": "0.041168054581451444",
+    "gasCost": "0.0181769441664",
+    "reward": "41.168054581451444",
+    "profit": "41.149877637285044"
+  }
+]
