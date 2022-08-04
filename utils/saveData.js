@@ -10,7 +10,7 @@ const fs = require("fs");
 async function saveData(folderName, fileName, dataSet) {
   fs.readFile(`./data/${folderName}/${fileName}.json`, async (err, buf) => {
     if (!buf) {
-      fs.writeFile(`./data/${folderName}/${fileName}.json`, "[]", err => {
+      fs.writeFile(`./data/${folderName}/${fileName}.json`, "[]", (err) => {
         if (err) {
           return console.error(err);
         }
@@ -20,14 +20,14 @@ async function saveData(folderName, fileName, dataSet) {
         let save = buf.toString();
         const newSave = await JSON.parse(save);
 
-        dataSet.map(data => {
-          newSave.push(data);
-        });
+        // dataSet.map(data => {
+        newSave.push(dataSet);
+        // });
 
         fs.writeFile(
           `./data/${folderName}/${fileName}.json`,
           JSON.stringify(newSave),
-          err => {
+          (err) => {
             if (err) {
               return console.error(err);
             }

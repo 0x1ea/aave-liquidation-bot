@@ -24,7 +24,7 @@ module.exports = {
       // If you want to do some forking, uncomment this
       forking: {
         url: PUBLIC_FORK_RPC_URL,
-        blockNumber: 15200000,
+        // blockNumber: 15200000,
       },
       chainId: 31337,
       mining: {

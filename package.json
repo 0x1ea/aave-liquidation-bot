@@ -25,7 +25,7 @@
   "scripts": {
     "test": "mocha",
     "fork": "hardhat node --fork https://rpc.ankr.com/polygon",
-    "forkMainnet": "hardhat node --fork https://rpc.ankr.com/eth"
+    "forkMainnet": "hardhat node --fork https://rpc.ankr.com/eth --fork-block-number 15271200"
   },
   "keywords": [],
   "author": "Ardy <cryptoardy@gmail.com>",

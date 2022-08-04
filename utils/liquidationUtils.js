@@ -8,10 +8,10 @@ async function getWeth(address, abi, account, amount, gasPrice, nonce) {
     value: amount,
     gasLimit: "60041",
     gasPrice: gasPrice,
-    nonce: nonce
+    nonce: nonce,
   });
   await tx.wait(1);
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve(balance);
   });
 }
@@ -29,10 +29,10 @@ async function approveErc20(
   const tx = await erc20Token.approve(spenderAddress, amountToSpend, {
     gasLimit: "63000",
     gasPrice: gasPrice,
-    nonce: nonce
+    nonce: nonce,
   });
   await tx.wait(1);
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve(tx);
   });
 }
@@ -42,10 +42,10 @@ async function swapTokens(address, abi, account, params, gasPrice, nonce) {
   const tx = await uniswapRouter.exactInputSingle(params, {
     gasLimit: "350000",
     gasPrice: gasPrice,
-    nonce: nonce
+    nonce: nonce,
   });
   await tx.wait(1);
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve(tx);
   });
 }
@@ -56,10 +56,10 @@ async function getEth(address, abi, account, gasPrice) {
   const tx = await erc20Contract.withdraw(balance, {
     gasLimit: "37041",
     maxFeePerGas: gasPrice.maxFeePerGas,
-    maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas
+    maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas,
   });
   await tx.wait(1);
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve(balance);
   });
 }
@@ -83,18 +83,15 @@ async function liquidateUser(
     { gasPrice: gasPrice, gasLimit: "850000", nonce: nonce }
   );
   await tx.wait(1);
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve(tx);
   });
 }
 
 // Read functions
 async function getBorrowUserData(lendingPool, account, print) {
-  const {
-    totalCollateralETH,
-    totalDebtETH,
-    healthFactor
-  } = await lendingPool.getUserAccountData(account);
+  const { totalCollateralETH, totalDebtETH, healthFactor } =
+    await lendingPool.getUserAccountData(account);
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
   if (print) {
@@ -106,15 +103,12 @@ async function getBorrowUserData(lendingPool, account, print) {
     console.log(`His helthFactor is: ${formattedHF}.\n`);
   }
 
-  return { formattedHF, totalCollateralETH, totalDebtETH };
+  return { totalCollateralETH, totalDebtETH, healthFactor, formattedHF };
 }
 
 async function getBorrowUserDataV3(lendingPool, account) {
-  const {
-    totalCollateralBase,
-    totalDebtBase,
-    healthFactor
-  } = await lendingPool.getUserAccountData(account);
+  const { totalCollateralBase, totalDebtBase, healthFactor } =
+    await lendingPool.getUserAccountData(account);
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
 
@@ -157,5 +151,5 @@ module.exports = {
   getLendingPool,
   liquidateUser,
   getPrice,
-  getWeth
+  getWeth,
 };

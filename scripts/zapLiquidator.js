@@ -6,7 +6,7 @@ const {
   getBorrowUserData,
   getLendingPool,
   getPrice,
-  getEth
+  getEth,
 } = require("../utils/liquidationUtils");
 
 async function zapLiquidator(
@@ -59,13 +59,16 @@ async function zapLiquidator(
    * ⚠ CONTROL DE SEGURIDAD #1: verifico que la victima se pueda liquidar.
    * ⚠  ⚠  ⚠
    */
-  // console.log(formattedHF, formattedHF < 1);
-
   if (formattedHF < 1) {
     // Estimo el coste total de la liquidacion
     let gasPrice = await deployer.getFeeData();
     gasPrice.gasPrice = gasPrice.gasPrice.mul(20);
     gasPrice.gasPrice = gasPrice.gasPrice.div(100);
+
+    // if (CHAIN == "polygon") {
+    gasPrice.gasPrice = BigNumber.from("31000000000");
+    // gasPrice.gasPrice = BigNumber.from("1600000000");
+    // }
 
     const dataProvider = new ethers.Contract(
       aave[CHAIN].v2.dataProvider.address,
@@ -87,14 +90,10 @@ async function zapLiquidator(
     );
 
     let swap_amount_in_base_token = currentVariableDebt.div(2);
-    // console.log("swap_amount_in_base_token", swap_amount_in_base_token.toString()); //aaaaaaaaaa
-    // console.log("baseTokenPrice", baseTokenPrice.toString());
 
     // Convierto el precio base de la deuda al precio en ETH
     let input_swap_amount_in_eth = swap_amount_in_base_token.mul(baseTokenPrice);
     input_swap_amount_in_eth = input_swap_amount_in_eth.div(ethers.utils.parseEther("1"));
-
-    // console.log("input_swap_amount_in_eth", input_swap_amount_in_eth.toString()); // aaaaaaaaaaaaaaaaaaaaaaaaaaa
 
     let LIQUIDATION_TOTAL_COST = LIQUIDATION_COST.mul(gasPrice.gasPrice);
 
@@ -109,9 +108,6 @@ async function zapLiquidator(
         deployer,
         WRAPPER_ADDRESS
       );
-      // console.log("matic_price_wei:", matic_price_wei.toString());
-      LIQUIDATION_TOTAL_COST = LIQUIDATION_TOTAL_COST.mul(matic_price_wei);
-      LIQUIDATION_TOTAL_COST = LIQUIDATION_TOTAL_COST.div(ethers.utils.parseEther("1"));
 
       input_swap_amount_in_eth = input_swap_amount_in_eth.mul(
         ethers.utils.parseEther("1")
@@ -120,7 +116,6 @@ async function zapLiquidator(
     }
 
     const PROFITABLE = reward.gt(LIQUIDATION_TOTAL_COST);
-    // console.log(reward.toString(), LIQUIDATION_TOTAL_COST.toString());
 
     /**
      * ⚠  ⚠  ⚠
@@ -132,14 +127,9 @@ async function zapLiquidator(
     //---------------------------------------------
     let totalEthCompromised = input_swap_amount_in_eth.add(LIQUIDATION_TOTAL_COST);
     let balance = await deployer.getBalance();
-    console.log("My balance:", ethers.utils.formatEther(balance));
-    console.log(
-      "EthCompromised (debt + gasCost):",
-      ethers.utils.formatEther(totalEthCompromised)
-    );
     let residuo = balance.sub(totalEthCompromised);
-    console.log("Result balance:", ethers.utils.formatEther(residuo));
     //---------------------------------------------
+
     if (PROFITABLE) {
       const is_hight_debt = residuo.lt(SECURITY_WALL);
       if (is_hight_debt) {
@@ -184,20 +174,7 @@ async function zapLiquidator(
         deployer = new ethers.Wallet(process.env[myAccount], provider);
 
         try {
-          const contract = new ethers.Contract(
-            // ZAP_ADDRESS,
-            // "0x51d1439B74648Bbb1f7012F6c43DcB8f8591D361", // Polygon
-            "0x0a17FabeA4633ce714F1Fa4a2dcA62C3bAc4758d", // Mainnet
-            ZAP_ABI,
-            deployer
-          );
-          // Estimo el coste total de la liquidacion
-          let gasPrice = await deployer.getFeeData();
-          gasPrice.gasPrice = gasPrice.gasPrice.mul(20);
-          gasPrice.gasPrice = gasPrice.gasPrice.div(100);
-
-          console.log("maxFeePerGas:", gasPrice.maxFeePerGas.toString());
-          console.log("maxPriorityFeePerGas:", gasPrice.maxPriorityFeePerGas.toString());
+          const contract = new ethers.Contract(ZAP_ADDRESS, ZAP_ABI, deployer);
 
           console.log("Contract data:");
           balance = await provider.getBalance(contract.address);
@@ -218,14 +195,42 @@ async function zapLiquidator(
           console.log("Getting victim data before liquidation...");
           await getBorrowUserData(lendingPool, VICTIM_ADDRESS, true);
 
-          console.log("liquidando...");
+          console.log("calling zap contract...");
 
-          await contract.liquidate(TOKEN_DEBT_ADDRESS, COL_ADDRESS, VICTIM_ADDRESS, {
-            value: input_swap_amount_in_eth,
-            gasLimit: 2000000,
-            maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas,
-            maxFeePerGas: gasPrice.maxFeePerGas
-          });
+          const txGasCost = await contract.estimateGas.liquidate(
+            TOKEN_DEBT_ADDRESS,
+            COL_ADDRESS,
+            VICTIM_ADDRESS,
+            {
+              value: input_swap_amount_in_eth,
+              gasLimit: 1500000,
+            }
+          );
+
+          let options;
+          if (CHAIN == "mainnet") {
+            options = {
+              value: input_swap_amount_in_eth,
+              gasLimit: txGasCost,
+              gasPrice: gasPrice.gasPrice,
+              // maxPriorityFeePerGas: gasPrice.maxPriorityFeePerGas,
+              // maxFeePerGas: gasPrice.maxFeePerGas,
+            };
+          } else if (CHAIN == "polygon") {
+            options = {
+              value: input_swap_amount_in_eth,
+              gasLimit: txGasCost,
+              gasPrice: gasPrice.gasPrice,
+            };
+          }
+
+          console.log("txGasCost:", txGasCost.toString());
+          await contract.liquidate(
+            TOKEN_DEBT_ADDRESS,
+            COL_ADDRESS,
+            VICTIM_ADDRESS,
+            options
+          );
           NONCE++;
           console.log("Done!");
 
@@ -260,19 +265,18 @@ async function zapLiquidator(
         } catch (error) {
           console.log("Liquidation error...");
           console.log(error, "\n");
-          return new Promise(resolve => {
+          return new Promise((resolve) => {
             resolve(NONCE++);
           });
         }
 
-        console.log("Liquidation excecuted successfully...\n");
+        console.log("Liquidation excecuted successfully!\n");
       } else {
         console.log("insufficient funds...");
       }
     }
   }
-  // }
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve(NONCE);
   });
 }

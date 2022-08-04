@@ -1,19 +1,18 @@
 require("dotenv").config();
 const { ethers } = require("ethers");
 const config = require("../config/config.json");
-const { liquidate } = require("./liquidateV2");
+const { fakeZap } = require("./fakeZap");
 
 /**
  * INFORMACION PARA CONFIGURAR
  * ANTES DE HACER EL LLAMADO
  */
-// const CHAIN = "mainnet";
-const CHAIN = "polygon";
+const CHAIN = "mainnet";
 const PUBLIC_PROVIDER_URL = config.rpcUrl[CHAIN].public;
-const PROVIDER_URL = config.rpcUrl[CHAIN].alchemy;
-const MY_ACCOUNT = config.keys.private;
-const MIN_ACCOUNT_RESERVE = "0.05";
+const PROVIDER_URL = config.rpcUrl[CHAIN].public;
+const MY_ACCOUNT = config.keys.fake;
 
+const MIN_ACCOUNT_RESERVE = "0.07";
 const FOLDER_NAME = `${CHAIN}_v2`;
 const INPUT_FILE_NAME = "users_ready";
 
@@ -22,7 +21,7 @@ async function bot(nonce) {
   const end = data.length;
   let NONCE = nonce;
 
-  for (let index = 1; index < end; index++) {
+  for (let index = 0; index < end; index++) {
     const iEnd = data[index].userConfiguration.length;
 
     for (let i = 1; i < iEnd; i++) {
@@ -30,7 +29,7 @@ async function bot(nonce) {
         for (let j = 0; j < iEnd; j++) {
           if (data[index].userConfiguration[j].col) {
             try {
-              let lastNonce = await liquidate(
+              let lastNonce = await fakeZap(
                 data[index].user,
                 data[index].userConfiguration[i].chainData,
                 data[index].userConfiguration[j].chainData,
@@ -43,22 +42,19 @@ async function bot(nonce) {
               );
               NONCE = lastNonce;
             } catch (error) {
-              // console.log(("Fallo de red ", error.code));
-              return new Promise(resolve => {
-                resolve(NONCE);
-              });
+              console.log(error.code);
             }
           }
         }
       }
     }
   }
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     resolve(NONCE);
   });
 }
 
-console.log("Searching MEV for:", CHAIN, "...");
+console.log("Searching for:", CHAIN, "...");
 async function botInterval() {
   let provider = new ethers.providers.JsonRpcProvider(process.env[PROVIDER_URL]);
   let deployer = new ethers.Wallet(process.env[MY_ACCOUNT], provider);

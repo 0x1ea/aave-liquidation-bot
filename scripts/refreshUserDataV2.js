@@ -7,7 +7,7 @@ const { convertConfiguration } = require("../utils/convertConfigurationV2");
 const { updateValues } = require("../utils/updateValues");
 
 refreshUserData("polygon");
-// refreshUserData("mainnet");
+refreshUserData("mainnet");
 
 async function refreshUserData(chain) {
   const CHAIN = chain;
@@ -53,12 +53,8 @@ async function refreshUserData(chain) {
         );
 
         const configuration = await getUserConfiguration(lendingPool, VICTIM_ADDRESS);
-        const {
-          totalCollateralETH,
-          totalDebtETH,
-          healthFactor,
-          formattedHF
-        } = await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
+        const { totalCollateralETH, totalDebtETH, healthFactor, formattedHF } =
+          await getBorrowUserData(lendingPool, VICTIM_ADDRESS);
 
         console.log(`${VICTIM_ADDRESS}, ${configuration} \n`);
 
@@ -74,7 +70,7 @@ async function refreshUserData(chain) {
           ),
           healthFactor: healthFactor.toString(),
           formattedHF: formattedHF,
-          userConfiguration: configuration
+          userConfiguration: configuration,
         };
 
         updateValues(FOLDER_NAME, OUTPUT_FILE_NAME, info, i);
@@ -95,18 +91,15 @@ async function getLendingPool(address, abi, account) {
 }
 
 async function getBorrowUserData(lendingPool, account) {
-  const {
-    totalCollateralETH,
-    totalDebtETH,
-    healthFactor
-  } = await lendingPool.getUserAccountData(account);
+  const { totalCollateralETH, totalDebtETH, healthFactor } =
+    await lendingPool.getUserAccountData(account);
 
   const formattedHF = parseFloat(ethers.utils.formatEther(healthFactor));
   return {
     totalCollateralETH,
     totalDebtETH,
     healthFactor,
-    formattedHF
+    formattedHF,
   };
 }
 
