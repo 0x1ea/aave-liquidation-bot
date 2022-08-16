@@ -128,7 +128,7 @@ describe("LiquidatorZap Unit Testing", function () {
   });
 
   describe("withdraw method", function () {
-    it("Should send the ERC20 token provided", async () => {
+    it("Should send you the ERC20 token provided", async () => {
       let balance = await weth.balanceOf(owner.address);
       await weth.withdraw(balance, {
         from: owner.address,
