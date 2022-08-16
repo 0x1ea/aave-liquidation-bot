@@ -1,12 +1,5 @@
-1. Deposit collateral: ETH | WETH
-2. Borrow another asset: DAI
-3. Repay the DAI
+# AAVE Liquidation Bot
 
-
-
-#### TradeOffs of Forking
-Pros: quick, easy, resemble what's on mainnet
-Const: we need an api, some contracts are complex to work with
 
 ### Primera prueba exitosa (en un entorno de desarrollo)
 ```bash
@@ -41,7 +34,7 @@ Have 0.386078043088023356 worth of ETH deposited.
 Have 0.332925285623063908 worth of ETH borrowed.
 His helthFactor is: 0.9768922864740794.
 
-liquidando...
+liquidating...
 Done!
 Getting victim data after liquidation...
 
