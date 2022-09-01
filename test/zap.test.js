@@ -1,11 +1,11 @@
-require("dotenv").config();
 const { expect, assert } = require("chai");
 const hre = require("hardhat");
 const uniswap = require("../config/uniswap.json");
 const aave = require("../config/aave.json");
 const { BigNumber } = require("ethers");
+require("dotenv").config();
 
-describe("LiquidatorZap Unit Testing", function () {
+describe("LiquidatorZap Unit Testing", () => {
   const CHAIN = "mainnet";
   const WETH_ADDRESS = aave[CHAIN].iWeth.address;
   const WETH_ABI = aave[CHAIN].iWeth.abi;
@@ -24,14 +24,14 @@ describe("LiquidatorZap Unit Testing", function () {
     weth = new ethers.Contract(WETH_ADDRESS, WETH_ABI, owner);
   });
 
-  describe("constructor", function () {
+  describe("constructor", () => {
     it("intitiallizes the liquidatorZap correctly", async () => {
       const owner = await liquidator.owner();
       assert.equal(owner, "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266");
     });
   });
 
-  describe("liquidate method", function () {
+  describe("liquidate method", () => {
     it("Reverts when you send 0 ether", async () => {
       await expect(
         liquidator.liquidate(
@@ -127,7 +127,7 @@ describe("LiquidatorZap Unit Testing", function () {
     });
   });
 
-  describe("withdraw method", function () {
+  describe("withdraw method", () => {
     it("Should send you the ERC20 token provided", async () => {
       let balance = await weth.balanceOf(owner.address);
       await weth.withdraw(balance, {
